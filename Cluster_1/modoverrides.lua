@@ -1,4 +1,5 @@
 return {
+  ["workshop-569043634"]={ configuration_options={  }, enabled=true },
   ["workshop-1788625832"]={ configuration_options={  }, enabled=true },
   ["workshop-347079953"]={
     configuration_options={ DFV_Language="EN", DFV_MinimalMode="default" },
