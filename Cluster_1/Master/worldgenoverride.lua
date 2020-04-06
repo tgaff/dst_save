@@ -21,7 +21,7 @@ return {
 		frograin = "default", 			-- "never", "rare", "default", "often", "always"
 		wildfires = "default", 			-- "never", "rare", "default", "often", "always"
 		regrowth = "fast", 			-- "veryslow", "slow", "default", "fast", "veryfast"
-		touchstone = "always", 		-- "never", "rare", "default", "often", "always"
+		touchstone = "often", 		-- "never", "rare", "default", "often", "always"
 		boons = "default", 				-- "never", "rare", "default", "often", "always"
 		cavelight = "default", 			-- "veryslow", "slow", "default", "fast", "veryfast"
 		disease_delay = "default", 		-- "none", "random", "long", "default", "short"
