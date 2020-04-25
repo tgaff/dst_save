@@ -1,12 +1,12 @@
 require "prefabutil"
 
---Code snippet start
+--Campire Respawn : Code snippet start
 
 local function OnRezPlayer(inst)
     inst.sg:GoToState("spawn_pre")
 end
 
---Code snippet end
+--Campire Respawn : Code snippet end
 
 local assets =
 {
@@ -45,13 +45,26 @@ local function ontakefuel(inst)
     inst.SoundEmitter:PlaySound("dontstarve/common/fireAddFuel")
 end
 
+local function updatefuelrate(inst)
+    inst.components.fueled.rate = TheWorld.state.israining and 1 + TUNING.FIREPIT_RAIN_RATE * TheWorld.state.precipitationrate or 1
+end
+
 local function onupdatefueled(inst)
-    local fueled = inst.components.fueled
+    if inst.components.burnable ~= nil and inst.components.fueled ~= nil then
+        updatefuelrate(inst)
+        inst.components.burnable:SetFXLevel(inst.components.fueled:GetCurrentSection(), inst.components.fueled:GetSectionPercent())
+    end
+end
 
-    fueled.rate = TheWorld.state.israining and 1 + TUNING.FIREPIT_RAIN_RATE * TheWorld.state.precipitationrate or 1
-
-    if inst.components.burnable ~= nil then
-        inst.components.burnable:SetFXLevel(fueled:GetCurrentSection(), fueled:GetSectionPercent())
+local function onfuelchange(newsection, oldsection, inst, doer)
+    if newsection <= 0 then
+        inst.components.burnable:Extinguish()
+    else
+        if not inst.components.burnable:IsBurning() then
+            updatefuelrate(inst)
+            inst.components.burnable:Ignite(nil, nil, doer)
+        end
+        inst.components.burnable:SetFXLevel(newsection, inst.components.fueled:GetSectionPercent())
     end
 end
 
@@ -97,6 +110,34 @@ local function OnInit(inst)
     end
 end
 
+--------------------------------------------------------------------------
+--quagmire
+
+local function OnPrefabOverrideDirty(inst)
+    if inst.prefaboverride:value() ~= nil then
+        inst:SetPrefabNameOverride(inst.prefaboverride:value().prefab)
+        if not TheWorld.ismastersim and inst.replica.container:CanBeOpened() then
+            inst.replica.container:WidgetSetup(inst.prefaboverride:value().prefab)
+        end
+    end
+end
+
+local function OnRadiusDirty(inst)
+    inst:SetPhysicsRadiusOverride(inst.radius:value() > 0 and inst.radius:value() / 100 or nil)
+end
+
+local function OnSave(inst, data)
+	data._has_debuffable = inst.components.debuffable ~= nil 
+end
+
+local function OnPreLoad(inst, data)
+	if data ~= nil and data._has_debuffable then
+		inst:AddComponent("debuffable")
+	end
+end
+
+--------------------------------------------------------------------------
+
 local function fn()
     local inst = CreateEntity()
 
@@ -105,8 +146,6 @@ local function fn()
     inst.entity:AddSoundEmitter()
     inst.entity:AddMiniMapEntity()
     inst.entity:AddNetwork()
-
-    MakeObstaclePhysics(inst, .3)
 
     inst.MiniMapEntity:SetIcon("firepit.png")
     inst.MiniMapEntity:SetPriority(1)
@@ -121,6 +160,26 @@ local function fn()
 
     --cooker (from cooker component) added to pristine state for optimization
     inst:AddTag("cooker")
+
+    if TheNet:GetServerGameMode() == "quagmire" then
+        inst:AddTag("installations")
+        inst:AddTag("quagmire_stewer")
+        inst:AddTag("quagmire_cookwaretrader")
+
+        inst.takeitem = net_entity(inst.GUID, "firepit.takeitem")
+        inst.prefaboverride = net_entity(inst.GUID, "firepit.prefaboverride", "prefaboverridedirty")
+        inst.radius = net_byte(inst.GUID, "firepit.radius", "radiusdirty")
+
+        if not TheWorld.ismastersim then
+            inst:ListenForEvent("prefaboverridedirty", OnPrefabOverrideDirty)
+            inst:ListenForEvent("radiusdirty", OnRadiusDirty)
+        end
+
+        inst.curradius = .6
+        MakeObstaclePhysics(inst, inst.curradius)
+    else
+        MakeObstaclePhysics(inst, .3)
+    end
 
     inst.entity:SetPristine()
 
@@ -151,25 +210,31 @@ local function fn()
 
     inst.components.fueled:SetSections(4)
     inst.components.fueled.bonusmult = TUNING.FIREPIT_BONUS_MULT
-    inst.components.fueled.ontakefuelfn = ontakefuel
+    inst.components.fueled:SetTakeFuelFn(ontakefuel)
     inst.components.fueled:SetUpdateFn(onupdatefueled)
-    inst.components.fueled:SetSectionCallback(function(section)
-        if section == 0 then
-            inst.components.burnable:Extinguish()
-        else
-            if not inst.components.burnable:IsBurning() then
-                inst.components.burnable:Ignite()
-            end
-            inst.components.burnable:SetFXLevel(section, inst.components.fueled:GetSectionPercent())
-        end
-    end)
+    inst.components.fueled:SetSectionCallback(onfuelchange)
     inst.components.fueled:InitializeFuelLevel(TUNING.FIREPIT_FUEL_START)
 
     -----------------------------
+    if TheNet:GetServerGameMode() == "quagmire" then
+        event_server_data("quagmire", "prefabs/firepit").master_postinit(inst, OnPrefabOverrideDirty, OnRadiusDirty)
+    end
+    -----------------------------
 
-    inst:AddComponent("hauntable")
-    inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
-    inst.components.hauntable:SetOnHauntFn(OnHaunt)
+--Campire Respawn : Disabled    
+    --inst:AddComponent("hauntable")
+    --inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
+    --inst.components.hauntable:SetOnHauntFn(OnHaunt)
+
+--Campire Respawn : Code snippet start
+	
+inst:AddComponent("hauntable")
+inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
+inst:AddTag("resurrector")
+
+inst:ListenForEvent("rez_player", OnRezPlayer)
+
+--Campire Respawn : Code snippet end
 
     -----------------------------
 
@@ -180,18 +245,18 @@ local function fn()
 
     inst:DoTaskInTime(0, OnInit)
 
---Code snippet start
-	
-	inst:AddComponent("hauntable")
-	inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
-	inst:AddTag("resurrector")
-	
-	inst:ListenForEvent("rez_player", OnRezPlayer)
+	inst.OnSave = OnSave
+	inst.OnPreLoad = OnPreLoad
+    
+    inst.restart_firepit = function( inst )
+        local fuel_percent = inst.components.fueled:GetPercent()
+        inst.components.fueled:MakeEmpty()
+        inst.components.fueled:SetPercent( fuel_percent )
+    end
 
---Code snippet end
-	
     return inst
 end
 
 return Prefab("firepit", fn, assets, prefabs),
     MakePlacer("firepit_placer", "firepit", "firepit", "preview")
+	
