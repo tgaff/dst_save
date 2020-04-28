@@ -222,9 +222,9 @@ local function fn()
     -----------------------------
 
 --Campire Respawn : Disabled    
-    --inst:AddComponent("hauntable")
-    --inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
-    --inst.components.hauntable:SetOnHauntFn(OnHaunt)
+    -- inst:AddComponent("hauntable")
+    -- inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
+    -- inst.components.hauntable:SetOnHauntFn(OnHaunt)
 
 --Campire Respawn : Code snippet start
 	
@@ -256,6 +256,8 @@ inst:ListenForEvent("rez_player", OnRezPlayer)
 
     return inst
 end
+
+
 
 return Prefab("firepit", fn, assets, prefabs),
     MakePlacer("firepit_placer", "firepit", "firepit", "preview")

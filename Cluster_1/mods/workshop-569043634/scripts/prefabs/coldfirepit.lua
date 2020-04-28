@@ -181,9 +181,9 @@ local function fn()
     inst.components.inspectable.getstatus = getstatus
 
 --Campire Respawn : Disabled    
-    --inst:AddComponent("hauntable")
-    --inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
-    --inst.components.hauntable:SetOnHauntFn(OnHaunt)
+    -- inst:AddComponent("hauntable")
+    -- inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
+    -- inst.components.hauntable:SetOnHauntFn(OnHaunt)
 
 --Campire Respawn : Code snippet start
 	
@@ -200,7 +200,13 @@ inst:ListenForEvent("rez_player", OnRezPlayer)
     inst:DoTaskInTime(0, OnInit)
 
 	inst.OnSave = OnSave
-	inst.OnPreLoad = OnPreLoad
+    inst.OnPreLoad = OnPreLoad
+    
+    inst.restart_firepit = function( inst )
+        local fuel_percent = inst.components.fueled:GetPercent()
+        inst.components.fueled:MakeEmpty()
+        inst.components.fueled:SetPercent( fuel_percent )
+    end
 
     return inst
 end

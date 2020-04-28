@@ -182,10 +182,10 @@ local function fn()
     inst:ListenForEvent("onbuilt", onbuilt)
 
 --Campire Respawn : Disabled    
-    --inst:AddComponent("hauntable")
-    --inst.components.hauntable:SetHauntValue(TUNING.HAUNT_SMALL)
-    --inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
-    --inst.components.hauntable:SetOnHauntFn(OnHaunt)
+    -- inst:AddComponent("hauntable")
+    -- inst.components.hauntable:SetHauntValue(TUNING.HAUNT_SMALL)
+    -- inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
+    -- inst.components.hauntable:SetOnHauntFn(OnHaunt)
 
 --Campire Respawn : Code snippet start
 	
