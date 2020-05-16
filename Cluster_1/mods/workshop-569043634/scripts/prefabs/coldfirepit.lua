@@ -1,12 +1,12 @@
 require "prefabutil"
 
---Code snippet start
+--Campire Respawn : Code snippet start
 
 local function OnRezPlayer(inst)
     inst.sg:GoToState("spawn_pre")
 end
 
---Code snippet end
+--Campire Respawn : Code snippet end
 
 local assets =
 {
@@ -45,13 +45,26 @@ local function ontakefuel(inst)
     inst.SoundEmitter:PlaySound("dontstarve/common/fireAddFuel")
 end
 
+local function updatefuelrate(inst)
+    inst.components.fueled.rate = TheWorld.state.israining and 1 + TUNING.COLDFIREPIT_RAIN_RATE * TheWorld.state.precipitationrate or 1
+end
+
 local function onupdatefueled(inst)
-    local fueled = inst.components.fueled
+    if inst.components.burnable ~= nil and inst.components.fueled ~= nil then
+        updatefuelrate(inst)
+        inst.components.burnable:SetFXLevel(inst.components.fueled:GetCurrentSection(), inst.components.fueled:GetSectionPercent())
+    end
+end
 
-    fueled.rate = TheWorld.state.israining and 1 + TUNING.COLDFIREPIT_RAIN_RATE * TheWorld.state.precipitationrate or 1
-
-    if inst.components.burnable ~= nil then
-        inst.components.burnable:SetFXLevel(fueled:GetCurrentSection(), fueled:GetSectionPercent())
+local function onfuelchange(newsection, oldsection, inst)
+    if newsection <= 0 then
+        inst.components.burnable:Extinguish()
+    else
+        if not inst.components.burnable:IsBurning() then
+            updatefuelrate(inst)
+            inst.components.burnable:Ignite()
+        end
+        inst.components.burnable:SetFXLevel(newsection, inst.components.fueled:GetSectionPercent())
     end
 end
 
@@ -91,6 +104,22 @@ local function OnHaunt(inst, haunter)
     return false
 end
 
+local function OnInit(inst)
+    if inst.components.burnable ~= nil then
+        inst.components.burnable:FixFX()
+    end
+end
+
+local function OnSave(inst, data)
+	data._has_debuffable = inst.components.debuffable ~= nil 
+end
+
+local function OnPreLoad(inst, data)
+	if data ~= nil and data._has_debuffable then
+		inst:AddComponent("debuffable")
+	end
+end
+
 local function fn()
     local inst = CreateEntity()
 
@@ -110,6 +139,7 @@ local function fn()
     inst:AddTag("campfire")
     inst:AddTag("structure")
     inst:AddTag("wildfireprotected")
+    inst:AddTag("blueflame")
 
     MakeObstaclePhysics(inst, .3)
 
@@ -122,7 +152,7 @@ local function fn()
     -----------------------
     inst:AddComponent("burnable")
     --inst.components.burnable:SetFXLevel(2)
-    inst.components.burnable:AddBurnFX("coldfirefire", Vector3(0, 0, 0))
+    inst.components.burnable:AddBurnFX("coldfirefire", Vector3(0, 45, 0), "firefx", true)
     inst:ListenForEvent("onextinguish", onextinguish)
 
     -------------------------
@@ -140,19 +170,9 @@ local function fn()
     inst.components.fueled.secondaryfueltype = FUELTYPE.CHEMICAL
     inst.components.fueled:SetSections(4)
     inst.components.fueled.bonusmult = TUNING.COLDFIREPIT_BONUS_MULT
-    inst.components.fueled.ontakefuelfn = ontakefuel
+    inst.components.fueled:SetTakeFuelFn(ontakefuel)
     inst.components.fueled:SetUpdateFn(onupdatefueled)
-    inst.components.fueled:SetSectionCallback(function(section)
-        if section == 0 then
-            inst.components.burnable:Extinguish()
-        else
-            if not inst.components.burnable:IsBurning() then
-                inst.components.burnable:Ignite()
-            end
-            inst.components.burnable:SetFXLevel(section, inst.components.fueled:GetSectionPercent())
-        end
-    end)
-
+    inst.components.fueled:SetSectionCallback(onfuelchange)
     inst.components.fueled:InitializeFuelLevel(TUNING.COLDFIREPIT_FUEL_START)
 
     -----------------------------
@@ -160,22 +180,34 @@ local function fn()
     inst:AddComponent("inspectable")
     inst.components.inspectable.getstatus = getstatus
 
-    inst:AddComponent("hauntable")
-    inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
-    inst.components.hauntable:SetOnHauntFn(OnHaunt)
+--Campire Respawn : Disabled    
+    -- inst:AddComponent("hauntable")
+    -- inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
+    -- inst.components.hauntable:SetOnHauntFn(OnHaunt)
+
+--Campire Respawn : Code snippet start
+	
+inst:AddComponent("hauntable")
+inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
+inst:AddTag("resurrector")
+
+inst:ListenForEvent("rez_player", OnRezPlayer)
+
+--Campire Respawn : Code snippet end
 
     inst:ListenForEvent("onbuilt", onbuilt)
 
---Code snippet start
-	
-	inst:AddComponent("hauntable")
-	inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
-	inst:AddTag("resurrector")
-	
-	inst:ListenForEvent("rez_player", OnRezPlayer)
+    inst:DoTaskInTime(0, OnInit)
 
---Code snippet end
-	
+	inst.OnSave = OnSave
+    inst.OnPreLoad = OnPreLoad
+    
+    inst.restart_firepit = function( inst )
+        local fuel_percent = inst.components.fueled:GetPercent()
+        inst.components.fueled:MakeEmpty()
+        inst.components.fueled:SetPercent( fuel_percent )
+    end
+
     return inst
 end
 

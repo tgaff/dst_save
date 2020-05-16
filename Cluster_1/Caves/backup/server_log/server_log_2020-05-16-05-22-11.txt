@@ -3883,17 +3883,3 @@
 [01:37:46]: Truncating to snapshot #71...
 [01:37:46]:  - session/3111B7C1B5E3F5F3/0000000065
 [01:37:46]:    1 file(s) removed
-[01:37:47]: [Shard] Stopping shard mode
-[01:37:47]: Collecting garbage...
-[01:37:47]: lua_gc took 0.21 seconds
-[01:37:47]: ~ShardLuaProxy()
-[01:37:47]: ~cEventLeaderboardProxy()
-[01:37:47]: ~ItemServerLuaProxy()
-[01:37:47]: ~InventoryLuaProxy()
-[01:37:47]: ~NetworkLuaProxy()
-[01:37:47]: ~SimLuaProxy()
-[01:37:47]: lua_close took 0.38 seconds
-[01:37:48]: Orphaned unnamed resource. This resource must have used Add( resource ) to insert itself into the manager. 
-[01:37:48]: CurlRequestManager::ClientThread::Main() complete
-[01:37:48]: HttpClient2 discarded 0 callbacks.
-[01:37:48]: Shutting down

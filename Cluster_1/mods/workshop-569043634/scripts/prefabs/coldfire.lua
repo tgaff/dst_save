@@ -1,12 +1,12 @@
 require "prefabutil"
 
---Code snippet start
+--Campire Respawn : Code snippet start
 
 local function OnRezPlayer(inst)
     inst.sg:GoToState("spawn_pre")
 end
 
---Code snippet end
+--Campire Respawn : Code snippet end
 
 local assets =
 {
@@ -33,6 +33,47 @@ local function onextinguish(inst)
     end
 end
 
+local function ontakefuel(inst)
+    inst.SoundEmitter:PlaySound("dontstarve/common/fireAddFuel")
+end
+
+local function updatefuelrate(inst)
+    inst.components.fueled.rate = TheWorld.state.israining and 1 + TUNING.COLDFIRE_RAIN_RATE * TheWorld.state.precipitationrate or 1
+end
+
+local function onupdatefueled(inst)
+    if inst.components.burnable ~= nil and inst.components.fueled ~= nil then
+        updatefuelrate(inst)
+        inst.components.burnable:SetFXLevel(inst.components.fueled:GetCurrentSection(), inst.components.fueled:GetSectionPercent())
+    end
+end
+
+local function onfuelchange(newsection, oldsection, inst)
+    if newsection <= 0 then
+        inst.components.burnable:Extinguish()
+        inst.AnimState:PlayAnimation("dead")
+        RemovePhysicsColliders(inst)
+        SpawnPrefab("ash").Transform:SetPosition(inst.Transform:GetWorldPosition())
+        -- if math.random() < .5 then
+        --     local gold = SpawnPrefab("goldnugget")
+        --     gold.Transform:SetPosition(inst.Transform:GetWorldPosition())
+        -- end
+        inst.components.fueled.accepting = false
+        inst:RemoveComponent("propagator")
+        inst:RemoveComponent("workable")
+        inst.persists = false
+        inst:AddTag("NOCLICK")
+        inst:DoTaskInTime(1, ErodeAway)
+    else
+        if not inst.components.burnable:IsBurning() then
+            updatefuelrate(inst)
+            inst.components.burnable:Ignite()
+        end
+        inst.AnimState:PlayAnimation("idle_loop")
+        inst.components.burnable:SetFXLevel(newsection, inst.components.fueled:GetSectionPercent())
+    end
+end
+
 local function onbuilt(inst)
     inst.AnimState:PlayAnimation("place")
     inst.AnimState:PushAnimation("idle_loop", false)
@@ -47,7 +88,6 @@ local SECTION_STATUS =
     [3] = "NORMAL",
     [4] = "HIGH",
 }
-
 local function getstatus(inst)
     return SECTION_STATUS[inst.components.fueled:GetCurrentSection()]
 end
@@ -61,6 +101,16 @@ local function OnHaunt(inst)
         return true
     end
     return false
+end
+
+local function OnSave(inst, data)
+	data._has_debuffable = inst.components.debuffable ~= nil 
+end
+
+local function OnPreLoad(inst, data)
+	if data ~= nil and data._has_debuffable then
+		inst:AddComponent("debuffable")
+	end
 end
 
 local function fn()
@@ -80,6 +130,8 @@ local function fn()
     inst.AnimState:PlayAnimation("idle_loop", false)
 
     inst:AddTag("campfire")
+    inst:AddTag("blueflame")
+    inst:AddTag("NPC_workable")
 
     MakeObstaclePhysics(inst, .3)
 
@@ -107,47 +159,9 @@ local function fn()
     inst.components.fueled.secondaryfueltype = FUELTYPE.CHEMICAL
     inst.components.fueled.accepting = true
     inst.components.fueled:SetSections(4)
-    inst.components.fueled.ontakefuelfn = function() inst.SoundEmitter:PlaySound("dontstarve/common/fireAddFuel") end
-
-    inst.components.fueled:SetUpdateFn(function()
-        if TheWorld.state.israining then
-            inst.components.fueled.rate = 1 + TUNING.COLDFIRE_RAIN_RATE * TheWorld.state.precipitationrate
-        else
-            inst.components.fueled.rate = 1
-        end
-
-        if inst.components.burnable ~= nil and inst.components.fueled ~= nil then
-            inst.components.burnable:SetFXLevel(inst.components.fueled:GetCurrentSection(), inst.components.fueled:GetSectionPercent())
-        end
-    end)
-
-    inst.components.fueled:SetSectionCallback(
-        function(section)
-            if section == 0 then
-                inst.components.burnable:Extinguish()
-                inst.AnimState:PlayAnimation("dead")
-                RemovePhysicsColliders(inst)
-                SpawnPrefab("ash").Transform:SetPosition(inst.Transform:GetWorldPosition())
-                -- if math.random() < .5 then
-                --     local gold = SpawnPrefab("goldnugget")
-                --     gold.Transform:SetPosition(inst.Transform:GetWorldPosition())
-                -- end
-                inst.components.fueled.accepting = false
-                inst:RemoveComponent("propagator")
-                inst:RemoveComponent("workable")
-                inst.persists = false
-                inst:AddTag("NOCLICK")
-                inst:DoTaskInTime(1, ErodeAway)
-            else
-                if not inst.components.burnable:IsBurning() then
-                    inst.components.burnable:Ignite()
-                end
-                inst.AnimState:PlayAnimation("idle_loop")
-                inst.components.burnable:SetFXLevel(section, inst.components.fueled:GetSectionPercent())
-                inst.components.fueled.rate = 1
-            end
-        end)
-
+    inst.components.fueled:SetTakeFuelFn(ontakefuel)
+    inst.components.fueled:SetUpdateFn(onupdatefueled)
+    inst.components.fueled:SetSectionCallback(onfuelchange)
     inst.components.fueled:InitializeFuelLevel(TUNING.COLDFIRE_FUEL_START)
 
     -----------------------------
@@ -155,20 +169,31 @@ local function fn()
     inst:AddComponent("inspectable")
     inst.components.inspectable.getstatus = getstatus
 
+--Campire Respawn : Disabled    
+    -- inst:AddComponent("hauntable")
+    -- inst.components.hauntable:SetHauntValue(TUNING.HAUNT_SMALL)
+    -- inst.components.hauntable.cooldown = TUNING.HAUNT_COOLDOWN_HUGE
+    -- inst.components.hauntable:SetOnHauntFn(OnHaunt)
+
+--Campire Respawn : Code snippet start
+	
+inst:AddComponent("hauntable")
+inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
+inst:AddTag("resurrector")
+
+inst:ListenForEvent("rez_player", OnRezPlayer)
+
+--Campire Respawn : Code snippet end
+
     inst:ListenForEvent("onbuilt", onbuilt)
 
---Code snippet start
-	
-	inst:AddComponent("hauntable")
-	inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
-	inst:AddTag("resurrector")
-	
-	inst:ListenForEvent("rez_player", OnRezPlayer)
+	inst.OnSave = OnSave
+	inst.OnPreLoad = OnPreLoad
 
---Code snippet end
-	
     return inst
 end
+
+
 
 return Prefab("coldfire", fn, assets, prefabs),
     MakePlacer("coldfire_placer", "coldfire", "coldfire", "preview")
