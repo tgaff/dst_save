@@ -1,15 +1,15 @@
 [00:00:00]: PersistRootStorage is now /data//DoNotStarveTogether/Cluster_1/Caves/ 
 [00:00:00]: Starting Up
-[00:00:00]: Version: 402187
-[00:00:00]: Current time: Sun Apr  5 02:30:30 2020
+[00:00:00]: Version: 413451
+[00:00:00]: Current time: Sun Jun  7 01:26:54 2020
 
 [00:00:00]: System Name: Linux
-[00:00:00]: Host Name: 5c0e6685b7b2
-[00:00:00]: Release(Kernel) Version: 4.15.0-58-generic
-[00:00:00]: Kernel Build Timestamp: #64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019
+[00:00:00]: Host Name: 18b29917794b
+[00:00:00]: Release(Kernel) Version: 4.15.0-99-generic
+[00:00:00]: Kernel Build Timestamp: #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
 [00:00:00]: Machine Arch: x86_64
-[00:00:00]: Don't Starve Together: 402187 LINUX
-[00:00:00]: Build Date: 5802
+[00:00:00]: Don't Starve Together: 413451 LINUX
+[00:00:00]: Build Date: 5919
 [00:00:00]: Mode: 32-bit
 [00:00:00]: Parsing command line
 [00:00:00]: Command Line Arguments: -persistent_storage_root /data -shard Caves 
@@ -18,13 +18,13 @@
 [00:00:00]: Mounting file system databundles/klump.zip successful.
 [00:00:00]: Mounting file system databundles/shaders.zip successful.
 [00:00:00]: Mounting file system databundles/fonts.zip successful.
-[00:00:00]: THREAD - started 'GAClient' (4135037760)
+[00:00:00]: THREAD - started 'GAClient' (4134329152)
 [00:00:00]: CurlRequestManager::ClientThread::Main()
 [00:00:00]: Mounting file system databundles/anim_dynamic.zip successful.
 [00:00:00]: Mounting file system databundles/bigportraits.zip successful.
 [00:00:00]: Mounting file system databundles/images.zip successful.
 [00:00:00]: Mounting file system databundles/scripts.zip successful.
-[00:00:00]: ProfileIndex:13.54
+[00:00:00]: ProfileIndex:5.27
 [00:00:00]: [Connect] PendingConnection::Reset(true)
 [00:00:00]: Platform: 1
 [00:00:00]: Network tick rate: U=15(2), D=0
@@ -35,10 +35,10 @@
 [00:00:00]: Token retrieved from: /data//DoNotStarveTogether/Cluster_1/cluster_token.txt
 [00:00:00]: Token retrieved from: /data//DoNotStarveTogether/Cluster_1/cluster_token.txt
 [00:00:00]: cGame::InitializeOnMainThread
-[00:00:00]: THREAD - started 'Ping Job Thread' (4128242496)
-[00:00:00]: THREAD - started 'StreamInput' (4126141248)
 [00:00:00]: Renderer initialize: Okay
+[00:00:00]: THREAD - started 'StreamInput' (4125092672)
 [00:00:00]: AnimManager initialize: Okay
+[00:00:00]: THREAD - started 'Ping Job Thread' (4127193920)
 [00:00:00]: Buffers initialize: Okay
 [00:00:00]: cDontStarveGame::DoGameSpecificInitialize()
 [00:00:00]: GameSpecific initialize: Okay
@@ -56,57 +56,37 @@
 [00:00:01]: Could not load modindex	
 [00:00:01]: ModIndex: Beginning normal load sequence for dedicated server.
 	
-[00:00:01]: DownloadMods(5)
+[00:00:01]: DownloadMods(6)
 [00:00:01]: Download server mod 1788625832
 [00:00:01]: Download server mod 347079953
 [00:00:01]: Download server mod 378160973
 [00:00:01]: Download server mod 356420397
-[00:00:02]: Download server mod 623749604
+[00:00:02]: Download server mod 569043634
+[00:00:02]: Download server mod 1895335315
+[00:00:02]: modoverrides.lua enabling workshop-1895335315	
 [00:00:02]: modoverrides.lua enabling workshop-1788625832	
 [00:00:02]: modoverrides.lua enabling workshop-356420397	
 [00:00:02]: modoverrides.lua enabling workshop-347079953	
-[00:00:02]: modoverrides.lua enabling workshop-623749604	
 [00:00:02]: modoverrides.lua enabling workshop-378160973	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-623749604	
+[00:00:02]: modoverrides.lua enabling workshop-569043634	
 [00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
 [00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
+[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-569043634	
 [00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
 [00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
-[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-623749604_CLIENT	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:02]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:02]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:02]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:02]: Overriding mod workshop-623749604's option Craft with value Normal	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:02]: Loading mod: workshop-623749604 ( Storeroom) Version:2.5a	
+[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
 [00:00:02]: Could not load mod_config_data/modconfiguration_workshop-378160973_CLIENT	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
 [00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
 [00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:02]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:02]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:02]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:02]: Overriding mod workshop-623749604's option Craft with value Normal	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
 [00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
 [00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
@@ -115,20 +95,20 @@
 [00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
 [00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
 [00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
 [00:00:02]: Loading mod: workshop-378160973 (Global Positions) Version:1.7.3	
 [00:00:02]: Could not load mod_config_data/modconfiguration_workshop-347079953_CLIENT	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
 [00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
 [00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:02]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:02]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:02]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:02]: Overriding mod workshop-623749604's option Craft with value Normal	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
 [00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
 [00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
@@ -137,20 +117,20 @@
 [00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
 [00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
 [00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
 [00:00:02]: Loading mod: workshop-347079953 (Display food values) Version:1.61	
-[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-1788625832_CLIENT	
+[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-569043634_CLIENT	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
 [00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
 [00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:02]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:02]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:02]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:02]: Overriding mod workshop-623749604's option Craft with value Normal	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
 [00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
 [00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
@@ -159,20 +139,42 @@
 [00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
 [00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
 [00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:02]: Loading mod: workshop-569043634 (Campfire Respawn) Version:v1.5	
+[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-1788625832_CLIENT	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
 [00:00:02]: Loading mod: workshop-1788625832 (Rabbit Cage) Version:1.7	
 [00:00:02]: Could not load mod_config_data/modconfiguration_workshop-356420397_CLIENT	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
 [00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
 [00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:02]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:02]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:02]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:02]: Overriding mod workshop-623749604's option Craft with value Normal	
 [00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
 [00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
 [00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
@@ -181,926 +183,958 @@
 [00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
 [00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
 [00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
 [00:00:02]: Loading mod: workshop-356420397 (No More Respawn Penalty) Version:1.3	
+[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-1895335315_CLIENT	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:02]: Loading mod: workshop-1895335315 (Storeroom (Modified)) Version:2.5.1	
 [00:00:02]: Mod: workshop-347079953 (Display food values)	Loading modworldgenmain.lua	
 [00:00:02]: Mod: workshop-347079953 (Display food values)	  Mod had no modworldgenmain.lua. Skipping.	
 [00:00:02]: Mod: workshop-347079953 (Display food values)	Loading modmain.lua	
 [00:00:02]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modworldgenmain.lua	
-[00:00:03]: Mod: workshop-1788625832 (Rabbit Cage)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:03]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modmain.lua	
-[00:00:03]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
-[00:00:03]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modworldgenmain.lua	
-[00:00:03]: Mod: workshop-356420397 (No More Respawn Penalty)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:03]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modmain.lua	
-[00:00:03]: Mod: workshop-623749604 ( Storeroom)	Loading modworldgenmain.lua	
-[00:00:03]: Mod: workshop-623749604 ( Storeroom)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:03]: Mod: workshop-623749604 ( Storeroom)	Loading modmain.lua	
-[00:00:03]: Storeroom perishable is loaded	
-[00:00:03]: modimport: ../mods/workshop-623749604/perishable/dst.lua	
-[00:00:03]: ----- STOREROOM DEBUG ----- 	
-[00:00:03]: slots = 80	
-[00:00:03]: perish = 1	
-[00:00:03]: recipe: cutstone = 20 marble = 4 boards = 20	
-[00:00:03]: widget: widgetanimbank = ui_chest_5x16 widgetpos = 	(0.00, 160.00, 0.00)	 slot_x = 15 slot_y = 4 posslot_x = 91 posslot_y = 42	
-[00:00:03]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
-[00:00:03]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:03]: Mod: workshop-378160973 (Global Positions)	Loading modmain.lua	
-[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-623749604	
-[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
-[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
-[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
-[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
-[00:00:03]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
-[00:00:05]: LOADING LUA SUCCESS
-[00:00:05]: Registering mod namespace "workshop-378160973"
-[00:00:05]: Registering mod namespace "food item"
-[00:00:05]: PlayerDeaths could not load morgue	
-[00:00:05]: PlayerHistory could not load player_history	
-[00:00:05]: ServerPreferences could not load server_preferences	
-[00:00:05]: bloom_enabled	false	
-[00:00:05]: Could not load saveindex	
-[00:00:05]: OnFilesLoaded()	
-[00:00:05]: OnUpdatePurchaseStateComplete	
-[00:00:05]: Klump load on boot started.	
-[00:00:05]: Klump files loaded: 	0	
-[00:00:06]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
-[00:00:06]: Mod: workshop-347079953 (Display food values)	  Registering default mod prefab	
-[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	Registering prefabs	
-[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_cage	
-[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage	
-[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage_placer	
-[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_bomb	
-[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_bomb	
-[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering default mod prefab	
-[00:00:06]: Mod: workshop-356420397 (No More Respawn Penalty)	Registering prefabs	
-[00:00:06]: Mod: workshop-356420397 (No More Respawn Penalty)	  Registering default mod prefab	
-[00:00:06]: Mod: workshop-623749604 ( Storeroom)	Registering prefabs	
-[00:00:06]: Mod: workshop-623749604 ( Storeroom)	  Registering prefab file: prefabs/storeroom	
-[00:00:06]: Mod: workshop-623749604 ( Storeroom)	    storeroom	
-[00:00:06]: Mod: workshop-623749604 ( Storeroom)	    storeroom_placer	
-[00:00:06]: Mod: workshop-623749604 ( Storeroom)	  Registering default mod prefab	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/worldmapexplorer	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    worldmapexplorer	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
-[00:00:06]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
-[00:00:07]: 	Load FE	
-[00:00:07]: 	Load FE: done	
-[00:00:07]: THREAD - started 'FilesExistAsyncThread' (4108958528)
-[00:00:07]: FilesExistAsyncThread started (14650 files)...
-[00:00:07]: Check for write access: TRUE
-[00:00:07]: Check for read access: TRUE
-[00:00:07]: ModIndex: Load sequence finished successfully.	
-[00:00:07]: Reset() returning
-[00:00:08]: ... FilesExistAsyncThread complete
-[00:00:08]: [200] Account Communication Success (6)
-[00:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
-[00:00:08]: Starting Dedicated Server Game	
-[00:00:08]: Network tick rate: U=15(2), D=0
-[00:00:08]: About to start a server with the following settings:
-[00:00:08]:   Dedicated: true
-[00:00:08]:   Online: true
-[00:00:08]:   Passworded: true
-[00:00:08]:   ServerPort: 11000
-[00:00:08]:   SteamAuthPort: 8767
-[00:00:08]:   SteamMasterServerPort: 12347
-[00:00:08]:   ClanID: false
-[00:00:08]:   ClanOnly: false
-[00:00:08]:   ClanAdmin: false
-[00:00:08]:   LanOnly: false
-[00:00:08]:   FriendsOnly: false
-[00:00:08]:   EnableAutosaver: true
-[00:00:08]:   EncodeUserPath: true
-[00:00:08]:   PVP: false
-[00:00:08]:   MaxPlayers: 6
-[00:00:08]:   GameMode: endless
-[00:00:08]:   OverridenDNS: 
-[00:00:08]:   PauseWhenEmpty: true
-[00:00:08]:   IdleTimeout: 1800s
-[00:00:08]:   VoteEnabled: true
-[00:00:08]:   InternetBroadcasting: true
-[00:00:08]:   Intent: social
-[00:00:08]: Could not load mod_config_data/modconfiguration_workshop-1788625832	
-[00:00:08]: Could not load mod_config_data/modconfiguration_workshop-623749604	
-[00:00:08]: Could not load mod_config_data/modconfiguration_workshop-347079953	
-[00:00:08]: Could not load mod_config_data/modconfiguration_workshop-378160973	
-[00:00:08]: Online Server Started on port: 11000
-[00:00:08]: Found a level data override file with these contents:	
-[00:00:08]: 	K: 	background_node_range	 V: 	table: 0xd4240a0	
-[00:00:08]: 		K: 	1	 V: 	0	
-[00:00:08]: 		K: 	2	 V: 	1	
-[00:00:08]: 	K: 	desc	 V: 	Delve into the caves... together!	
-[00:00:08]: 	K: 	hideminimap	 V: 	false	
-[00:00:08]: 	K: 	id	 V: 	DST_CAVE	
-[00:00:08]: 	K: 	location	 V: 	cave	
-[00:00:08]: 	K: 	max_playlist_position	 V: 	999	
-[00:00:08]: 	K: 	min_playlist_position	 V: 	0	
-[00:00:08]: 	K: 	name	 V: 	The Caves	
-[00:00:08]: 	K: 	numrandom_set_pieces	 V: 	0	
-[00:00:08]: 	K: 	override_level_string	 V: 	false	
-[00:00:08]: 	K: 	overrides	 V: 	table: 0xd44f940	
-[00:00:08]: 		K: 	banana	 V: 	often	
-[00:00:08]: 		K: 	bats	 V: 	default	
-[00:00:08]: 		K: 	berrybush	 V: 	default	
-[00:00:08]: 		K: 	boons	 V: 	always	
-[00:00:08]: 		K: 	branching	 V: 	default	
-[00:00:08]: 		K: 	bunnymen	 V: 	default	
-[00:00:08]: 		K: 	cave_ponds	 V: 	default	
-[00:00:08]: 		K: 	cave_spiders	 V: 	default	
-[00:00:08]: 		K: 	cavelight	 V: 	default	
-[00:00:08]: 		K: 	chess	 V: 	default	
-[00:00:08]: 		K: 	disease_delay	 V: 	default	
-[00:00:08]: 		K: 	earthquakes	 V: 	default	
-[00:00:08]: 		K: 	fern	 V: 	default	
-[00:00:08]: 		K: 	fissure	 V: 	default	
-[00:00:08]: 		K: 	flint	 V: 	default	
-[00:00:08]: 		K: 	flower_cave	 V: 	default	
-[00:00:08]: 		K: 	grass	 V: 	default	
-[00:00:08]: 		K: 	layout_mode	 V: 	RestrictNodesByKey	
-[00:00:08]: 		K: 	lichen	 V: 	default	
-[00:00:08]: 		K: 	liefs	 V: 	default	
-[00:00:08]: 		K: 	loop	 V: 	default	
-[00:00:08]: 		K: 	marshbush	 V: 	default	
-[00:00:08]: 		K: 	monkey	 V: 	default	
-[00:00:08]: 		K: 	mushroom	 V: 	default	
-[00:00:08]: 		K: 	mushtree	 V: 	default	
-[00:00:08]: 		K: 	prefabswaps_start	 V: 	default	
-[00:00:08]: 		K: 	reeds	 V: 	default	
-[00:00:08]: 		K: 	regrowth	 V: 	default	
-[00:00:08]: 		K: 	roads	 V: 	never	
-[00:00:08]: 		K: 	rock	 V: 	default	
-[00:00:08]: 		K: 	rocky	 V: 	default	
-[00:00:08]: 		K: 	sapling	 V: 	default	
-[00:00:08]: 		K: 	season_start	 V: 	default	
-[00:00:08]: 		K: 	slurper	 V: 	default	
-[00:00:08]: 		K: 	slurtles	 V: 	default	
-[00:00:08]: 		K: 	start_location	 V: 	caves	
-[00:00:08]: 		K: 	task_set	 V: 	cave_default	
-[00:00:08]: 		K: 	tentacles	 V: 	rare	
-[00:00:08]: 		K: 	touchstone	 V: 	often	
-[00:00:08]: 		K: 	trees	 V: 	default	
-[00:00:08]: 		K: 	weather	 V: 	default	
-[00:00:08]: 		K: 	world_size	 V: 	default	
-[00:00:08]: 		K: 	wormattacks	 V: 	default	
-[00:00:08]: 		K: 	wormhole_prefab	 V: 	tentacle_pillar	
-[00:00:08]: 		K: 	wormlights	 V: 	default	
-[00:00:08]: 		K: 	worms	 V: 	default	
-[00:00:08]: 	K: 	required_prefabs	 V: 	table: 0xd466390	
-[00:00:08]: 		K: 	1	 V: 	multiplayer_portal	
-[00:00:08]: 	K: 	substitutes	 V: 	table: 0xd465ac0	
-[00:00:08]: 	K: 	version	 V: 	4	
-[00:00:08]: Loaded and applied level data override from ../leveldataoverride.lua	
-[00:00:08]: Overwriting savedata with level data file.	
-[00:00:08]: Found a worldgen override file with these contents:	
-[00:00:08]: 	K: 	override_enabled	 V: 	true	
-[00:00:08]: 	K: 	overrides	 V: 	table: 0xd73ee10	
-[00:00:08]: 		K: 	alternatehunt	 V: 	default	
-[00:00:08]: 		K: 	angrybees	 V: 	default	
-[00:00:08]: 		K: 	antliontribute	 V: 	default	
-[00:00:08]: 		K: 	autumn	 V: 	default	
-[00:00:08]: 		K: 	banana	 V: 	default	
-[00:00:08]: 		K: 	bats	 V: 	default	
-[00:00:08]: 		K: 	bearger	 V: 	default	
-[00:00:08]: 		K: 	beefalo	 V: 	default	
-[00:00:08]: 		K: 	beefaloheat	 V: 	default	
-[00:00:08]: 		K: 	bees	 V: 	default	
-[00:00:08]: 		K: 	berrybush	 V: 	default	
-[00:00:08]: 		K: 	birds	 V: 	default	
-[00:00:08]: 		K: 	boons	 V: 	default	
-[00:00:08]: 		K: 	branching	 V: 	default	
-[00:00:08]: 		K: 	bunnymen	 V: 	default	
-[00:00:08]: 		K: 	butterfly	 V: 	default	
-[00:00:08]: 		K: 	buzzard	 V: 	default	
-[00:00:08]: 		K: 	cactus	 V: 	default	
-[00:00:08]: 		K: 	carrot	 V: 	default	
-[00:00:08]: 		K: 	catcoon	 V: 	default	
-[00:00:08]: 		K: 	cave_ponds	 V: 	default	
-[00:00:08]: 		K: 	cave_spiders	 V: 	default	
-[00:00:08]: 		K: 	cavelight	 V: 	default	
-[00:00:08]: 		K: 	chess	 V: 	default	
-[00:00:08]: 		K: 	day	 V: 	default	
-[00:00:08]: 		K: 	deciduousmonster	 V: 	default	
-[00:00:08]: 		K: 	deerclops	 V: 	default	
-[00:00:08]: 		K: 	disease_delay	 V: 	default	
-[00:00:08]: 		K: 	dragonfly	 V: 	default	
-[00:00:08]: 		K: 	earthquakes	 V: 	default	
-[00:00:08]: 		K: 	fern	 V: 	default	
-[00:00:08]: 		K: 	fissure	 V: 	default	
-[00:00:08]: 		K: 	flint	 V: 	default	
-[00:00:08]: 		K: 	flower_cave	 V: 	default	
-[00:00:08]: 		K: 	flowers	 V: 	default	
-[00:00:08]: 		K: 	frograin	 V: 	default	
-[00:00:08]: 		K: 	goosemoose	 V: 	default	
-[00:00:08]: 		K: 	grass	 V: 	default	
-[00:00:08]: 		K: 	houndmound	 V: 	default	
-[00:00:08]: 		K: 	hounds	 V: 	default	
-[00:00:08]: 		K: 	hunt	 V: 	default	
-[00:00:08]: 		K: 	krampus	 V: 	default	
-[00:00:08]: 		K: 	lichen	 V: 	default	
-[00:00:08]: 		K: 	liefs	 V: 	default	
-[00:00:08]: 		K: 	lightning	 V: 	default	
-[00:00:08]: 		K: 	lightninggoat	 V: 	default	
-[00:00:08]: 		K: 	loop	 V: 	default	
-[00:00:08]: 		K: 	lureplants	 V: 	default	
-[00:00:08]: 		K: 	marshbush	 V: 	default	
-[00:00:08]: 		K: 	merm	 V: 	default	
-[00:00:08]: 		K: 	meteorshowers	 V: 	default	
-[00:00:08]: 		K: 	meteorspawner	 V: 	default	
-[00:00:08]: 		K: 	moles	 V: 	default	
-[00:00:08]: 		K: 	monkey	 V: 	default	
-[00:00:08]: 		K: 	mushroom	 V: 	default	
-[00:00:08]: 		K: 	mushtree	 V: 	default	
-[00:00:08]: 		K: 	penguins	 V: 	default	
-[00:00:08]: 		K: 	perd	 V: 	default	
-[00:00:08]: 		K: 	petrification	 V: 	default	
-[00:00:08]: 		K: 	pigs	 V: 	default	
-[00:00:08]: 		K: 	ponds	 V: 	default	
-[00:00:08]: 		K: 	prefabswaps_start	 V: 	default	
-[00:00:08]: 		K: 	rabbits	 V: 	default	
-[00:00:08]: 		K: 	reeds	 V: 	default	
-[00:00:08]: 		K: 	regrowth	 V: 	default	
-[00:00:08]: 		K: 	rock	 V: 	default	
-[00:00:08]: 		K: 	rock_ice	 V: 	default	
-[00:00:08]: 		K: 	rocky	 V: 	default	
-[00:00:08]: 		K: 	sapling	 V: 	default	
-[00:00:08]: 		K: 	season_start	 V: 	default	
-[00:00:08]: 		K: 	slurper	 V: 	default	
-[00:00:08]: 		K: 	slurtles	 V: 	default	
-[00:00:08]: 		K: 	specialevent	 V: 	default	
-[00:00:08]: 		K: 	spiders	 V: 	default	
-[00:00:08]: 		K: 	spring	 V: 	default	
-[00:00:08]: 		K: 	start_location	 V: 	default	
-[00:00:08]: 		K: 	summer	 V: 	default	
-[00:00:08]: 		K: 	tallbirds	 V: 	default	
-[00:00:08]: 		K: 	task_set	 V: 	cave_default	
-[00:00:08]: 		K: 	tentacles	 V: 	default	
-[00:00:08]: 		K: 	touchstone	 V: 	default	
-[00:00:08]: 		K: 	trees	 V: 	default	
-[00:00:08]: 		K: 	tumbleweed	 V: 	default	
-[00:00:08]: 		K: 	walrus	 V: 	default	
-[00:00:08]: 		K: 	weather	 V: 	default	
-[00:00:08]: 		K: 	wildfires	 V: 	default	
-[00:00:08]: 		K: 	winter	 V: 	default	
-[00:00:08]: 		K: 	world_size	 V: 	default	
-[00:00:08]: 		K: 	wormattacks	 V: 	default	
-[00:00:08]: 		K: 	wormlights	 V: 	default	
-[00:00:08]: 		K: 	worms	 V: 	default	
-[00:00:08]: 	K: 	preset	 V: 	DST_CAVE	
-[00:00:08]:   sanity-checking worldgenoverride.lua...	
-[00:00:08]: Loaded and applied world gen overrides from ../worldgenoverride.lua	
-[00:00:08]:   contained preset DST_CAVE, loading...	
-[00:00:08]:   applying overrides to preset...	
-[00:00:08]: Overwriting savedata with override file.	
-[00:00:08]: Collecting garbage...
-[00:00:08]: lua_gc took 0.09 seconds
-[00:00:08]: ~ShardLuaProxy()
-[00:00:08]: ~cEventLeaderboardProxy()
-[00:00:08]: ~ItemServerLuaProxy()
-[00:00:08]: ~InventoryLuaProxy()
-[00:00:08]: ~NetworkLuaProxy()
-[00:00:08]: ~SimLuaProxy()
-[00:00:08]: lua_close took 0.14 seconds
-[00:00:08]: ReleaseAll
-[00:00:08]: ReleaseAll Finished
-[00:00:08]: cGame::StartPlaying
-[00:00:08]: LOADING LUA
-[00:00:08]: DoLuaFile scripts/main.lua
-[00:00:08]: DoLuaFile loading buffer scripts/main.lua
-[00:00:09]:   taskgrouplist:	default	Together	
-[00:00:09]:   taskgrouplist:	classic	Classic	
-[00:00:09]:   taskgrouplist:	cave_default	Underground	
-[00:00:09]:   taskgrouplist:	lavaarena_taskset	The Forge	
-[00:00:09]:   taskgrouplist:	quagmire_taskset	The Gorge	
-[00:00:09]: running main.lua
+[00:00:02]: Mod: workshop-1788625832 (Rabbit Cage)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:02]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modmain.lua	
+[00:00:02]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:02]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modworldgenmain.lua	
+[00:00:02]: Mod: workshop-1895335315 (Storeroom (Modified))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:02]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modmain.lua	
+[00:00:02]: --- STOREROOM DEBUG ---	
+[00:00:02]: slots = 80	
+[00:00:02]: recipe: cutstone = 20 marble = 4 boards = 20	
+[00:00:02]: widget: widgetanimbank = ui_chest_5x16 widgetpos = 	(0.00, 160.00, 0.00)	 slot_x = 15 slot_y = 4 posslot_x = 91 posslot_y = 42	
+[00:00:02]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modworldgenmain.lua	
+[00:00:02]: Mod: workshop-356420397 (No More Respawn Penalty)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:02]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modmain.lua	
+[00:00:02]: Mod: workshop-569043634 (Campfire Respawn)	Loading modworldgenmain.lua	
+[00:00:02]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:02]: Mod: workshop-569043634 (Campfire Respawn)	Loading modmain.lua	
+[00:00:02]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modmain.lua. Skipping.	
+[00:00:02]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
+[00:00:02]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:02]: Mod: workshop-378160973 (Global Positions)	Loading modmain.lua	
+[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
+[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-569043634	
+[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
+[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
+[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
+[00:00:02]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:03]: LOADING LUA SUCCESS
+[00:00:03]: Registering mod namespace "workshop-378160973"
+[00:00:03]: Registering mod namespace "food item"
+[00:00:03]: PlayerDeaths could not load morgue	
+[00:00:03]: PlayerHistory could not load player_history	
+[00:00:03]: ServerPreferences could not load server_preferences	
+[00:00:03]: bloom_enabled	false	
+[00:00:03]: Could not load saveindex	
+[00:00:03]: OnFilesLoaded()	
+[00:00:03]: OnUpdatePurchaseStateComplete	
+[00:00:03]: Klump load on boot started.	
+[00:00:03]: Klump files loaded: 	0	
+[00:00:04]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
+[00:00:04]: Mod: workshop-347079953 (Display food values)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	Registering prefabs	
+[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_cage	
+[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage	
+[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage_placer	
+[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_bomb	
+[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_bomb	
+[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	Registering prefabs	
+[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering prefab file: prefabs/storeroom	
+[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom	
+[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom_placer	
+[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-356420397 (No More Respawn Penalty)	Registering prefabs	
+[00:00:04]: Mod: workshop-356420397 (No More Respawn Penalty)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-569043634 (Campfire Respawn)	Registering prefabs	
+[00:00:04]: Mod: workshop-569043634 (Campfire Respawn)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/worldmapexplorer	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    worldmapexplorer	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
+[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
+[00:00:04]: 	Load FE	
+[00:00:04]: 	Load FE: done	
+[00:00:04]: Check for write access: TRUE
+[00:00:04]: Check for read access: TRUE
+[00:00:04]: ModIndex: Load sequence finished successfully.	
+[00:00:04]: Reset() returning
+[00:00:04]: THREAD - started 'FilesExistAsyncThread' (4106787648)
+[00:00:04]: FilesExistAsyncThread started (15447 files)...
+[00:00:05]: [200] Account Communication Success (6)
+[00:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:00:05]: Starting Dedicated Server Game	
+[00:00:05]: Network tick rate: U=15(2), D=0
+[00:00:05]: About to start a server with the following settings:
+[00:00:05]:   Dedicated: true
+[00:00:05]:   Online: true
+[00:00:05]:   Passworded: true
+[00:00:05]:   ServerPort: 11000
+[00:00:05]:   SteamAuthPort: 8767
+[00:00:05]:   SteamMasterServerPort: 12347
+[00:00:05]:   ClanID: false
+[00:00:05]:   ClanOnly: false
+[00:00:05]:   ClanAdmin: false
+[00:00:05]:   LanOnly: false
+[00:00:05]:   FriendsOnly: false
+[00:00:05]:   EnableAutosaver: true
+[00:00:05]:   EncodeUserPath: true
+[00:00:05]:   PVP: false
+[00:00:05]:   MaxPlayers: 6
+[00:00:05]:   GameMode: endless
+[00:00:05]:   OverridenDNS: 
+[00:00:05]:   PauseWhenEmpty: true
+[00:00:05]:   IdleTimeout: 1800s
+[00:00:05]:   VoteEnabled: true
+[00:00:05]:   InternetBroadcasting: true
+[00:00:05]:   Intent: social
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-1895335315	
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-1788625832	
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-378160973	
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-347079953	
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-569043634	
+[00:00:05]: Online Server Started on port: 11000
+[00:00:05]: Not applying level data overrides.	
+[00:00:05]: Found a worldgen override file with these contents:	
+[00:00:05]: 	K: 	override_enabled	 V: 	true	
+[00:00:05]: 	K: 	overrides	 V: 	table: 0xcfe1c50	
+[00:00:05]: 		K: 	alternatehunt	 V: 	default	
+[00:00:05]: 		K: 	angrybees	 V: 	default	
+[00:00:05]: 		K: 	antliontribute	 V: 	default	
+[00:00:05]: 		K: 	autumn	 V: 	default	
+[00:00:05]: 		K: 	banana	 V: 	often	
+[00:00:05]: 		K: 	bats	 V: 	default	
+[00:00:05]: 		K: 	bearger	 V: 	default	
+[00:00:05]: 		K: 	beefalo	 V: 	default	
+[00:00:05]: 		K: 	beefaloheat	 V: 	default	
+[00:00:05]: 		K: 	bees	 V: 	default	
+[00:00:05]: 		K: 	berrybush	 V: 	default	
+[00:00:05]: 		K: 	birds	 V: 	default	
+[00:00:05]: 		K: 	boons	 V: 	default	
+[00:00:05]: 		K: 	branching	 V: 	default	
+[00:00:05]: 		K: 	bunnymen	 V: 	default	
+[00:00:05]: 		K: 	butterfly	 V: 	default	
+[00:00:05]: 		K: 	buzzard	 V: 	default	
+[00:00:05]: 		K: 	cactus	 V: 	default	
+[00:00:05]: 		K: 	carrot	 V: 	default	
+[00:00:05]: 		K: 	catcoon	 V: 	default	
+[00:00:05]: 		K: 	cave_ponds	 V: 	default	
+[00:00:05]: 		K: 	cave_spiders	 V: 	default	
+[00:00:05]: 		K: 	cavelight	 V: 	default	
+[00:00:05]: 		K: 	chess	 V: 	default	
+[00:00:05]: 		K: 	day	 V: 	default	
+[00:00:05]: 		K: 	deciduousmonster	 V: 	default	
+[00:00:05]: 		K: 	deerclops	 V: 	default	
+[00:00:05]: 		K: 	disease_delay	 V: 	default	
+[00:00:05]: 		K: 	dragonfly	 V: 	default	
+[00:00:05]: 		K: 	earthquakes	 V: 	default	
+[00:00:05]: 		K: 	fern	 V: 	default	
+[00:00:05]: 		K: 	fissure	 V: 	default	
+[00:00:05]: 		K: 	flint	 V: 	default	
+[00:00:05]: 		K: 	flower_cave	 V: 	default	
+[00:00:05]: 		K: 	flowers	 V: 	default	
+[00:00:05]: 		K: 	frograin	 V: 	default	
+[00:00:05]: 		K: 	goosemoose	 V: 	default	
+[00:00:05]: 		K: 	grass	 V: 	default	
+[00:00:05]: 		K: 	houndmound	 V: 	default	
+[00:00:05]: 		K: 	hounds	 V: 	default	
+[00:00:05]: 		K: 	hunt	 V: 	default	
+[00:00:05]: 		K: 	krampus	 V: 	default	
+[00:00:05]: 		K: 	lichen	 V: 	default	
+[00:00:05]: 		K: 	liefs	 V: 	default	
+[00:00:05]: 		K: 	lightning	 V: 	default	
+[00:00:05]: 		K: 	lightninggoat	 V: 	default	
+[00:00:05]: 		K: 	loop	 V: 	default	
+[00:00:05]: 		K: 	lureplants	 V: 	default	
+[00:00:05]: 		K: 	marshbush	 V: 	default	
+[00:00:05]: 		K: 	merm	 V: 	default	
+[00:00:05]: 		K: 	meteorshowers	 V: 	default	
+[00:00:05]: 		K: 	meteorspawner	 V: 	default	
+[00:00:05]: 		K: 	moles	 V: 	default	
+[00:00:05]: 		K: 	monkey	 V: 	default	
+[00:00:05]: 		K: 	mushroom	 V: 	default	
+[00:00:05]: 		K: 	mushtree	 V: 	default	
+[00:00:05]: 		K: 	penguins	 V: 	default	
+[00:00:05]: 		K: 	perd	 V: 	default	
+[00:00:05]: 		K: 	petrification	 V: 	default	
+[00:00:05]: 		K: 	pigs	 V: 	default	
+[00:00:05]: 		K: 	ponds	 V: 	default	
+[00:00:05]: 		K: 	prefabswaps_start	 V: 	default	
+[00:00:05]: 		K: 	rabbits	 V: 	default	
+[00:00:05]: 		K: 	reeds	 V: 	default	
+[00:00:05]: 		K: 	regrowth	 V: 	default	
+[00:00:05]: 		K: 	rock	 V: 	default	
+[00:00:05]: 		K: 	rock_ice	 V: 	default	
+[00:00:05]: 		K: 	rocky	 V: 	default	
+[00:00:05]: 		K: 	sapling	 V: 	default	
+[00:00:05]: 		K: 	season_start	 V: 	default	
+[00:00:05]: 		K: 	slurper	 V: 	default	
+[00:00:05]: 		K: 	slurtles	 V: 	default	
+[00:00:05]: 		K: 	specialevent	 V: 	default	
+[00:00:05]: 		K: 	spiders	 V: 	default	
+[00:00:05]: 		K: 	spring	 V: 	default	
+[00:00:05]: 		K: 	start_location	 V: 	default	
+[00:00:05]: 		K: 	summer	 V: 	default	
+[00:00:05]: 		K: 	tallbirds	 V: 	default	
+[00:00:05]: 		K: 	task_set	 V: 	cave_default	
+[00:00:05]: 		K: 	tentacles	 V: 	default	
+[00:00:05]: 		K: 	touchstone	 V: 	default	
+[00:00:05]: 		K: 	trees	 V: 	default	
+[00:00:05]: 		K: 	tumbleweed	 V: 	default	
+[00:00:05]: 		K: 	walrus	 V: 	default	
+[00:00:05]: 		K: 	weather	 V: 	default	
+[00:00:05]: 		K: 	wildfires	 V: 	default	
+[00:00:05]: 		K: 	winter	 V: 	default	
+[00:00:05]: 		K: 	world_size	 V: 	default	
+[00:00:05]: 		K: 	wormattacks	 V: 	default	
+[00:00:05]: 		K: 	wormlights	 V: 	default	
+[00:00:05]: 		K: 	worms	 V: 	default	
+[00:00:05]: 	K: 	preset	 V: 	DST_CAVE	
+[00:00:05]:   sanity-checking worldgenoverride.lua...	
+[00:00:05]: Loaded and applied world gen overrides from ../worldgenoverride.lua	
+[00:00:05]:   contained preset DST_CAVE, loading...	
+[00:00:05]:   applying overrides to preset...	
+[00:00:05]: Overwriting savedata with override file.	
+[00:00:05]: Collecting garbage...
+[00:00:05]: lua_gc took 0.08 seconds
+[00:00:05]: ~ShardLuaProxy()
+[00:00:05]: ~cEventLeaderboardProxy()
+[00:00:05]: ~ItemServerLuaProxy()
+[00:00:05]: ~InventoryLuaProxy()
+[00:00:05]: ~NetworkLuaProxy()
+[00:00:05]: ~SimLuaProxy()
+[00:00:05]: FilesExistAsyncThread aborted.
+[00:00:05]: ... FilesExistAsyncThread complete
+[00:00:05]: lua_close took 0.06 seconds
+[00:00:05]: ReleaseAll
+[00:00:05]: ReleaseAll Finished
+[00:00:05]: cGame::StartPlaying
+[00:00:05]: LOADING LUA
+[00:00:05]: DoLuaFile scripts/main.lua
+[00:00:05]: DoLuaFile loading buffer scripts/main.lua
+[00:00:06]:   taskgrouplist:	default	Together	
+[00:00:06]:   taskgrouplist:	classic	Classic	
+[00:00:06]:   taskgrouplist:	cave_default	Underground	
+[00:00:06]:   taskgrouplist:	lavaarena_taskset	The Forge	
+[00:00:06]:   taskgrouplist:	quagmire_taskset	The Gorge	
+[00:00:06]: running main.lua
 	
-[00:00:09]: unloading prefabs for mod MOD_workshop-347079953	
-[00:00:09]: unloading prefabs for mod MOD_workshop-1788625832	
-[00:00:09]: unloading prefabs for mod MOD_workshop-356420397	
-[00:00:09]: unloading prefabs for mod MOD_workshop-623749604	
-[00:00:09]: unloading prefabs for mod MOD_workshop-378160973	
-[00:00:09]: loaded modindex	
-[00:00:09]: ModIndex: Beginning normal load sequence for dedicated server.
+[00:00:06]: unloading prefabs for mod MOD_workshop-347079953	
+[00:00:06]: unloading prefabs for mod MOD_workshop-1788625832	
+[00:00:06]: unloading prefabs for mod MOD_workshop-1895335315	
+[00:00:06]: unloading prefabs for mod MOD_workshop-356420397	
+[00:00:06]: unloading prefabs for mod MOD_workshop-569043634	
+[00:00:06]: unloading prefabs for mod MOD_workshop-378160973	
+[00:00:06]: loaded modindex	
+[00:00:06]: ModIndex: Beginning normal load sequence for dedicated server.
 	
-[00:00:09]: modoverrides.lua enabling workshop-1788625832	
-[00:00:09]: modoverrides.lua enabling workshop-356420397	
-[00:00:09]: modoverrides.lua enabling workshop-347079953	
-[00:00:09]: modoverrides.lua enabling workshop-623749604	
-[00:00:09]: modoverrides.lua enabling workshop-378160973	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-623749604	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
-[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-623749604	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:09]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:09]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:09]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:09]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:09]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:09]: Overriding mod workshop-623749604's option Craft with value Normal	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:09]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:09]: Loading mod: workshop-623749604 ( Storeroom) Version:2.5a	
-[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-378160973	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:09]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:09]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:09]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:09]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:09]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:09]: Overriding mod workshop-623749604's option Craft with value Normal	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:09]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:09]: Loading mod: workshop-378160973 (Global Positions) Version:1.7.3	
-[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-347079953	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:09]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:09]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:09]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:09]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:09]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:09]: Overriding mod workshop-623749604's option Craft with value Normal	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:09]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:09]: Loading mod: workshop-347079953 (Display food values) Version:1.61	
-[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-1788625832	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:09]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:09]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:09]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:09]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:09]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:09]: Overriding mod workshop-623749604's option Craft with value Normal	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:09]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:09]: Loading mod: workshop-1788625832 (Rabbit Cage) Version:1.7	
-[00:00:09]: Could not load mod_config_data/modconfiguration_workshop-356420397	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:09]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-623749604	
-[00:00:09]: Overriding mod workshop-623749604's option FoodSpoilage with value 1	
-[00:00:09]: Overriding mod workshop-623749604's option Destroyable with value DestroyByPlayer	
-[00:00:09]: Overriding mod workshop-623749604's option Slots with value 80	
-[00:00:09]: Overriding mod workshop-623749604's option Position with value Center	
-[00:00:09]: Overriding mod workshop-623749604's option Language with value En	
-[00:00:09]: Overriding mod workshop-623749604's option Craft with value Normal	
-[00:00:09]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:09]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:09]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:09]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:09]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:09]: Loading mod: workshop-356420397 (No More Respawn Penalty) Version:1.3	
-[00:00:09]: Mod: workshop-347079953 (Display food values)	Loading modworldgenmain.lua	
-[00:00:09]: Mod: workshop-347079953 (Display food values)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:09]: Mod: workshop-347079953 (Display food values)	Loading modmain.lua	
-[00:00:09]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modworldgenmain.lua	
-[00:00:09]: Mod: workshop-1788625832 (Rabbit Cage)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:09]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modmain.lua	
-[00:00:09]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
-[00:00:09]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modworldgenmain.lua	
-[00:00:09]: Mod: workshop-356420397 (No More Respawn Penalty)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:09]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modmain.lua	
-[00:00:09]: Mod: workshop-623749604 ( Storeroom)	Loading modworldgenmain.lua	
-[00:00:09]: Mod: workshop-623749604 ( Storeroom)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:09]: Mod: workshop-623749604 ( Storeroom)	Loading modmain.lua	
-[00:00:09]: Storeroom perishable is loaded	
-[00:00:09]: modimport: ../mods/workshop-623749604/perishable/dst.lua	
-[00:00:09]: ----- STOREROOM DEBUG ----- 	
-[00:00:09]: slots = 80	
-[00:00:09]: perish = 1	
-[00:00:09]: recipe: cutstone = 20 marble = 4 boards = 20	
-[00:00:09]: widget: widgetanimbank = ui_chest_5x16 widgetpos = 	(0.00, 160.00, 0.00)	 slot_x = 15 slot_y = 4 posslot_x = 91 posslot_y = 42	
-[00:00:09]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
-[00:00:09]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:09]: Mod: workshop-378160973 (Global Positions)	Loading modmain.lua	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-623749604	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
-[00:00:09]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
-[00:00:10]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
-[00:00:10]: LOADING LUA SUCCESS
-[00:00:10]: Registering mod namespace "workshop-378160973"
-[00:00:10]: Registering mod namespace "food item"
-[00:00:10]: PlayerDeaths could not load morgue	
-[00:00:10]: PlayerHistory could not load player_history	
-[00:00:10]: ServerPreferences could not load server_preferences	
-[00:00:10]: bloom_enabled	false	
-[00:00:10]: OnLoad slot	2	: World options was nil! Populating with default.	
-[00:00:10]: OnLoad slot	3	: World options was nil! Populating with default.	
-[00:00:10]: OnLoad slot	4	: World options was nil! Populating with default.	
-[00:00:10]: OnLoad slot	5	: World options was nil! Populating with default.	
-[00:00:10]: loaded saveindex	
-[00:00:10]: OnFilesLoaded()	
-[00:00:10]: OnUpdatePurchaseStateComplete	
-[00:00:10]: Load Slot: ... generating new world	
-[00:00:10]: WorldSim::SimThread::SimThread()
-[00:00:10]: ABOUT TO INSTALL STACKTRACE
-[00:00:10]: DoLuaFile scripts/stacktrace.lua
-[00:00:10]: DoLuaFile loading buffer scripts/stacktrace.lua
-[00:00:10]: INSTALLED STACKTRACE
-[00:00:10]: WorldSim::SimThread::SimThread() complete
-[00:00:10]: Check for write access: TRUE
-[00:00:10]: Check for read access: TRUE
-[00:00:10]: ModIndex: Load sequence finished successfully.	
-[00:00:10]: Reset() returning
-[00:00:10]: THREAD - started 'WorldSim' (4062985024)
-[00:00:10]: WorldSim::SimThread::Main()
-[00:00:10]: DoLuaFile scripts/worldgen_main.lua
-[00:00:10]: DoLuaFile loading buffer scripts/worldgen_main.lua
-[00:00:10]: DLC enabled : 	false	
-[00:00:11]:   taskgrouplist:	default	Together	
-[00:00:11]:   taskgrouplist:	classic	Classic	
-[00:00:11]:   taskgrouplist:	cave_default	Underground	
-[00:00:11]:   taskgrouplist:	lavaarena_taskset	The Forge	
-[00:00:11]:   taskgrouplist:	quagmire_taskset	The Gorge	
-[00:00:11]: ModIndex:GetModsToLoad inserting modname, 	workshop-1788625832	
-[00:00:11]: ModIndex:GetModsToLoad inserting modname, 	workshop-623749604	
-[00:00:11]: ModIndex:GetModsToLoad inserting modname, 	workshop-347079953	
-[00:00:11]: ModIndex:GetModsToLoad inserting modname, 	workshop-356420397	
-[00:00:11]: ModIndex:GetModsToLoad inserting modname, 	workshop-378160973	
-[00:00:11]: Loading mod: workshop-1788625832 (Rabbit Cage) Version:1.7	
-[00:00:11]: Loading mod: workshop-623749604 ( Storeroom) Version:2.5a	
-[00:00:11]: Loading mod: workshop-347079953 (Display food values) Version:1.61	
-[00:00:11]: Loading mod: workshop-356420397 (No More Respawn Penalty) Version:1.3	
-[00:00:11]: Loading mod: workshop-378160973 (Global Positions) Version:1.7.3	
-[00:00:11]: Mod: workshop-347079953 (Display food values)	Loading modworldgenmain.lua	
-[00:00:11]: Mod: workshop-347079953 (Display food values)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:11]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modworldgenmain.lua	
-[00:00:11]: Mod: workshop-1788625832 (Rabbit Cage)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:11]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modworldgenmain.lua	
-[00:00:11]: Mod: workshop-356420397 (No More Respawn Penalty)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:11]: Mod: workshop-623749604 ( Storeroom)	Loading modworldgenmain.lua	
-[00:00:11]: Mod: workshop-623749604 ( Storeroom)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:11]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
-[00:00:11]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:11]: running worldgen_main.lua
+[00:00:06]: modoverrides.lua enabling workshop-1895335315	
+[00:00:06]: modoverrides.lua enabling workshop-1788625832	
+[00:00:06]: modoverrides.lua enabling workshop-356420397	
+[00:00:06]: modoverrides.lua enabling workshop-347079953	
+[00:00:06]: modoverrides.lua enabling workshop-378160973	
+[00:00:06]: modoverrides.lua enabling workshop-569043634	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-569043634	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-378160973	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:06]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:06]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:06]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:06]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:06]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:06]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:06]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:06]: Loading mod: workshop-378160973 (Global Positions) Version:1.7.3	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-347079953	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:06]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:06]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:06]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:06]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:06]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:06]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:06]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:06]: Loading mod: workshop-347079953 (Display food values) Version:1.61	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-569043634	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:06]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:06]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:06]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:06]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:06]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:06]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:06]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:06]: Loading mod: workshop-569043634 (Campfire Respawn) Version:v1.5	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-1788625832	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:06]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:06]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:06]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:06]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:06]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:06]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:06]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:06]: Loading mod: workshop-1788625832 (Rabbit Cage) Version:1.7	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-356420397	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:06]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:06]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:06]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:06]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:06]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:06]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:06]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:06]: Loading mod: workshop-356420397 (No More Respawn Penalty) Version:1.3	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-1895335315	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:06]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:06]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:06]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:06]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:06]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:06]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:06]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:06]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:06]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:06]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:06]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:06]: Loading mod: workshop-1895335315 (Storeroom (Modified)) Version:2.5.1	
+[00:00:06]: Mod: workshop-347079953 (Display food values)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-347079953 (Display food values)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-347079953 (Display food values)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modmain.lua	
+[00:00:06]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:06]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-1895335315 (Storeroom (Modified))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modmain.lua	
+[00:00:06]: --- STOREROOM DEBUG ---	
+[00:00:06]: slots = 80	
+[00:00:06]: recipe: cutstone = 20 marble = 4 boards = 20	
+[00:00:06]: widget: widgetanimbank = ui_chest_5x16 widgetpos = 	(0.00, 160.00, 0.00)	 slot_x = 15 slot_y = 4 posslot_x = 91 posslot_y = 42	
+[00:00:06]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-356420397 (No More Respawn Penalty)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-569043634 (Campfire Respawn)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-569043634 (Campfire Respawn)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-378160973 (Global Positions)	Loading modmain.lua	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-569043634	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
+[00:00:06]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:06]: LOADING LUA SUCCESS
+[00:00:06]: Registering mod namespace "workshop-378160973"
+[00:00:06]: Registering mod namespace "food item"
+[00:00:06]: PlayerDeaths could not load morgue	
+[00:00:06]: PlayerHistory could not load player_history	
+[00:00:06]: ServerPreferences could not load server_preferences	
+[00:00:06]: bloom_enabled	false	
+[00:00:06]: OnLoad slot	2	: World options was nil! Populating with default.	
+[00:00:06]: OnLoad slot	3	: World options was nil! Populating with default.	
+[00:00:06]: OnLoad slot	4	: World options was nil! Populating with default.	
+[00:00:06]: OnLoad slot	5	: World options was nil! Populating with default.	
+[00:00:06]: loaded saveindex	
+[00:00:06]: OnFilesLoaded()	
+[00:00:06]: OnUpdatePurchaseStateComplete	
+[00:00:06]: Load Slot: ... generating new world	
+[00:00:06]: WorldSim::SimThread::SimThread()
+[00:00:06]: ABOUT TO INSTALL STACKTRACE
+[00:00:06]: DoLuaFile scripts/stacktrace.lua
+[00:00:06]: DoLuaFile loading buffer scripts/stacktrace.lua
+[00:00:06]: INSTALLED STACKTRACE
+[00:00:06]: WorldSim::SimThread::SimThread() complete
+[00:00:06]: Check for write access: TRUE
+[00:00:06]: Check for read access: TRUE
+[00:00:06]: ModIndex: Load sequence finished successfully.	
+[00:00:06]: Reset() returning
+[00:00:06]: THREAD - started 'WorldSim' (4060887872)
+[00:00:06]: WorldSim::SimThread::Main()
+[00:00:06]: DoLuaFile scripts/worldgen_main.lua
+[00:00:06]: DoLuaFile loading buffer scripts/worldgen_main.lua
+[00:00:06]: DLC enabled : 	false	
+[00:00:06]:   taskgrouplist:	default	Together	
+[00:00:06]:   taskgrouplist:	classic	Classic	
+[00:00:06]:   taskgrouplist:	cave_default	Underground	
+[00:00:06]:   taskgrouplist:	lavaarena_taskset	The Forge	
+[00:00:06]:   taskgrouplist:	quagmire_taskset	The Gorge	
+[00:00:06]: ModIndex:GetModsToLoad inserting modname, 	workshop-1895335315	
+[00:00:06]: ModIndex:GetModsToLoad inserting modname, 	workshop-1788625832	
+[00:00:06]: ModIndex:GetModsToLoad inserting modname, 	workshop-356420397	
+[00:00:06]: ModIndex:GetModsToLoad inserting modname, 	workshop-378160973	
+[00:00:06]: ModIndex:GetModsToLoad inserting modname, 	workshop-347079953	
+[00:00:06]: ModIndex:GetModsToLoad inserting modname, 	workshop-569043634	
+[00:00:06]: Loading mod: workshop-1895335315 (Storeroom (Modified)) Version:2.5.1	
+[00:00:06]: Loading mod: workshop-1788625832 (Rabbit Cage) Version:1.7	
+[00:00:06]: Loading mod: workshop-356420397 (No More Respawn Penalty) Version:1.3	
+[00:00:06]: Loading mod: workshop-378160973 (Global Positions) Version:1.7.3	
+[00:00:06]: Loading mod: workshop-347079953 (Display food values) Version:1.61	
+[00:00:06]: Loading mod: workshop-569043634 (Campfire Respawn) Version:v1.5	
+[00:00:06]: Mod: workshop-347079953 (Display food values)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-347079953 (Display food values)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-1788625832 (Rabbit Cage)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-1895335315 (Storeroom (Modified))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-356420397 (No More Respawn Penalty)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-569043634 (Campfire Respawn)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: running worldgen_main.lua
 	
-[00:00:11]: SEED = 	1586053840	
-[00:00:11]: Generating world with these parameters:	
-[00:00:11]: level_type	SURVIVAL	
-[00:00:11]: level_data:	
-[00:00:11]: 	K: 	1	 V: 	table: 0xf0a1f590	
-[00:00:11]: 		K: 	background_node_range	 V: 	table: 0xf0a1f5c0	
-[00:00:11]: 			K: 	1	 V: 	0	
-[00:00:11]: 			K: 	2	 V: 	1	
-[00:00:11]: 		K: 	desc	 V: 	Delve into the caves... together!	
-[00:00:11]: 		K: 	hideminimap	 V: 	false	
-[00:00:11]: 		K: 	id	 V: 	DST_CAVE	
-[00:00:11]: 		K: 	location	 V: 	cave	
-[00:00:11]: 		K: 	max_playlist_position	 V: 	999	
-[00:00:11]: 		K: 	min_playlist_position	 V: 	0	
-[00:00:11]: 		K: 	name	 V: 	The Caves	
-[00:00:11]: 		K: 	numrandom_set_pieces	 V: 	0	
-[00:00:11]: 		K: 	override_level_string	 V: 	false	
-[00:00:11]: 		K: 	overrides	 V: 	table: 0xf0a1ff30	
-[00:00:11]: 			K: 	alternatehunt	 V: 	default	
-[00:00:11]: 			K: 	angrybees	 V: 	default	
-[00:00:11]: 			K: 	antliontribute	 V: 	default	
-[00:00:11]: 			K: 	autumn	 V: 	default	
-[00:00:11]: 			K: 	banana	 V: 	default	
-[00:00:11]: 			K: 	bats	 V: 	default	
-[00:00:11]: 			K: 	bearger	 V: 	default	
-[00:00:11]: 			K: 	beefalo	 V: 	default	
-[00:00:11]: 			K: 	beefaloheat	 V: 	default	
-[00:00:11]: 			K: 	bees	 V: 	default	
-[00:00:11]: 			K: 	berrybush	 V: 	default	
-[00:00:11]: 			K: 	birds	 V: 	default	
-[00:00:11]: 			K: 	boons	 V: 	default	
-[00:00:11]: 			K: 	branching	 V: 	default	
-[00:00:11]: 			K: 	bunnymen	 V: 	default	
-[00:00:11]: 			K: 	butterfly	 V: 	default	
-[00:00:11]: 			K: 	buzzard	 V: 	default	
-[00:00:11]: 			K: 	cactus	 V: 	default	
-[00:00:11]: 			K: 	carrot	 V: 	default	
-[00:00:11]: 			K: 	catcoon	 V: 	default	
-[00:00:11]: 			K: 	cave_ponds	 V: 	default	
-[00:00:11]: 			K: 	cave_spiders	 V: 	default	
-[00:00:11]: 			K: 	cavelight	 V: 	default	
-[00:00:11]: 			K: 	chess	 V: 	default	
-[00:00:11]: 			K: 	day	 V: 	default	
-[00:00:11]: 			K: 	deciduousmonster	 V: 	default	
-[00:00:11]: 			K: 	deerclops	 V: 	default	
-[00:00:11]: 			K: 	disease_delay	 V: 	default	
-[00:00:11]: 			K: 	dragonfly	 V: 	default	
-[00:00:11]: 			K: 	earthquakes	 V: 	default	
-[00:00:11]: 			K: 	fern	 V: 	default	
-[00:00:11]: 			K: 	fissure	 V: 	default	
-[00:00:11]: 			K: 	flint	 V: 	default	
-[00:00:11]: 			K: 	flower_cave	 V: 	default	
-[00:00:11]: 			K: 	flowers	 V: 	default	
-[00:00:11]: 			K: 	frograin	 V: 	default	
-[00:00:11]: 			K: 	goosemoose	 V: 	default	
-[00:00:11]: 			K: 	grass	 V: 	default	
-[00:00:11]: 			K: 	houndmound	 V: 	default	
-[00:00:11]: 			K: 	hounds	 V: 	default	
-[00:00:11]: 			K: 	hunt	 V: 	default	
-[00:00:11]: 			K: 	krampus	 V: 	default	
-[00:00:11]: 			K: 	layout_mode	 V: 	RestrictNodesByKey	
-[00:00:11]: 			K: 	lichen	 V: 	default	
-[00:00:11]: 			K: 	liefs	 V: 	default	
-[00:00:11]: 			K: 	lightning	 V: 	default	
-[00:00:11]: 			K: 	lightninggoat	 V: 	default	
-[00:00:11]: 			K: 	loop	 V: 	default	
-[00:00:11]: 			K: 	lureplants	 V: 	default	
-[00:00:11]: 			K: 	marshbush	 V: 	default	
-[00:00:11]: 			K: 	merm	 V: 	default	
-[00:00:11]: 			K: 	meteorshowers	 V: 	default	
-[00:00:11]: 			K: 	meteorspawner	 V: 	default	
-[00:00:11]: 			K: 	moles	 V: 	default	
-[00:00:11]: 			K: 	monkey	 V: 	default	
-[00:00:11]: 			K: 	mushroom	 V: 	default	
-[00:00:11]: 			K: 	mushtree	 V: 	default	
-[00:00:11]: 			K: 	penguins	 V: 	default	
-[00:00:11]: 			K: 	perd	 V: 	default	
-[00:00:11]: 			K: 	petrification	 V: 	default	
-[00:00:11]: 			K: 	pigs	 V: 	default	
-[00:00:11]: 			K: 	ponds	 V: 	default	
-[00:00:11]: 			K: 	prefabswaps_start	 V: 	default	
-[00:00:11]: 			K: 	rabbits	 V: 	default	
-[00:00:11]: 			K: 	reeds	 V: 	default	
-[00:00:11]: 			K: 	regrowth	 V: 	default	
-[00:00:11]: 			K: 	roads	 V: 	never	
-[00:00:11]: 			K: 	rock	 V: 	default	
-[00:00:11]: 			K: 	rock_ice	 V: 	default	
-[00:00:11]: 			K: 	rocky	 V: 	default	
-[00:00:11]: 			K: 	sapling	 V: 	default	
-[00:00:11]: 			K: 	season_start	 V: 	default	
-[00:00:11]: 			K: 	slurper	 V: 	default	
-[00:00:11]: 			K: 	slurtles	 V: 	default	
-[00:00:11]: 			K: 	specialevent	 V: 	default	
-[00:00:11]: 			K: 	spiders	 V: 	default	
-[00:00:11]: 			K: 	spring	 V: 	default	
-[00:00:11]: 			K: 	start_location	 V: 	default	
-[00:00:11]: 			K: 	summer	 V: 	default	
-[00:00:11]: 			K: 	tallbirds	 V: 	default	
-[00:00:11]: 			K: 	task_set	 V: 	cave_default	
-[00:00:11]: 			K: 	tentacles	 V: 	default	
-[00:00:11]: 			K: 	touchstone	 V: 	default	
-[00:00:11]: 			K: 	trees	 V: 	default	
-[00:00:11]: 			K: 	tumbleweed	 V: 	default	
-[00:00:11]: 			K: 	walrus	 V: 	default	
-[00:00:11]: 			K: 	weather	 V: 	default	
-[00:00:11]: 			K: 	wildfires	 V: 	default	
-[00:00:11]: 			K: 	winter	 V: 	default	
-[00:00:11]: 			K: 	world_size	 V: 	default	
-[00:00:11]: 			K: 	wormattacks	 V: 	default	
-[00:00:11]: 			K: 	wormhole_prefab	 V: 	tentacle_pillar	
-[00:00:11]: 			K: 	wormlights	 V: 	default	
-[00:00:11]: 			K: 	worms	 V: 	default	
-[00:00:11]: 		K: 	required_prefabs	 V: 	table: 0xf0a1f940	
-[00:00:11]: 			K: 	1	 V: 	multiplayer_portal	
-[00:00:11]: 		K: 	substitutes	 V: 	table: 0xf0a2db50	
-[00:00:11]: 		K: 	version	 V: 	4	
-[00:00:11]: 
+[00:00:06]: SEED = 	1591493220	
+[00:00:06]: Generating world with these parameters:	
+[00:00:06]: level_type	SURVIVAL	
+[00:00:06]: level_data:	
+[00:00:06]: 	K: 	1	 V: 	table: 0xf08f6610	
+[00:00:06]: 		K: 	background_node_range	 V: 	table: 0xf08f6640	
+[00:00:06]: 			K: 	1	 V: 	0	
+[00:00:06]: 			K: 	2	 V: 	1	
+[00:00:06]: 		K: 	desc	 V: 	Delve into the caves... together!	
+[00:00:06]: 		K: 	hideminimap	 V: 	false	
+[00:00:06]: 		K: 	id	 V: 	DST_CAVE	
+[00:00:06]: 		K: 	location	 V: 	cave	
+[00:00:06]: 		K: 	max_playlist_position	 V: 	999	
+[00:00:06]: 		K: 	min_playlist_position	 V: 	0	
+[00:00:06]: 		K: 	name	 V: 	The Caves	
+[00:00:06]: 		K: 	numrandom_set_pieces	 V: 	0	
+[00:00:06]: 		K: 	override_level_string	 V: 	false	
+[00:00:06]: 		K: 	overrides	 V: 	table: 0xf08f6fb0	
+[00:00:06]: 			K: 	alternatehunt	 V: 	default	
+[00:00:06]: 			K: 	angrybees	 V: 	default	
+[00:00:06]: 			K: 	antliontribute	 V: 	default	
+[00:00:06]: 			K: 	autumn	 V: 	default	
+[00:00:06]: 			K: 	banana	 V: 	often	
+[00:00:06]: 			K: 	bats	 V: 	default	
+[00:00:06]: 			K: 	bearger	 V: 	default	
+[00:00:06]: 			K: 	beefalo	 V: 	default	
+[00:00:06]: 			K: 	beefaloheat	 V: 	default	
+[00:00:06]: 			K: 	bees	 V: 	default	
+[00:00:06]: 			K: 	berrybush	 V: 	default	
+[00:00:06]: 			K: 	birds	 V: 	default	
+[00:00:06]: 			K: 	boons	 V: 	default	
+[00:00:06]: 			K: 	branching	 V: 	default	
+[00:00:06]: 			K: 	bunnymen	 V: 	default	
+[00:00:06]: 			K: 	butterfly	 V: 	default	
+[00:00:06]: 			K: 	buzzard	 V: 	default	
+[00:00:06]: 			K: 	cactus	 V: 	default	
+[00:00:06]: 			K: 	carrot	 V: 	default	
+[00:00:06]: 			K: 	catcoon	 V: 	default	
+[00:00:06]: 			K: 	cave_ponds	 V: 	default	
+[00:00:06]: 			K: 	cave_spiders	 V: 	default	
+[00:00:06]: 			K: 	cavelight	 V: 	default	
+[00:00:06]: 			K: 	chess	 V: 	default	
+[00:00:06]: 			K: 	day	 V: 	default	
+[00:00:06]: 			K: 	deciduousmonster	 V: 	default	
+[00:00:06]: 			K: 	deerclops	 V: 	default	
+[00:00:06]: 			K: 	disease_delay	 V: 	default	
+[00:00:06]: 			K: 	dragonfly	 V: 	default	
+[00:00:06]: 			K: 	earthquakes	 V: 	default	
+[00:00:06]: 			K: 	fern	 V: 	default	
+[00:00:06]: 			K: 	fissure	 V: 	default	
+[00:00:06]: 			K: 	flint	 V: 	default	
+[00:00:06]: 			K: 	flower_cave	 V: 	default	
+[00:00:06]: 			K: 	flowers	 V: 	default	
+[00:00:06]: 			K: 	frograin	 V: 	default	
+[00:00:06]: 			K: 	goosemoose	 V: 	default	
+[00:00:06]: 			K: 	grass	 V: 	default	
+[00:00:06]: 			K: 	houndmound	 V: 	default	
+[00:00:06]: 			K: 	hounds	 V: 	default	
+[00:00:06]: 			K: 	hunt	 V: 	default	
+[00:00:06]: 			K: 	krampus	 V: 	default	
+[00:00:06]: 			K: 	layout_mode	 V: 	RestrictNodesByKey	
+[00:00:06]: 			K: 	lichen	 V: 	default	
+[00:00:06]: 			K: 	liefs	 V: 	default	
+[00:00:06]: 			K: 	lightning	 V: 	default	
+[00:00:06]: 			K: 	lightninggoat	 V: 	default	
+[00:00:06]: 			K: 	loop	 V: 	default	
+[00:00:06]: 			K: 	lureplants	 V: 	default	
+[00:00:06]: 			K: 	marshbush	 V: 	default	
+[00:00:06]: 			K: 	merm	 V: 	default	
+[00:00:06]: 			K: 	meteorshowers	 V: 	default	
+[00:00:06]: 			K: 	meteorspawner	 V: 	default	
+[00:00:06]: 			K: 	moles	 V: 	default	
+[00:00:06]: 			K: 	monkey	 V: 	default	
+[00:00:06]: 			K: 	mushroom	 V: 	default	
+[00:00:06]: 			K: 	mushtree	 V: 	default	
+[00:00:06]: 			K: 	penguins	 V: 	default	
+[00:00:06]: 			K: 	perd	 V: 	default	
+[00:00:06]: 			K: 	petrification	 V: 	default	
+[00:00:06]: 			K: 	pigs	 V: 	default	
+[00:00:06]: 			K: 	ponds	 V: 	default	
+[00:00:06]: 			K: 	prefabswaps_start	 V: 	default	
+[00:00:06]: 			K: 	rabbits	 V: 	default	
+[00:00:06]: 			K: 	reeds	 V: 	default	
+[00:00:06]: 			K: 	regrowth	 V: 	default	
+[00:00:06]: 			K: 	roads	 V: 	never	
+[00:00:06]: 			K: 	rock	 V: 	default	
+[00:00:06]: 			K: 	rock_ice	 V: 	default	
+[00:00:06]: 			K: 	rocky	 V: 	default	
+[00:00:06]: 			K: 	sapling	 V: 	default	
+[00:00:06]: 			K: 	season_start	 V: 	default	
+[00:00:06]: 			K: 	slurper	 V: 	default	
+[00:00:06]: 			K: 	slurtles	 V: 	default	
+[00:00:06]: 			K: 	specialevent	 V: 	default	
+[00:00:06]: 			K: 	spiders	 V: 	default	
+[00:00:06]: 			K: 	spring	 V: 	default	
+[00:00:06]: 			K: 	start_location	 V: 	default	
+[00:00:06]: 			K: 	summer	 V: 	default	
+[00:00:06]: 			K: 	tallbirds	 V: 	default	
+[00:00:06]: 			K: 	task_set	 V: 	cave_default	
+[00:00:06]: 			K: 	tentacles	 V: 	default	
+[00:00:06]: 			K: 	touchstone	 V: 	default	
+[00:00:06]: 			K: 	trees	 V: 	default	
+[00:00:06]: 			K: 	tumbleweed	 V: 	default	
+[00:00:06]: 			K: 	walrus	 V: 	default	
+[00:00:06]: 			K: 	weather	 V: 	default	
+[00:00:06]: 			K: 	wildfires	 V: 	default	
+[00:00:06]: 			K: 	winter	 V: 	default	
+[00:00:06]: 			K: 	world_size	 V: 	default	
+[00:00:06]: 			K: 	wormattacks	 V: 	default	
+[00:00:06]: 			K: 	wormhole_prefab	 V: 	tentacle_pillar	
+[00:00:06]: 			K: 	wormlights	 V: 	default	
+[00:00:06]: 			K: 	worms	 V: 	default	
+[00:00:06]: 		K: 	required_prefabs	 V: 	table: 0xf08f69c0	
+[00:00:06]: 			K: 	1	 V: 	multiplayer_portal	
+[00:00:06]: 		K: 	substitutes	 V: 	table: 0xf0504c00	
+[00:00:06]: 		K: 	version	 V: 	4	
+[00:00:06]: 
 #######
 #
 # Generating SURVIVAL Mode Level
 #
 #######
 	
-[00:00:11]: Prefab Swap Selection: regular grass	
-[00:00:11]: Prefab Swap Selection: regular twigs	
-[00:00:11]: Prefab Swap Selection: juicy berries	
+[00:00:06]: Prefab Swap Selection: regular grass	
+[00:00:06]: Prefab Swap Selection: regular twigs	
+[00:00:06]: Prefab Swap Selection: regular berries	
+[00:00:06]: New size:	425	default	
+[00:00:06]: Creating story...	
+[00:00:06]: [Story Gen] Generate nodes. Starting at: 'MudWorld'	
+[00:00:06]: [Story Gen] RestrictNodesByKey	
+[00:00:06]: Finding valid start task...	
+[00:00:06]:    ...picked 	CaveExitTask8	
+[00:00:06]: Has start node	Clearing	
+[00:00:06]: Adding Background Nodes	
+[00:00:06]: [Story Gen] Adding Cove Nodes	
+[00:00:06]: [WorldSimActual::WorldGen_InitializeNodePoints]
+[00:00:06]: [WorldSimActual::WorldGen_VoronoiPass]
+[00:00:06]: GenerateVoronoiMap [100]:
+[00:00:10]: ...Done.
+[00:00:10]: ... story created	
+[00:00:10]: Baking map...	425	
+[00:00:10]: [WorldSimActual::WorldGen_Commit] worldgen success.
+[00:00:10]: [WorldSimActual::ConvertToTileMap]
+[00:00:10]: [ConvertToTileMap]
+[00:00:10]: [WorldSimActual::ConvertToTileMap] complete
+[00:00:10]: [WorldSimActual::SeparateIslands]
+[00:00:10]: [SeparateIslands]
+[00:00:10]: [WorldSimActual::SeparateIslands] complete
+[00:00:10]: Map Baked!	
+[00:00:10]: [WorldSimActual::ForceConnectivity]
+[00:00:10]: [GenerateLandmasses]
+[00:00:10]: [GenerateLandmasses] islands: 7
+[00:00:10]: [MergeConnectedLandmasses] true
+[00:00:10]: [WorldSimActual::ForceConnectivity] complete
+[00:00:10]: Encoding...	
+[00:00:10]: Encoding... DONE	
+[00:00:10]: Checking Tags	
+[00:00:11]: Couldn't generate any points for maze. Aborting.
+[00:00:11]: Couldn't generate any points for maze. Aborting.
+[00:00:11]: Populating voronoi...	
+[00:00:11]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask9:1:GreenMushSinkhole	
+[00:00:11]: Warning! Could not find a spot for PondSinkhole in node CaveExitTask7:0:SinkholeOasis	
+[00:00:11]: Warning! Could not find a spot for StraightWall in node Residential2:3:Vacant	
+[00:00:11]: Warning! Could not find a spot for StraightWall2 in node Residential2:3:Vacant	
+[00:00:11]: Warning! Could not find a spot for StraightWall2 in node Residential2:3:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential:4:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential:4:Vacant	
+[00:00:11]: Warning! Could not find a spot for StraightWall in node Residential:2:Vacant	
+[00:00:11]: Warning! Could not find a spot for StraightWall in node Residential:2:Vacant	
+[00:00:11]: Warning! Could not find a spot for StraightWall2 in node Residential:2:Vacant	
+[00:00:11]: Warning! Could not find a spot for StraightWall2 in node Residential:2:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:11]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
+[00:00:11]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
+[00:00:11]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
+[00:00:11]: Warning! Could not find a spot for StraightWall2 in node Residential:3:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential:3:Vacant	
+[00:00:11]: Warning! Could not find a spot for CornerWall2 in node Residential:3:Vacant	
+[00:00:11]: [ReplaceSingleNonLandTiles] Validating...
+[00:00:11]: [ReplaceSingleNonLandTiles] Replaced 36 tiles.
+[00:00:11]: PANIC: Too many disconnected tiles...	1442	
+[00:00:11]: An error occured during world gen we will retry! [was 	1	 of 	5	]	
 [00:00:11]: New size:	425	default	
 [00:00:11]: Creating story...	
 [00:00:11]: [Story Gen] Generate nodes. Starting at: 'MudWorld'	
 [00:00:11]: [Story Gen] RestrictNodesByKey	
 [00:00:11]: Finding valid start task...	
-[00:00:11]:    ...picked 	CaveExitTask3	
+[00:00:11]:    ...picked 	CaveExitTask10	
 [00:00:11]: Has start node	Clearing	
 [00:00:11]: Adding Background Nodes	
 [00:00:11]: [Story Gen] Adding Cove Nodes	
 [00:00:11]: [WorldSimActual::WorldGen_InitializeNodePoints]
 [00:00:11]: [WorldSimActual::WorldGen_VoronoiPass]
 [00:00:11]: GenerateVoronoiMap [100]:
-[00:00:18]: ...Done.
-[00:00:18]: ... story created	
-[00:00:18]: Baking map...	425	
-[00:00:18]: [WorldSimActual::WorldGen_Commit] worldgen success.
-[00:00:18]: [WorldSimActual::ConvertToTileMap]
-[00:00:18]: [ConvertToTileMap]
-[00:00:18]: [WorldSimActual::ConvertToTileMap] complete
-[00:00:18]: [WorldSimActual::SeparateIslands]
-[00:00:18]: [SeparateIslands]
-[00:00:18]: [WorldSimActual::SeparateIslands] complete
-[00:00:19]: Map Baked!	
-[00:00:19]: [WorldSimActual::ForceConnectivity]
-[00:00:19]: [GenerateLandmasses]
-[00:00:19]: [GenerateLandmasses] islands: 8
-[00:00:19]: [MergeConnectedLandmasses] true
-[00:00:19]: [WorldSimActual::ForceConnectivity] complete
-[00:00:19]: Encoding...	
-[00:00:19]: Encoding... DONE	
-[00:00:19]: Checking Tags	
-[00:00:19]: Couldn't generate any points for maze. Aborting.
-[00:00:19]: Populating voronoi...	
-[00:00:19]: Warning! Could not find a spot for StraightWall in node Residential2:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall in node Residential2:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential2:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential2:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for RabbitTown in node CaveExitTask2:0:RabbitTown	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential:4:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential:4:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential:4:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential:4:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential:4:Vacant	
-[00:00:19]: Warning! Could not find a spot for RabbitTown in node GreenForest:1:GreenMushRabbits	
-[00:00:19]: Warning! Could not find a spot for StraightWall in node Residential:2:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall in node Residential:2:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall in node Residential:2:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential:2:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential:2:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
-[00:00:19]: Warning! Could not find a spot for GrassySinkhole in node PleasantSinkhole:3:GrasslandSinkhole	
-[00:00:19]: Warning! Could not find a spot for RabbitTown in node RabbitTown:0:RabbitTown	
-[00:00:19]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
-[00:00:19]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
-[00:00:19]: Warning! Could not find a spot for StraightWall in node Residential:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall in node Residential:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for StraightWall2 in node Residential:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for CornerWall2 in node Residential:3:Vacant	
-[00:00:19]: Warning! Could not find a spot for EvergreenSinkhole in node UndergroundForest:0:SinkholeCopses	
-[00:00:19]: Warning! Could not find a spot for EvergreenSinkhole in node UndergroundForest:0:SinkholeCopses	
-[00:00:19]: Warning! Could not find a spot for EvergreenSinkhole in node UndergroundForest:0:SinkholeCopses	
-[00:00:20]: [ReplaceSingleNonLandTiles] Validating...
-[00:00:20]: [ReplaceSingleNonLandTiles] Replaced 34 tiles.
-[00:00:20]: disconnected tiles...	681	
-[00:00:20]: Removing entity on IMPASSABLE	wall_ruins	326.5	198.265	456, 0, -56.94	
-[00:00:20]: Removing entity on IMPASSABLE	wall_ruins	304.7325	296.5	368.93, 0, 336	
-[00:00:20]: Checking Required Prefab atrium_gate has at least 1 instances (1 found).	
-[00:00:20]: Checking Required Prefab minotaur_spawner has at least 1 instances (1 found).	
-[00:00:20]: Checking Required Prefab multiplayer_portal has at least 1 instances (1 found).	
-[00:00:20]: Checking Required Prefab sacred_chest has at least 1 instances (1 found).	
-[00:00:20]: [ReplaceSingleNonLandTiles] Validating...
-[00:00:20]: [ReplaceSingleNonLandTiles] Replaced 0 tiles.
-[00:00:20]: Done cave map gen!	
-[00:00:20]: Checking map...	
-[00:00:20]: Generation complete	
-[00:00:21]: WorldSim::SimThread::Main() complete
-[00:00:21]: Serializing world: session/BBAD81EBF05AF159/0000000002
-[00:00:21]: Klump load on boot started.	
-[00:00:21]: Klump files loaded: 	0	
-[00:00:21]: 	Unload FE	
-[00:00:21]: 	Unload FE done	
-[00:00:23]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
-[00:00:23]: Mod: workshop-347079953 (Display food values)	  Registering default mod prefab	
-[00:00:23]: Mod: workshop-1788625832 (Rabbit Cage)	Registering prefabs	
-[00:00:23]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_cage	
-[00:00:23]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage	
-[00:00:23]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage_placer	
-[00:00:23]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_bomb	
-[00:00:23]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_bomb	
-[00:00:23]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering default mod prefab	
-[00:00:23]: Mod: workshop-356420397 (No More Respawn Penalty)	Registering prefabs	
-[00:00:23]: Mod: workshop-356420397 (No More Respawn Penalty)	  Registering default mod prefab	
-[00:00:23]: Mod: workshop-623749604 ( Storeroom)	Registering prefabs	
-[00:00:23]: Mod: workshop-623749604 ( Storeroom)	  Registering prefab file: prefabs/storeroom	
-[00:00:23]: Mod: workshop-623749604 ( Storeroom)	    storeroom	
-[00:00:23]: Mod: workshop-623749604 ( Storeroom)	    storeroom_placer	
-[00:00:23]: Mod: workshop-623749604 ( Storeroom)	  Registering default mod prefab	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/worldmapexplorer	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    worldmapexplorer	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
-[00:00:23]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
-[00:00:23]: 	LOAD BE	
-[00:00:31]: 	LOAD BE: done	
-[00:00:31]: Begin Session: BBAD81EBF05AF159
-[00:00:31]: saving to server_temp/server_save	
-[00:00:31]: MiniMapComponent::AddAtlas( minimap/minimap_data.xml )
-[00:00:31]: MiniMapComponent::AddAtlas( ../mods/workshop-1788625832/minimap/rabbit_cage.xml )
-[00:00:31]: MiniMapComponent::AddAtlas( ../mods/workshop-623749604/minimap/storeroom.xml )
-[00:00:31]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/campfire.xml )
-[00:00:31]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_generic.xml )
-[00:00:31]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_gohere.xml )
-[00:00:31]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_explore.xml )
-[00:00:31]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_danger.xml )
-[00:00:31]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_omw.xml )
-[00:00:31]: Loading 16 new character(s)	
-[00:00:33]: Total 16 character(s) loaded	
-[00:00:44]: Loading Nav Grid	
-[00:00:44]: World generated on version 402187, using seed: 1586053840	
-[00:00:44]: [Shard] Slave is waiting for LUA...
-[00:00:51]: Reconstructing topology	
-[00:00:51]: 	...Sorting points	
-[00:00:51]: 	...Sorting edges	
-[00:00:51]: 	...Connecting nodes	
-[00:00:51]: 	...Validating connections	
-[00:00:52]: 	...Housekeeping	
-[00:00:52]: 	...Done!	
-[00:00:52]: 1 uploads added to server. From server_temp
-[00:00:52]: About to start a shard with these settings:
-[00:00:52]:   ShardName: Caves
-[00:00:52]:   ShardID: 2666465312
-[00:00:52]:   ShardRole: SLAVE
-[00:00:52]:   MasterHost: 127.0.0.1
-[00:00:52]:   MasterBind: (null)
-[00:00:52]:   MasterPort: 10998
-[00:00:52]: [Shard] Connecting to master...
-[00:00:52]: Telling Client our new session identifier: BBAD81EBF05AF159
-[00:00:52]: [Steam] SteamGameServer_Init(8767, 11000, 12347)
-[00:00:52]: [Steam] SteamGameServer_Init success
-[00:00:53]: [Shard] Connection to master failed. Waiting to reconnect...
-[00:00:53]: Validating portal[1] <-> <nil>[1] (inactive)	
-[00:00:53]: Validating portal[2] <-> <nil>[2] (inactive)	
-[00:00:53]: Validating portal[3] <-> <nil>[3] (inactive)	
-[00:00:53]: Validating portal[4] <-> <nil>[4] (inactive)	
-[00:00:53]: Validating portal[5] <-> <nil>[5] (inactive)	
-[00:00:53]: Validating portal[6] <-> <nil>[6] (inactive)	
-[00:00:54]: Validating portal[7] <-> <nil>[7] (inactive)	
-[00:00:54]: Validating portal[8] <-> <nil>[8] (inactive)	
-[00:00:54]: Validating portal[9] <-> <nil>[9] (inactive)	
-[00:00:54]: Validating portal[10] <-> <nil>[10] (inactive)	
-[00:00:54]: Gameserver logged on to Steam, assigned identity steamid:90134104061763588
-[00:00:58]: About to start a shard with these settings:
-[00:00:58]:   ShardName: Caves
-[00:00:58]:   ShardID: 2666465312
-[00:00:58]:   ShardRole: SLAVE
-[00:00:58]:   MasterHost: 127.0.0.1
-[00:00:58]:   MasterBind: (null)
-[00:00:58]:   MasterPort: 10998
-[00:00:58]: [Shard] Connecting to master...
-[00:00:58]: [Shard] Sending slave information to master...
-[00:01:01]: Overriding region to US
-[00:01:01]: Registering slave in US lobby
-[00:01:02]: [Shard] Slave is now ready!
-[00:01:02]: World 1 is now connected	
-[00:01:02]: Validating portal[1] <-> 1[1] (active)	
-[00:01:02]: Validating portal[2] <-> 1[2] (active)	
-[00:01:02]: Validating portal[3] <-> 1[3] (active)	
-[00:01:02]: Validating portal[4] <-> 1[4] (active)	
-[00:01:02]: Validating portal[5] <-> 1[5] (active)	
-[00:01:02]: Validating portal[6] <-> 1[6] (active)	
-[00:01:02]: Validating portal[7] <-> 1[7] (active)	
-[00:01:02]: Validating portal[8] <-> 1[8] (active)	
-[00:01:02]: Validating portal[9] <-> 1[9] (active)	
-[00:01:02]: Validating portal[10] <-> 1[10] (active)	
-[00:01:03]: [Shard] Slave LUA is now ready!
-[00:01:03]: Sim paused
-[00:02:05]: Sim unpaused
-[00:06:01]: Registering slave in US lobby
-[00:06:38]: [Shard] #1 -> session/BBAD81EBF05AF159/A7M55QF87D64/0000000003
-[00:06:38]: [Shard] Received migration #1 data for (KU_nIwUWxJ4)
-[00:06:42]: New incoming connection 73.93.155.106|4178 <7714535023567676305>
-[00:06:42]: Client connected from 73.93.155.106|4178 <7714535023567676305>
-[00:06:42]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^E1HkLF1y5ERjmFbB2DgzaH0swMAdF3lfHcquq4Bdx1E= for <7714535023567676305>
-[00:06:43]: Client authenticated: (KU_nIwUWxJ4) amadochingu
-[00:06:43]: [Steam] Authenticated host '76561197971690736'
-[00:06:43]: [Shard] Completed incoming migration #1 for (KU_nIwUWxJ4)
-[00:06:58]: Resuming user: session/BBAD81EBF05AF159/A7M55QF87D64/0000000003
-[00:06:58]: Could not find anim build FROMNUM
-[00:06:58]: Could not find anim build FROMNUM
-[00:06:58]: Could not find anim build FROMNUM
-[00:06:58]: Player will spawn close to portal #1	
-[00:06:58]: Spawning player at: [Load] (-593.22, 0.00, -251.09)	
-[00:09:01]: KU_nIwUWxJ4	running text command:	wave	true	
-[00:09:09]: KU_nIwUWxJ4	running text command:	wave	true	
-[00:09:56]: Activating portal[2] to 1	
-[00:09:57]: Serializing user: session/BBAD81EBF05AF159/A7M55QF87D64/0000000003
-[00:09:57]: [Shard] Migration request: (KU_nIwUWxJ4) to [SHDMASTER](1)
-[00:09:57]: [Shard] #2 <- session/BBAD81EBF05AF159/A7M55QF87D64/0000000003
-[00:09:57]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
-[00:09:57]: [Steam] SendUserDisconnect for '76561197971690736'
-[00:10:07]: Serializing world: session/BBAD81EBF05AF159/0000000003
-[00:11:01]: Registering slave in US lobby
-[00:16:01]: Registering slave in US lobby
-[00:16:24]: Sim paused
-[00:21:01]: Registering slave in US lobby
-[00:26:01]: Registering slave in US lobby
-[00:30:08]: [200] Account Communication Success (6)
-[00:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
-[00:31:01]: Registering slave in US lobby
-[00:36:01]: Registering slave in US lobby
-[00:41:01]: Registering slave in US lobby
-[00:46:01]: Registering slave in US lobby
-[00:51:01]: Registering slave in US lobby
-[00:56:01]: Registering slave in US lobby
-[01:00:08]: [200] Account Communication Success (6)
-[01:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
-[01:01:01]: Registering slave in US lobby
-[01:06:01]: Registering slave in US lobby
-[01:11:01]: Registering slave in US lobby
-[01:16:01]: Registering slave in US lobby
-[01:21:01]: Registering slave in US lobby
-[01:26:01]: Registering slave in US lobby
-[01:30:08]: [200] Account Communication Success (6)
-[01:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
-[01:31:01]: Registering slave in US lobby
-[01:36:01]: Registering slave in US lobby
-[01:41:01]: Registering slave in US lobby
-[01:46:01]: Registering slave in US lobby
-[01:51:01]: Registering slave in US lobby
-[01:56:01]: Registering slave in US lobby
-[02:00:08]: [200] Account Communication Success (6)
-[02:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
-[02:01:01]: Registering slave in US lobby
-[02:06:01]: Registering slave in US lobby
-[02:11:01]: Registering slave in US lobby
-[02:16:01]: Registering slave in US lobby
-[02:21:01]: Registering slave in US lobby
-[02:26:01]: Registering slave in US lobby
-[02:30:08]: [200] Account Communication Success (6)
-[02:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
-[02:31:01]: Registering slave in US lobby
-[02:36:01]: Registering slave in US lobby
-[02:41:01]: Registering slave in US lobby
-[02:46:01]: Registering slave in US lobby
-[02:51:01]: Registering slave in US lobby
-[02:51:10]: Serializing world: session/BBAD81EBF05AF159/0000000004
-[02:51:10]: [Shard] Stopping shard mode
-[02:51:10]: Collecting garbage...
-[02:51:11]: lua_gc took 0.44 seconds
-[02:51:11]: ~ShardLuaProxy()
-[02:51:11]: ~cEventLeaderboardProxy()
-[02:51:11]: ~ItemServerLuaProxy()
-[02:51:11]: ~InventoryLuaProxy()
-[02:51:11]: ~NetworkLuaProxy()
-[02:51:11]: ~SimLuaProxy()
-[02:51:11]: lua_close took 0.77 seconds
-[02:51:12]: Orphaned unnamed resource. This resource must have used Add( resource ) to insert itself into the manager. 
-[02:51:12]: CurlRequestManager::ClientThread::Main() complete
-[02:51:12]: HttpClient2 discarded 0 callbacks.
-[02:51:12]: Shutting down
+[00:00:13]: ...Done.
+[00:00:13]: [TheLabyrinth:COVE_1:Blank] poly.size() == 0
+[00:00:13]: [!]	 edge == NULL
+[00:00:13]: Infinite edge! TheLabyrinth:BG_69:Labyrinth
+[00:00:13]: Infinite edge! TheLabyrinth:BG_69:Labyrinth
+[00:00:13]: ... story created	
+[00:00:13]: Baking map...	425	
+[00:00:13]: [WorldSimActual::WorldGen_Commit] worldgen success.
+[00:00:13]: [WorldSimActual::ConvertToTileMap]
+[00:00:13]: [ConvertToTileMap]
+[00:00:14]: [WorldSimActual::ConvertToTileMap] complete
+[00:00:14]: [WorldSimActual::SeparateIslands]
+[00:00:14]: [SeparateIslands]
+[00:00:14]: [WorldSimActual::SeparateIslands] complete
+[00:00:14]: Map Baked!	
+[00:00:14]: [WorldSimActual::ForceConnectivity]
+[00:00:14]: [GenerateLandmasses]
+[00:00:14]: [GenerateLandmasses] islands: 5
+[00:00:14]: [MergeConnectedLandmasses] true
+[00:00:14]: [WorldSimActual::ForceConnectivity] complete
+[00:00:14]: Encoding...	
+[00:00:14]: Encoding... DONE	
+[00:00:14]: Checking Tags	
+[00:00:14]: Couldn't generate any points for maze. Aborting.
+[00:00:14]: Populating voronoi...	
+[00:00:14]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
+[00:00:14]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
+[00:00:14]: Warning! Could not find a spot for StraightWall2 in node Residential2:3:Vacant	
+[00:00:14]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
+[00:00:14]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
+[00:00:14]: Warning! Could not find a spot for RabbitHermit in node MudCave:0:MudWithRabbit	
+[00:00:14]: Warning! Could not find a spot for StraightWall in node Residential:2:Vacant	
+[00:00:14]: Warning! Could not find a spot for StraightWall in node Residential:2:Vacant	
+[00:00:14]: Warning! Could not find a spot for StraightWall2 in node Residential:2:Vacant	
+[00:00:14]: Warning! Could not find a spot for StraightWall2 in node Residential:2:Vacant	
+[00:00:14]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:14]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:14]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:14]: Warning! Could not find a spot for CornerWall2 in node Residential:4:Vacant	
+[00:00:14]: Warning! Could not find a spot for Mudlights in node CaveSwamp:0:TentacleMud	
+[00:00:14]: Warning! Could not find a spot for Mudlights in node CaveSwamp:0:TentacleMud	
+[00:00:14]: Warning! Could not find a spot for StraightWall2 in node Residential:3:Vacant	
+[00:00:14]: Warning! Could not find a spot for CornerWall2 in node Residential:3:Vacant	
+[00:00:14]: Warning! Could not find a spot for CornerWall2 in node Residential:3:Vacant	
+[00:00:14]: [ReplaceSingleNonLandTiles] Validating...
+[00:00:14]: [ReplaceSingleNonLandTiles] Replaced 38 tiles.
+[00:00:14]: PANIC: Too many disconnected tiles...	1060	
+[00:00:14]: An error occured during world gen we will retry! [was 	2	 of 	5	]	
+[00:00:14]: New size:	425	default	
+[00:00:14]: Creating story...	
+[00:00:14]: [Story Gen] Generate nodes. Starting at: 'MudWorld'	
+[00:00:14]: [Story Gen] RestrictNodesByKey	
+[00:00:14]: Finding valid start task...	
+[00:00:14]:    ...picked 	CaveExitTask5	
+[00:00:14]: Has start node	Clearing	
+[00:00:14]: Adding Background Nodes	
+[00:00:14]: [Story Gen] Adding Cove Nodes	
+[00:00:14]: [WorldSimActual::WorldGen_InitializeNodePoints]
+[00:00:14]: [WorldSimActual::WorldGen_VoronoiPass]
+[00:00:14]: GenerateVoronoiMap [100]:
+[00:00:17]: ...Done.
+[00:00:17]: ... story created	
+[00:00:17]: Baking map...	425	
+[00:00:17]: [WorldSimActual::WorldGen_Commit] worldgen success.
+[00:00:17]: [WorldSimActual::ConvertToTileMap]
+[00:00:17]: [ConvertToTileMap]
+[00:00:17]: [WorldSimActual::ConvertToTileMap] complete
+[00:00:17]: [WorldSimActual::SeparateIslands]
+[00:00:17]: [SeparateIslands]
+[00:00:17]: [WorldSimActual::SeparateIslands] complete
+[00:00:17]: Map Baked!	
+[00:00:17]: [WorldSimActual::ForceConnectivity]
+[00:00:17]: [GenerateLandmasses]
+[00:00:17]: [GenerateLandmasses] islands: 12
+[00:00:17]: [MergeConnectedLandmasses] true
+[00:00:17]: [WorldSimActual::ForceConnectivity] complete
+[00:00:17]: Encoding...	
+[00:00:17]: Encoding... DONE	
+[00:00:17]: Checking Tags	
+[00:00:17]: Couldn't generate any points for maze. Aborting.
+[00:00:17]: Populating voronoi...	
+[00:00:17]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask9:1:GreenMushSinkhole	
+[00:00:17]: Warning! Could not find a spot for TwigsBoon in node AtriumMaze:2:AtriumMazeRooms	
+[00:00:17]: Warning! Could not find a spot for StraightWall2 in node Residential2:3:Vacant	
+[00:00:17]: Warning! Could not find a spot for StraightWall2 in node Residential2:3:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential2:3:Vacant	
+[00:00:17]: Warning! Could not find a spot for RabbitTown in node CaveExitTask10:1:GreenMushRabbits	
+[00:00:17]: Warning! Could not find a spot for GrassySinkhole in node CaveExitTask8:0:GrasslandSinkhole	
+[00:00:17]: Warning! Could not find a spot for StraightWall2 in node Residential:4:Vacant	
+[00:00:17]: Warning! Could not find a spot for StraightWall2 in node Residential:4:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential:4:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential:4:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential:4:Vacant	
+[00:00:17]: Warning! Could not find a spot for StraightWall in node Residential:2:Vacant	
+[00:00:17]: Warning! Could not find a spot for StraightWall2 in node Residential:2:Vacant	
+[00:00:17]: Warning! Could not find a spot for StraightWall2 in node Residential:2:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential:2:Vacant	
+[00:00:17]: Warning! Could not find a spot for Mudlights in node CaveSwamp:0:TentacleMud	
+[00:00:17]: Warning! Could not find a spot for Mudlights in node CaveSwamp:0:TentacleMud	
+[00:00:17]: Warning! Could not find a spot for Mudlights in node CaveSwamp:0:TentacleMud	
+[00:00:17]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
+[00:00:17]: Warning! Could not find a spot for EvergreenSinkhole in node CaveExitTask6:1:SinkholeCopses	
+[00:00:17]: Warning! Could not find a spot for CornerWall2 in node Residential:3:Vacant	
+[00:00:17]: [ReplaceSingleNonLandTiles] Validating...
+[00:00:17]: [ReplaceSingleNonLandTiles] Replaced 37 tiles.
+[00:00:17]: disconnected tiles...	90	
+[00:00:17]: Removing entity on IMPASSABLE	pandoraschest	119.5	118.5	-372, 0, -376	
+[00:00:17]: Removing entity on IMPASSABLE	wall_ruins	172.265	52.5	-160.94, 0, -640	
+[00:00:17]: Removing entity on IMPASSABLE	wall_ruins	236.5	113.265	96, 0, -396.94	
+[00:00:17]: Removing entity on IMPASSABLE	wall_ruins	149.7325	130.5	-251.07, 0, -328	
+[00:00:17]: Checking Required Prefab atrium_gate has at least 1 instances (1 found).	
+[00:00:17]: Checking Required Prefab minotaur_spawner has at least 1 instances (1 found).	
+[00:00:17]: Checking Required Prefab multiplayer_portal has at least 1 instances (1 found).	
+[00:00:17]: Checking Required Prefab sacred_chest has at least 1 instances (1 found).	
+[00:00:17]: [ReplaceSingleNonLandTiles] Validating...
+[00:00:17]: [ReplaceSingleNonLandTiles] Replaced 0 tiles.
+[00:00:17]: Done cave map gen!	
+[00:00:17]: Checking map...	
+[00:00:17]: Generation complete	
+[00:00:17]: WorldSim::SimThread::Main() complete
+[00:00:17]: Serializing world: session/8B8E42DB64BCC87A/0000000002
+[00:00:17]: Klump load on boot started.	
+[00:00:17]: Klump files loaded: 	0	
+[00:00:18]: 	Unload FE	
+[00:00:18]: 	Unload FE done	
+[00:00:18]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
+[00:00:18]: Mod: workshop-347079953 (Display food values)	  Registering default mod prefab	
+[00:00:18]: Mod: workshop-1788625832 (Rabbit Cage)	Registering prefabs	
+[00:00:18]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_cage	
+[00:00:18]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage	
+[00:00:18]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage_placer	
+[00:00:18]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_bomb	
+[00:00:18]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_bomb	
+[00:00:18]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering default mod prefab	
+[00:00:18]: Mod: workshop-1895335315 (Storeroom (Modified))	Registering prefabs	
+[00:00:18]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering prefab file: prefabs/storeroom	
+[00:00:18]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom	
+[00:00:18]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom_placer	
+[00:00:18]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering default mod prefab	
+[00:00:18]: Mod: workshop-356420397 (No More Respawn Penalty)	Registering prefabs	
+[00:00:18]: Mod: workshop-356420397 (No More Respawn Penalty)	  Registering default mod prefab	
+[00:00:18]: Mod: workshop-569043634 (Campfire Respawn)	Registering prefabs	
+[00:00:18]: Mod: workshop-569043634 (Campfire Respawn)	  Registering default mod prefab	
+[00:00:18]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
+[00:00:18]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
+[00:00:18]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
+[00:00:18]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
+[00:00:18]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/worldmapexplorer	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	    worldmapexplorer	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
+[00:00:19]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
+[00:00:19]: 	LOAD BE	
+[00:00:22]: 	LOAD BE: done	
+[00:00:22]: Begin Session: 8B8E42DB64BCC87A
+[00:00:22]: saving to server_temp/server_save	
+[00:00:22]: MiniMapComponent::AddAtlas( minimap/minimap_data.xml )
+[00:00:22]: MiniMapComponent::AddAtlas( ../mods/workshop-1788625832/minimap/rabbit_cage.xml )
+[00:00:22]: MiniMapComponent::AddAtlas( ../mods/workshop-1895335315/minimap/storeroom.xml )
+[00:00:22]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/campfire.xml )
+[00:00:22]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_generic.xml )
+[00:00:22]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_gohere.xml )
+[00:00:22]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_explore.xml )
+[00:00:22]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_danger.xml )
+[00:00:22]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_omw.xml )
+[00:00:22]: Loading 16 new character(s)	
+[00:00:23]: Total 16 character(s) loaded	
+[00:00:27]: Loading Nav Grid	
+[00:00:27]: World generated on version 413451, using seed: 1591493220	
+[00:00:27]: [Shard] Slave is waiting for LUA...
+[00:00:31]: Reconstructing topology	
+[00:00:31]: 	...Sorting points	
+[00:00:31]: 	...Sorting edges	
+[00:00:32]: 	...Connecting nodes	
+[00:00:32]: 	...Validating connections	
+[00:00:32]: 	...Housekeeping	
+[00:00:32]: 	...Done!	
+[00:00:32]: 1 uploads added to server. From server_temp
+[00:00:32]: About to start a shard with these settings:
+[00:00:32]:   ShardName: Caves
+[00:00:32]:   ShardID: 2666465312
+[00:00:32]:   ShardRole: SLAVE
+[00:00:32]:   MasterHost: 127.0.0.1
+[00:00:32]:   MasterBind: (null)
+[00:00:32]:   MasterPort: 10998
+[00:00:32]: [Shard] Connecting to master...
+[00:00:32]: Telling Client our new session identifier: 8B8E42DB64BCC87A
+[00:00:32]: [Steam] SteamGameServer_Init(8767, 11000, 12347)
+[00:00:32]: [Steam] SteamGameServer_Init success
+[00:00:32]: [Shard] Sending slave information to master...
+[00:00:33]: Validating portal[1] <-> <nil>[1] (inactive)	
+[00:00:33]: Validating portal[2] <-> <nil>[2] (inactive)	
+[00:00:33]: Validating portal[3] <-> <nil>[3] (inactive)	
+[00:00:33]: Validating portal[4] <-> <nil>[4] (inactive)	
+[00:00:33]: Validating portal[5] <-> <nil>[5] (inactive)	
+[00:00:33]: Validating portal[6] <-> <nil>[6] (inactive)	
+[00:00:33]: Validating portal[7] <-> <nil>[7] (inactive)	
+[00:00:33]: Validating portal[8] <-> <nil>[8] (inactive)	
+[00:00:33]: Validating portal[9] <-> <nil>[9] (inactive)	
+[00:00:33]: Validating portal[10] <-> <nil>[10] (inactive)	
+[00:00:33]: Overriding region to US
+[00:00:33]: Registering slave in US lobby
+[00:00:33]: Gameserver logged on to Steam, assigned identity steamid:90135963222226948
+[00:00:33]: [Shard] Slave is now ready!
+[00:00:33]: Registering slave in US lobby
+[00:00:33]: World 1 is now connected	
+[00:00:33]: Validating portal[1] <-> 1[1] (active)	
+[00:00:33]: Validating portal[2] <-> 1[2] (active)	
+[00:00:33]: Validating portal[3] <-> 1[3] (active)	
+[00:00:33]: Validating portal[4] <-> 1[4] (active)	
+[00:00:33]: Validating portal[5] <-> 1[5] (active)	
+[00:00:33]: Validating portal[6] <-> 1[6] (active)	
+[00:00:33]: Validating portal[7] <-> 1[7] (active)	
+[00:00:33]: Validating portal[8] <-> 1[8] (active)	
+[00:00:33]: Validating portal[9] <-> 1[9] (active)	
+[00:00:33]: Validating portal[10] <-> 1[10] (active)	
+[00:00:34]: [Shard] Slave LUA is now ready!
+[00:00:34]: Sim paused
+[00:01:21]: Serializing world: session/8B8E42DB64BCC87A/0000000003
+[00:01:22]: [Shard] Stopping shard mode
+[00:01:22]: Collecting garbage...
+[00:01:22]: lua_gc took 0.22 seconds
+[00:01:22]: ~ShardLuaProxy()
+[00:01:22]: ~cEventLeaderboardProxy()
+[00:01:22]: ~ItemServerLuaProxy()
+[00:01:22]: ~InventoryLuaProxy()
+[00:01:22]: ~NetworkLuaProxy()
+[00:01:22]: ~SimLuaProxy()
+[00:01:22]: lua_close took 0.35 seconds
+[00:01:22]: Orphaned unnamed resource. This resource must have used Add( resource ) to insert itself into the manager. 
+[00:01:23]: CurlRequestManager::ClientThread::Main() complete
+[00:01:23]: HttpClient2 discarded 0 callbacks.
+[00:01:23]: Shutting down
