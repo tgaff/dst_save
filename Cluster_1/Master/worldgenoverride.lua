@@ -10,7 +10,7 @@ return {
 		loop = "default", 				-- "never", "default", "always"
 		specialevent = "default",       -- "none", "default", "hallowed_nights", "winters_feast", "year_of_the_gobbler"
 		autumn = "longseason", 			-- "noseason", "veryshortseason", "shortseason", "default", "longseason", "verylongseason", "random"
-		winter = "shortseason", 			-- "noseason", "veryshortseason", "shortseason", "default", "longseason", "verylongseason", "random"
+		winter = "default", 			-- "noseason", "veryshortseason", "shortseason", "default", "longseason", "verylongseason", "random"
 		spring = "default", 			-- "noseason", "veryshortseason", "shortseason", "default", "longseason", "verylongseason", "random"
 		summer = "default", 			-- "noseason", "veryshortseason", "shortseason", "default", "longseason", "verylongseason", "random"
 		season_start = "default", 		-- "default", "winter", "spring", "summer", "autumnorspring", "winterorsummer", "random"
@@ -56,7 +56,7 @@ return {
 
 		-- ANIMALS
 		rabbits = "often", 			-- "never", "rare", "default", "often", "always"
-		moles = "often", 				-- "never", "rare", "default", "often", "always"
+		moles = "default", 				-- "never", "rare", "default", "often", "always"
 		butterfly = "default", 			-- "never", "rare", "default", "often", "always"
 		birds = "default", 				-- "never", "rare", "default", "often", "always"
 		buzzard = "default", 			-- "never", "rare", "default", "often", "always"

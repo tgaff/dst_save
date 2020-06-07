@@ -18,7 +18,7 @@ return {
     },
     enabled=true 
   },
-  ["workshop-623749604"]={
+  ["workshop-1895335315"]={
     configuration_options={
       Craft="Normal",
       Destroyable="DestroyByPlayer",
