@@ -1,10 +1,10 @@
 [00:00:00]: PersistRootStorage is now /data//DoNotStarveTogether/Cluster_1/Caves/ 
 [00:00:00]: Starting Up
 [00:00:00]: Version: 413451
-[00:00:00]: Current time: Sun Jun  7 03:10:30 2020
+[00:00:00]: Current time: Mon Jun  8 02:03:32 2020
 
 [00:00:00]: System Name: Linux
-[00:00:00]: Host Name: 2d526829912d
+[00:00:00]: Host Name: 68868c1237b6
 [00:00:00]: Release(Kernel) Version: 4.15.0-99-generic
 [00:00:00]: Kernel Build Timestamp: #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
 [00:00:00]: Machine Arch: x86_64
@@ -18,13 +18,13 @@
 [00:00:00]: Mounting file system databundles/klump.zip successful.
 [00:00:00]: Mounting file system databundles/shaders.zip successful.
 [00:00:00]: Mounting file system databundles/fonts.zip successful.
-[00:00:00]: THREAD - started 'GAClient' (4134320960)
+[00:00:00]: THREAD - started 'GAClient' (4134271808)
 [00:00:00]: CurlRequestManager::ClientThread::Main()
 [00:00:00]: Mounting file system databundles/anim_dynamic.zip successful.
 [00:00:00]: Mounting file system databundles/bigportraits.zip successful.
 [00:00:00]: Mounting file system databundles/images.zip successful.
 [00:00:00]: Mounting file system databundles/scripts.zip successful.
-[00:00:00]: ProfileIndex:5.69
+[00:00:00]: ProfileIndex:8.59
 [00:00:00]: [Connect] PendingConnection::Reset(true)
 [00:00:00]: Platform: 1
 [00:00:00]: Network tick rate: U=15(2), D=0
@@ -36,10 +36,10 @@
 [00:00:00]: Token retrieved from: /data//DoNotStarveTogether/Cluster_1/cluster_token.txt
 [00:00:00]: cGame::InitializeOnMainThread
 [00:00:00]: Renderer initialize: Okay
-[00:00:00]: AnimManager initialize: Okay
 [00:00:00]: THREAD - started 'Ping Job Thread' (4127193920)
-[00:00:00]: Buffers initialize: Okay
+[00:00:00]: AnimManager initialize: Okay
 [00:00:00]: THREAD - started 'StreamInput' (4125092672)
+[00:00:00]: Buffers initialize: Okay
 [00:00:00]: cDontStarveGame::DoGameSpecificInitialize()
 [00:00:00]: GameSpecific initialize: Okay
 [00:00:00]: cGame::StartPlaying
@@ -63,180 +63,180 @@
 [00:00:01]: Download server mod 356420397
 [00:00:02]: Download server mod 569043634
 [00:00:02]: Download server mod 1895335315
-[00:00:02]: modoverrides.lua enabling workshop-1895335315	
-[00:00:02]: modoverrides.lua enabling workshop-1788625832	
-[00:00:02]: modoverrides.lua enabling workshop-356420397	
-[00:00:02]: modoverrides.lua enabling workshop-347079953	
-[00:00:02]: modoverrides.lua enabling workshop-378160973	
-[00:00:02]: modoverrides.lua enabling workshop-569043634	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-569043634	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
-[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-378160973_CLIENT	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
-[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
-[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
-[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
-[00:00:02]: Loading mod: workshop-378160973 (Global Positions) Version:1.7.3	
-[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-347079953_CLIENT	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
-[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
-[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
-[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
-[00:00:02]: Loading mod: workshop-347079953 (Display food values) Version:1.61	
-[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-569043634_CLIENT	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
-[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
-[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
-[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
-[00:00:02]: Loading mod: workshop-569043634 (Campfire Respawn) Version:v1.5	
-[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-1788625832_CLIENT	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
-[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
-[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
-[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
-[00:00:02]: Loading mod: workshop-1788625832 (Rabbit Cage) Version:1.7	
-[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-356420397_CLIENT	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
-[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
-[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
-[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
-[00:00:02]: Loading mod: workshop-356420397 (No More Respawn Penalty) Version:1.3	
-[00:00:02]: Could not load mod_config_data/modconfiguration_workshop-1895335315_CLIENT	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
-[00:00:02]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
-[00:00:02]: Overriding mod workshop-1895335315's option Slots with value 80	
-[00:00:02]: Overriding mod workshop-1895335315's option Position with value Center	
-[00:00:02]: Overriding mod workshop-1895335315's option Language with value En	
-[00:00:02]: Overriding mod workshop-1895335315's option Craft with value Normal	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_Language with value EN	
-[00:00:02]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
-[00:00:02]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
-[00:00:02]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
-[00:00:02]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
-[00:00:02]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
-[00:00:02]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
-[00:00:02]: Loading mod: workshop-1895335315 (Storeroom (Modified)) Version:2.5.1	
-[00:00:02]: Mod: workshop-347079953 (Display food values)	Loading modworldgenmain.lua	
-[00:00:02]: Mod: workshop-347079953 (Display food values)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:02]: Mod: workshop-347079953 (Display food values)	Loading modmain.lua	
-[00:00:02]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modworldgenmain.lua	
-[00:00:02]: Mod: workshop-1788625832 (Rabbit Cage)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:02]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modmain.lua	
-[00:00:02]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
-[00:00:02]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modworldgenmain.lua	
-[00:00:02]: Mod: workshop-1895335315 (Storeroom (Modified))	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:02]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modmain.lua	
-[00:00:02]: --- STOREROOM DEBUG ---	
-[00:00:02]: slots = 80	
-[00:00:02]: recipe: cutstone = 20 marble = 4 boards = 20	
-[00:00:02]: widget: widgetanimbank = ui_chest_5x16 widgetpos = 	(0.00, 160.00, 0.00)	 slot_x = 15 slot_y = 4 posslot_x = 91 posslot_y = 42	
-[00:00:02]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modworldgenmain.lua	
-[00:00:02]: Mod: workshop-356420397 (No More Respawn Penalty)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:02]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modmain.lua	
-[00:00:02]: Mod: workshop-569043634 (Campfire Respawn)	Loading modworldgenmain.lua	
-[00:00:02]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:02]: Mod: workshop-569043634 (Campfire Respawn)	Loading modmain.lua	
-[00:00:02]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modmain.lua. Skipping.	
-[00:00:02]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
-[00:00:02]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
-[00:00:02]: Mod: workshop-378160973 (Global Positions)	Loading modmain.lua	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-569043634	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
-[00:00:02]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
+[00:00:03]: modoverrides.lua enabling workshop-1895335315	
+[00:00:03]: modoverrides.lua enabling workshop-1788625832	
+[00:00:03]: modoverrides.lua enabling workshop-356420397	
+[00:00:03]: modoverrides.lua enabling workshop-347079953	
+[00:00:03]: modoverrides.lua enabling workshop-378160973	
+[00:00:03]: modoverrides.lua enabling workshop-569043634	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-569043634	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
+[00:00:03]: Could not load mod_config_data/modconfiguration_workshop-378160973_CLIENT	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:03]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:03]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:03]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:03]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:03]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:03]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:03]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:03]: Loading mod: workshop-378160973 (Global Positions) Version:1.7.3	
+[00:00:03]: Could not load mod_config_data/modconfiguration_workshop-347079953_CLIENT	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:03]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:03]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:03]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:03]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:03]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:03]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:03]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:03]: Loading mod: workshop-347079953 (Display food values) Version:1.61	
+[00:00:03]: Could not load mod_config_data/modconfiguration_workshop-569043634_CLIENT	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:03]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:03]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:03]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:03]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:03]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:03]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:03]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:03]: Loading mod: workshop-569043634 (Campfire Respawn) Version:v1.5	
+[00:00:03]: Could not load mod_config_data/modconfiguration_workshop-1788625832_CLIENT	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:03]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:03]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:03]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:03]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:03]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:03]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:03]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:03]: Loading mod: workshop-1788625832 (Rabbit Cage) Version:1.7	
+[00:00:03]: Could not load mod_config_data/modconfiguration_workshop-356420397_CLIENT	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:03]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:03]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:03]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:03]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:03]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:03]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:03]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:03]: Loading mod: workshop-356420397 (No More Respawn Penalty) Version:1.3	
+[00:00:03]: Could not load mod_config_data/modconfiguration_workshop-1895335315_CLIENT	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1895335315	
+[00:00:03]: Overriding mod workshop-1895335315's option Destroyable with value DestroyByPlayer	
+[00:00:03]: Overriding mod workshop-1895335315's option Slots with value 80	
+[00:00:03]: Overriding mod workshop-1895335315's option Position with value Center	
+[00:00:03]: Overriding mod workshop-1895335315's option Language with value En	
+[00:00:03]: Overriding mod workshop-1895335315's option Craft with value Normal	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-1788625832	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-356420397	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-347079953	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_Language with value EN	
+[00:00:03]: Overriding mod workshop-347079953's option DFV_MinimalMode with value default	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-378160973	
+[00:00:03]: Overriding mod workshop-378160973's option FIREOPTIONS with value 1	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWFIREICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHAREMINIMAPPROGRESS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERICONS with value true	
+[00:00:03]: Overriding mod workshop-378160973's option OVERRIDEMODE with value false	
+[00:00:03]: Overriding mod workshop-378160973's option SHOWPLAYERSOPTIONS with value 2	
+[00:00:03]: Overriding mod workshop-378160973's option ENABLEPINGS with value true	
+[00:00:03]: applying configuration_options from modoverrides.lua to mod workshop-569043634	
+[00:00:03]: Loading mod: workshop-1895335315 (Storeroom (Modified)) Version:2.5.1	
+[00:00:03]: Mod: workshop-347079953 (Display food values)	Loading modworldgenmain.lua	
+[00:00:03]: Mod: workshop-347079953 (Display food values)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:03]: Mod: workshop-347079953 (Display food values)	Loading modmain.lua	
+[00:00:03]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modworldgenmain.lua	
+[00:00:03]: Mod: workshop-1788625832 (Rabbit Cage)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:03]: Mod: workshop-1788625832 (Rabbit Cage)	Loading modmain.lua	
+[00:00:03]: Warning: Calling Recipe from a mod is now deprecated. Please call AddRecipe from your modmain.lua file.	
+[00:00:03]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modworldgenmain.lua	
+[00:00:03]: Mod: workshop-1895335315 (Storeroom (Modified))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:03]: Mod: workshop-1895335315 (Storeroom (Modified))	Loading modmain.lua	
+[00:00:03]: --- STOREROOM DEBUG ---	
+[00:00:03]: slots = 80	
+[00:00:03]: recipe: cutstone = 20 marble = 4 boards = 20	
+[00:00:03]: widget: widgetanimbank = ui_chest_5x16 widgetpos = 	(0.00, 160.00, 0.00)	 slot_x = 15 slot_y = 4 posslot_x = 91 posslot_y = 42	
+[00:00:03]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modworldgenmain.lua	
+[00:00:03]: Mod: workshop-356420397 (No More Respawn Penalty)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:03]: Mod: workshop-356420397 (No More Respawn Penalty)	Loading modmain.lua	
+[00:00:03]: Mod: workshop-569043634 (Campfire Respawn)	Loading modworldgenmain.lua	
+[00:00:03]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:03]: Mod: workshop-569043634 (Campfire Respawn)	Loading modmain.lua	
+[00:00:03]: Mod: workshop-569043634 (Campfire Respawn)	  Mod had no modmain.lua. Skipping.	
+[00:00:03]: Mod: workshop-378160973 (Global Positions)	Loading modworldgenmain.lua	
+[00:00:03]: Mod: workshop-378160973 (Global Positions)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:03]: Mod: workshop-378160973 (Global Positions)	Loading modmain.lua	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-378160973	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-347079953	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-569043634	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
+[00:00:03]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
 [00:00:03]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
 [00:00:04]: LOADING LUA SUCCESS
 [00:00:04]: Registering mod namespace "workshop-378160973"
@@ -250,95 +250,95 @@
 [00:00:04]: OnUpdatePurchaseStateComplete	
 [00:00:04]: Klump load on boot started.	
 [00:00:04]: Klump files loaded: 	0	
-[00:00:04]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
-[00:00:04]: Mod: workshop-347079953 (Display food values)	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	Registering prefabs	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_cage	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage_placer	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_bomb	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_bomb	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	Registering prefabs	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering prefab file: prefabs/storeroom	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom_placer	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-356420397 (No More Respawn Penalty)	Registering prefabs	
-[00:00:04]: Mod: workshop-356420397 (No More Respawn Penalty)	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-569043634 (Campfire Respawn)	Registering prefabs	
-[00:00:04]: Mod: workshop-569043634 (Campfire Respawn)	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/worldmapexplorer	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    worldmapexplorer	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
-[00:00:04]: 	Load FE	
+[00:00:05]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
+[00:00:05]: Mod: workshop-347079953 (Display food values)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	Registering prefabs	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_cage	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage_placer	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_bomb	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_bomb	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	Registering prefabs	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering prefab file: prefabs/storeroom	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom_placer	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-356420397 (No More Respawn Penalty)	Registering prefabs	
+[00:00:05]: Mod: workshop-356420397 (No More Respawn Penalty)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-569043634 (Campfire Respawn)	Registering prefabs	
+[00:00:05]: Mod: workshop-569043634 (Campfire Respawn)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/worldmapexplorer	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    worldmapexplorer	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
+[00:00:05]: 	Load FE	
 [00:00:05]: 	Load FE: done	
 [00:00:05]: Check for write access: TRUE
 [00:00:05]: Check for read access: TRUE
-[00:00:05]: ModIndex: Load sequence finished successfully.	
-[00:00:05]: Reset() returning
 [00:00:05]: THREAD - started 'FilesExistAsyncThread' (4106787648)
 [00:00:05]: FilesExistAsyncThread started (15447 files)...
-[00:00:05]: [200] Account Communication Success (6)
-[00:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[00:00:05]: Starting Dedicated Server Game	
-[00:00:05]: Network tick rate: U=15(2), D=0
-[00:00:05]: About to start a server with the following settings:
-[00:00:05]:   Dedicated: true
-[00:00:05]:   Online: true
-[00:00:05]:   Passworded: true
-[00:00:05]:   ServerPort: 11000
-[00:00:05]:   SteamAuthPort: 8767
-[00:00:05]:   SteamMasterServerPort: 12347
-[00:00:05]:   ClanID: false
-[00:00:05]:   ClanOnly: false
-[00:00:05]:   ClanAdmin: false
-[00:00:05]:   LanOnly: false
-[00:00:05]:   FriendsOnly: false
-[00:00:05]:   EnableAutosaver: true
-[00:00:05]:   EncodeUserPath: true
-[00:00:05]:   PVP: false
-[00:00:05]:   MaxPlayers: 6
-[00:00:05]:   GameMode: endless
-[00:00:05]:   OverridenDNS: 
-[00:00:05]:   PauseWhenEmpty: true
-[00:00:05]:   IdleTimeout: 1800s
-[00:00:05]:   VoteEnabled: true
-[00:00:05]:   InternetBroadcasting: true
-[00:00:05]:   Intent: social
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-1895335315	
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-1788625832	
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-378160973	
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-347079953	
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-569043634	
-[00:00:05]: Online Server Started on port: 11000
-[00:00:05]: Collecting garbage...
-[00:00:05]: lua_gc took 0.06 seconds
-[00:00:05]: ~ShardLuaProxy()
-[00:00:05]: ~cEventLeaderboardProxy()
-[00:00:05]: ~ItemServerLuaProxy()
-[00:00:05]: ~InventoryLuaProxy()
-[00:00:05]: ~NetworkLuaProxy()
-[00:00:05]: ~SimLuaProxy()
-[00:00:05]: FilesExistAsyncThread aborted.
-[00:00:05]: ... FilesExistAsyncThread complete
-[00:00:05]: lua_close took 0.05 seconds
-[00:00:05]: ReleaseAll
-[00:00:05]: ReleaseAll Finished
-[00:00:05]: cGame::StartPlaying
+[00:00:05]: ModIndex: Load sequence finished successfully.	
+[00:00:05]: Reset() returning
+[00:00:06]: [200] Account Communication Success (6)
+[00:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:00:06]: Starting Dedicated Server Game	
+[00:00:06]: Network tick rate: U=15(2), D=0
+[00:00:06]: About to start a server with the following settings:
+[00:00:06]:   Dedicated: true
+[00:00:06]:   Online: true
+[00:00:06]:   Passworded: true
+[00:00:06]:   ServerPort: 11000
+[00:00:06]:   SteamAuthPort: 8767
+[00:00:06]:   SteamMasterServerPort: 12347
+[00:00:06]:   ClanID: false
+[00:00:06]:   ClanOnly: false
+[00:00:06]:   ClanAdmin: false
+[00:00:06]:   LanOnly: false
+[00:00:06]:   FriendsOnly: false
+[00:00:06]:   EnableAutosaver: true
+[00:00:06]:   EncodeUserPath: true
+[00:00:06]:   PVP: false
+[00:00:06]:   MaxPlayers: 6
+[00:00:06]:   GameMode: endless
+[00:00:06]:   OverridenDNS: 
+[00:00:06]:   PauseWhenEmpty: true
+[00:00:06]:   IdleTimeout: 1800s
+[00:00:06]:   VoteEnabled: true
+[00:00:06]:   InternetBroadcasting: true
+[00:00:06]:   Intent: social
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-1895335315	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-1788625832	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-378160973	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-347079953	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-569043634	
+[00:00:06]: Online Server Started on port: 11000
+[00:00:06]: Collecting garbage...
+[00:00:06]: lua_gc took 0.05 seconds
+[00:00:06]: ~ShardLuaProxy()
+[00:00:06]: ~cEventLeaderboardProxy()
+[00:00:06]: ~ItemServerLuaProxy()
+[00:00:06]: ~InventoryLuaProxy()
+[00:00:06]: ~NetworkLuaProxy()
+[00:00:06]: ~SimLuaProxy()
+[00:00:06]: FilesExistAsyncThread aborted.
+[00:00:06]: ... FilesExistAsyncThread complete
+[00:00:06]: lua_close took 0.05 seconds
+[00:00:06]: ReleaseAll
+[00:00:06]: ReleaseAll Finished
+[00:00:06]: cGame::StartPlaying
 [00:00:06]: LOADING LUA
 [00:00:06]: DoLuaFile scripts/main.lua
 [00:00:06]: DoLuaFile loading buffer scripts/main.lua
@@ -532,21 +532,21 @@
 [00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
 [00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
 [00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
-[00:00:06]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
-[00:00:06]: LOADING LUA SUCCESS
-[00:00:06]: Registering mod namespace "workshop-378160973"
-[00:00:06]: Registering mod namespace "food item"
-[00:00:06]: PlayerDeaths could not load morgue	
-[00:00:06]: PlayerHistory could not load player_history	
-[00:00:06]: ServerPreferences could not load server_preferences	
-[00:00:06]: bloom_enabled	false	
-[00:00:06]: loaded saveindex	
-[00:00:06]: OnFilesLoaded()	
-[00:00:06]: OnUpdatePurchaseStateComplete	
-[00:00:06]: Loading world: session/8B8E42DB64BCC87A/0000000003	
-[00:00:06]: Save file is at version 5.04	
-[00:00:06]: Klump load on boot started.	
-[00:00:06]: Klump files loaded: 	0	
+[00:00:07]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:07]: LOADING LUA SUCCESS
+[00:00:07]: Registering mod namespace "workshop-378160973"
+[00:00:07]: Registering mod namespace "food item"
+[00:00:07]: PlayerDeaths could not load morgue	
+[00:00:07]: PlayerHistory could not load player_history	
+[00:00:07]: ServerPreferences could not load server_preferences	
+[00:00:07]: bloom_enabled	false	
+[00:00:07]: loaded saveindex	
+[00:00:07]: OnFilesLoaded()	
+[00:00:07]: OnUpdatePurchaseStateComplete	
+[00:00:07]: Loading world: session/8B8E42DB64BCC87A/0000000031	
+[00:00:07]: Save file is at version 5.04	
+[00:00:07]: Klump load on boot started.	
+[00:00:07]: Klump files loaded: 	0	
 [00:00:07]: 	Unload FE	
 [00:00:07]: 	Unload FE done	
 [00:00:08]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
@@ -597,60 +597,60 @@
 [00:00:12]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_danger.xml )
 [00:00:12]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_omw.xml )
 [00:00:12]: Loading 16 new character(s)	
-[00:00:12]: Total 16 character(s) loaded	
-[00:00:17]: Loading Nav Grid	
-[00:00:17]: World generated on version 413451, using seed: 1591493220	
-[00:00:17]: setting 	summerlength	15	
-[00:00:17]: setting 	isnightmaredawn	false	
-[00:00:17]: setting 	elapseddaysinseason	0	
-[00:00:17]: setting 	isfullmoon	false	
-[00:00:17]: setting 	moisture	0.4666665494442	
-[00:00:17]: setting 	springlength	20	
-[00:00:17]: setting 	isnightmarewild	false	
-[00:00:17]: setting 	moonphase	new	
-[00:00:17]: setting 	precipitationrate	0	
-[00:00:17]: setting 	iswet	false	
-[00:00:17]: setting 	isnewmoon	false	
-[00:00:17]: setting 	iswinter	false	
-[00:00:17]: setting 	israining	false	
-[00:00:17]: setting 	isnightmarewarn	false	
-[00:00:17]: setting 	precipitation	none	
-[00:00:17]: setting 	cavephase	day	
-[00:00:17]: setting 	moistureceil	499.34228515625	
-[00:00:17]: setting 	isday	false	
-[00:00:17]: setting 	iscaveday	true	
-[00:00:17]: setting 	season	autumn	
-[00:00:17]: setting 	timeinphase	0.0045843124389648	
-[00:00:17]: setting 	temperature	18.270014490053	
-[00:00:17]: setting 	isnightmarecalm	true	
-[00:00:17]: setting 	isnight	true	
-[00:00:17]: setting 	isdusk	false	
-[00:00:17]: setting 	iscavedusk	false	
-[00:00:17]: setting 	isautumn	true	
-[00:00:17]: setting 	issnowing	false	
-[00:00:17]: setting 	iswaxingmoon	true	
-[00:00:17]: setting 	pop	0.00093456245008006	
-[00:00:17]: setting 	snowlevel	0	
-[00:00:17]: setting 	issnowcovered	false	
-[00:00:17]: setting 	autumnlength	30	
-[00:00:17]: setting 	phase	night	
-[00:00:17]: setting 	nightmaretime	1.8662109375	
-[00:00:17]: setting 	winterlength	15	
-[00:00:17]: setting 	isspring	false	
-[00:00:17]: setting 	nightmarephase	calm	
-[00:00:17]: setting 	remainingdaysinseason	30	
-[00:00:17]: setting 	cycles	0	
-[00:00:17]: setting 	iscavenight	false	
-[00:00:17]: setting 	nightmaretimeinphase	0.0051839192708333	
-[00:00:17]: setting 	wetness	0	
-[00:00:17]: setting 	time	0.0022921562194824	
-[00:00:17]: setting 	issummer	false	
-[00:00:17]: [Shard] Slave is waiting for LUA...
-[00:00:21]: Reconstructing topology	
-[00:00:21]: 	...Sorting points	
-[00:00:21]: 	...Sorting edges	
-[00:00:21]: 	...Connecting nodes	
-[00:00:21]: 	...Validating connections	
+[00:00:13]: Total 16 character(s) loaded	
+[00:00:18]: Loading Nav Grid	
+[00:00:18]: World generated on version 413451, using seed: 1591493220	
+[00:00:18]: setting 	summerlength	15	
+[00:00:18]: setting 	isnightmaredawn	false	
+[00:00:18]: setting 	elapseddaysinseason	27	
+[00:00:18]: setting 	isfullmoon	false	
+[00:00:18]: setting 	moisture	2555.8129882812	
+[00:00:18]: setting 	springlength	20	
+[00:00:18]: setting 	isnightmarewild	false	
+[00:00:18]: setting 	moonphase	new	
+[00:00:18]: setting 	precipitationrate	0.27943468093872	
+[00:00:18]: setting 	iswet	true	
+[00:00:18]: setting 	isnewmoon	false	
+[00:00:18]: setting 	iswinter	false	
+[00:00:18]: setting 	israining	true	
+[00:00:18]: setting 	isnightmarewarn	false	
+[00:00:18]: setting 	precipitation	rain	
+[00:00:18]: setting 	cavephase	dusk	
+[00:00:18]: setting 	moistureceil	5249.5541992188	
+[00:00:18]: setting 	isday	false	
+[00:00:18]: setting 	iscaveday	false	
+[00:00:18]: setting 	season	autumn	
+[00:00:18]: setting 	timeinphase	0.80532953898112	
+[00:00:18]: setting 	temperature	3.9462316663521	
+[00:00:18]: setting 	isnightmarecalm	true	
+[00:00:18]: setting 	isnight	true	
+[00:00:18]: setting 	isdusk	false	
+[00:00:18]: setting 	iscavedusk	true	
+[00:00:18]: setting 	isautumn	true	
+[00:00:18]: setting 	issnowing	false	
+[00:00:18]: setting 	iswaxingmoon	true	
+[00:00:18]: setting 	pop	1	
+[00:00:18]: setting 	snowlevel	0	
+[00:00:18]: setting 	issnowcovered	false	
+[00:00:18]: setting 	autumnlength	30	
+[00:00:18]: setting 	phase	night	
+[00:00:18]: setting 	nightmaretime	264.19109954338	
+[00:00:18]: setting 	winterlength	15	
+[00:00:18]: setting 	isspring	false	
+[00:00:18]: setting 	nightmarephase	calm	
+[00:00:18]: setting 	remainingdaysinseason	3	
+[00:00:18]: setting 	cycles	27	
+[00:00:18]: setting 	iscavenight	false	
+[00:00:18]: setting 	nightmaretimeinphase	0.73386416539827	
+[00:00:18]: setting 	wetness	66.875885009766	
+[00:00:18]: setting 	time	0.6891654809316	
+[00:00:18]: setting 	issummer	false	
+[00:00:18]: [Shard] Slave is waiting for LUA...
+[00:00:22]: Reconstructing topology	
+[00:00:22]: 	...Sorting points	
+[00:00:22]: 	...Sorting edges	
+[00:00:22]: 	...Connecting nodes	
+[00:00:22]: 	...Validating connections	
 [00:00:22]: 	...Housekeeping	
 [00:00:22]: 	...Done!	
 [00:00:22]: 1 uploads added to server. From server_temp
@@ -668,482 +668,1445 @@
 [00:00:22]: ModIndex: Load sequence finished successfully.	
 [00:00:22]: Reset() returning
 [00:00:22]: [Steam] SteamGameServer_Init(8767, 11000, 12347)
-[00:00:22]: [Steam] SteamGameServer_Init success
-[00:00:22]: [Shard] Sending slave information to master...
-[00:00:22]: Validating portal[7] <-> 1[7] (inactive)	
-[00:00:22]: Validating portal[4] <-> 1[4] (inactive)	
-[00:00:23]: Validating portal[10] <-> 1[10] (inactive)	
-[00:00:23]: Validating portal[2] <-> 1[2] (inactive)	
-[00:00:23]: Validating portal[5] <-> 1[5] (inactive)	
+[00:00:23]: [Steam] SteamGameServer_Init success
+[00:00:23]: [Shard] Sending slave information to master...
+[00:00:23]: Validating portal[8] <-> 1[8] (inactive)	
 [00:00:23]: Validating portal[6] <-> 1[6] (inactive)	
 [00:00:23]: Validating portal[9] <-> 1[9] (inactive)	
-[00:00:23]: Validating portal[8] <-> 1[8] (inactive)	
+[00:00:23]: Validating portal[5] <-> 1[5] (inactive)	
 [00:00:23]: Validating portal[3] <-> 1[3] (inactive)	
+[00:00:23]: Validating portal[7] <-> 1[7] (inactive)	
+[00:00:23]: Validating portal[10] <-> 1[10] (inactive)	
+[00:00:23]: Validating portal[4] <-> 1[4] (inactive)	
+[00:00:23]: Validating portal[2] <-> 1[2] (inactive)	
 [00:00:23]: Validating portal[1] <-> 1[1] (inactive)	
-[00:00:24]: Gameserver logged on to Steam, assigned identity steamid:90135964362649600
-[00:00:30]: Overriding region to US
-[00:00:30]: Registering slave in US lobby
-[00:00:31]: [Shard] Slave is now ready!
-[00:00:31]: World 1 is now connected	
-[00:00:31]: Validating portal[7] <-> 1[7] (active)	
-[00:00:31]: Validating portal[4] <-> 1[4] (active)	
-[00:00:31]: Validating portal[10] <-> 1[10] (active)	
-[00:00:31]: Validating portal[2] <-> 1[2] (active)	
-[00:00:31]: Validating portal[5] <-> 1[5] (active)	
-[00:00:31]: Validating portal[6] <-> 1[6] (active)	
-[00:00:31]: Validating portal[9] <-> 1[9] (active)	
-[00:00:31]: Validating portal[8] <-> 1[8] (active)	
-[00:00:31]: Validating portal[3] <-> 1[3] (active)	
-[00:00:31]: Validating portal[1] <-> 1[1] (active)	
-[00:00:32]: [Shard] Slave LUA is now ready!
-[00:00:32]: Sim paused
-[00:03:38]: Sim unpaused
-[00:05:30]: Registering slave in US lobby
-[00:10:30]: Registering slave in US lobby
-[00:11:39]: Serializing world: session/8B8E42DB64BCC87A/0000000004
-[00:15:30]: Registering slave in US lobby
-[00:19:40]: Serializing world: session/8B8E42DB64BCC87A/0000000005
-[00:20:30]: Registering slave in US lobby
-[00:25:30]: Registering slave in US lobby
-[00:27:41]: Serializing world: session/8B8E42DB64BCC87A/0000000006
-[00:30:05]: [200] Account Communication Success (6)
-[00:30:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[00:30:30]: Registering slave in US lobby
-[00:35:30]: Registering slave in US lobby
-[00:35:41]: Serializing world: session/8B8E42DB64BCC87A/0000000007
-[00:40:30]: Registering slave in US lobby
-[00:43:43]: Serializing world: session/8B8E42DB64BCC87A/0000000008
-[00:45:30]: Registering slave in US lobby
-[00:50:30]: Registering slave in US lobby
-[00:51:44]: Serializing world: session/8B8E42DB64BCC87A/0000000009
-[00:55:30]: Registering slave in US lobby
-[00:59:45]: Serializing world: session/8B8E42DB64BCC87A/0000000010
-[01:00:05]: [200] Account Communication Success (6)
-[01:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[01:00:30]: Registering slave in US lobby
-[01:05:30]: Registering slave in US lobby
-[01:07:46]: Serializing world: session/8B8E42DB64BCC87A/0000000011
-[01:10:30]: Registering slave in US lobby
-[01:15:30]: Registering slave in US lobby
-[01:15:47]: Serializing world: session/8B8E42DB64BCC87A/0000000012
-[01:15:47]: Truncating to snapshot #12...
-[01:15:47]:  - session/8B8E42DB64BCC87A/0000000002
-[01:15:47]:    1 file(s) removed
-[01:20:30]: Registering slave in US lobby
-[01:23:49]: Serializing world: session/8B8E42DB64BCC87A/0000000013
-[01:23:49]: Truncating to snapshot #13...
-[01:23:49]:  - session/8B8E42DB64BCC87A/0000000003
-[01:23:49]:    1 file(s) removed
-[01:25:30]: Registering slave in US lobby
-[01:30:05]: [200] Account Communication Success (6)
-[01:30:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[01:30:30]: Registering slave in US lobby
-[01:31:50]: Serializing world: session/8B8E42DB64BCC87A/0000000014
-[01:31:50]: Truncating to snapshot #14...
-[01:31:50]:  - session/8B8E42DB64BCC87A/0000000004
-[01:31:50]:    1 file(s) removed
-[01:35:30]: Registering slave in US lobby
-[01:39:51]: Serializing world: session/8B8E42DB64BCC87A/0000000015
-[01:39:51]: Truncating to snapshot #15...
-[01:39:51]:  - session/8B8E42DB64BCC87A/0000000005
-[01:39:51]:    1 file(s) removed
-[01:40:30]: Registering slave in US lobby
-[01:45:30]: Registering slave in US lobby
-[01:47:52]: Serializing world: session/8B8E42DB64BCC87A/0000000016
-[01:47:52]: Truncating to snapshot #16...
-[01:47:52]:  - session/8B8E42DB64BCC87A/0000000006
-[01:47:52]:    1 file(s) removed
-[01:50:30]: Registering slave in US lobby
-[01:55:30]: Registering slave in US lobby
-[01:55:54]: Serializing world: session/8B8E42DB64BCC87A/0000000017
-[01:55:54]: Truncating to snapshot #17...
-[01:55:54]:  - session/8B8E42DB64BCC87A/0000000007
-[01:55:54]:    1 file(s) removed
-[02:00:05]: [200] Account Communication Success (6)
-[02:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[02:00:30]: Registering slave in US lobby
-[02:03:55]: Serializing world: session/8B8E42DB64BCC87A/0000000018
-[02:03:55]: Truncating to snapshot #18...
-[02:03:55]:  - session/8B8E42DB64BCC87A/0000000008
-[02:03:55]:    1 file(s) removed
-[02:05:30]: Registering slave in US lobby
-[02:10:30]: Registering slave in US lobby
-[02:11:56]: Serializing world: session/8B8E42DB64BCC87A/0000000019
-[02:11:56]: Truncating to snapshot #19...
-[02:11:56]:  - session/8B8E42DB64BCC87A/0000000009
-[02:11:56]:    1 file(s) removed
-[02:15:30]: Registering slave in US lobby
-[02:19:57]: Serializing world: session/8B8E42DB64BCC87A/0000000020
-[02:19:57]: Truncating to snapshot #20...
-[02:19:57]:  - session/8B8E42DB64BCC87A/0000000010
-[02:19:57]:    1 file(s) removed
-[02:20:30]: Registering slave in US lobby
-[02:25:30]: Registering slave in US lobby
-[02:27:58]: Serializing world: session/8B8E42DB64BCC87A/0000000021
-[02:27:58]: Truncating to snapshot #21...
-[02:27:58]:  - session/8B8E42DB64BCC87A/0000000011
-[02:27:58]:    1 file(s) removed
-[02:30:05]: [200] Account Communication Success (6)
-[02:30:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[02:30:30]: Registering slave in US lobby
-[02:35:30]: Registering slave in US lobby
-[02:35:59]: Serializing world: session/8B8E42DB64BCC87A/0000000022
-[02:35:59]: Truncating to snapshot #22...
-[02:35:59]:  - session/8B8E42DB64BCC87A/0000000012
-[02:35:59]:    1 file(s) removed
-[02:40:30]: Registering slave in US lobby
-[02:44:00]: Serializing world: session/8B8E42DB64BCC87A/0000000023
-[02:44:00]: Truncating to snapshot #23...
-[02:44:00]:  - session/8B8E42DB64BCC87A/0000000013
-[02:44:00]:    1 file(s) removed
-[02:45:30]: Registering slave in US lobby
-[02:50:30]: Registering slave in US lobby
-[02:52:02]: Serializing world: session/8B8E42DB64BCC87A/0000000024
-[02:52:02]: Truncating to snapshot #24...
-[02:52:02]:  - session/8B8E42DB64BCC87A/0000000014
-[02:52:02]:    1 file(s) removed
-[02:55:30]: Registering slave in US lobby
-[03:00:03]: Serializing world: session/8B8E42DB64BCC87A/0000000025
-[03:00:03]: Truncating to snapshot #25...
-[03:00:03]:  - session/8B8E42DB64BCC87A/0000000015
-[03:00:03]:    1 file(s) removed
-[03:00:05]: [200] Account Communication Success (6)
-[03:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[03:00:30]: Registering slave in US lobby
-[03:05:30]: Registering slave in US lobby
-[03:08:05]: Serializing world: session/8B8E42DB64BCC87A/0000000026
-[03:08:05]: Truncating to snapshot #26...
-[03:08:05]:  - session/8B8E42DB64BCC87A/0000000016
-[03:08:05]:    1 file(s) removed
-[03:10:30]: Registering slave in US lobby
-[03:15:30]: Registering slave in US lobby
-[03:16:05]: Serializing world: session/8B8E42DB64BCC87A/0000000027
-[03:16:05]: Truncating to snapshot #27...
-[03:16:05]:  - session/8B8E42DB64BCC87A/0000000017
-[03:16:05]:    1 file(s) removed
-[03:20:30]: Registering slave in US lobby
-[03:24:07]: Serializing world: session/8B8E42DB64BCC87A/0000000028
-[03:24:07]: Truncating to snapshot #28...
-[03:24:07]:  - session/8B8E42DB64BCC87A/0000000018
-[03:24:07]:    1 file(s) removed
-[03:25:30]: Registering slave in US lobby
+[00:00:24]: Gameserver logged on to Steam, assigned identity steamid:90135991738659844
+[00:00:31]: Overriding region to US
+[00:00:31]: Registering slave in US lobby
+[00:00:32]: [Shard] Slave is now ready!
+[00:00:32]: World 1 is now connected	
+[00:00:32]: Validating portal[8] <-> 1[8] (active)	
+[00:00:32]: Validating portal[6] <-> 1[6] (active)	
+[00:00:32]: Validating portal[9] <-> 1[9] (active)	
+[00:00:32]: Validating portal[5] <-> 1[5] (active)	
+[00:00:32]: Validating portal[3] <-> 1[3] (active)	
+[00:00:32]: Validating portal[7] <-> 1[7] (active)	
+[00:00:32]: Validating portal[10] <-> 1[10] (active)	
+[00:00:32]: Validating portal[4] <-> 1[4] (active)	
+[00:00:32]: Validating portal[2] <-> 1[2] (active)	
+[00:00:32]: Validating portal[1] <-> 1[1] (active)	
+[00:00:33]: [Shard] Slave LUA is now ready!
+[00:00:33]: Sim paused
+[00:04:23]: Sim unpaused
+[00:05:31]: Registering slave in US lobby
+[00:06:58]: Serializing world: session/8B8E42DB64BCC87A/0000000032
+[00:06:58]: Truncating to snapshot #32...
+[00:06:58]:  - session/8B8E42DB64BCC87A/0000000022
+[00:06:58]:    1 file(s) removed
+[00:10:32]: Registering slave in US lobby
+[00:14:58]: Serializing world: session/8B8E42DB64BCC87A/0000000033
+[00:14:58]: Truncating to snapshot #33...
+[00:14:58]:  - session/8B8E42DB64BCC87A/0000000023
+[00:14:58]:    1 file(s) removed
+[00:15:32]: Registering slave in US lobby
+[00:20:32]: Registering slave in US lobby
+[00:23:00]: Serializing world: session/8B8E42DB64BCC87A/0000000034
+[00:23:00]: Truncating to snapshot #34...
+[00:23:00]:  - session/8B8E42DB64BCC87A/0000000024
+[00:23:00]:    1 file(s) removed
+[00:25:32]: Registering slave in US lobby
+[00:30:06]: [200] Account Communication Success (6)
+[00:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:30:32]: Registering slave in US lobby
+[00:31:01]: Serializing world: session/8B8E42DB64BCC87A/0000000035
+[00:31:01]: Truncating to snapshot #35...
+[00:31:01]:  - session/8B8E42DB64BCC87A/0000000025
+[00:31:01]:    1 file(s) removed
+[00:35:32]: Registering slave in US lobby
+[00:39:03]: Serializing world: session/8B8E42DB64BCC87A/0000000036
+[00:39:03]: Truncating to snapshot #36...
+[00:39:03]:  - session/8B8E42DB64BCC87A/0000000026
+[00:39:03]:    1 file(s) removed
+[00:40:32]: Registering slave in US lobby
+[00:45:32]: Registering slave in US lobby
+[00:47:03]: Serializing world: session/8B8E42DB64BCC87A/0000000037
+[00:47:03]: Truncating to snapshot #37...
+[00:47:03]:  - session/8B8E42DB64BCC87A/0000000027
+[00:47:03]:    1 file(s) removed
+[00:50:32]: Registering slave in US lobby
+[00:55:05]: Serializing world: session/8B8E42DB64BCC87A/0000000038
+[00:55:05]: Truncating to snapshot #38...
+[00:55:05]:  - session/8B8E42DB64BCC87A/0000000028
+[00:55:05]:    1 file(s) removed
+[00:55:32]: Registering slave in US lobby
+[01:00:06]: [200] Account Communication Success (6)
+[01:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:00:32]: Registering slave in US lobby
+[01:03:05]: Serializing world: session/8B8E42DB64BCC87A/0000000039
+[01:03:05]: Truncating to snapshot #39...
+[01:03:05]:  - session/8B8E42DB64BCC87A/0000000029
+[01:03:05]:    1 file(s) removed
+[01:05:32]: Registering slave in US lobby
+[01:10:32]: Registering slave in US lobby
+[01:11:06]: Serializing world: session/8B8E42DB64BCC87A/0000000040
+[01:11:06]: Truncating to snapshot #40...
+[01:11:06]:  - session/8B8E42DB64BCC87A/0000000030
+[01:11:06]:    1 file(s) removed
+[01:15:32]: Registering slave in US lobby
+[01:19:08]: Serializing world: session/8B8E42DB64BCC87A/0000000041
+[01:19:08]: Truncating to snapshot #41...
+[01:19:08]:  - session/8B8E42DB64BCC87A/0000000031
+[01:19:08]:    1 file(s) removed
+[01:20:32]: Registering slave in US lobby
+[01:25:32]: Registering slave in US lobby
+[01:27:09]: Serializing world: session/8B8E42DB64BCC87A/0000000042
+[01:27:09]: Truncating to snapshot #42...
+[01:27:09]:  - session/8B8E42DB64BCC87A/0000000032
+[01:27:09]:    1 file(s) removed
+[01:30:06]: [200] Account Communication Success (6)
+[01:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:30:32]: Registering slave in US lobby
+[01:35:10]: Serializing world: session/8B8E42DB64BCC87A/0000000043
+[01:35:10]: Truncating to snapshot #43...
+[01:35:10]:  - session/8B8E42DB64BCC87A/0000000033
+[01:35:10]:    1 file(s) removed
+[01:35:32]: Registering slave in US lobby
+[01:40:32]: Registering slave in US lobby
+[01:43:10]: Serializing world: session/8B8E42DB64BCC87A/0000000044
+[01:43:10]: Truncating to snapshot #44...
+[01:43:10]:  - session/8B8E42DB64BCC87A/0000000034
+[01:43:10]:    1 file(s) removed
+[01:45:32]: Registering slave in US lobby
+[01:50:32]: Registering slave in US lobby
+[01:51:12]: Serializing world: session/8B8E42DB64BCC87A/0000000045
+[01:51:12]: Truncating to snapshot #45...
+[01:51:12]:  - session/8B8E42DB64BCC87A/0000000035
+[01:51:12]:    1 file(s) removed
+[01:55:32]: Registering slave in US lobby
+[01:59:13]: Serializing world: session/8B8E42DB64BCC87A/0000000046
+[01:59:13]: Truncating to snapshot #46...
+[01:59:13]:  - session/8B8E42DB64BCC87A/0000000036
+[01:59:13]:    1 file(s) removed
+[02:00:06]: [200] Account Communication Success (6)
+[02:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:00:32]: Registering slave in US lobby
+[02:05:32]: Registering slave in US lobby
+[02:07:15]: Serializing world: session/8B8E42DB64BCC87A/0000000047
+[02:07:15]: Truncating to snapshot #47...
+[02:07:15]:  - session/8B8E42DB64BCC87A/0000000037
+[02:07:15]:    1 file(s) removed
+[02:10:32]: Registering slave in US lobby
+[02:15:17]: Serializing world: session/8B8E42DB64BCC87A/0000000048
+[02:15:17]: Truncating to snapshot #48...
+[02:15:17]:  - session/8B8E42DB64BCC87A/0000000038
+[02:15:17]:    1 file(s) removed
+[02:15:32]: Registering slave in US lobby
+[02:20:32]: Registering slave in US lobby
+[02:23:19]: Serializing world: session/8B8E42DB64BCC87A/0000000049
+[02:23:19]: Truncating to snapshot #49...
+[02:23:19]:  - session/8B8E42DB64BCC87A/0000000039
+[02:23:19]:    1 file(s) removed
+[02:25:32]: Registering slave in US lobby
+[02:30:06]: [200] Account Communication Success (6)
+[02:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:30:32]: Registering slave in US lobby
+[02:31:20]: Serializing world: session/8B8E42DB64BCC87A/0000000050
+[02:31:20]: Truncating to snapshot #50...
+[02:31:20]:  - session/8B8E42DB64BCC87A/0000000040
+[02:31:20]:    1 file(s) removed
+[02:35:32]: Registering slave in US lobby
+[02:39:22]: Serializing world: session/8B8E42DB64BCC87A/0000000051
+[02:39:22]: Truncating to snapshot #51...
+[02:39:22]:  - session/8B8E42DB64BCC87A/0000000041
+[02:39:22]:    1 file(s) removed
+[02:40:32]: Registering slave in US lobby
+[02:45:32]: Registering slave in US lobby
+[02:47:24]: Serializing world: session/8B8E42DB64BCC87A/0000000052
+[02:47:24]: Truncating to snapshot #52...
+[02:47:24]:  - session/8B8E42DB64BCC87A/0000000042
+[02:47:24]:    1 file(s) removed
+[02:50:32]: Registering slave in US lobby
+[02:55:24]: Serializing world: session/8B8E42DB64BCC87A/0000000053
+[02:55:24]: Truncating to snapshot #53...
+[02:55:24]:  - session/8B8E42DB64BCC87A/0000000043
+[02:55:24]:    1 file(s) removed
+[02:55:32]: Registering slave in US lobby
+[03:00:06]: [200] Account Communication Success (6)
+[03:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:00:32]: Registering slave in US lobby
+[03:03:25]: Serializing world: session/8B8E42DB64BCC87A/0000000054
+[03:03:25]: Truncating to snapshot #54...
+[03:03:25]:  - session/8B8E42DB64BCC87A/0000000044
+[03:03:25]:    1 file(s) removed
+[03:05:32]: Registering slave in US lobby
+[03:10:32]: Registering slave in US lobby
+[03:11:29]: Serializing world: session/8B8E42DB64BCC87A/0000000055
+[03:11:29]: Truncating to snapshot #55...
+[03:11:29]:  - session/8B8E42DB64BCC87A/0000000045
+[03:11:29]:    1 file(s) removed
+[03:15:32]: Registering slave in US lobby
+[03:19:30]: Serializing world: session/8B8E42DB64BCC87A/0000000056
+[03:19:30]: Truncating to snapshot #56...
+[03:19:30]:  - session/8B8E42DB64BCC87A/0000000046
+[03:19:30]:    1 file(s) removed
+[03:20:32]: Registering slave in US lobby
+[03:25:32]: Registering slave in US lobby
+[03:27:31]: Serializing world: session/8B8E42DB64BCC87A/0000000057
+[03:27:31]: Truncating to snapshot #57...
+[03:27:31]:  - session/8B8E42DB64BCC87A/0000000047
+[03:27:31]:    1 file(s) removed
 [03:30:06]: [200] Account Communication Success (6)
 [03:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[03:30:30]: Registering slave in US lobby
-[03:32:09]: Serializing world: session/8B8E42DB64BCC87A/0000000029
-[03:32:09]: Truncating to snapshot #29...
-[03:32:09]:  - session/8B8E42DB64BCC87A/0000000019
-[03:32:09]:    1 file(s) removed
-[03:35:30]: Registering slave in US lobby
-[03:40:10]: Serializing world: session/8B8E42DB64BCC87A/0000000030
-[03:40:10]: Truncating to snapshot #30...
-[03:40:10]:  - session/8B8E42DB64BCC87A/0000000020
-[03:40:10]:    1 file(s) removed
-[03:40:31]: Registering slave in US lobby
-[03:45:31]: Registering slave in US lobby
-[03:45:41]: Sim paused
-[03:50:31]: Registering slave in US lobby
-[03:55:31]: Registering slave in US lobby
-[04:00:05]: [200] Account Communication Success (6)
-[04:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[04:00:31]: Registering slave in US lobby
-[04:05:31]: Registering slave in US lobby
-[04:10:31]: Registering slave in US lobby
-[04:15:31]: Registering slave in US lobby
-[04:20:31]: Registering slave in US lobby
-[04:25:31]: Registering slave in US lobby
+[03:30:32]: Registering slave in US lobby
+[03:35:32]: Serializing world: session/8B8E42DB64BCC87A/0000000058
+[03:35:32]: Truncating to snapshot #58...
+[03:35:32]:  - session/8B8E42DB64BCC87A/0000000048
+[03:35:32]:    1 file(s) removed
+[03:35:32]: Registering slave in US lobby
+[03:40:32]: Registering slave in US lobby
+[03:43:33]: Serializing world: session/8B8E42DB64BCC87A/0000000059
+[03:43:33]: Truncating to snapshot #59...
+[03:43:33]:  - session/8B8E42DB64BCC87A/0000000049
+[03:43:33]:    1 file(s) removed
+[03:45:32]: Registering slave in US lobby
+[03:46:52]: [Shard] #1 -> session/8B8E42DB64BCC87A/A7M55QF87D64/0000000060
+[03:46:52]: [Shard] Received migration #1 data for (KU_nIwUWxJ4)
+[03:46:55]: New incoming connection 73.93.152.233|19744 <14674907823847888716>
+[03:46:55]: Client connected from 73.93.152.233|19744 <14674907823847888716>
+[03:46:55]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^G3WkQeJxiiwEVqeDAXJkWvrtvZ5O2ZtmthAoTkPlSI0= for <14674907823847888716>
+[03:46:56]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[03:46:56]: [Steam] Authenticated host '76561197971690736'
+[03:46:56]: [Shard] Completed incoming migration #1 for (KU_nIwUWxJ4)
+[03:47:05]: Resuming user: session/8B8E42DB64BCC87A/A7M55QF87D64/0000000060
+[03:47:05]: Player will spawn close to portal #8	
+[03:47:05]: Spawning player at: [Load] (210.42, 0.00, 238.30)	
+[03:49:46]: Activating portal[9] to 1	
+[03:49:47]: Serializing user: session/8B8E42DB64BCC87A/A7M55QF87D64/0000000060
+[03:49:47]: [Shard] Migration request: (KU_nIwUWxJ4) to [SHDMASTER](1)
+[03:49:47]: [Shard] #2 <- session/8B8E42DB64BCC87A/A7M55QF87D64/0000000060
+[03:49:47]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[03:49:47]: Ignored request to resume during migration
+[03:49:47]: [Steam] SendUserDisconnect for '76561197971690736'
+[03:50:14]: [Shard] #3 -> session/8B8E42DB64BCC87A/A7M55QF87D64/0000000060
+[03:50:14]: [Shard] Received migration #3 data for (KU_nIwUWxJ4)
+[03:50:16]: New incoming connection 73.93.152.233|19672 <3047486765914059299>
+[03:50:16]: Client connected from 73.93.152.233|19672 <3047486765914059299>
+[03:50:16]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^Q5Z2YiREiuAsgxkyikgQANJBlZncm7pB146n12hEwPw= for <3047486765914059299>
+[03:50:16]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[03:50:16]: [Steam] Authenticated host '76561197971690736'
+[03:50:16]: [Shard] Completed incoming migration #3 for (KU_nIwUWxJ4)
+[03:50:24]: Resuming user: session/8B8E42DB64BCC87A/A7M55QF87D64/0000000060
+[03:50:24]: Player will spawn close to portal #9	
+[03:50:24]: Spawning player at: [Load] (182.81, 0.00, 256.38)	
+[03:50:32]: Registering slave in US lobby
+[03:50:33]: Activating portal[8] to 1	
+[03:50:33]: Serializing user: session/8B8E42DB64BCC87A/A7M55QF87D64/0000000060
+[03:50:33]: [Shard] Migration request: (KU_nIwUWxJ4) to [SHDMASTER](1)
+[03:50:33]: [Shard] #4 <- session/8B8E42DB64BCC87A/A7M55QF87D64/0000000060
+[03:50:33]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[03:50:33]: [Steam] SendUserDisconnect for '76561197971690736'
+[03:51:38]: Serializing world: session/8B8E42DB64BCC87A/0000000060
+[03:51:38]: Truncating to snapshot #60...
+[03:51:38]:  - session/8B8E42DB64BCC87A/0000000050
+[03:51:38]:    1 file(s) removed
+[03:55:32]: Registering slave in US lobby
+[03:59:39]: Serializing world: session/8B8E42DB64BCC87A/0000000061
+[03:59:39]: Truncating to snapshot #61...
+[03:59:39]:  - session/8B8E42DB64BCC87A/0000000051
+[03:59:39]:    1 file(s) removed
+[04:00:06]: [200] Account Communication Success (6)
+[04:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:00:32]: Registering slave in US lobby
+[04:05:32]: Registering slave in US lobby
+[04:07:40]: Serializing world: session/8B8E42DB64BCC87A/0000000062
+[04:07:40]: Truncating to snapshot #62...
+[04:07:40]:  - session/8B8E42DB64BCC87A/0000000052
+[04:07:40]:    1 file(s) removed
+[04:09:53]: [Shard] #5 -> session/8B8E42DB64BCC87A/A7M55QF87D64/0000000063
+[04:09:53]: [Shard] Received migration #5 data for (KU_nIwUWxJ4)
+[04:09:56]: New incoming connection 73.93.152.233|19691 <2256477172696603018>
+[04:09:56]: Client connected from 73.93.152.233|19691 <2256477172696603018>
+[04:09:56]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^Or6ESYp726kKKlA+txL7+WURcOdC6tUof6LrgCWtk+U= for <2256477172696603018>
+[04:09:57]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[04:09:57]: [Steam] Authenticated host '76561197971690736'
+[04:09:57]: [Shard] Completed incoming migration #5 for (KU_nIwUWxJ4)
+[04:10:05]: Resuming user: session/8B8E42DB64BCC87A/A7M55QF87D64/0000000063
+[04:10:05]: Player will spawn close to portal #8	
+[04:10:05]: Spawning player at: [Load] (214.62, 0.00, 238.36)	
+[04:10:32]: Registering slave in US lobby
+[04:13:01]: Activating portal[5] to 1	
+[04:13:01]: Serializing user: session/8B8E42DB64BCC87A/A7M55QF87D64/0000000063
+[04:13:01]: [Shard] Migration request: (KU_nIwUWxJ4) to [SHDMASTER](1)
+[04:13:01]: [Shard] #6 <- session/8B8E42DB64BCC87A/A7M55QF87D64/0000000063
+[04:13:02]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[04:13:02]: [Steam] SendUserDisconnect for '76561197971690736'
+[04:15:32]: Registering slave in US lobby
+[04:15:43]: Serializing world: session/8B8E42DB64BCC87A/0000000063
+[04:15:43]: Truncating to snapshot #63...
+[04:15:43]:  - session/8B8E42DB64BCC87A/0000000053
+[04:15:43]:    1 file(s) removed
+[04:20:32]: Registering slave in US lobby
+[04:23:51]: Serializing world: session/8B8E42DB64BCC87A/0000000064
+[04:23:51]: Truncating to snapshot #64...
+[04:23:51]:  - session/8B8E42DB64BCC87A/0000000054
+[04:23:51]:    1 file(s) removed
+[04:25:32]: Registering slave in US lobby
 [04:30:06]: [200] Account Communication Success (6)
 [04:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[04:30:31]: Registering slave in US lobby
-[04:35:31]: Registering slave in US lobby
-[04:40:31]: Registering slave in US lobby
-[04:45:31]: Registering slave in US lobby
-[04:50:31]: Registering slave in US lobby
-[04:55:31]: Registering slave in US lobby
+[04:30:32]: Registering slave in US lobby
+[04:31:54]: Serializing world: session/8B8E42DB64BCC87A/0000000065
+[04:31:54]: Truncating to snapshot #65...
+[04:31:54]:  - session/8B8E42DB64BCC87A/0000000055
+[04:31:54]:    1 file(s) removed
+[04:35:32]: Registering slave in US lobby
+[04:39:55]: Serializing world: session/8B8E42DB64BCC87A/0000000066
+[04:39:55]: Truncating to snapshot #66...
+[04:39:55]:  - session/8B8E42DB64BCC87A/0000000056
+[04:39:55]:    1 file(s) removed
+[04:40:32]: Registering slave in US lobby
+[04:45:32]: Registering slave in US lobby
+[04:47:55]: Serializing world: session/8B8E42DB64BCC87A/0000000067
+[04:47:55]: Truncating to snapshot #67...
+[04:47:55]:  - session/8B8E42DB64BCC87A/0000000057
+[04:47:55]:    1 file(s) removed
+[04:50:32]: Registering slave in US lobby
+[04:54:42]: [Shard] #7 -> session/8B8E42DB64BCC87A/A7M55QF87D64/0000000068
+[04:54:42]: [Shard] Received migration #7 data for (KU_nIwUWxJ4)
+[04:54:45]: New incoming connection 73.93.152.233|19889 <17473571714139356239>
+[04:54:45]: Client connected from 73.93.152.233|19889 <17473571714139356239>
+[04:54:45]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^dhkZuzXHKfLqodcwk3Mbfkn7JY8OJBXkbj6hLyRbhi4= for <17473571714139356239>
+[04:54:45]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[04:54:45]: [Steam] Authenticated host '76561197971690736'
+[04:54:45]: [Shard] Completed incoming migration #7 for (KU_nIwUWxJ4)
+[04:54:54]: Resuming user: session/8B8E42DB64BCC87A/A7M55QF87D64/0000000068
+[04:54:54]: Player will spawn close to portal #9	
+[04:54:54]: Spawning player at: [Load] (178.85, 0.00, 254.47)	
+[04:55:15]: Activating portal[8] to 1	
+[04:55:16]: Serializing user: session/8B8E42DB64BCC87A/A7M55QF87D64/0000000068
+[04:55:16]: [Shard] Migration request: (KU_nIwUWxJ4) to [SHDMASTER](1)
+[04:55:16]: [Shard] #8 <- session/8B8E42DB64BCC87A/A7M55QF87D64/0000000068
+[04:55:16]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[04:55:16]: [Steam] SendUserDisconnect for '76561197971690736'
+[04:55:32]: Registering slave in US lobby
+[04:55:57]: Serializing world: session/8B8E42DB64BCC87A/0000000068
+[04:55:57]: Truncating to snapshot #68...
+[04:55:57]:  - session/8B8E42DB64BCC87A/0000000058
+[04:55:57]:    1 file(s) removed
 [05:00:06]: [200] Account Communication Success (6)
 [05:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[05:00:31]: Registering slave in US lobby
-[05:05:31]: Registering slave in US lobby
-[05:10:31]: Registering slave in US lobby
-[05:15:31]: Registering slave in US lobby
-[05:20:31]: Registering slave in US lobby
-[05:25:31]: Registering slave in US lobby
+[05:00:32]: Registering slave in US lobby
+[05:03:58]: Serializing world: session/8B8E42DB64BCC87A/0000000069
+[05:03:58]: Truncating to snapshot #69...
+[05:03:58]:  - session/8B8E42DB64BCC87A/0000000059
+[05:03:58]:    1 file(s) removed
+[05:05:10]: Sim paused
+[05:05:32]: Registering slave in US lobby
+[05:10:32]: Registering slave in US lobby
+[05:15:32]: Registering slave in US lobby
+[05:20:32]: Registering slave in US lobby
+[05:25:32]: Registering slave in US lobby
 [05:30:06]: [200] Account Communication Success (6)
 [05:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[05:30:31]: Registering slave in US lobby
-[05:35:31]: Registering slave in US lobby
-[05:40:31]: Registering slave in US lobby
-[05:45:31]: Registering slave in US lobby
-[05:50:31]: Registering slave in US lobby
-[05:55:31]: Registering slave in US lobby
+[05:30:32]: Registering slave in US lobby
+[05:35:32]: Registering slave in US lobby
+[05:40:32]: Registering slave in US lobby
+[05:45:32]: Registering slave in US lobby
+[05:50:32]: Registering slave in US lobby
+[05:55:32]: Registering slave in US lobby
 [06:00:06]: [200] Account Communication Success (6)
 [06:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[06:00:31]: Registering slave in US lobby
-[06:05:31]: Registering slave in US lobby
-[06:10:31]: Registering slave in US lobby
-[06:15:31]: Registering slave in US lobby
-[06:20:31]: Registering slave in US lobby
-[06:25:31]: Registering slave in US lobby
+[06:00:32]: Registering slave in US lobby
+[06:05:32]: Registering slave in US lobby
+[06:10:32]: Registering slave in US lobby
+[06:15:32]: Registering slave in US lobby
+[06:20:32]: Registering slave in US lobby
+[06:25:32]: Registering slave in US lobby
 [06:30:06]: [200] Account Communication Success (6)
 [06:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[06:30:31]: Registering slave in US lobby
-[06:35:31]: Registering slave in US lobby
-[06:40:31]: Registering slave in US lobby
-[06:45:31]: Registering slave in US lobby
-[06:50:31]: Registering slave in US lobby
-[06:55:31]: Registering slave in US lobby
+[06:30:32]: Registering slave in US lobby
+[06:35:32]: Registering slave in US lobby
+[06:40:32]: Registering slave in US lobby
+[06:45:32]: Registering slave in US lobby
+[06:50:32]: Registering slave in US lobby
+[06:55:32]: Registering slave in US lobby
 [07:00:06]: [200] Account Communication Success (6)
 [07:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[07:00:31]: Registering slave in US lobby
-[07:05:31]: Registering slave in US lobby
-[07:10:31]: Registering slave in US lobby
-[07:15:31]: Registering slave in US lobby
-[07:20:31]: Registering slave in US lobby
-[07:25:31]: Registering slave in US lobby
+[07:00:32]: Registering slave in US lobby
+[07:05:32]: Registering slave in US lobby
+[07:10:33]: Registering slave in US lobby
+[07:15:33]: Registering slave in US lobby
+[07:20:33]: Registering slave in US lobby
+[07:25:33]: Registering slave in US lobby
 [07:30:06]: [200] Account Communication Success (6)
 [07:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[07:30:31]: Registering slave in US lobby
-[07:35:31]: Registering slave in US lobby
-[07:40:31]: Registering slave in US lobby
-[07:45:31]: Registering slave in US lobby
-[07:50:31]: Registering slave in US lobby
-[07:55:31]: Registering slave in US lobby
+[07:30:33]: Registering slave in US lobby
+[07:35:33]: Registering slave in US lobby
+[07:40:33]: Registering slave in US lobby
+[07:45:33]: Registering slave in US lobby
+[07:50:33]: Registering slave in US lobby
+[07:55:33]: Registering slave in US lobby
 [08:00:06]: [200] Account Communication Success (6)
 [08:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[08:00:31]: Registering slave in US lobby
-[08:05:31]: Registering slave in US lobby
-[08:10:31]: Registering slave in US lobby
-[08:15:31]: Registering slave in US lobby
-[08:20:31]: Registering slave in US lobby
-[08:25:31]: Registering slave in US lobby
+[08:00:33]: Registering slave in US lobby
+[08:05:33]: Registering slave in US lobby
+[08:10:33]: Registering slave in US lobby
+[08:15:33]: Registering slave in US lobby
+[08:20:33]: Registering slave in US lobby
+[08:25:33]: Registering slave in US lobby
 [08:30:06]: [200] Account Communication Success (6)
 [08:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[08:30:31]: Registering slave in US lobby
-[08:35:31]: Registering slave in US lobby
-[08:40:31]: Registering slave in US lobby
-[08:45:31]: Registering slave in US lobby
-[08:50:31]: Registering slave in US lobby
-[08:55:31]: Registering slave in US lobby
+[08:30:33]: Registering slave in US lobby
+[08:35:33]: Registering slave in US lobby
+[08:40:33]: Registering slave in US lobby
+[08:45:33]: Registering slave in US lobby
+[08:50:33]: Registering slave in US lobby
+[08:55:33]: Registering slave in US lobby
 [09:00:06]: [200] Account Communication Success (6)
 [09:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[09:00:31]: Registering slave in US lobby
-[09:05:31]: Registering slave in US lobby
-[09:10:31]: Registering slave in US lobby
-[09:15:31]: Registering slave in US lobby
-[09:20:31]: Registering slave in US lobby
-[09:25:31]: Registering slave in US lobby
+[09:00:33]: Registering slave in US lobby
+[09:05:33]: Registering slave in US lobby
+[09:10:33]: Registering slave in US lobby
+[09:15:33]: Registering slave in US lobby
+[09:20:33]: Registering slave in US lobby
+[09:25:33]: Registering slave in US lobby
 [09:30:06]: [200] Account Communication Success (6)
 [09:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[09:30:31]: Registering slave in US lobby
-[09:35:31]: Registering slave in US lobby
-[09:40:31]: Registering slave in US lobby
-[09:45:31]: Registering slave in US lobby
-[09:50:31]: Registering slave in US lobby
-[09:55:31]: Registering slave in US lobby
+[09:30:33]: Registering slave in US lobby
+[09:35:33]: Registering slave in US lobby
+[09:40:33]: Registering slave in US lobby
+[09:45:33]: Registering slave in US lobby
+[09:50:33]: Registering slave in US lobby
+[09:55:33]: Registering slave in US lobby
 [10:00:06]: [200] Account Communication Success (6)
 [10:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[10:00:31]: Registering slave in US lobby
-[10:05:31]: Registering slave in US lobby
-[10:10:31]: Registering slave in US lobby
-[10:15:31]: Registering slave in US lobby
-[10:20:31]: Registering slave in US lobby
-[10:25:31]: Registering slave in US lobby
+[10:00:33]: Registering slave in US lobby
+[10:05:33]: Registering slave in US lobby
+[10:10:33]: Registering slave in US lobby
+[10:15:33]: Registering slave in US lobby
+[10:20:33]: Registering slave in US lobby
+[10:25:33]: Registering slave in US lobby
 [10:30:06]: [200] Account Communication Success (6)
 [10:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[10:30:31]: Registering slave in US lobby
-[10:35:31]: Registering slave in US lobby
-[10:40:31]: Registering slave in US lobby
-[10:45:32]: Registering slave in US lobby
-[10:50:32]: Registering slave in US lobby
-[10:55:32]: Registering slave in US lobby
+[10:30:33]: Registering slave in US lobby
+[10:35:33]: Registering slave in US lobby
+[10:40:33]: Registering slave in US lobby
+[10:45:33]: Registering slave in US lobby
+[10:50:33]: Registering slave in US lobby
+[10:55:33]: Registering slave in US lobby
 [11:00:06]: [200] Account Communication Success (6)
 [11:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[11:00:32]: Registering slave in US lobby
-[11:05:32]: Registering slave in US lobby
-[11:10:32]: Registering slave in US lobby
-[11:15:32]: Registering slave in US lobby
-[11:20:32]: Registering slave in US lobby
-[11:25:32]: Registering slave in US lobby
+[11:00:33]: Registering slave in US lobby
+[11:05:33]: Registering slave in US lobby
+[11:10:33]: Registering slave in US lobby
+[11:15:33]: Registering slave in US lobby
+[11:20:33]: Registering slave in US lobby
+[11:25:33]: Registering slave in US lobby
 [11:30:06]: [200] Account Communication Success (6)
 [11:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[11:30:32]: Registering slave in US lobby
-[11:35:32]: Registering slave in US lobby
-[11:40:32]: Registering slave in US lobby
-[11:45:32]: Registering slave in US lobby
-[11:50:32]: Registering slave in US lobby
-[11:55:32]: Registering slave in US lobby
+[11:30:33]: Registering slave in US lobby
+[11:35:33]: Registering slave in US lobby
+[11:40:33]: Registering slave in US lobby
+[11:45:33]: Registering slave in US lobby
+[11:50:33]: Registering slave in US lobby
+[11:55:33]: Registering slave in US lobby
 [12:00:06]: [200] Account Communication Success (6)
 [12:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[12:00:32]: Registering slave in US lobby
-[12:05:32]: Registering slave in US lobby
-[12:10:32]: Registering slave in US lobby
-[12:15:32]: Registering slave in US lobby
-[12:20:32]: Registering slave in US lobby
-[12:25:32]: Registering slave in US lobby
+[12:00:33]: Registering slave in US lobby
+[12:05:33]: Registering slave in US lobby
+[12:10:33]: Registering slave in US lobby
+[12:15:33]: Registering slave in US lobby
+[12:20:33]: Registering slave in US lobby
+[12:25:33]: Registering slave in US lobby
 [12:30:06]: [200] Account Communication Success (6)
 [12:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[12:30:32]: Registering slave in US lobby
-[12:35:32]: Registering slave in US lobby
-[12:40:32]: Registering slave in US lobby
-[12:45:32]: Registering slave in US lobby
-[12:50:32]: Registering slave in US lobby
-[12:55:32]: Registering slave in US lobby
+[12:30:33]: Registering slave in US lobby
+[12:35:33]: Registering slave in US lobby
+[12:40:33]: Registering slave in US lobby
+[12:45:33]: Registering slave in US lobby
+[12:50:33]: Registering slave in US lobby
+[12:55:33]: Registering slave in US lobby
 [13:00:06]: [200] Account Communication Success (6)
 [13:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[13:00:32]: Registering slave in US lobby
-[13:05:32]: Registering slave in US lobby
-[13:10:32]: Registering slave in US lobby
-[13:15:32]: Registering slave in US lobby
-[13:20:32]: Registering slave in US lobby
-[13:25:32]: Registering slave in US lobby
+[13:00:33]: Registering slave in US lobby
+[13:05:33]: Registering slave in US lobby
+[13:10:33]: Registering slave in US lobby
+[13:15:33]: Registering slave in US lobby
+[13:20:33]: Registering slave in US lobby
+[13:25:33]: Registering slave in US lobby
 [13:30:06]: [200] Account Communication Success (6)
 [13:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[13:30:32]: Registering slave in US lobby
-[13:35:32]: Registering slave in US lobby
-[13:40:32]: Registering slave in US lobby
-[13:45:32]: Registering slave in US lobby
-[13:50:32]: Registering slave in US lobby
-[13:55:32]: Registering slave in US lobby
+[13:30:33]: Registering slave in US lobby
+[13:35:33]: Registering slave in US lobby
+[13:40:33]: Registering slave in US lobby
+[13:45:33]: Registering slave in US lobby
+[13:50:33]: Registering slave in US lobby
+[13:55:33]: Registering slave in US lobby
 [14:00:06]: [200] Account Communication Success (6)
 [14:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[14:00:32]: Registering slave in US lobby
-[14:05:32]: Registering slave in US lobby
-[14:10:32]: Registering slave in US lobby
-[14:15:32]: Registering slave in US lobby
-[14:20:32]: Registering slave in US lobby
-[14:25:32]: Registering slave in US lobby
+[14:00:33]: Registering slave in US lobby
+[14:05:34]: Registering slave in US lobby
+[14:10:34]: Registering slave in US lobby
+[14:15:34]: Registering slave in US lobby
+[14:20:34]: Registering slave in US lobby
+[14:25:34]: Registering slave in US lobby
 [14:30:06]: [200] Account Communication Success (6)
 [14:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[14:30:32]: Registering slave in US lobby
-[14:35:32]: Registering slave in US lobby
-[14:40:32]: Registering slave in US lobby
-[14:45:32]: Registering slave in US lobby
-[14:50:32]: Registering slave in US lobby
-[14:55:32]: Registering slave in US lobby
+[14:30:34]: Registering slave in US lobby
+[14:35:34]: Registering slave in US lobby
+[14:40:34]: Registering slave in US lobby
+[14:45:34]: Registering slave in US lobby
+[14:50:34]: Registering slave in US lobby
+[14:55:34]: Registering slave in US lobby
 [15:00:06]: [200] Account Communication Success (6)
 [15:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[15:00:32]: Registering slave in US lobby
-[15:05:32]: Registering slave in US lobby
-[15:10:32]: Registering slave in US lobby
-[15:15:32]: Registering slave in US lobby
-[15:20:32]: Registering slave in US lobby
-[15:25:32]: Registering slave in US lobby
+[15:00:34]: Registering slave in US lobby
+[15:05:34]: Registering slave in US lobby
+[15:10:34]: Registering slave in US lobby
+[15:15:34]: Registering slave in US lobby
+[15:20:34]: Registering slave in US lobby
+[15:25:34]: Registering slave in US lobby
 [15:30:06]: [200] Account Communication Success (6)
 [15:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[15:30:32]: Registering slave in US lobby
-[15:35:32]: Registering slave in US lobby
-[15:40:32]: Registering slave in US lobby
-[15:45:32]: Registering slave in US lobby
-[15:50:32]: Registering slave in US lobby
-[15:55:32]: Registering slave in US lobby
+[15:30:34]: Registering slave in US lobby
+[15:35:34]: Registering slave in US lobby
+[15:40:34]: Registering slave in US lobby
+[15:45:34]: Registering slave in US lobby
+[15:50:34]: Registering slave in US lobby
+[15:55:34]: Registering slave in US lobby
 [16:00:06]: [200] Account Communication Success (6)
 [16:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[16:00:32]: Registering slave in US lobby
-[16:05:32]: Registering slave in US lobby
-[16:10:32]: Registering slave in US lobby
-[16:15:32]: Registering slave in US lobby
-[16:20:32]: Registering slave in US lobby
-[16:25:32]: Registering slave in US lobby
+[16:00:34]: Registering slave in US lobby
+[16:05:34]: Registering slave in US lobby
+[16:10:34]: Registering slave in US lobby
+[16:15:34]: Registering slave in US lobby
+[16:20:34]: Registering slave in US lobby
+[16:25:34]: Registering slave in US lobby
 [16:30:06]: [200] Account Communication Success (6)
 [16:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[16:30:32]: Registering slave in US lobby
-[16:35:32]: Registering slave in US lobby
-[16:40:32]: Registering slave in US lobby
-[16:45:32]: Registering slave in US lobby
-[16:50:32]: Registering slave in US lobby
-[16:55:32]: Registering slave in US lobby
-[17:00:06]: [200] Account Communication Success (6)
-[17:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[17:00:32]: Registering slave in US lobby
-[17:05:32]: Registering slave in US lobby
-[17:10:32]: Registering slave in US lobby
-[17:15:32]: Registering slave in US lobby
-[17:20:32]: Registering slave in US lobby
-[17:25:32]: Registering slave in US lobby
-[17:30:06]: [200] Account Communication Success (6)
-[17:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[17:30:32]: Registering slave in US lobby
-[17:35:32]: Registering slave in US lobby
-[17:40:32]: Registering slave in US lobby
-[17:45:32]: Registering slave in US lobby
-[17:50:32]: Registering slave in US lobby
-[17:55:32]: Registering slave in US lobby
-[18:00:06]: [200] Account Communication Success (6)
-[18:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[18:00:32]: Registering slave in US lobby
-[18:05:32]: Registering slave in US lobby
-[18:10:32]: Registering slave in US lobby
-[18:15:33]: Registering slave in US lobby
-[18:20:33]: Registering slave in US lobby
-[18:25:33]: Registering slave in US lobby
-[18:30:06]: [200] Account Communication Success (6)
-[18:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[18:30:33]: Registering slave in US lobby
-[18:35:33]: Registering slave in US lobby
-[18:40:33]: Registering slave in US lobby
-[18:45:33]: Registering slave in US lobby
-[18:50:33]: Registering slave in US lobby
-[18:55:33]: Registering slave in US lobby
-[19:00:06]: [200] Account Communication Success (6)
-[19:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[19:00:33]: Registering slave in US lobby
-[19:05:33]: Registering slave in US lobby
-[19:10:33]: Registering slave in US lobby
-[19:15:33]: Registering slave in US lobby
-[19:20:33]: Registering slave in US lobby
-[19:25:33]: Registering slave in US lobby
-[19:30:06]: [200] Account Communication Success (6)
-[19:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[19:30:33]: Registering slave in US lobby
-[19:35:33]: Registering slave in US lobby
-[19:40:33]: Registering slave in US lobby
-[19:45:33]: Registering slave in US lobby
-[19:50:33]: Registering slave in US lobby
-[19:55:33]: Registering slave in US lobby
-[20:00:06]: [200] Account Communication Success (6)
-[20:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[20:00:33]: Registering slave in US lobby
-[20:05:33]: Registering slave in US lobby
-[20:10:33]: Registering slave in US lobby
-[20:15:33]: Registering slave in US lobby
-[20:20:33]: Registering slave in US lobby
-[20:25:33]: Registering slave in US lobby
-[20:30:06]: [200] Account Communication Success (6)
-[20:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[20:30:33]: Registering slave in US lobby
-[20:35:33]: Registering slave in US lobby
-[20:40:33]: Registering slave in US lobby
-[20:45:33]: Registering slave in US lobby
-[20:50:33]: Registering slave in US lobby
-[20:55:33]: Registering slave in US lobby
-[21:00:06]: [200] Account Communication Success (6)
-[21:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[21:00:33]: Registering slave in US lobby
-[21:05:33]: Registering slave in US lobby
-[21:10:33]: Registering slave in US lobby
-[21:15:33]: Registering slave in US lobby
-[21:20:33]: Registering slave in US lobby
-[21:25:33]: Registering slave in US lobby
-[21:30:06]: [200] Account Communication Success (6)
-[21:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[21:30:33]: Registering slave in US lobby
-[21:35:33]: Registering slave in US lobby
-[21:40:33]: Registering slave in US lobby
-[21:45:33]: Registering slave in US lobby
-[21:50:33]: Registering slave in US lobby
-[21:55:33]: Registering slave in US lobby
+[16:30:34]: Registering slave in US lobby
+[16:35:34]: Registering slave in US lobby
+[16:40:34]: Registering slave in US lobby
+[16:45:34]: Registering slave in US lobby
+[16:50:34]: Registering slave in US lobby
+[16:55:34]: Registering slave in US lobby
+[17:00:07]: [200] Account Communication Success (6)
+[17:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:00:34]: Registering slave in US lobby
+[17:05:34]: Registering slave in US lobby
+[17:10:34]: Registering slave in US lobby
+[17:15:34]: Registering slave in US lobby
+[17:20:34]: Registering slave in US lobby
+[17:25:34]: Registering slave in US lobby
+[17:30:07]: [200] Account Communication Success (6)
+[17:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:30:34]: Registering slave in US lobby
+[17:35:34]: Registering slave in US lobby
+[17:40:34]: Registering slave in US lobby
+[17:45:34]: Registering slave in US lobby
+[17:50:34]: Registering slave in US lobby
+[17:55:34]: Registering slave in US lobby
+[18:00:07]: [200] Account Communication Success (6)
+[18:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:00:34]: Registering slave in US lobby
+[18:05:34]: Registering slave in US lobby
+[18:10:34]: Registering slave in US lobby
+[18:15:34]: Registering slave in US lobby
+[18:20:34]: Registering slave in US lobby
+[18:25:34]: Registering slave in US lobby
+[18:30:07]: [200] Account Communication Success (6)
+[18:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:30:34]: Registering slave in US lobby
+[18:35:34]: Registering slave in US lobby
+[18:40:34]: Registering slave in US lobby
+[18:45:34]: Registering slave in US lobby
+[18:50:34]: Registering slave in US lobby
+[18:55:34]: Registering slave in US lobby
+[19:00:07]: [200] Account Communication Success (6)
+[19:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:00:34]: Registering slave in US lobby
+[19:05:34]: Registering slave in US lobby
+[19:10:34]: Registering slave in US lobby
+[19:15:34]: Registering slave in US lobby
+[19:20:34]: Registering slave in US lobby
+[19:25:34]: Registering slave in US lobby
+[19:30:07]: [200] Account Communication Success (6)
+[19:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:30:34]: Registering slave in US lobby
+[19:35:34]: Registering slave in US lobby
+[19:40:34]: Registering slave in US lobby
+[19:45:34]: Registering slave in US lobby
+[19:50:34]: Registering slave in US lobby
+[19:55:34]: Registering slave in US lobby
+[20:00:07]: [200] Account Communication Success (6)
+[20:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:00:34]: Registering slave in US lobby
+[20:05:34]: Registering slave in US lobby
+[20:10:34]: Registering slave in US lobby
+[20:15:34]: Registering slave in US lobby
+[20:20:34]: Registering slave in US lobby
+[20:25:34]: Registering slave in US lobby
+[20:30:07]: [200] Account Communication Success (6)
+[20:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:30:34]: Registering slave in US lobby
+[20:35:34]: Registering slave in US lobby
+[20:40:34]: Registering slave in US lobby
+[20:45:34]: Registering slave in US lobby
+[20:50:34]: Registering slave in US lobby
+[20:55:35]: Registering slave in US lobby
+[21:00:07]: [200] Account Communication Success (6)
+[21:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:00:35]: Registering slave in US lobby
+[21:05:35]: Registering slave in US lobby
+[21:10:35]: Registering slave in US lobby
+[21:15:35]: Registering slave in US lobby
+[21:20:35]: Registering slave in US lobby
+[21:25:35]: Registering slave in US lobby
+[21:30:07]: [200] Account Communication Success (6)
+[21:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:30:35]: Registering slave in US lobby
+[21:35:35]: Registering slave in US lobby
+[21:40:35]: Registering slave in US lobby
+[21:45:35]: Registering slave in US lobby
+[21:50:35]: Registering slave in US lobby
+[21:55:35]: Registering slave in US lobby
 [22:00:07]: [200] Account Communication Success (6)
 [22:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
-[22:00:33]: Registering slave in US lobby
-[22:05:33]: Registering slave in US lobby
-[22:10:33]: Registering slave in US lobby
-[22:15:33]: Registering slave in US lobby
-[22:20:33]: Registering slave in US lobby
-[22:25:33]: Registering slave in US lobby
-[22:30:06]: [200] Account Communication Success (6)
-[22:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[22:30:33]: Registering slave in US lobby
-[22:35:33]: Registering slave in US lobby
-[22:40:33]: Registering slave in US lobby
-[22:45:33]: Registering slave in US lobby
-[22:50:33]: Registering slave in US lobby
+[22:00:35]: Registering slave in US lobby
+[22:05:35]: Registering slave in US lobby
+[22:10:35]: Registering slave in US lobby
+[22:15:35]: Registering slave in US lobby
+[22:20:35]: Registering slave in US lobby
+[22:25:35]: Registering slave in US lobby
+[22:30:07]: [200] Account Communication Success (6)
+[22:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:30:35]: Registering slave in US lobby
+[22:35:35]: Registering slave in US lobby
+[22:40:35]: Registering slave in US lobby
+[22:45:35]: Registering slave in US lobby
+[22:50:35]: Registering slave in US lobby
+[22:55:35]: Registering slave in US lobby
+[23:00:07]: [200] Account Communication Success (6)
+[23:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:00:35]: Registering slave in US lobby
+[23:05:35]: Registering slave in US lobby
+[23:10:35]: Registering slave in US lobby
+[23:15:35]: Registering slave in US lobby
+[23:20:35]: Registering slave in US lobby
+[23:25:35]: Registering slave in US lobby
+[23:30:07]: [200] Account Communication Success (6)
+[23:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:30:35]: Registering slave in US lobby
+[23:35:35]: Registering slave in US lobby
+[23:40:35]: Registering slave in US lobby
+[23:45:35]: Registering slave in US lobby
+[23:50:35]: Registering slave in US lobby
+[23:55:35]: Registering slave in US lobby
+[00:00:07]: [200] Account Communication Success (6)
+[00:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:00:35]: Registering slave in US lobby
+[00:05:35]: Registering slave in US lobby
+[00:10:35]: Registering slave in US lobby
+[00:15:35]: Registering slave in US lobby
+[00:20:35]: Registering slave in US lobby
+[00:25:35]: Registering slave in US lobby
+[00:30:07]: [200] Account Communication Success (6)
+[00:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:30:35]: Registering slave in US lobby
+[00:35:35]: Registering slave in US lobby
+[00:40:35]: Registering slave in US lobby
+[00:45:35]: Registering slave in US lobby
+[00:50:35]: Registering slave in US lobby
+[00:55:35]: Registering slave in US lobby
+[01:00:07]: [200] Account Communication Success (6)
+[01:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:00:35]: Registering slave in US lobby
+[01:05:35]: Registering slave in US lobby
+[01:10:35]: Registering slave in US lobby
+[01:15:35]: Registering slave in US lobby
+[01:20:35]: Registering slave in US lobby
+[01:25:35]: Registering slave in US lobby
+[01:30:07]: [200] Account Communication Success (6)
+[01:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:30:35]: Registering slave in US lobby
+[01:35:35]: Registering slave in US lobby
+[01:40:35]: Registering slave in US lobby
+[01:45:35]: Registering slave in US lobby
+[01:50:35]: Registering slave in US lobby
+[01:55:35]: Registering slave in US lobby
+[02:00:07]: [200] Account Communication Success (6)
+[02:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:00:35]: Registering slave in US lobby
+[02:05:35]: Registering slave in US lobby
+[02:10:35]: Registering slave in US lobby
+[02:15:35]: Registering slave in US lobby
+[02:20:35]: Registering slave in US lobby
+[02:25:35]: Registering slave in US lobby
+[02:30:07]: [200] Account Communication Success (6)
+[02:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:30:35]: Registering slave in US lobby
+[02:35:35]: Registering slave in US lobby
+[02:40:35]: Registering slave in US lobby
+[02:45:35]: Registering slave in US lobby
+[02:50:35]: Registering slave in US lobby
+[02:55:35]: Registering slave in US lobby
+[03:00:07]: [200] Account Communication Success (6)
+[03:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:00:35]: Registering slave in US lobby
+[03:05:35]: Registering slave in US lobby
+[03:10:35]: Registering slave in US lobby
+[03:15:35]: Registering slave in US lobby
+[03:20:35]: Registering slave in US lobby
+[03:25:35]: Registering slave in US lobby
+[03:30:07]: [200] Account Communication Success (6)
+[03:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:30:35]: Registering slave in US lobby
+[03:35:35]: Registering slave in US lobby
+[03:40:35]: Registering slave in US lobby
+[03:45:35]: Registering slave in US lobby
+[03:50:35]: Registering slave in US lobby
+[03:55:35]: Registering slave in US lobby
+[04:00:07]: [200] Account Communication Success (6)
+[04:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:00:35]: Registering slave in US lobby
+[04:05:35]: Registering slave in US lobby
+[04:10:36]: Registering slave in US lobby
+[04:15:36]: Registering slave in US lobby
+[04:20:36]: Registering slave in US lobby
+[04:25:36]: Registering slave in US lobby
+[04:30:07]: [200] Account Communication Success (6)
+[04:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:30:36]: Registering slave in US lobby
+[04:35:36]: Registering slave in US lobby
+[04:40:36]: Registering slave in US lobby
+[04:45:36]: Registering slave in US lobby
+[04:50:36]: Registering slave in US lobby
+[04:55:36]: Registering slave in US lobby
+[05:00:07]: [200] Account Communication Success (6)
+[05:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:00:36]: Registering slave in US lobby
+[05:05:36]: Registering slave in US lobby
+[05:10:36]: Registering slave in US lobby
+[05:15:36]: Registering slave in US lobby
+[05:20:36]: Registering slave in US lobby
+[05:25:36]: Registering slave in US lobby
+[05:30:07]: [200] Account Communication Success (6)
+[05:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:30:36]: Registering slave in US lobby
+[05:35:36]: Registering slave in US lobby
+[05:40:36]: Registering slave in US lobby
+[05:45:36]: Registering slave in US lobby
+[05:50:36]: Registering slave in US lobby
+[05:55:36]: Registering slave in US lobby
+[06:00:07]: [200] Account Communication Success (6)
+[06:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[06:00:36]: Registering slave in US lobby
+[06:05:36]: Registering slave in US lobby
+[06:10:36]: Registering slave in US lobby
+[06:15:36]: Registering slave in US lobby
+[06:20:36]: Registering slave in US lobby
+[06:25:36]: Registering slave in US lobby
+[06:30:07]: [200] Account Communication Success (6)
+[06:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[06:30:36]: Registering slave in US lobby
+[06:35:36]: Registering slave in US lobby
+[06:40:36]: Registering slave in US lobby
+[06:45:36]: Registering slave in US lobby
+[06:50:36]: Registering slave in US lobby
+[06:55:36]: Registering slave in US lobby
+[07:00:07]: [200] Account Communication Success (6)
+[07:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[07:00:36]: Registering slave in US lobby
+[07:05:36]: Registering slave in US lobby
+[07:10:36]: Registering slave in US lobby
+[07:15:36]: Registering slave in US lobby
+[07:20:36]: Registering slave in US lobby
+[07:25:36]: Registering slave in US lobby
+[07:30:07]: [200] Account Communication Success (6)
+[07:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[07:30:36]: Registering slave in US lobby
+[07:35:36]: Registering slave in US lobby
+[07:40:36]: Registering slave in US lobby
+[07:45:36]: Registering slave in US lobby
+[07:50:36]: Registering slave in US lobby
+[07:55:36]: Registering slave in US lobby
+[08:00:07]: [200] Account Communication Success (6)
+[08:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[08:00:36]: Registering slave in US lobby
+[08:05:36]: Registering slave in US lobby
+[08:10:36]: Registering slave in US lobby
+[08:15:36]: Registering slave in US lobby
+[08:20:36]: Registering slave in US lobby
+[08:25:36]: Registering slave in US lobby
+[08:30:07]: [200] Account Communication Success (6)
+[08:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[08:30:36]: Registering slave in US lobby
+[08:35:36]: Registering slave in US lobby
+[08:40:36]: Registering slave in US lobby
+[08:45:36]: Registering slave in US lobby
+[08:50:36]: Registering slave in US lobby
+[08:55:36]: Registering slave in US lobby
+[09:00:07]: [200] Account Communication Success (6)
+[09:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[09:00:36]: Registering slave in US lobby
+[09:05:36]: Registering slave in US lobby
+[09:10:36]: Registering slave in US lobby
+[09:15:36]: Registering slave in US lobby
+[09:20:36]: Registering slave in US lobby
+[09:25:36]: Registering slave in US lobby
+[09:30:07]: [200] Account Communication Success (6)
+[09:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[09:30:36]: Registering slave in US lobby
+[09:35:36]: Registering slave in US lobby
+[09:40:36]: Registering slave in US lobby
+[09:45:36]: Registering slave in US lobby
+[09:50:36]: Registering slave in US lobby
+[09:55:36]: Registering slave in US lobby
+[10:00:07]: [200] Account Communication Success (6)
+[10:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[10:00:36]: Registering slave in US lobby
+[10:05:36]: Registering slave in US lobby
+[10:10:36]: Registering slave in US lobby
+[10:15:36]: Registering slave in US lobby
+[10:20:36]: Registering slave in US lobby
+[10:25:36]: Registering slave in US lobby
+[10:30:08]: [200] Account Communication Success (6)
+[10:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[10:30:36]: Registering slave in US lobby
+[10:35:36]: Registering slave in US lobby
+[10:40:36]: Registering slave in US lobby
+[10:45:36]: Registering slave in US lobby
+[10:50:36]: Registering slave in US lobby
+[10:55:36]: Registering slave in US lobby
+[11:00:07]: [200] Account Communication Success (6)
+[11:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[11:00:36]: Registering slave in US lobby
+[11:05:37]: Registering slave in US lobby
+[11:10:37]: Registering slave in US lobby
+[11:15:37]: Registering slave in US lobby
+[11:20:37]: Registering slave in US lobby
+[11:25:37]: Registering slave in US lobby
+[11:30:08]: [200] Account Communication Success (6)
+[11:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[11:30:37]: Registering slave in US lobby
+[11:35:37]: Registering slave in US lobby
+[11:40:37]: Registering slave in US lobby
+[11:45:37]: Registering slave in US lobby
+[11:50:37]: Registering slave in US lobby
+[11:55:37]: Registering slave in US lobby
+[12:00:08]: [200] Account Communication Success (6)
+[12:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[12:00:37]: Registering slave in US lobby
+[12:05:37]: Registering slave in US lobby
+[12:10:37]: Registering slave in US lobby
+[12:15:37]: Registering slave in US lobby
+[12:20:37]: Registering slave in US lobby
+[12:25:37]: Registering slave in US lobby
+[12:30:08]: [200] Account Communication Success (6)
+[12:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[12:30:37]: Registering slave in US lobby
+[12:35:37]: Registering slave in US lobby
+[12:40:37]: Registering slave in US lobby
+[12:45:37]: Registering slave in US lobby
+[12:50:37]: Registering slave in US lobby
+[12:55:37]: Registering slave in US lobby
+[13:00:08]: [200] Account Communication Success (6)
+[13:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[13:00:37]: Registering slave in US lobby
+[13:05:37]: Registering slave in US lobby
+[13:10:37]: Registering slave in US lobby
+[13:15:37]: Registering slave in US lobby
+[13:20:37]: Registering slave in US lobby
+[13:25:37]: Registering slave in US lobby
+[13:30:08]: [200] Account Communication Success (6)
+[13:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[13:30:37]: Registering slave in US lobby
+[13:35:37]: Registering slave in US lobby
+[13:40:37]: Registering slave in US lobby
+[13:45:37]: Registering slave in US lobby
+[13:50:37]: Registering slave in US lobby
+[13:55:37]: Registering slave in US lobby
+[14:00:08]: [200] Account Communication Success (6)
+[14:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[14:00:37]: Registering slave in US lobby
+[14:05:37]: Registering slave in US lobby
+[14:10:37]: Registering slave in US lobby
+[14:15:37]: Registering slave in US lobby
+[14:20:37]: Registering slave in US lobby
+[14:25:37]: Registering slave in US lobby
+[14:30:08]: [200] Account Communication Success (6)
+[14:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[14:30:37]: Registering slave in US lobby
+[14:35:37]: Registering slave in US lobby
+[14:40:37]: Registering slave in US lobby
+[14:45:37]: Registering slave in US lobby
+[14:50:37]: Registering slave in US lobby
+[14:55:37]: Registering slave in US lobby
+[15:00:08]: [200] Account Communication Success (6)
+[15:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[15:00:37]: Registering slave in US lobby
+[15:05:37]: Registering slave in US lobby
+[15:10:37]: Registering slave in US lobby
+[15:15:37]: Registering slave in US lobby
+[15:20:37]: Registering slave in US lobby
+[15:25:37]: Registering slave in US lobby
+[15:30:08]: [200] Account Communication Success (6)
+[15:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[15:30:37]: Registering slave in US lobby
+[15:35:37]: Registering slave in US lobby
+[15:40:37]: Registering slave in US lobby
+[15:45:37]: Registering slave in US lobby
+[15:50:37]: Registering slave in US lobby
+[15:55:37]: Registering slave in US lobby
+[16:00:08]: [200] Account Communication Success (6)
+[16:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[16:00:37]: Registering slave in US lobby
+[16:05:37]: Registering slave in US lobby
+[16:10:37]: Registering slave in US lobby
+[16:15:37]: Registering slave in US lobby
+[16:20:37]: Registering slave in US lobby
+[16:25:37]: Registering slave in US lobby
+[16:30:08]: [200] Account Communication Success (6)
+[16:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[16:30:37]: Registering slave in US lobby
+[16:35:37]: Registering slave in US lobby
+[16:40:37]: Registering slave in US lobby
+[16:45:37]: Registering slave in US lobby
+[16:50:37]: Registering slave in US lobby
+[16:55:37]: Registering slave in US lobby
+[17:00:08]: [200] Account Communication Success (6)
+[17:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:00:37]: Registering slave in US lobby
+[17:05:37]: Registering slave in US lobby
+[17:10:37]: Registering slave in US lobby
+[17:15:37]: Registering slave in US lobby
+[17:20:37]: Registering slave in US lobby
+[17:25:37]: Registering slave in US lobby
+[17:30:08]: [200] Account Communication Success (6)
+[17:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:30:37]: Registering slave in US lobby
+[17:35:37]: Registering slave in US lobby
+[17:40:37]: Registering slave in US lobby
+[17:45:37]: Registering slave in US lobby
+[17:50:37]: Registering slave in US lobby
+[17:55:37]: Registering slave in US lobby
+[18:00:08]: [200] Account Communication Success (6)
+[18:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:00:37]: Registering slave in US lobby
+[18:05:37]: Registering slave in US lobby
+[18:10:37]: Registering slave in US lobby
+[18:15:37]: Registering slave in US lobby
+[18:20:37]: Registering slave in US lobby
+[18:25:38]: Registering slave in US lobby
+[18:30:08]: [200] Account Communication Success (6)
+[18:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:30:38]: Registering slave in US lobby
+[18:35:38]: Registering slave in US lobby
+[18:40:38]: Registering slave in US lobby
+[18:45:38]: Registering slave in US lobby
+[18:50:38]: Registering slave in US lobby
+[18:55:38]: Registering slave in US lobby
+[19:00:08]: [200] Account Communication Success (6)
+[19:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:00:38]: Registering slave in US lobby
+[19:05:38]: Registering slave in US lobby
+[19:10:38]: Registering slave in US lobby
+[19:15:38]: Registering slave in US lobby
+[19:20:38]: Registering slave in US lobby
+[19:25:38]: Registering slave in US lobby
+[19:30:08]: [200] Account Communication Success (6)
+[19:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:30:38]: Registering slave in US lobby
+[19:35:38]: Registering slave in US lobby
+[19:40:38]: Registering slave in US lobby
+[19:45:38]: Registering slave in US lobby
+[19:50:38]: Registering slave in US lobby
+[19:55:38]: Registering slave in US lobby
+[20:00:08]: [200] Account Communication Success (6)
+[20:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:00:38]: Registering slave in US lobby
+[20:05:38]: Registering slave in US lobby
+[20:10:38]: Registering slave in US lobby
+[20:15:38]: Registering slave in US lobby
+[20:20:38]: Registering slave in US lobby
+[20:25:38]: Registering slave in US lobby
+[20:30:08]: [200] Account Communication Success (6)
+[20:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:30:38]: Registering slave in US lobby
+[20:35:38]: Registering slave in US lobby
+[20:40:38]: Registering slave in US lobby
+[20:45:38]: Registering slave in US lobby
+[20:47:21]: Registering slave in US lobby
+[20:51:15]: Gameserver logged on to Steam, assigned identity steamid:90135991738659844
+[20:51:15]: Registering slave in US lobby
+[20:56:15]: Registering slave in US lobby
+[21:00:08]: [200] Account Communication Success (6)
+[21:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:01:15]: Registering slave in US lobby
+[21:06:15]: Registering slave in US lobby
+[21:11:15]: Registering slave in US lobby
+[21:16:15]: Registering slave in US lobby
+[21:21:15]: Registering slave in US lobby
+[21:26:15]: Registering slave in US lobby
+[21:30:08]: [200] Account Communication Success (6)
+[21:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:31:15]: Registering slave in US lobby
+[21:36:15]: Registering slave in US lobby
+[21:41:15]: Registering slave in US lobby
+[21:46:15]: Registering slave in US lobby
+[21:51:15]: Registering slave in US lobby
+[21:56:15]: Registering slave in US lobby
+[22:00:08]: [200] Account Communication Success (6)
+[22:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:01:15]: Registering slave in US lobby
+[22:06:15]: Registering slave in US lobby
+[22:11:15]: Registering slave in US lobby
+[22:16:15]: Registering slave in US lobby
+[22:21:15]: Registering slave in US lobby
+[22:26:15]: Registering slave in US lobby
+[22:30:08]: [200] Account Communication Success (6)
+[22:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:31:15]: Registering slave in US lobby
+[22:36:15]: Registering slave in US lobby
+[22:41:15]: Registering slave in US lobby
+[22:46:15]: Registering slave in US lobby
+[22:51:15]: Registering slave in US lobby
+[22:56:15]: Registering slave in US lobby
+[23:00:08]: [200] Account Communication Success (6)
+[23:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:01:15]: Registering slave in US lobby
+[23:06:15]: Registering slave in US lobby
+[23:11:15]: Registering slave in US lobby
+[23:16:15]: Registering slave in US lobby
+[23:21:15]: Registering slave in US lobby
+[23:26:15]: Registering slave in US lobby
+[23:30:08]: [200] Account Communication Success (6)
+[23:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:31:15]: Registering slave in US lobby
+[23:36:15]: Registering slave in US lobby
+[23:41:15]: Registering slave in US lobby
+[23:46:15]: Registering slave in US lobby
+[23:51:15]: Registering slave in US lobby
+[23:56:15]: Registering slave in US lobby
+[00:00:08]: [200] Account Communication Success (6)
+[00:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:01:15]: Registering slave in US lobby
+[00:06:15]: Registering slave in US lobby
+[00:11:15]: Registering slave in US lobby
+[00:16:15]: Registering slave in US lobby
+[00:21:15]: Registering slave in US lobby
+[00:26:15]: Registering slave in US lobby
+[00:30:08]: [200] Account Communication Success (6)
+[00:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:31:15]: Registering slave in US lobby
+[00:36:15]: Registering slave in US lobby
+[00:41:15]: Registering slave in US lobby
+[00:46:15]: Registering slave in US lobby
+[00:51:15]: Registering slave in US lobby
+[00:56:15]: Registering slave in US lobby
+[01:00:08]: [200] Account Communication Success (6)
+[01:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:01:15]: Registering slave in US lobby
+[01:06:15]: Registering slave in US lobby
+[01:11:15]: Registering slave in US lobby
+[01:16:15]: Registering slave in US lobby
+[01:21:15]: Registering slave in US lobby
+[01:26:15]: Registering slave in US lobby
+[01:30:08]: [200] Account Communication Success (6)
+[01:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:31:15]: Registering slave in US lobby
+[01:36:15]: Registering slave in US lobby
+[01:41:15]: Registering slave in US lobby
+[01:46:15]: Registering slave in US lobby
+[01:51:15]: Registering slave in US lobby
+[01:56:15]: Registering slave in US lobby
+[02:00:08]: [200] Account Communication Success (6)
+[02:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:01:15]: Registering slave in US lobby
+[02:06:15]: Registering slave in US lobby
+[02:11:15]: Registering slave in US lobby
+[02:16:15]: Registering slave in US lobby
+[02:21:15]: Registering slave in US lobby
+[02:26:15]: Registering slave in US lobby
+[02:30:08]: [200] Account Communication Success (6)
+[02:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:31:15]: Registering slave in US lobby
+[02:36:15]: Registering slave in US lobby
+[02:41:15]: Registering slave in US lobby
+[02:46:15]: Registering slave in US lobby
+[02:51:15]: Registering slave in US lobby
+[02:56:16]: Registering slave in US lobby
+[03:00:08]: [200] Account Communication Success (6)
+[03:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:01:16]: Registering slave in US lobby
+[03:06:16]: Registering slave in US lobby
+[03:11:16]: Registering slave in US lobby
+[03:16:16]: Registering slave in US lobby
+[03:21:16]: Registering slave in US lobby
+[03:26:16]: Registering slave in US lobby
+[03:30:08]: [200] Account Communication Success (6)
+[03:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:31:16]: Registering slave in US lobby
+[03:36:16]: Registering slave in US lobby
+[03:41:16]: Registering slave in US lobby
+[03:46:16]: Registering slave in US lobby
+[03:51:16]: Registering slave in US lobby
+[03:56:16]: Registering slave in US lobby
+[04:00:08]: [200] Account Communication Success (6)
+[04:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:01:16]: Registering slave in US lobby
+[04:06:16]: Registering slave in US lobby
+[04:11:16]: Registering slave in US lobby
+[04:16:16]: Registering slave in US lobby
+[04:21:16]: Registering slave in US lobby
+[04:26:16]: Registering slave in US lobby
+[04:30:08]: [200] Account Communication Success (6)
+[04:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:31:16]: Registering slave in US lobby
+[04:36:16]: Registering slave in US lobby
+[04:41:16]: Registering slave in US lobby
+[04:46:16]: Registering slave in US lobby
+[04:51:16]: Registering slave in US lobby
+[04:56:16]: Registering slave in US lobby
+[05:00:08]: [200] Account Communication Success (6)
+[05:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:01:16]: Registering slave in US lobby
+[05:06:16]: Registering slave in US lobby
+[05:11:16]: Registering slave in US lobby
+[05:16:16]: Registering slave in US lobby
+[05:21:16]: Registering slave in US lobby
+[05:26:16]: Registering slave in US lobby
+[05:30:08]: [200] Account Communication Success (6)
+[05:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:31:16]: Registering slave in US lobby
+[05:36:16]: Registering slave in US lobby
+[05:41:16]: Registering slave in US lobby
+[05:46:16]: Registering slave in US lobby
+[05:51:16]: Registering slave in US lobby
+[05:56:16]: Registering slave in US lobby
+[06:00:09]: [200] Account Communication Success (6)
+[06:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[06:01:16]: Registering slave in US lobby
+[06:06:16]: Registering slave in US lobby
+[06:11:16]: Registering slave in US lobby
+[06:16:16]: Registering slave in US lobby
+[06:21:16]: Registering slave in US lobby
+[06:26:16]: Registering slave in US lobby
+[06:30:09]: [200] Account Communication Success (6)
+[06:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[06:31:16]: Registering slave in US lobby
+[06:36:16]: Registering slave in US lobby
+[06:41:16]: Registering slave in US lobby
+[06:46:16]: Registering slave in US lobby
+[06:51:16]: Registering slave in US lobby
+[06:56:16]: Registering slave in US lobby
+[07:00:09]: [200] Account Communication Success (6)
+[07:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[07:01:16]: Registering slave in US lobby
+[07:06:16]: Registering slave in US lobby
+[07:11:16]: Registering slave in US lobby
+[07:16:16]: Registering slave in US lobby
+[07:21:16]: Registering slave in US lobby
+[07:26:16]: Registering slave in US lobby
+[07:30:09]: [200] Account Communication Success (6)
+[07:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[07:31:16]: Registering slave in US lobby
+[07:36:16]: Registering slave in US lobby
+[07:41:16]: Registering slave in US lobby
+[07:46:16]: Registering slave in US lobby
+[07:51:16]: Registering slave in US lobby
+[07:56:16]: Registering slave in US lobby
+[08:00:09]: [200] Account Communication Success (6)
+[08:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[08:01:16]: Registering slave in US lobby
+[08:06:16]: Registering slave in US lobby
+[08:11:16]: Registering slave in US lobby
+[08:16:16]: Registering slave in US lobby
+[08:21:16]: Registering slave in US lobby
+[08:26:16]: Registering slave in US lobby
+[08:30:09]: [200] Account Communication Success (6)
+[08:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[08:31:16]: Registering slave in US lobby
+[08:36:16]: Registering slave in US lobby
+[08:41:16]: Registering slave in US lobby
+[08:46:16]: Registering slave in US lobby
+[08:51:16]: Registering slave in US lobby
+[08:56:16]: Registering slave in US lobby
+[09:00:09]: [200] Account Communication Success (6)
+[09:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[09:01:16]: Registering slave in US lobby
+[09:06:16]: Registering slave in US lobby
+[09:11:16]: Registering slave in US lobby
+[09:16:16]: Registering slave in US lobby
+[09:21:16]: Registering slave in US lobby
+[09:26:16]: Registering slave in US lobby
+[09:30:09]: [200] Account Communication Success (6)
+[09:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[09:31:16]: Registering slave in US lobby
+[09:36:16]: Registering slave in US lobby
+[09:41:16]: Registering slave in US lobby
+[09:46:16]: Registering slave in US lobby
+[09:51:16]: Registering slave in US lobby
+[09:56:16]: Registering slave in US lobby
+[10:00:09]: [200] Account Communication Success (6)
+[10:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[10:01:16]: Registering slave in US lobby
+[10:06:16]: Registering slave in US lobby
+[10:11:16]: Registering slave in US lobby
+[10:16:17]: Registering slave in US lobby
+[10:21:17]: Registering slave in US lobby
+[10:26:17]: Registering slave in US lobby
+[10:30:09]: [200] Account Communication Success (6)
+[10:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[10:31:17]: Registering slave in US lobby
+[10:36:17]: Registering slave in US lobby
+[10:41:17]: Registering slave in US lobby
+[10:46:17]: Registering slave in US lobby
+[10:51:17]: Registering slave in US lobby
+[10:56:17]: Registering slave in US lobby
+[11:00:09]: [200] Account Communication Success (6)
+[11:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[11:01:17]: Registering slave in US lobby
+[11:06:17]: Registering slave in US lobby
+[11:11:17]: Registering slave in US lobby
+[11:16:17]: Registering slave in US lobby
+[11:21:17]: Registering slave in US lobby
+[11:26:17]: Registering slave in US lobby
+[11:30:09]: [200] Account Communication Success (6)
+[11:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[11:31:17]: Registering slave in US lobby
+[11:36:17]: Registering slave in US lobby
+[11:41:17]: Registering slave in US lobby
+[11:46:17]: Registering slave in US lobby
+[11:51:17]: Registering slave in US lobby
+[11:56:17]: Registering slave in US lobby
+[12:00:09]: [200] Account Communication Success (6)
+[12:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[12:01:17]: Registering slave in US lobby
+[12:06:17]: Registering slave in US lobby
+[12:11:17]: Registering slave in US lobby
+[12:16:17]: Registering slave in US lobby
+[12:21:17]: Registering slave in US lobby
+[12:26:17]: Registering slave in US lobby
+[12:30:09]: [200] Account Communication Success (6)
+[12:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[12:31:17]: Registering slave in US lobby
+[12:36:17]: Registering slave in US lobby
+[12:41:17]: Registering slave in US lobby
+[12:46:17]: Registering slave in US lobby
+[12:51:17]: Registering slave in US lobby
+[12:56:17]: Registering slave in US lobby
+[13:00:09]: [200] Account Communication Success (6)
+[13:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[13:01:17]: Registering slave in US lobby
+[13:06:17]: Registering slave in US lobby
+[13:11:17]: Registering slave in US lobby
+[13:16:17]: Registering slave in US lobby
+[13:21:17]: Registering slave in US lobby
+[13:26:17]: Registering slave in US lobby
+[13:30:09]: [200] Account Communication Success (6)
+[13:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[13:31:17]: Registering slave in US lobby
+[13:36:17]: Registering slave in US lobby
+[13:41:17]: Registering slave in US lobby
+[13:46:17]: Registering slave in US lobby
+[13:51:17]: Registering slave in US lobby
+[13:56:17]: Registering slave in US lobby
+[14:00:09]: [200] Account Communication Success (6)
+[14:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[14:01:17]: Registering slave in US lobby
+[14:06:17]: Registering slave in US lobby
+[14:11:17]: Registering slave in US lobby
+[14:16:17]: Registering slave in US lobby
+[14:21:17]: Registering slave in US lobby
+[14:26:17]: Registering slave in US lobby
+[14:30:09]: [200] Account Communication Success (6)
+[14:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[14:31:17]: Registering slave in US lobby
+[14:36:17]: Registering slave in US lobby
+[14:41:17]: Registering slave in US lobby
+[14:46:17]: Registering slave in US lobby
+[14:51:17]: Registering slave in US lobby
+[14:56:17]: Registering slave in US lobby
+[15:00:09]: [200] Account Communication Success (6)
+[15:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[15:01:17]: Registering slave in US lobby
+[15:06:17]: Registering slave in US lobby
+[15:11:17]: Registering slave in US lobby
+[15:16:17]: Registering slave in US lobby
+[15:21:17]: Registering slave in US lobby
+[15:26:17]: Registering slave in US lobby
+[15:30:09]: [200] Account Communication Success (6)
+[15:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[15:31:17]: Registering slave in US lobby
+[15:36:17]: Registering slave in US lobby
+[15:41:17]: Registering slave in US lobby
+[15:46:17]: Registering slave in US lobby
+[15:51:17]: Registering slave in US lobby
+[15:56:17]: Registering slave in US lobby
+[16:00:09]: [200] Account Communication Success (6)
+[16:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[16:01:17]: Registering slave in US lobby
+[16:06:17]: Registering slave in US lobby
+[16:11:17]: Registering slave in US lobby
+[16:16:17]: Registering slave in US lobby
+[16:21:17]: Registering slave in US lobby
+[16:26:17]: Registering slave in US lobby
+[16:30:09]: [200] Account Communication Success (6)
+[16:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[16:31:17]: Registering slave in US lobby
+[16:36:17]: Registering slave in US lobby
+[16:41:17]: Registering slave in US lobby
+[16:46:17]: Registering slave in US lobby
+[16:51:17]: Registering slave in US lobby
+[16:56:17]: Registering slave in US lobby
+[17:00:09]: [200] Account Communication Success (6)
+[17:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:01:17]: Registering slave in US lobby
+[17:06:17]: Registering slave in US lobby
+[17:11:17]: Registering slave in US lobby
+[17:16:17]: Registering slave in US lobby
+[17:21:17]: Registering slave in US lobby
+[17:26:17]: Registering slave in US lobby
+[17:30:09]: [200] Account Communication Success (6)
+[17:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:31:17]: Registering slave in US lobby
+[17:36:17]: Registering slave in US lobby
+[17:41:17]: Registering slave in US lobby
+[17:46:17]: Registering slave in US lobby
+[17:51:17]: Registering slave in US lobby
+[17:56:18]: Registering slave in US lobby
+[18:00:09]: [200] Account Communication Success (6)
+[18:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:01:18]: Registering slave in US lobby
+[18:06:18]: Registering slave in US lobby
+[18:11:18]: Registering slave in US lobby
+[18:16:18]: Registering slave in US lobby
+[18:21:18]: Registering slave in US lobby
+[18:26:18]: Registering slave in US lobby
+[18:30:09]: [200] Account Communication Success (6)
+[18:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:31:18]: Registering slave in US lobby
+[18:36:18]: Registering slave in US lobby
+[18:41:18]: Registering slave in US lobby
+[18:46:18]: Registering slave in US lobby
+[18:51:18]: Registering slave in US lobby
+[18:56:18]: Registering slave in US lobby
+[19:00:09]: [200] Account Communication Success (6)
+[19:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:01:18]: Registering slave in US lobby
+[19:06:18]: Registering slave in US lobby
+[19:11:18]: Registering slave in US lobby
+[19:16:18]: Registering slave in US lobby
+[19:21:18]: Registering slave in US lobby
+[19:26:18]: Registering slave in US lobby
+[19:30:09]: [200] Account Communication Success (6)
+[19:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:31:18]: Registering slave in US lobby
+[19:36:18]: Registering slave in US lobby
+[19:41:18]: Registering slave in US lobby
+[19:46:18]: Registering slave in US lobby
+[19:51:18]: Registering slave in US lobby
+[19:56:18]: Registering slave in US lobby
+[20:00:09]: [200] Account Communication Success (6)
+[20:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:01:18]: Registering slave in US lobby
+[20:06:18]: Registering slave in US lobby
+[20:11:18]: Registering slave in US lobby
+[20:16:18]: Registering slave in US lobby
+[20:21:18]: Registering slave in US lobby
+[20:26:18]: Registering slave in US lobby
+[20:30:09]: [200] Account Communication Success (6)
+[20:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:31:18]: Registering slave in US lobby
+[20:36:18]: Registering slave in US lobby
+[20:41:18]: Registering slave in US lobby
+[20:46:18]: Registering slave in US lobby
+[20:51:18]: Registering slave in US lobby
+[20:56:18]: Registering slave in US lobby
+[21:00:09]: [200] Account Communication Success (6)
+[21:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:01:18]: Registering slave in US lobby
+[21:06:18]: Registering slave in US lobby
+[21:11:18]: Registering slave in US lobby
+[21:16:18]: Registering slave in US lobby
+[21:21:18]: Registering slave in US lobby
+[21:26:18]: Registering slave in US lobby
+[21:30:09]: [200] Account Communication Success (6)
+[21:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:31:18]: Registering slave in US lobby
+[21:36:18]: Registering slave in US lobby
+[21:41:18]: Registering slave in US lobby
+[21:46:18]: Registering slave in US lobby
+[21:51:18]: Registering slave in US lobby
+[21:56:18]: Registering slave in US lobby
+[22:00:09]: [200] Account Communication Success (6)
+[22:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:01:18]: Registering slave in US lobby
+[22:06:18]: Registering slave in US lobby
+[22:11:18]: Registering slave in US lobby
+[22:16:18]: Registering slave in US lobby
+[22:21:18]: Registering slave in US lobby
+[22:26:18]: Registering slave in US lobby
+[22:30:09]: [200] Account Communication Success (6)
+[22:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:31:18]: Registering slave in US lobby
+[22:36:18]: Registering slave in US lobby
+[22:41:18]: Registering slave in US lobby
+[22:46:18]: Registering slave in US lobby
+[22:51:18]: Registering slave in US lobby
+[22:56:18]: Registering slave in US lobby
+[23:00:10]: [200] Account Communication Success (6)
+[23:00:10]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:01:18]: Registering slave in US lobby
+[23:06:18]: Registering slave in US lobby
+[23:11:18]: Registering slave in US lobby
+[23:16:18]: Registering slave in US lobby
+[23:21:18]: Registering slave in US lobby
+[23:26:18]: Registering slave in US lobby
+[23:30:09]: [200] Account Communication Success (6)
+[23:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:31:18]: Registering slave in US lobby
+[23:36:18]: Registering slave in US lobby
+[23:41:18]: Registering slave in US lobby
+[23:46:18]: Registering slave in US lobby
+[23:51:18]: Registering slave in US lobby
+[23:56:18]: Registering slave in US lobby
+[00:00:09]: [200] Account Communication Success (6)
+[00:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:01:18]: Registering slave in US lobby
+[00:06:18]: Registering slave in US lobby
+[00:11:18]: Registering slave in US lobby
+[00:16:18]: Registering slave in US lobby
+[00:21:18]: Registering slave in US lobby
+[00:26:18]: Registering slave in US lobby
+[00:30:10]: [200] Account Communication Success (6)
+[00:30:10]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:31:18]: Registering slave in US lobby
+[00:36:18]: Registering slave in US lobby
+[00:41:18]: Registering slave in US lobby
+[00:46:18]: Registering slave in US lobby
+[00:51:18]: Registering slave in US lobby
+[00:56:18]: Registering slave in US lobby
+[01:00:10]: [200] Account Communication Success (6)
+[01:00:10]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:01:18]: Registering slave in US lobby
+[01:06:18]: Registering slave in US lobby
+[01:11:18]: Registering slave in US lobby
+[01:15:38]: Serializing world: session/8B8E42DB64BCC87A/0000000070
+[01:15:38]: Truncating to snapshot #70...
+[01:15:38]:  - session/8B8E42DB64BCC87A/0000000060
+[01:15:38]:    1 file(s) removed
+[01:15:38]: [Shard] Stopping shard mode
+[01:15:39]: Collecting garbage...
+[01:15:39]: lua_gc took 0.28 seconds
+[01:15:39]: ~ShardLuaProxy()
+[01:15:39]: ~cEventLeaderboardProxy()
+[01:15:39]: ~ItemServerLuaProxy()
+[01:15:39]: ~InventoryLuaProxy()
+[01:15:39]: ~NetworkLuaProxy()
+[01:15:39]: ~SimLuaProxy()
+[01:15:39]: lua_close took 0.38 seconds
+[01:15:39]: Orphaned unnamed resource. This resource must have used Add( resource ) to insert itself into the manager. 
+[01:15:39]: CurlRequestManager::ClientThread::Main() complete
+[01:15:39]: HttpClient2 discarded 0 callbacks.
+[01:15:39]: Shutting down

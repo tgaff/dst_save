@@ -1,10 +1,10 @@
 [00:00:00]: PersistRootStorage is now /data//DoNotStarveTogether/Cluster_1/Master/ 
 [00:00:00]: Starting Up
 [00:00:00]: Version: 413451
-[00:00:00]: Current time: Sun Jun  7 03:10:30 2020
+[00:00:00]: Current time: Mon Jun  8 02:03:32 2020
 
 [00:00:00]: System Name: Linux
-[00:00:00]: Host Name: 2d526829912d
+[00:00:00]: Host Name: 68868c1237b6
 [00:00:00]: Release(Kernel) Version: 4.15.0-99-generic
 [00:00:00]: Kernel Build Timestamp: #100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020
 [00:00:00]: Machine Arch: x86_64
@@ -16,15 +16,15 @@
 [00:00:00]: Initializing distribution platform
 [00:00:00]: ....Done
 [00:00:00]: Mounting file system databundles/klump.zip successful.
+[00:00:00]: THREAD - started 'GAClient' (4134124352)
+[00:00:00]: CurlRequestManager::ClientThread::Main()
 [00:00:00]: Mounting file system databundles/shaders.zip successful.
 [00:00:00]: Mounting file system databundles/fonts.zip successful.
-[00:00:00]: THREAD - started 'GAClient' (4134411072)
-[00:00:00]: CurlRequestManager::ClientThread::Main()
 [00:00:00]: Mounting file system databundles/anim_dynamic.zip successful.
 [00:00:00]: Mounting file system databundles/bigportraits.zip successful.
 [00:00:00]: Mounting file system databundles/images.zip successful.
 [00:00:00]: Mounting file system databundles/scripts.zip successful.
-[00:00:00]: ProfileIndex:7.39
+[00:00:00]: ProfileIndex:6.00
 [00:00:00]: [Connect] PendingConnection::Reset(true)
 [00:00:00]: Platform: 1
 [00:00:00]: Network tick rate: U=15(2), D=0
@@ -39,10 +39,10 @@
 [00:00:00]: Renderer initialize: Okay
 [00:00:00]: AnimManager initialize: Okay
 [00:00:00]: Buffers initialize: Okay
+[00:00:00]: THREAD - started 'Ping Job Thread' (4127193920)
 [00:00:00]: cDontStarveGame::DoGameSpecificInitialize()
 [00:00:00]: GameSpecific initialize: Okay
 [00:00:00]: cGame::StartPlaying
-[00:00:00]: THREAD - started 'Ping Job Thread' (4127193920)
 [00:00:00]: LOADING LUA
 [00:00:00]: DoLuaFile scripts/main.lua
 [00:00:00]: DoLuaFile loading buffer scripts/main.lua
@@ -250,83 +250,83 @@
 [00:00:04]: OnUpdatePurchaseStateComplete	
 [00:00:04]: Klump load on boot started.	
 [00:00:04]: Klump files loaded: 	0	
-[00:00:04]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
-[00:00:04]: Mod: workshop-347079953 (Display food values)	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	Registering prefabs	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_cage	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage_placer	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_bomb	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_bomb	
-[00:00:04]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	Registering prefabs	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering prefab file: prefabs/storeroom	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom_placer	
-[00:00:04]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-356420397 (No More Respawn Penalty)	Registering prefabs	
-[00:00:04]: Mod: workshop-356420397 (No More Respawn Penalty)	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-569043634 (Campfire Respawn)	Registering prefabs	
-[00:00:04]: Mod: workshop-569043634 (Campfire Respawn)	  Registering default mod prefab	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/worldmapexplorer	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    worldmapexplorer	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
-[00:00:04]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-347079953 (Display food values)	Registering prefabs	
+[00:00:05]: Mod: workshop-347079953 (Display food values)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	Registering prefabs	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_cage	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_cage_placer	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering prefab file: prefabs/rabbit_bomb	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	    rabbit_bomb	
+[00:00:05]: Mod: workshop-1788625832 (Rabbit Cage)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	Registering prefabs	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering prefab file: prefabs/storeroom	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	    storeroom_placer	
+[00:00:05]: Mod: workshop-1895335315 (Storeroom (Modified))	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-356420397 (No More Respawn Penalty)	Registering prefabs	
+[00:00:05]: Mod: workshop-356420397 (No More Respawn Penalty)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-569043634 (Campfire Respawn)	Registering prefabs	
+[00:00:05]: Mod: workshop-569043634 (Campfire Respawn)	  Registering default mod prefab	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	Registering prefabs	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalposition_classified	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    globalposition_classified	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/smoketrail	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    smoketrail	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    globalmapicon_noproxy	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/worldmapexplorer	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    worldmapexplorer	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering prefab file: prefabs/pings	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_generic	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_omw	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_danger	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_explore	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	    ping_gohere	
+[00:00:05]: Mod: workshop-378160973 (Global Positions)	  Registering default mod prefab	
 [00:00:05]: 	Load FE	
-[00:00:05]: THREAD - started 'FilesExistAsyncThread' (4106787648)
-[00:00:05]: FilesExistAsyncThread started (15447 files)...
 [00:00:05]: 	Load FE: done	
 [00:00:05]: Check for write access: TRUE
 [00:00:05]: Check for read access: TRUE
 [00:00:05]: ModIndex: Load sequence finished successfully.	
 [00:00:05]: Reset() returning
-[00:00:05]: [200] Account Communication Success (6)
-[00:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[00:00:05]: Starting Dedicated Server Game	
-[00:00:05]: Network tick rate: U=15(2), D=0
-[00:00:05]: About to start a server with the following settings:
-[00:00:05]:   Dedicated: true
-[00:00:05]:   Online: true
-[00:00:05]:   Passworded: true
-[00:00:05]:   ServerPort: 10999
-[00:00:05]:   SteamAuthPort: 8766
-[00:00:05]:   SteamMasterServerPort: 12346
-[00:00:05]:   ClanID: false
-[00:00:05]:   ClanOnly: false
-[00:00:05]:   ClanAdmin: false
-[00:00:05]:   LanOnly: false
-[00:00:05]:   FriendsOnly: false
-[00:00:05]:   EnableAutosaver: true
-[00:00:05]:   EncodeUserPath: true
-[00:00:05]:   PVP: false
-[00:00:05]:   MaxPlayers: 6
-[00:00:05]:   GameMode: endless
-[00:00:05]:   OverridenDNS: 
-[00:00:05]:   PauseWhenEmpty: true
-[00:00:05]:   IdleTimeout: 1800s
-[00:00:05]:   VoteEnabled: true
-[00:00:05]:   InternetBroadcasting: true
-[00:00:05]:   Intent: social
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-1895335315	
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-1788625832	
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-378160973	
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-347079953	
-[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-569043634	
-[00:00:05]: Online Server Started on port: 10999
-[00:00:05]: Collecting garbage...
-[00:00:06]: lua_gc took 0.07 seconds
+[00:00:05]: THREAD - started 'FilesExistAsyncThread' (4106554176)
+[00:00:05]: FilesExistAsyncThread started (15447 files)...
+[00:00:06]: [200] Account Communication Success (6)
+[00:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:00:06]: Starting Dedicated Server Game	
+[00:00:06]: Network tick rate: U=15(2), D=0
+[00:00:06]: About to start a server with the following settings:
+[00:00:06]:   Dedicated: true
+[00:00:06]:   Online: true
+[00:00:06]:   Passworded: true
+[00:00:06]:   ServerPort: 10999
+[00:00:06]:   SteamAuthPort: 8766
+[00:00:06]:   SteamMasterServerPort: 12346
+[00:00:06]:   ClanID: false
+[00:00:06]:   ClanOnly: false
+[00:00:06]:   ClanAdmin: false
+[00:00:06]:   LanOnly: false
+[00:00:06]:   FriendsOnly: false
+[00:00:06]:   EnableAutosaver: true
+[00:00:06]:   EncodeUserPath: true
+[00:00:06]:   PVP: false
+[00:00:06]:   MaxPlayers: 6
+[00:00:06]:   GameMode: endless
+[00:00:06]:   OverridenDNS: 
+[00:00:06]:   PauseWhenEmpty: true
+[00:00:06]:   IdleTimeout: 1800s
+[00:00:06]:   VoteEnabled: true
+[00:00:06]:   InternetBroadcasting: true
+[00:00:06]:   Intent: social
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-1895335315	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-1788625832	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-378160973	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-347079953	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-569043634	
+[00:00:06]: Online Server Started on port: 10999
+[00:00:06]: Collecting garbage...
+[00:00:06]: lua_gc took 0.09 seconds
 [00:00:06]: ~ShardLuaProxy()
 [00:00:06]: ~cEventLeaderboardProxy()
 [00:00:06]: ~ItemServerLuaProxy()
@@ -335,7 +335,7 @@
 [00:00:06]: ~SimLuaProxy()
 [00:00:06]: FilesExistAsyncThread aborted.
 [00:00:06]: ... FilesExistAsyncThread complete
-[00:00:06]: lua_close took 0.05 seconds
+[00:00:06]: lua_close took 0.06 seconds
 [00:00:06]: ReleaseAll
 [00:00:06]: ReleaseAll Finished
 [00:00:06]: cGame::StartPlaying
@@ -532,18 +532,18 @@
 [00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1788625832	
 [00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-356420397	
 [00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1895335315	
-[00:00:06]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
-[00:00:06]: LOADING LUA SUCCESS
-[00:00:06]: Registering mod namespace "workshop-378160973"
-[00:00:06]: Registering mod namespace "food item"
-[00:00:06]: PlayerDeaths could not load morgue	
-[00:00:06]: PlayerHistory could not load player_history	
-[00:00:06]: ServerPreferences could not load server_preferences	
-[00:00:06]: bloom_enabled	false	
-[00:00:06]: loaded saveindex	
-[00:00:06]: OnFilesLoaded()	
-[00:00:06]: OnUpdatePurchaseStateComplete	
-[00:00:06]: Loading world: session/B2C1CA1B648E5137/0000000003	
+[00:00:07]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:07]: LOADING LUA SUCCESS
+[00:00:07]: Registering mod namespace "workshop-378160973"
+[00:00:07]: Registering mod namespace "food item"
+[00:00:07]: PlayerDeaths could not load morgue	
+[00:00:07]: PlayerHistory could not load player_history	
+[00:00:07]: ServerPreferences could not load server_preferences	
+[00:00:07]: bloom_enabled	false	
+[00:00:07]: loaded saveindex	
+[00:00:07]: OnFilesLoaded()	
+[00:00:07]: OnUpdatePurchaseStateComplete	
+[00:00:07]: Loading world: session/B2C1CA1B648E5137/0000000031	
 [00:00:07]: Save file is at version 5.04	
 [00:00:07]: Klump load on boot started.	
 [00:00:07]: Klump files loaded: 	0	
@@ -597,17 +597,17 @@
 [00:00:12]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_danger.xml )
 [00:00:12]: MiniMapComponent::AddAtlas( ../mods/workshop-378160973/minimap/ping_omw.xml )
 [00:00:12]: Loading 16 new character(s)	
-[00:00:12]: Total 16 character(s) loaded	
-[00:00:13]: Loading Nav Grid	
+[00:00:13]: Total 16 character(s) loaded	
+[00:00:14]: Loading Nav Grid	
 [00:00:14]: World generated on version 413451, using seed: 1591493220	
 [00:00:14]: setting 	summerlength	15	
 [00:00:14]: setting 	isnightmaredawn	false	
-[00:00:14]: setting 	elapseddaysinseason	0	
+[00:00:14]: setting 	elapseddaysinseason	27	
 [00:00:14]: setting 	isfullmoon	false	
-[00:00:14]: setting 	moisture	0.025000002235174	
+[00:00:14]: setting 	moisture	2294.8610839844	
 [00:00:14]: setting 	springlength	20	
 [00:00:14]: setting 	isnightmarewild	false	
-[00:00:14]: setting 	moonphase	new	
+[00:00:14]: setting 	moonphase	threequarter	
 [00:00:14]: setting 	precipitationrate	0	
 [00:00:14]: setting 	iswet	false	
 [00:00:14]: setting 	isnewmoon	false	
@@ -615,448 +615,670 @@
 [00:00:14]: setting 	israining	false	
 [00:00:14]: setting 	isnightmarewarn	false	
 [00:00:14]: setting 	precipitation	none	
-[00:00:14]: setting 	cavephase	day	
-[00:00:14]: setting 	moistureceil	775.89782714844	
-[00:00:14]: setting 	isday	true	
-[00:00:14]: setting 	iscaveday	true	
+[00:00:14]: setting 	cavephase	dusk	
+[00:00:14]: setting 	moistureceil	6425.0615234375	
+[00:00:14]: setting 	isday	false	
+[00:00:14]: setting 	iscaveday	false	
 [00:00:14]: setting 	season	autumn	
-[00:00:14]: setting 	timeinphase	0.00041675567626953	
-[00:00:14]: setting 	temperature	30.026547616334	
+[00:00:14]: setting 	timeinphase	0.80532953898112	
+[00:00:14]: setting 	temperature	11.491882775505	
 [00:00:14]: setting 	isnightmarecalm	false	
 [00:00:14]: setting 	isnight	false	
-[00:00:14]: setting 	isdusk	false	
-[00:00:14]: setting 	iscavedusk	false	
+[00:00:14]: setting 	isdusk	true	
+[00:00:14]: setting 	iscavedusk	true	
 [00:00:14]: setting 	isautumn	true	
 [00:00:14]: setting 	issnowing	false	
 [00:00:14]: setting 	iswaxingmoon	true	
-[00:00:14]: setting 	pop	3.2220740103183e-05	
+[00:00:14]: setting 	pop	0.20876649794459	
 [00:00:14]: setting 	snowlevel	0	
 [00:00:14]: setting 	issnowcovered	false	
 [00:00:14]: setting 	autumnlength	30	
-[00:00:14]: setting 	phase	day	
+[00:00:14]: setting 	phase	dusk	
 [00:00:14]: setting 	nightmaretime	0	
 [00:00:14]: setting 	winterlength	15	
 [00:00:14]: setting 	isspring	false	
 [00:00:14]: setting 	nightmarephase	none	
-[00:00:14]: setting 	remainingdaysinseason	30	
-[00:00:14]: setting 	cycles	0	
+[00:00:14]: setting 	remainingdaysinseason	3	
+[00:00:14]: setting 	cycles	27	
 [00:00:14]: setting 	iscavenight	false	
 [00:00:14]: setting 	nightmaretimeinphase	0	
-[00:00:14]: setting 	wetness	0	
-[00:00:14]: setting 	time	0.00020837783813477	
+[00:00:14]: setting 	wetness	3.8384931087494	
+[00:00:14]: setting 	time	0.6891654809316	
 [00:00:14]: setting 	issummer	false	
 [00:00:14]: OVERRIDE: setting	regrowth	to	fast	
 [00:00:14]: OVERRIDE: setting	hounds	to	rare	
-[00:00:20]: Reconstructing topology	
-[00:00:20]: 	...Sorting points	
-[00:00:20]: 	...Sorting edges	
-[00:00:20]: 	...Connecting nodes	
-[00:00:20]: 	...Validating connections	
-[00:00:21]: 	...Housekeeping	
-[00:00:21]: 	...Done!	
-[00:00:21]: 1 uploads added to server. From server_temp
-[00:00:21]: About to start a shard with these settings:
-[00:00:21]:   ShardName: [SHDMASTER]
-[00:00:21]:   ShardID: 1
-[00:00:21]:   ShardRole: MASTER
-[00:00:21]:   MasterHost: (null)
-[00:00:21]:   MasterBind: 127.0.0.1
-[00:00:21]:   MasterPort: 10998
-[00:00:21]: [Shard] Starting master server
-[00:00:21]: [Shard] Shard server started on port: 10998
-[00:00:21]: Telling Client our new session identifier: B2C1CA1B648E5137
-[00:00:21]: Check for write access: TRUE
-[00:00:21]: Check for read access: TRUE
-[00:00:21]: ModIndex: Load sequence finished successfully.	
-[00:00:21]: Reset() returning
-[00:00:21]: [Steam] SteamGameServer_Init(8766, 10999, 12346)
-[00:00:21]: [Steam] SteamGameServer_Init success
-[00:00:22]: Validating portal[4] <-> 2666465312[4] (inactive)	
-[00:00:22]: Validating portal[7] <-> 2666465312[7] (inactive)	
-[00:00:22]: Validating portal[9] <-> 2666465312[9] (inactive)	
-[00:00:22]: Validating portal[6] <-> 2666465312[6] (inactive)	
-[00:00:22]: Validating portal[3] <-> 2666465312[3] (inactive)	
-[00:00:22]: Validating portal[1] <-> 2666465312[1] (inactive)	
-[00:00:22]: Validating portal[5] <-> 2666465312[5] (inactive)	
-[00:00:22]: Validating portal[10] <-> 2666465312[10] (inactive)	
-[00:00:22]: Validating portal[8] <-> 2666465312[8] (inactive)	
-[00:00:22]: Validating portal[2] <-> 2666465312[2] (inactive)	
-[00:00:22]: Sim paused
-[00:00:23]: Gameserver logged on to Steam, assigned identity steamid:90135964362641416
-[00:00:29]: Best lobby region is aws/US (ping 70)
-[00:00:29]: Registering master server in US lobby
-[00:00:30]: [Shard] Slave Caves(2666465312) connected: [LAN] 127.0.0.1
-[00:00:31]: [Shard] Slave Caves(2666465312) ready!
-[00:00:31]: World 2666465312 is now connected	
-[00:00:31]: Validating portal[4] <-> 2666465312[4] (disabled)	
-[00:00:31]: Validating portal[7] <-> 2666465312[7] (disabled)	
-[00:00:31]: Validating portal[9] <-> 2666465312[9] (disabled)	
-[00:00:31]: Validating portal[6] <-> 2666465312[6] (disabled)	
-[00:00:31]: Validating portal[3] <-> 2666465312[3] (disabled)	
-[00:00:31]: Validating portal[1] <-> 2666465312[1] (disabled)	
-[00:00:31]: Validating portal[5] <-> 2666465312[5] (disabled)	
-[00:00:31]: Validating portal[10] <-> 2666465312[10] (disabled)	
-[00:00:31]: Validating portal[8] <-> 2666465312[8] (disabled)	
-[00:00:31]: Validating portal[2] <-> 2666465312[2] (disabled)	
-[00:00:39]: Registering master server in US lobby
-[00:02:04]: New incoming connection 24.4.255.244|64049 <8039112818191377852>
-[00:02:04]: Client connected from 24.4.255.244|64049 <8039112818191377852>
-[00:02:04]: ValidateGameSessionToken pgs-usc^KU_G_clads_^DontStarveTogether^Wvs20nj58Ft91E9XnvToOZAEycbyMMi7We9Qe1bdJXM= for <8039112818191377852>
-[00:02:05]: Client authenticated: (KU_G_clads_) DreamingApples
-[00:02:05]: [Steam] SendUserConnectAndAuthenticate for '76561198080290377'
-[00:02:05]: [Steam] Authenticated client '76561198080290377'
-[00:02:06]: There is no active event to validate against.
-[00:02:06]: [Shard] Read save location file for (KU_G_clads_)
-[00:02:06]: Registering master server in US lobby
-[00:02:17]: New incoming connection 24.4.255.244|52949 <15294629748833121484>
-[00:02:17]: Client connected from 24.4.255.244|52949 <15294629748833121484>
-[00:02:17]: ValidateGameSessionToken pgs-usc^KU_3nz48Pd4^DontStarveTogether^OEtGjr9qPyfg+4kb3OXGA0Y3fYsoYOhX4iR2d1wdymI= for <15294629748833121484>
-[00:02:17]: Client authenticated: (KU_3nz48Pd4) Ryuukaze
-[00:02:17]: [Steam] SendUserConnectAndAuthenticate for '76561198030426044'
-[00:02:18]: [Steam] Authenticated client '76561198030426044'
-[00:02:18]: There is no active event to validate against.
-[00:02:18]: [Shard] Read save location file for (KU_3nz48Pd4)
-[00:02:18]: Registering master server in US lobby
-[00:02:24]: Resuming user: session/B2C1CA1B648E5137/A7I3V6NP4VDV
-[00:02:31]: Resuming user: session/B2C1CA1B648E5137/A7GF3T2236E4
-[00:03:08]: New incoming connection 73.93.155.137|53208 <18298323974974199052>
-[00:03:08]: Client connected from 73.93.155.137|53208 <18298323974974199052>
-[00:03:08]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^QFBcg/vjBEPxAD/FnPGig7zSFQtbq6z2Y99/it1sJLU= for <18298323974974199052>
-[00:03:08]: Client authenticated: (KU_nIwUWxJ4) amadochingu
-[00:03:08]: [Steam] Authenticated host '76561197971690736'
-[00:03:08]: There is no active event to validate against.
-[00:03:08]: [Shard] Read save location file for (KU_nIwUWxJ4)
-[00:03:13]: New incoming connection 73.93.155.137|52758 <9203126445275788312>
-[00:03:13]: Client connected from 73.93.155.137|52758 <9203126445275788312>
-[00:03:13]: ValidateGameSessionToken pgs-usc^KU_3Dirn8-V^DontStarveTogether^SFgTXAH1qeokoyZM3RrWdlGVGQHOyWrPKQgr/+lGUuA= for <9203126445275788312>
-[00:03:13]: Client authenticated: (KU_3Dirn8-V) Jinny
-[00:03:13]: [Steam] SendUserConnectAndAuthenticate for '76561199037658351'
-[00:03:14]: [Steam] Authenticated client '76561199037658351'
-[00:03:14]: There is no active event to validate against.
-[00:03:14]: [Shard] Read save location file for (KU_3Dirn8-V)
-[00:03:17]: Resuming user: session/B2C1CA1B648E5137/A7M55QF87D64
-[00:03:18]: Registering master server in US lobby
-[00:03:29]: Resuming user: session/B2C1CA1B648E5137/A7GCRCQS93SV
-[00:03:38]: Spawn request: winona from DreamingApples
-[00:03:38]: Skin request: () (body_wes_nature) (hand_wendy_victorian) (legs_waxwell_victorian) (feet_formal_stiletto_black_scribble)
-[00:03:38]: Spawning player at: [Fixed] (-286.00, 0.00, -130.00)	
-[00:03:38]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000004
-[00:03:38]: Sim unpaused
-[00:03:38]: Registering master server in US lobby
-[00:04:26]: Spawn request: wathgrithr from amadochingu
-[00:04:26]: Skin request: () (body_waxwell_victorian) (hand_waxwell_victorian) (legs_swing_pants_navy_midnight) ()
-[00:04:26]: Spawning player at: [Fixed] (-286.00, 0.00, -130.00)	
-[00:04:26]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000004
-[00:04:26]: Registering master server in US lobby
-[00:04:32]: Spawn request: wendy from Jinny
-[00:04:32]: Skin request: () () (hand_wendy_gladiator) (legs_waxwell_gladiator) (feet_webber_ice)
-[00:04:32]: Spawning player at: [Fixed] (-286.00, 0.00, -130.00)	
-[00:04:32]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000004
-[00:04:34]: KU_nIwUWxJ4	running text command:	wave	true	
-[00:04:36]: Registering master server in US lobby
-[00:04:36]: KU_nIwUWxJ4	running text command:	wave	true	
-[00:04:38]: KU_3Dirn8-V	running text command:	wave	true	
-[00:06:34]: Spawn request: wathgrithr from Ryuukaze
-[00:06:34]: Skin request: () () () () ()
-[00:06:34]: Spawning player at: [Fixed] (-286.00, 0.00, -130.00)	
-[00:06:34]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000004
-[00:06:34]: Registering master server in US lobby
-[00:10:55]: [(KU_nIwUWxJ4) amadochingu] ReceiveRemoteExecute(c_listallplayers()) @(-546.95, -424.11)
-[00:10:55]: [1] (KU_G_clads_) DreamingApples <winona>	
-[00:10:55]: [2] (KU_nIwUWxJ4) amadochingu <wathgrithr>	
-[00:10:55]: [3] (KU_3Dirn8-V) Jinny <wendy>	
-[00:10:55]: [4] (KU_3nz48Pd4) Ryuukaze <wathgrithr>	
-[00:11:01]: [(KU_nIwUWxJ4) amadochingu] ReceiveRemoteExecute(c_listallplayers()) @(-546.95, -424.11)
-[00:11:01]: [1] (KU_G_clads_) DreamingApples <winona>	
-[00:11:01]: [2] (KU_nIwUWxJ4) amadochingu <wathgrithr>	
-[00:11:01]: [3] (KU_3Dirn8-V) Jinny <wendy>	
-[00:11:01]: [4] (KU_3nz48Pd4) Ryuukaze <wathgrithr>	
-[00:11:07]: [(KU_nIwUWxJ4) amadochingu] ReceiveRemoteExecute(c_listplayers()) @(-546.95, -424.11)
-[00:11:07]: *[1] (KU_nIwUWxJ4) amadochingu <wathgrithr>	
-[00:11:07]:  [2] (KU_3Dirn8-V) Jinny <wendy>	
-[00:11:07]:  [3] (KU_3nz48Pd4) Ryuukaze <wathgrithr>	
-[00:11:07]:  [4] (KU_G_clads_) DreamingApples <winona>	
-[00:11:14]: Could not find anim [death] in bank [ghost]
-[00:11:14]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000004
-[00:11:39]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000004
-[00:11:39]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000004
-[00:11:39]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000004
-[00:11:39]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000004
-[00:11:39]: Serializing world: session/B2C1CA1B648E5137/0000000004
-[00:11:40]: Could not find anim [death] in bank [ghost]
-[00:11:40]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000005
-[00:11:44]: Registering master server in US lobby
-[00:12:27]: Could not find anim [idle_loop] in bank [ghost]
-[00:12:30]: Could not find anim [transform] in bank [wilson]
-[00:12:31]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000005
-[00:12:35]: Could not find anim [idle_loop] in bank [ghost]
-[00:12:38]: Could not find anim [transform] in bank [wilson]
-[00:12:39]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000005
-[00:17:23]: Remote left click out of range	
-[00:19:38]: Registering master server in US lobby
-[00:19:40]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000005
-[00:19:40]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000005
-[00:19:40]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000005
-[00:19:40]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000005
-[00:19:40]: Serializing world: session/B2C1CA1B648E5137/0000000005
-[00:24:09]: KU_nIwUWxJ4	running text command:	wave	true	
-[00:27:41]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000006
-[00:27:41]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000006
-[00:27:41]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000006
-[00:27:41]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000006
-[00:27:41]: Serializing world: session/B2C1CA1B648E5137/0000000006
-[00:27:43]: Registering master server in US lobby
-[00:30:05]: [200] Account Communication Success (6)
-[00:30:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[00:34:03]: KU_3Dirn8-V	running text command:	wave	true	
-[00:35:41]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000007
-[00:35:41]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000007
-[00:35:41]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000007
-[00:35:41]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000007
-[00:35:42]: Serializing world: session/B2C1CA1B648E5137/0000000007
-[00:35:49]: Registering master server in US lobby
-[00:38:10]: Could not find anim [death] in bank [ghost]
-[00:38:10]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000008
-[00:38:19]: Could not find anim [idle_loop] in bank [ghost]
-[00:38:22]: Could not find anim [transform] in bank [wilson]
-[00:38:23]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000008
-[00:38:51]: Could not find anim [death] in bank [ghost]
-[00:38:51]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000008
-[00:38:54]: Could not find anim [idle_loop] in bank [ghost]
-[00:38:57]: Could not find anim [transform] in bank [wilson]
-[00:38:58]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000008
-[00:43:41]: Registering master server in US lobby
-[00:43:42]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000008
-[00:43:42]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000008
-[00:43:42]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000008
-[00:43:42]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000008
-[00:43:43]: Serializing world: session/B2C1CA1B648E5137/0000000008
-[00:51:43]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000009
-[00:51:43]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000009
-[00:51:43]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000009
-[00:51:43]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000009
-[00:51:44]: Serializing world: session/B2C1CA1B648E5137/0000000009
-[00:51:46]: Registering master server in US lobby
-[00:59:45]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000010
-[00:59:45]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000010
-[00:59:45]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000010
-[00:59:45]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000010
-[00:59:45]: Serializing world: session/B2C1CA1B648E5137/0000000010
-[00:59:51]: Registering master server in US lobby
-[01:00:05]: [200] Account Communication Success (6)
-[01:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[01:07:45]: Registering master server in US lobby
-[01:07:46]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000011
-[01:07:46]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000011
-[01:07:46]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000011
-[01:07:46]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000011
-[01:07:46]: Serializing world: session/B2C1CA1B648E5137/0000000011
-[01:15:47]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000012
-[01:15:47]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000012
-[01:15:47]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000012
-[01:15:47]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000012
-[01:15:48]: Serializing world: session/B2C1CA1B648E5137/0000000012
-[01:15:50]: Registering master server in US lobby
-[01:23:48]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000013
-[01:23:48]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000013
-[01:23:48]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000013
-[01:23:48]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000013
-[01:23:49]: Serializing world: session/B2C1CA1B648E5137/0000000013
-[01:23:55]: Registering master server in US lobby
-[01:30:05]: [200] Account Communication Success (6)
-[01:30:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[01:31:48]: Registering master server in US lobby
-[01:31:50]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000014
-[01:31:50]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000014
-[01:31:50]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000014
-[01:31:50]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000014
-[01:31:50]: Serializing world: session/B2C1CA1B648E5137/0000000014
-[01:39:51]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000015
-[01:39:51]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000015
-[01:39:51]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000015
-[01:39:51]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000015
-[01:39:51]: Serializing world: session/B2C1CA1B648E5137/0000000015
-[01:39:53]: Registering master server in US lobby
-[01:47:52]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000016
-[01:47:52]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000016
-[01:47:52]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000016
-[01:47:52]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000016
-[01:47:53]: Serializing world: session/B2C1CA1B648E5137/0000000016
-[01:47:59]: Registering master server in US lobby
-[01:50:52]: Could not find anim [grow_normal_to_tall] in bank [tree_leaf_monster]
-[01:55:52]: Registering master server in US lobby
-[01:55:53]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000017
-[01:55:53]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000017
-[01:55:53]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000017
-[01:55:53]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000017
-[01:55:54]: Serializing world: session/B2C1CA1B648E5137/0000000017
-[02:00:05]: [200] Account Communication Success (6)
-[02:00:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[02:03:55]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000018
-[02:03:55]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000018
-[02:03:55]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000018
-[02:03:55]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000018
-[02:03:55]: Serializing world: session/B2C1CA1B648E5137/0000000018
-[02:03:57]: Registering master server in US lobby
-[02:11:48]: Could not find anim [spawn] in bank [FROMNUM]
-[02:11:49]: Could not find anim [spawn] in bank [FROMNUM]
-[02:11:55]: KU_nIwUWxJ4	running text command:	toast	true	
-[02:11:55]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000019
-[02:11:55]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000019
-[02:11:55]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000019
-[02:11:56]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000019
-[02:11:56]: Serializing world: session/B2C1CA1B648E5137/0000000019
-[02:12:03]: Registering master server in US lobby
-[02:18:03]: KU_nIwUWxJ4	running text command:	toast	true	
-[02:18:17]: KU_nIwUWxJ4	running text command:	joy	true	
-[02:18:31]: KU_nIwUWxJ4	running text command:	bonesaw	true	
-[02:19:56]: Registering master server in US lobby
-[02:19:57]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000020
-[02:19:57]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000020
-[02:19:57]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000020
-[02:19:57]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000020
-[02:19:57]: Serializing world: session/B2C1CA1B648E5137/0000000020
-[02:27:58]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000021
-[02:27:58]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000021
-[02:27:58]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000021
-[02:27:58]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000021
-[02:27:59]: Serializing world: session/B2C1CA1B648E5137/0000000021
-[02:28:01]: Registering master server in US lobby
-[02:29:08]: [Steam] SendUserDisconnect for '76561197971690736'
-[02:29:08]: [Shard] (KU_nIwUWxJ4) disconnected from [SHDMASTER](1)
-[02:29:08]: Registering master server in US lobby
-[02:29:08]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000022
-[02:30:05]: [200] Account Communication Success (6)
-[02:30:05]: Received (KU_nIwUWxJ4) from TokenPurpose
-[02:30:45]: New incoming connection 73.93.155.137|53026 <6077981294620436077>
-[02:30:45]: Client connected from 73.93.155.137|53026 <6077981294620436077>
-[02:30:45]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^99VVe0UxYitLMZhKuhlHEHkN7rKBQKxmom2PvhSe4UE= for <6077981294620436077>
-[02:30:46]: Client authenticated: (KU_nIwUWxJ4) amadochingu
-[02:30:46]: [Steam] Authenticated host '76561197971690736'
-[02:30:46]: There is no active event to validate against.
-[02:30:46]: [Shard] Read save location file for (KU_nIwUWxJ4)
-[02:30:46]: Registering master server in US lobby
-[02:30:54]: Resuming user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000022
-[02:30:54]: Spawning player at: [Load] (-88.14, -0.00, -306.95)	
-[02:30:56]: Registering master server in US lobby
-[02:33:16]: Could not find anim [death] in bank [ghost]
-[02:33:16]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000022
-[02:33:27]: Could not find anim [idle_loop] in bank [ghost]
-[02:33:30]: Could not find anim [transform] in bank [wilson]
-[02:33:31]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000022
-[02:35:59]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000022
-[02:35:59]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000022
-[02:35:59]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000022
-[02:35:59]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000022
-[02:35:59]: Serializing world: session/B2C1CA1B648E5137/0000000022
-[02:36:07]: Registering master server in US lobby
-[02:43:59]: Registering master server in US lobby
-[02:44:00]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000023
-[02:44:00]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000023
-[02:44:00]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000023
-[02:44:00]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000023
-[02:44:01]: Serializing world: session/B2C1CA1B648E5137/0000000023
-[02:52:02]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000024
-[02:52:02]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000024
-[02:52:02]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000024
-[02:52:02]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000024
-[02:52:02]: Serializing world: session/B2C1CA1B648E5137/0000000024
-[02:52:04]: Registering master server in US lobby
-[02:52:59]: [Steam] SendUserDisconnect for '76561197971690736'
-[02:52:59]: [Shard] (KU_nIwUWxJ4) disconnected from [SHDMASTER](1)
-[02:52:59]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000025
-[02:53:04]: Registering master server in US lobby
-[02:55:36]: New incoming connection 73.93.155.137|53218 <13527105538443865678>
-[02:55:36]: Client connected from 73.93.155.137|53218 <13527105538443865678>
-[02:55:36]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^uKtwd4tyHIG0qnXdHGm0IPXzgY8jtHAfZ6Ugdib3T3Q= for <13527105538443865678>
-[02:55:36]: Client authenticated: (KU_nIwUWxJ4) amadochingu
-[02:55:37]: [Steam] Authenticated host '76561197971690736'
-[02:55:37]: There is no active event to validate against.
-[02:55:37]: [Shard] Read save location file for (KU_nIwUWxJ4)
-[02:55:44]: Registering master server in US lobby
-[02:55:45]: Resuming user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000025
-[02:55:45]: Spawning player at: [Load] (-105.79, -0.00, -339.35)	
-[02:55:54]: Registering master server in US lobby
-[03:00:02]: Registering master server in US lobby
-[03:00:03]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000025
-[03:00:03]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000025
-[03:00:03]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000025
-[03:00:03]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000025
-[03:00:04]: Serializing world: session/B2C1CA1B648E5137/0000000025
+[00:00:19]: Could not find anim [sway2_loop_short] in bank [tree_leaf_monster]
+[00:00:19]: Could not find anim [sway2_loop_normal] in bank [tree_leaf_monster]
+[00:00:19]: Could not find anim [sway2_loop_normal] in bank [tree_leaf_monster]
+[00:00:22]: Reconstructing topology	
+[00:00:22]: 	...Sorting points	
+[00:00:22]: 	...Sorting edges	
+[00:00:22]: 	...Connecting nodes	
+[00:00:22]: 	...Validating connections	
+[00:00:22]: 	...Housekeeping	
+[00:00:22]: 	...Done!	
+[00:00:22]: 1 uploads added to server. From server_temp
+[00:00:22]: About to start a shard with these settings:
+[00:00:22]:   ShardName: [SHDMASTER]
+[00:00:22]:   ShardID: 1
+[00:00:22]:   ShardRole: MASTER
+[00:00:22]:   MasterHost: (null)
+[00:00:22]:   MasterBind: 127.0.0.1
+[00:00:22]:   MasterPort: 10998
+[00:00:22]: [Shard] Starting master server
+[00:00:22]: [Shard] Shard server started on port: 10998
+[00:00:22]: Telling Client our new session identifier: B2C1CA1B648E5137
+[00:00:22]: Check for write access: TRUE
+[00:00:22]: Check for read access: TRUE
+[00:00:22]: ModIndex: Load sequence finished successfully.	
+[00:00:23]: Reset() returning
+[00:00:23]: [Steam] SteamGameServer_Init(8766, 10999, 12346)
+[00:00:23]: [Steam] SteamGameServer_Init success
+[00:00:23]: Validating portal[10] <-> 2666465312[10] (inactive)	
+[00:00:24]: Validating portal[1] <-> 2666465312[1] (inactive)	
+[00:00:24]: Validating portal[2] <-> 2666465312[2] (inactive)	
+[00:00:24]: Validating portal[3] <-> 2666465312[3] (inactive)	
+[00:00:24]: Validating portal[6] <-> 2666465312[6] (inactive)	
+[00:00:24]: Validating portal[5] <-> 2666465312[5] (inactive)	
+[00:00:24]: Validating portal[8] <-> 2666465312[8] (inactive)	
+[00:00:24]: Validating portal[4] <-> 2666465312[4] (inactive)	
+[00:00:24]: Validating portal[7] <-> 2666465312[7] (inactive)	
+[00:00:24]: Validating portal[9] <-> 2666465312[9] (inactive)	
+[00:00:24]: Sim paused
+[00:00:25]: Gameserver logged on to Steam, assigned identity steamid:90135991738667008
+[00:00:31]: Best lobby region is aws/US (ping 71)
+[00:00:31]: Registering master server in US lobby
+[00:00:31]: [Shard] Slave Caves(2666465312) connected: [LAN] 127.0.0.1
+[00:00:32]: [Shard] Slave Caves(2666465312) ready!
+[00:00:32]: World 2666465312 is now connected	
+[00:00:32]: Validating portal[10] <-> 2666465312[10] (disabled)	
+[00:00:32]: Validating portal[1] <-> 2666465312[1] (disabled)	
+[00:00:32]: Validating portal[2] <-> 2666465312[2] (disabled)	
+[00:00:32]: Validating portal[3] <-> 2666465312[3] (disabled)	
+[00:00:32]: Validating portal[6] <-> 2666465312[6] (disabled)	
+[00:00:32]: Validating portal[5] <-> 2666465312[5] (disabled)	
+[00:00:32]: Validating portal[8] <-> 2666465312[8] (disabled)	
+[00:00:32]: Validating portal[4] <-> 2666465312[4] (disabled)	
+[00:00:32]: Validating portal[7] <-> 2666465312[7] (disabled)	
+[00:00:32]: Validating portal[9] <-> 2666465312[9] (disabled)	
+[00:00:41]: Registering master server in US lobby
+[00:04:08]: New incoming connection 24.4.255.244|52224 <647339893538938522>
+[00:04:08]: Client connected from 24.4.255.244|52224 <647339893538938522>
+[00:04:08]: ValidateGameSessionToken pgs-usc^KU_G_clads_^DontStarveTogether^kq7s7oQNScSOWxrzWuT5mS7U5KmN48UfMfkP/RITBSM= for <647339893538938522>
+[00:04:09]: Client authenticated: (KU_G_clads_) DreamingApples
+[00:04:09]: [Steam] SendUserConnectAndAuthenticate for '76561198080290377'
+[00:04:09]: [Steam] Authenticated client '76561198080290377'
+[00:04:10]: There is no active event to validate against.
+[00:04:10]: [Shard] Read save location file for (KU_G_clads_)
+[00:04:11]: Registering master server in US lobby
+[00:04:23]: Resuming user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000031
+[00:04:23]: Spawning player at: [Load] (-68.11, -0.00, -322.01)	
+[00:04:23]: Sim unpaused
+[00:04:23]: Registering master server in US lobby
+[00:05:31]: New incoming connection 73.93.152.233|19531 <17356894636697736726>
+[00:05:31]: Client connected from 73.93.152.233|19531 <17356894636697736726>
+[00:05:31]: ValidateGameSessionToken pgs-usc^KU_3Dirn8-V^DontStarveTogether^HzMkrOtlqhCSWrVRWJpB2oVp4CzRIYAUzbhnHrKg+V4= for <17356894636697736726>
+[00:05:32]: Client authenticated: (KU_3Dirn8-V) Jinny
+[00:05:32]: [Steam] SendUserConnectAndAuthenticate for '76561199037658351'
+[00:05:32]: [Steam] Authenticated client '76561199037658351'
+[00:05:33]: There is no active event to validate against.
+[00:05:33]: [Shard] Read save location file for (KU_3Dirn8-V)
+[00:05:33]: Registering master server in US lobby
+[00:05:44]: New incoming connection 73.93.152.233|19714 <16550379871070625133>
+[00:05:44]: Client connected from 73.93.152.233|19714 <16550379871070625133>
+[00:05:44]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^uOsQvdKXgjIOub/gLyfPbMfJ3EiHd4qngjsG5ZGG9YA= for <16550379871070625133>
+[00:05:44]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[00:05:44]: [Steam] Authenticated host '76561197971690736'
+[00:05:45]: There is no active event to validate against.
+[00:05:45]: [Shard] Read save location file for (KU_nIwUWxJ4)
+[00:05:45]: Registering master server in US lobby
+[00:05:45]: Resuming user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000031
+[00:05:45]: Spawning player at: [Load] (-66.29, -0.00, -302.51)	
+[00:05:54]: Resuming user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000031
+[00:05:54]: Spawning player at: [Load] (-61.72, -0.00, -324.03)	
+[00:05:56]: Registering master server in US lobby
+[00:05:56]: KU_3Dirn8-V	running text command:	wave	true	
+[00:06:05]: KU_nIwUWxJ4	running text command:	squat	true	
+[00:06:20]: KU_nIwUWxJ4	running text command:	sit	true	
+[00:06:43]: New incoming connection 24.4.255.244|62776 <167027709502209457>
+[00:06:43]: Client connected from 24.4.255.244|62776 <167027709502209457>
+[00:06:43]: ValidateGameSessionToken pgs-usc^KU_3nz48Pd4^DontStarveTogether^NUkjcNrH3a4r0CerMj8qXAp7nXGDzQlotmBunSNhQ8M= for <167027709502209457>
+[00:06:43]: Client authenticated: (KU_3nz48Pd4) Ryuukaze
+[00:06:43]: [Steam] SendUserConnectAndAuthenticate for '76561198030426044'
+[00:06:43]: [Steam] Authenticated client '76561198030426044'
+[00:06:44]: There is no active event to validate against.
+[00:06:44]: [Shard] Read save location file for (KU_3nz48Pd4)
+[00:06:44]: Registering master server in US lobby
+[00:06:53]: KU_nIwUWxJ4	running text command:	squat	true	
+[00:06:53]: Resuming user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000031
+[00:06:53]: Spawning player at: [Load] (-85.33, -0.00, -111.39)	
+[00:06:54]: Registering master server in US lobby
+[00:06:57]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000032
+[00:06:57]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000032
+[00:06:57]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000032
+[00:06:57]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000032
+[00:06:58]: Serializing world: session/B2C1CA1B648E5137/0000000032
+[00:07:04]: Registering master server in US lobby
+[00:13:18]: Could not find anim [death] in bank [ghost]
+[00:13:18]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000033
+[00:13:37]: Could not find anim [idle_loop] in bank [ghost]
+[00:13:40]: Could not find anim [transform] in bank [wilson]
+[00:13:41]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000033
+[00:14:54]: Could not find anim [death] in bank [ghost]
+[00:14:54]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000033
+[00:14:57]: Registering master server in US lobby
+[00:14:58]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000033
+[00:14:58]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000033
+[00:14:58]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000033
+[00:14:58]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000033
+[00:14:59]: Serializing world: session/B2C1CA1B648E5137/0000000033
+[00:15:26]: Could not find anim [idle_loop] in bank [ghost]
+[00:15:28]: Could not find anim [transform] in bank [wilson]
+[00:15:30]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000034
+[00:17:48]: Could not find anim [death] in bank [ghost]
+[00:17:48]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000034
+[00:18:01]: Could not find anim [idle_loop] in bank [ghost]
+[00:18:04]: Could not find anim [transform] in bank [wilson]
+[00:18:05]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000034
+[00:23:00]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000034
+[00:23:00]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000034
+[00:23:00]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000034
+[00:23:00]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000034
+[00:23:00]: Serializing world: session/B2C1CA1B648E5137/0000000034
+[00:23:02]: Registering master server in US lobby
+[00:30:06]: [200] Account Communication Success (6)
+[00:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:31:01]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000035
+[00:31:01]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000035
+[00:31:01]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000035
+[00:31:01]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000035
+[00:31:02]: Serializing world: session/B2C1CA1B648E5137/0000000035
+[00:31:07]: Registering master server in US lobby
+[00:35:28]: KU_nIwUWxJ4	running text command:	wave	true	
+[00:39:01]: Registering master server in US lobby
+[00:39:02]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000036
+[00:39:02]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000036
+[00:39:02]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000036
+[00:39:03]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000036
+[00:39:03]: Serializing world: session/B2C1CA1B648E5137/0000000036
+[00:46:25]: Could not find anim [death] in bank [ghost]
+[00:46:25]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000037
+[00:47:03]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000037
+[00:47:03]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000037
+[00:47:03]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000037
+[00:47:03]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000037
+[00:47:04]: Serializing world: session/B2C1CA1B648E5137/0000000037
+[00:47:06]: Registering master server in US lobby
+[00:48:20]: Could not find anim [death] in bank [ghost]
+[00:48:20]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000038
+[00:48:58]: Could not find anim [idle_loop] in bank [ghost]
+[00:49:01]: Could not find anim [transform] in bank [wilson]
+[00:49:02]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000038
+[00:49:18]: Could not find anim [idle_loop] in bank [ghost]
+[00:49:21]: Could not find anim [transform] in bank [wilson]
+[00:49:22]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000038
+[00:54:40]: KU_nIwUWxJ4	running text command:	squat	true	
+[00:55:05]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000038
+[00:55:05]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000038
+[00:55:05]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000038
+[00:55:05]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000038
+[00:55:05]: Serializing world: session/B2C1CA1B648E5137/0000000038
+[00:55:12]: Registering master server in US lobby
+[01:00:06]: [200] Account Communication Success (6)
+[01:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:00:56]: Could not find anim [death] in bank [ghost]
+[01:00:56]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000039
+[01:01:12]: Could not find anim [idle_loop] in bank [ghost]
+[01:01:15]: Could not find anim [transform] in bank [wilson]
+[01:01:16]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000039
+[01:03:04]: Registering master server in US lobby
+[01:03:05]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000039
+[01:03:05]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000039
+[01:03:05]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000039
+[01:03:05]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000039
+[01:03:06]: Serializing world: session/B2C1CA1B648E5137/0000000039
+[01:11:06]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000040
+[01:11:06]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000040
+[01:11:06]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000040
+[01:11:06]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000040
+[01:11:06]: Serializing world: session/B2C1CA1B648E5137/0000000040
+[01:11:09]: Registering master server in US lobby
+[01:17:31]: Could not find anim [death] in bank [ghost]
+[01:17:31]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000041
+[01:18:43]: Could not find anim [death] in bank [ghost]
+[01:18:43]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000041
+[01:19:01]: Could not find anim [idle_loop] in bank [ghost]
+[01:19:04]: Could not find anim [transform] in bank [wilson]
+[01:19:06]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000041
+[01:19:07]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000041
+[01:19:07]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000041
+[01:19:07]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000041
+[01:19:07]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000041
+[01:19:08]: Serializing world: session/B2C1CA1B648E5137/0000000041
+[01:19:14]: Registering master server in US lobby
+[01:19:17]: Could not find anim [idle_loop] in bank [ghost]
+[01:19:20]: Could not find anim [transform] in bank [wilson]
+[01:19:21]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000042
+[01:27:08]: Registering master server in US lobby
+[01:27:09]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000042
+[01:27:09]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000042
+[01:27:09]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000042
+[01:27:09]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000042
+[01:27:09]: Serializing world: session/B2C1CA1B648E5137/0000000042
+[01:30:06]: [200] Account Communication Success (6)
+[01:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:35:09]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000043
+[01:35:09]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000043
+[01:35:09]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000043
+[01:35:09]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000043
+[01:35:10]: Serializing world: session/B2C1CA1B648E5137/0000000043
+[01:35:13]: Registering master server in US lobby
+[01:43:10]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000044
+[01:43:10]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000044
+[01:43:10]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000044
+[01:43:10]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000044
+[01:43:11]: Serializing world: session/B2C1CA1B648E5137/0000000044
+[01:43:18]: Registering master server in US lobby
+[01:50:54]: Could not find anim [spawn] in bank [FROMNUM]
+[01:50:54]: Could not find anim [spawn] in bank [FROMNUM]
+[01:51:10]: Registering master server in US lobby
+[01:51:12]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000045
+[01:51:12]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000045
+[01:51:12]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000045
+[01:51:12]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000045
+[01:51:12]: Serializing world: session/B2C1CA1B648E5137/0000000045
+[01:59:13]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000046
+[01:59:13]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000046
+[01:59:13]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000046
+[01:59:13]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000046
+[01:59:13]: Serializing world: session/B2C1CA1B648E5137/0000000046
+[01:59:15]: Registering master server in US lobby
+[02:00:06]: [200] Account Communication Success (6)
+[02:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:07:14]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000047
+[02:07:14]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000047
+[02:07:14]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000047
+[02:07:14]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000047
+[02:07:15]: Serializing world: session/B2C1CA1B648E5137/0000000047
+[02:07:21]: Registering master server in US lobby
+[02:13:36]: KU_nIwUWxJ4	running text command:	squat	true	
+[02:13:46]: KU_nIwUWxJ4	running text command:	toast	true	
+[02:14:02]: KU_nIwUWxJ4	running text command:	sit	true	
+[02:15:01]: KU_nIwUWxJ4	running text command:	sit	true	
+[02:15:15]: Registering master server in US lobby
+[02:15:17]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000048
+[02:15:17]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000048
+[02:15:17]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000048
+[02:15:17]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000048
+[02:15:17]: Serializing world: session/B2C1CA1B648E5137/0000000048
+[02:22:51]: Could not find anim [death] in bank [ghost]
+[02:22:51]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000049
+[02:22:56]: Could not find anim [idle_loop] in bank [ghost]
+[02:22:59]: Could not find anim [death] in bank [ghost]
+[02:22:59]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000049
+[02:22:59]: Could not find anim [transform] in bank [wilson]
+[02:23:00]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000049
+[02:23:08]: Could not find anim [idle_loop] in bank [ghost]
+[02:23:11]: Could not find anim [transform] in bank [wilson]
+[02:23:12]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000049
+[02:23:19]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000049
+[02:23:19]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000049
+[02:23:19]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000049
+[02:23:19]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000049
+[02:23:19]: Serializing world: session/B2C1CA1B648E5137/0000000049
+[02:23:21]: Registering master server in US lobby
+[02:30:06]: [200] Account Communication Success (6)
+[02:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:31:20]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000050
+[02:31:20]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000050
+[02:31:20]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000050
+[02:31:20]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000050
+[02:31:21]: Serializing world: session/B2C1CA1B648E5137/0000000050
+[02:31:26]: Registering master server in US lobby
+[02:33:53]: Could not find anim [death] in bank [ghost]
+[02:33:53]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000051
+[02:35:32]: Could not find anim [idle_loop] in bank [ghost]
+[02:35:35]: Could not find anim [transform] in bank [wilson]
+[02:35:36]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000051
+[02:37:49]: Could not find anim [death] in bank [ghost]
+[02:37:49]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000051
+[02:37:56]: Could not find anim [idle_loop] in bank [ghost]
+[02:37:59]: Could not find anim [transform] in bank [wilson]
+[02:38:00]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000051
+[02:38:06]: Could not find anim [death] in bank [ghost]
+[02:38:06]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000051
+[02:38:17]: Could not find anim [idle_loop] in bank [ghost]
+[02:38:20]: Could not find anim [transform] in bank [wilson]
+[02:38:21]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000051
+[02:38:34]: Could not find anim [death] in bank [ghost]
+[02:38:34]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000051
+[02:38:36]: Could not find anim [idle_loop] in bank [ghost]
+[02:38:39]: Could not find anim [transform] in bank [wilson]
+[02:38:41]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000051
+[02:38:58]: Could not find anim [death] in bank [ghost]
+[02:38:58]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000051
+[02:39:01]: Could not find anim [death] in bank [ghost]
+[02:39:01]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000051
+[02:39:20]: Registering master server in US lobby
+[02:39:22]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000051
+[02:39:22]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000051
+[02:39:22]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000051
+[02:39:22]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000051
+[02:39:22]: Serializing world: session/B2C1CA1B648E5137/0000000051
+[02:39:34]: Could not find anim [idle_loop] in bank [ghost]
+[02:39:37]: Could not find anim [transform] in bank [wilson]
+[02:39:39]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000052
+[02:41:02]: Could not find anim [idle_loop] in bank [ghost]
+[02:41:05]: Could not find anim [transform] in bank [wilson]
+[02:41:06]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000052
+[02:43:17]: Could not find anim [death] in bank [ghost]
+[02:43:17]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000052
+[02:43:22]: Could not find anim [idle_loop] in bank [ghost]
+[02:43:25]: Could not find anim [death] in bank [ghost]
+[02:43:25]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000052
+[02:43:25]: Could not find anim [transform] in bank [wilson]
+[02:43:26]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000052
+[02:47:23]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000052
+[02:47:23]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000052
+[02:47:23]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000052
+[02:47:23]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000052
+[02:47:24]: Serializing world: session/B2C1CA1B648E5137/0000000052
+[02:47:26]: Registering master server in US lobby
+[02:47:41]: Could not find anim [idle_loop] in bank [ghost]
+[02:47:44]: Could not find anim [transform] in bank [wilson]
+[02:47:45]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000053
+[02:55:24]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000053
+[02:55:24]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000053
+[02:55:24]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000053
+[02:55:24]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000053
+[02:55:25]: Serializing world: session/B2C1CA1B648E5137/0000000053
+[02:55:31]: Registering master server in US lobby
 [03:00:06]: [200] Account Communication Success (6)
 [03:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[03:01:33]: Could not find anim [grow_normal_to_tall] in bank [tree_leaf_monster]
-[03:06:54]: KU_nIwUWxJ4	running text command:	toast	true	
-[03:08:04]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000026
-[03:08:04]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000026
-[03:08:04]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000026
-[03:08:04]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000026
-[03:08:05]: Serializing world: session/B2C1CA1B648E5137/0000000026
-[03:08:07]: Registering master server in US lobby
-[03:09:58]: Could not find anim [death] in bank [ghost]
-[03:09:58]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000027
-[03:10:03]: Could not find anim [idle_loop] in bank [ghost]
-[03:10:06]: Could not find anim [transform] in bank [wilson]
-[03:10:07]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000027
-[03:16:05]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000027
-[03:16:05]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000027
-[03:16:05]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000027
-[03:16:05]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000027
-[03:16:06]: Serializing world: session/B2C1CA1B648E5137/0000000027
-[03:16:12]: Registering master server in US lobby
-[03:22:53]: Could not find anim [death] in bank [ghost]
-[03:22:53]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000028
-[03:23:28]: KU_nIwUWxJ4	running text command:	wave	true	
-[03:23:30]: Could not find anim [idle_loop] in bank [ghost]
-[03:23:33]: Could not find anim [transform] in bank [wilson]
-[03:23:34]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000028
-[03:24:05]: Registering master server in US lobby
-[03:24:07]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000028
-[03:24:07]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000028
-[03:24:07]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000028
-[03:24:07]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000028
-[03:24:07]: Serializing world: session/B2C1CA1B648E5137/0000000028
+[03:03:24]: Registering master server in US lobby
+[03:03:25]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000054
+[03:03:25]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000054
+[03:03:25]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000054
+[03:03:25]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000054
+[03:03:25]: Serializing world: session/B2C1CA1B648E5137/0000000054
+[03:09:05]: Could not find anim [death] in bank [ghost]
+[03:09:05]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000055
+[03:09:09]: Could not find anim [idle_loop] in bank [ghost]
+[03:09:12]: Could not find anim [transform] in bank [wilson]
+[03:09:13]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000055
+[03:11:28]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000055
+[03:11:28]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000055
+[03:11:28]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000055
+[03:11:28]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000055
+[03:11:29]: Serializing world: session/B2C1CA1B648E5137/0000000055
+[03:11:29]: Registering master server in US lobby
+[03:12:49]: Could not find anim [death] in bank [ghost]
+[03:12:49]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000056
+[03:14:30]: Could not find anim [idle_loop] in bank [ghost]
+[03:14:33]: Could not find anim [transform] in bank [wilson]
+[03:14:35]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000056
+[03:15:41]: Could not find anim [death] in bank [ghost]
+[03:15:41]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000056
+[03:15:47]: Could not find anim [idle_loop] in bank [ghost]
+[03:15:50]: Could not find anim [transform] in bank [wilson]
+[03:15:51]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000056
+[03:19:30]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000056
+[03:19:30]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000056
+[03:19:30]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000056
+[03:19:30]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000056
+[03:19:31]: Serializing world: session/B2C1CA1B648E5137/0000000056
+[03:19:34]: Registering master server in US lobby
+[03:27:31]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000057
+[03:27:31]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000057
+[03:27:31]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000057
+[03:27:31]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000057
+[03:27:31]: Serializing world: session/B2C1CA1B648E5137/0000000057
+[03:27:39]: Registering master server in US lobby
 [03:30:06]: [200] Account Communication Success (6)
 [03:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[03:31:02]: KU_nIwUWxJ4	running text command:	wave	true	
-[03:31:05]: KU_nIwUWxJ4	running text command:	toast	true	
-[03:32:00]: KU_nIwUWxJ4	running text command:	wave	true	
-[03:32:03]: KU_nIwUWxJ4	running text command:	sit	true	
-[03:32:09]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000029
-[03:32:09]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000029
-[03:32:09]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000029
-[03:32:09]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000029
-[03:32:09]: Serializing world: session/B2C1CA1B648E5137/0000000029
-[03:32:11]: Registering master server in US lobby
-[03:34:14]: Could not find anim [grow_normal_to_tall] in bank [tree_leaf_monster]
-[03:40:10]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000030
-[03:40:10]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000030
-[03:40:10]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000030
-[03:40:10]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000030
-[03:40:10]: Serializing world: session/B2C1CA1B648E5137/0000000030
-[03:40:16]: Registering master server in US lobby
-[03:45:25]: [Steam] SendUserDisconnect for '76561197971690736'
-[03:45:25]: [Shard] (KU_nIwUWxJ4) disconnected from [SHDMASTER](1)
-[03:45:25]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000031
-[03:45:26]: Registering master server in US lobby
-[03:45:32]: [Steam] SendUserDisconnect for '76561198080290377'
-[03:45:32]: [Shard] (KU_G_clads_) disconnected from [SHDMASTER](1)
-[03:45:33]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000031
-[03:45:36]: Registering master server in US lobby
-[03:45:40]: [Steam] SendUserDisconnect for '76561198030426044'
-[03:45:40]: [Shard] (KU_3nz48Pd4) disconnected from [SHDMASTER](1)
-[03:45:40]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000031
-[03:45:40]: [Steam] SendUserDisconnect for '76561199037658351'
-[03:45:40]: [Shard] (KU_3Dirn8-V) disconnected from [SHDMASTER](1)
-[03:45:41]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000031
-[03:45:41]: Sim paused
-[03:45:46]: Registering master server in US lobby
+[03:30:15]: Could not find anim [grow_normal_to_tall] in bank [tree_leaf_monster]
+[03:30:15]: Could not find anim [grow_normal_to_tall] in bank [tree_leaf_monster]
+[03:31:10]: Could not find anim [death] in bank [ghost]
+[03:31:10]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000058
+[03:31:20]: Could not find anim [idle_loop] in bank [ghost]
+[03:31:23]: Could not find anim [transform] in bank [wilson]
+[03:31:24]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000058
+[03:32:37]: Could not find anim [death] in bank [ghost]
+[03:32:37]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000058
+[03:32:47]: Could not find anim [idle_loop] in bank [ghost]
+[03:32:50]: Could not find anim [transform] in bank [wilson]
+[03:32:51]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000058
+[03:33:07]: Could not find anim [death] in bank [ghost]
+[03:33:07]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000058
+[03:33:21]: Could not find anim [idle_loop] in bank [ghost]
+[03:33:24]: Could not find anim [transform] in bank [wilson]
+[03:33:25]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000058
+[03:33:26]: Could not find anim [transform_out] in bank [FROMNUM]
+[03:33:56]: Could not find anim [chop_tall_monster] in bank [FROMNUM]
+[03:35:30]: Registering master server in US lobby
+[03:35:32]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000058
+[03:35:32]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000058
+[03:35:32]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000058
+[03:35:32]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000058
+[03:35:32]: Serializing world: session/B2C1CA1B648E5137/0000000058
+[03:39:09]: Could not find anim [death] in bank [ghost]
+[03:39:09]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000059
+[03:39:14]: Could not find anim [idle_loop] in bank [ghost]
+[03:39:17]: Could not find anim [transform] in bank [wilson]
+[03:39:18]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000059
+[03:43:33]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000059
+[03:43:33]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000059
+[03:43:33]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000059
+[03:43:33]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000059
+[03:43:34]: Serializing world: session/B2C1CA1B648E5137/0000000059
+[03:43:35]: Registering master server in US lobby
+[03:46:44]: Validating portal[8] <-> 2666465312[8] (active)	
+[03:46:51]: Activating portal[8] to 2666465312	
+[03:46:52]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:46:52]: [Shard] Migration request: (KU_nIwUWxJ4) to Caves(2666465312)
+[03:46:52]: [Shard] Begin migration #1 for (KU_nIwUWxJ4)
+[03:46:52]: [Shard] #1 [SHDMASTER](1) -> Caves(2666465312)
+[03:46:52]: [Shard] #1 <- session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:46:52]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[03:46:52]: [Steam] SendUserDisconnect for '76561197971690736'
+[03:46:52]: [Shard] (KU_nIwUWxJ4) disconnected from [SHDMASTER](1)
+[03:46:56]: [Shard] Completed migration #1 for player (KU_nIwUWxJ4)
+[03:46:56]: [Shard] Writing save location file for (KU_nIwUWxJ4)
+[03:49:47]: [Shard] Begin migration #2 for (KU_nIwUWxJ4)
+[03:49:47]: [Shard] #2 Caves(2666465312) -> [SHDMASTER](1)
+[03:49:47]: [Shard] #2 -> session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:49:47]: [Shard] Received migration #2 data for (KU_nIwUWxJ4)
+[03:49:47]: [Shard] (KU_nIwUWxJ4) disconnected from Caves(2666465312)
+[03:49:51]: New incoming connection 73.93.152.233|19784 <18308281501663071369>
+[03:49:51]: Client connected from 73.93.152.233|19784 <18308281501663071369>
+[03:49:51]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^bTAtXjSVX3SE+5hk67hcDwdfDHA68eco7+Ay7/0VEVc= for <18308281501663071369>
+[03:49:51]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[03:49:51]: [Steam] Authenticated host '76561197971690736'
+[03:49:51]: [Shard] Completed incoming migration #2 for (KU_nIwUWxJ4)
+[03:49:51]: [Shard] Completed migration #2 for player (KU_nIwUWxJ4)
+[03:49:51]: [Shard] Writing save location file for (KU_nIwUWxJ4)
+[03:49:57]: Resuming user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:49:58]: Player will spawn close to portal #9	
+[03:49:58]: Spawning player at: [Load] (-524.76, 0.00, -115.50)	
+[03:49:58]: Validating portal[9] <-> 2666465312[9] (active)	
+[03:50:13]: Activating portal[9] to 2666465312	
+[03:50:14]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:50:14]: [Shard] Migration request: (KU_nIwUWxJ4) to Caves(2666465312)
+[03:50:14]: [Shard] Begin migration #3 for (KU_nIwUWxJ4)
+[03:50:14]: [Shard] #3 [SHDMASTER](1) -> Caves(2666465312)
+[03:50:14]: [Shard] #3 <- session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:50:14]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[03:50:14]: [Steam] SendUserDisconnect for '76561197971690736'
+[03:50:14]: [Shard] (KU_nIwUWxJ4) disconnected from [SHDMASTER](1)
+[03:50:16]: [Shard] Completed migration #3 for player (KU_nIwUWxJ4)
+[03:50:16]: [Shard] Writing save location file for (KU_nIwUWxJ4)
+[03:50:33]: [Shard] Begin migration #4 for (KU_nIwUWxJ4)
+[03:50:33]: [Shard] #4 Caves(2666465312) -> [SHDMASTER](1)
+[03:50:33]: [Shard] #4 -> session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:50:33]: [Shard] Received migration #4 data for (KU_nIwUWxJ4)
+[03:50:33]: [Shard] (KU_nIwUWxJ4) disconnected from Caves(2666465312)
+[03:50:35]: New incoming connection 73.93.152.233|19783 <8143587061751558256>
+[03:50:35]: Client connected from 73.93.152.233|19783 <8143587061751558256>
+[03:50:35]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^HIa5JcYOxqKKe2Ax9g+OYwGCb3ETcFZ+4yC18UZCRqA= for <8143587061751558256>
+[03:50:35]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[03:50:35]: [Steam] Authenticated host '76561197971690736'
+[03:50:35]: [Shard] Completed incoming migration #4 for (KU_nIwUWxJ4)
+[03:50:35]: [Shard] Completed migration #4 for player (KU_nIwUWxJ4)
+[03:50:35]: [Shard] Writing save location file for (KU_nIwUWxJ4)
+[03:50:42]: Resuming user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:50:42]: Player will spawn close to portal #8	
+[03:50:42]: Spawning player at: [Load] (-56.37, 0.00, -253.82)	
+[03:51:35]: Could not find anim [death] in bank [ghost]
+[03:51:35]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:51:38]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000060
+[03:51:38]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000060
+[03:51:38]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000060
+[03:51:38]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[03:51:39]: Serializing world: session/B2C1CA1B648E5137/0000000060
+[03:51:39]: Could not find anim [idle_loop] in bank [ghost]
+[03:51:41]: Registering master server in US lobby
+[03:51:42]: Could not find anim [transform] in bank [wilson]
+[03:51:43]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000061
+[03:59:31]: Could not find anim [spawn] in bank [FROMNUM]
+[03:59:32]: Could not find anim [spawn] in bank [FROMNUM]
+[03:59:39]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000061
+[03:59:39]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000061
+[03:59:39]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000061
+[03:59:39]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000061
+[03:59:39]: Serializing world: session/B2C1CA1B648E5137/0000000061
+[03:59:46]: Registering master server in US lobby
 [04:00:06]: [200] Account Communication Success (6)
 [04:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:07:38]: Registering master server in US lobby
+[04:07:40]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000062
+[04:07:40]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000062
+[04:07:40]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000062
+[04:07:40]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000062
+[04:07:40]: Serializing world: session/B2C1CA1B648E5137/0000000062
+[04:09:53]: Activating portal[8] to 2666465312	
+[04:09:53]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000063
+[04:09:53]: [Shard] Migration request: (KU_nIwUWxJ4) to Caves(2666465312)
+[04:09:53]: [Shard] Begin migration #5 for (KU_nIwUWxJ4)
+[04:09:53]: [Shard] #5 [SHDMASTER](1) -> Caves(2666465312)
+[04:09:53]: [Shard] #5 <- session/B2C1CA1B648E5137/A7M55QF87D64/0000000063
+[04:09:53]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[04:09:54]: [Steam] SendUserDisconnect for '76561197971690736'
+[04:09:54]: [Shard] (KU_nIwUWxJ4) disconnected from [SHDMASTER](1)
+[04:09:57]: [Shard] Completed migration #5 for player (KU_nIwUWxJ4)
+[04:09:57]: [Shard] Writing save location file for (KU_nIwUWxJ4)
+[04:13:01]: [Shard] Begin migration #6 for (KU_nIwUWxJ4)
+[04:13:01]: [Shard] #6 Caves(2666465312) -> [SHDMASTER](1)
+[04:13:02]: [Shard] #6 -> session/B2C1CA1B648E5137/A7M55QF87D64/0000000063
+[04:13:02]: [Shard] Received migration #6 data for (KU_nIwUWxJ4)
+[04:13:02]: [Shard] (KU_nIwUWxJ4) disconnected from Caves(2666465312)
+[04:13:04]: New incoming connection 73.93.152.233|19737 <12642536503609525644>
+[04:13:04]: Client connected from 73.93.152.233|19737 <12642536503609525644>
+[04:13:04]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^FuJgEU3nLv7anurxxnZGBEGZ6S3kUKLheU8UYOXvZj0= for <12642536503609525644>
+[04:13:05]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[04:13:05]: [Steam] Authenticated host '76561197971690736'
+[04:13:05]: [Shard] Completed incoming migration #6 for (KU_nIwUWxJ4)
+[04:13:05]: [Shard] Completed migration #6 for player (KU_nIwUWxJ4)
+[04:13:05]: [Shard] Writing save location file for (KU_nIwUWxJ4)
+[04:13:11]: Resuming user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000063
+[04:13:11]: Player will spawn close to portal #5	
+[04:13:11]: Spawning player at: [Load] (-156.51, 0.00, -103.24)	
+[04:13:11]: Validating portal[5] <-> 2666465312[5] (active)	
+[04:15:43]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000063
+[04:15:43]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000063
+[04:15:43]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000063
+[04:15:43]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000063
+[04:15:44]: Serializing world: session/B2C1CA1B648E5137/0000000063
+[04:15:44]: Registering master server in US lobby
+[04:23:50]: Registering master server in US lobby
+[04:23:51]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000064
+[04:23:51]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000064
+[04:23:51]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000064
+[04:23:51]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000064
+[04:23:51]: Serializing world: session/B2C1CA1B648E5137/0000000064
 [04:30:06]: [200] Account Communication Success (6)
 [04:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:31:54]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000065
+[04:31:54]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000065
+[04:31:54]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000065
+[04:31:54]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000065
+[04:31:54]: Serializing world: session/B2C1CA1B648E5137/0000000065
+[04:31:56]: Registering master server in US lobby
+[04:31:58]: Could not find anim [spawn] in bank [FROMNUM]
+[04:31:59]: Could not find anim [spawn] in bank [FROMNUM]
+[04:31:59]: Could not find anim [spawn] in bank [FROMNUM]
+[04:32:00]: Could not find anim [spawn] in bank [FROMNUM]
+[04:32:00]: Could not find anim [spawn] in bank [FROMNUM]
+[04:32:00]: Could not find anim [spawn] in bank [FROMNUM]
+[04:39:54]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000066
+[04:39:55]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000066
+[04:39:55]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000066
+[04:39:55]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000066
+[04:39:55]: Serializing world: session/B2C1CA1B648E5137/0000000066
+[04:40:01]: Registering master server in US lobby
+[04:42:33]: KU_nIwUWxJ4	running text command:	squat	true	
+[04:42:41]: KU_nIwUWxJ4	running text command:	squat	true	
+[04:47:54]: Registering master server in US lobby
+[04:47:55]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000067
+[04:47:55]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000067
+[04:47:55]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000067
+[04:47:55]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000067
+[04:47:56]: Serializing world: session/B2C1CA1B648E5137/0000000067
+[04:54:41]: Activating portal[9] to 2666465312	
+[04:54:41]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000068
+[04:54:41]: [Shard] Migration request: (KU_nIwUWxJ4) to Caves(2666465312)
+[04:54:42]: [Shard] Begin migration #7 for (KU_nIwUWxJ4)
+[04:54:42]: [Shard] #7 [SHDMASTER](1) -> Caves(2666465312)
+[04:54:42]: [Shard] #7 <- session/B2C1CA1B648E5137/A7M55QF87D64/0000000068
+[04:54:42]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[04:54:42]: [Steam] SendUserDisconnect for '76561197971690736'
+[04:54:42]: [Shard] (KU_nIwUWxJ4) disconnected from [SHDMASTER](1)
+[04:54:45]: [Shard] Completed migration #7 for player (KU_nIwUWxJ4)
+[04:54:45]: [Shard] Writing save location file for (KU_nIwUWxJ4)
+[04:55:16]: [Shard] Begin migration #8 for (KU_nIwUWxJ4)
+[04:55:16]: [Shard] #8 Caves(2666465312) -> [SHDMASTER](1)
+[04:55:16]: [Shard] #8 -> session/B2C1CA1B648E5137/A7M55QF87D64/0000000068
+[04:55:16]: [Shard] Received migration #8 data for (KU_nIwUWxJ4)
+[04:55:16]: [Shard] (KU_nIwUWxJ4) disconnected from Caves(2666465312)
+[04:55:18]: New incoming connection 73.93.152.233|19775 <13306815681654123684>
+[04:55:18]: Client connected from 73.93.152.233|19775 <13306815681654123684>
+[04:55:18]: ValidateGameSessionToken pgs-usc^KU_nIwUWxJ4^DontStarveTogether^wMGk2MAlS69mLNZbLLxiXj4lYL8zG8k5e/2wEJYKKt4= for <13306815681654123684>
+[04:55:18]: Client authenticated: (KU_nIwUWxJ4) amadochingu
+[04:55:18]: [Steam] Authenticated host '76561197971690736'
+[04:55:18]: [Shard] Completed incoming migration #8 for (KU_nIwUWxJ4)
+[04:55:18]: [Shard] Completed migration #8 for player (KU_nIwUWxJ4)
+[04:55:18]: [Shard] Writing save location file for (KU_nIwUWxJ4)
+[04:55:24]: Resuming user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000068
+[04:55:24]: Player will spawn close to portal #8	
+[04:55:24]: Spawning player at: [Load] (-57.15, 0.00, -253.67)	
+[04:55:57]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000068
+[04:55:57]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000068
+[04:55:57]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000068
+[04:55:57]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000068
+[04:55:58]: Serializing world: session/B2C1CA1B648E5137/0000000068
+[04:55:59]: Registering master server in US lobby
+[04:56:09]: [Steam] SendUserDisconnect for '76561198080290377'
+[04:56:09]: [Shard] (KU_G_clads_) disconnected from [SHDMASTER](1)
+[04:56:09]: Registering master server in US lobby
+[04:56:09]: Serializing user: session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000069
+[04:59:14]: [Steam] SendUserDisconnect for '76561198030426044'
+[04:59:14]: [Shard] (KU_3nz48Pd4) disconnected from [SHDMASTER](1)
+[04:59:14]: Registering master server in US lobby
+[04:59:14]: Serializing user: session/B2C1CA1B648E5137/A7GF3T2236E4/0000000069
 [05:00:06]: [200] Account Communication Success (6)
 [05:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:03:58]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000069
+[05:03:58]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000069
+[05:03:58]: Serializing world: session/B2C1CA1B648E5137/0000000069
+[05:03:59]: Registering master server in US lobby
+[05:04:58]: [Steam] SendUserDisconnect for '76561197971690736'
+[05:04:58]: [Shard] (KU_nIwUWxJ4) disconnected from [SHDMASTER](1)
+[05:04:59]: Serializing user: session/B2C1CA1B648E5137/A7M55QF87D64/0000000070
+[05:04:59]: Registering master server in US lobby
+[05:05:10]: [Steam] SendUserDisconnect for '76561199037658351'
+[05:05:10]: [Shard] (KU_3Dirn8-V) disconnected from [SHDMASTER](1)
+[05:05:10]: Registering master server in US lobby
+[05:05:10]: Serializing user: session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000070
+[05:05:10]: Sim paused
 [05:30:06]: [200] Account Communication Success (6)
 [05:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
 [06:00:06]: [200] Account Communication Success (6)
@@ -1107,18 +1329,18 @@
 [17:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
 [17:30:06]: [200] Account Communication Success (6)
 [17:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[18:00:06]: [200] Account Communication Success (6)
-[18:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[18:30:06]: [200] Account Communication Success (6)
-[18:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[19:00:06]: [200] Account Communication Success (6)
-[19:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[19:30:06]: [200] Account Communication Success (6)
-[19:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[20:00:06]: [200] Account Communication Success (6)
-[20:00:06]: Received (KU_nIwUWxJ4) from TokenPurpose
-[20:30:06]: [200] Account Communication Success (6)
-[20:30:06]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:00:07]: [200] Account Communication Success (6)
+[18:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:30:07]: [200] Account Communication Success (6)
+[18:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:00:07]: [200] Account Communication Success (6)
+[19:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:30:07]: [200] Account Communication Success (6)
+[19:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:00:07]: [200] Account Communication Success (6)
+[20:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:30:07]: [200] Account Communication Success (6)
+[20:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
 [21:00:07]: [200] Account Communication Success (6)
 [21:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
 [21:30:07]: [200] Account Communication Success (6)
@@ -1127,3 +1349,423 @@
 [22:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
 [22:30:07]: [200] Account Communication Success (6)
 [22:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:00:07]: [200] Account Communication Success (6)
+[23:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:30:07]: [200] Account Communication Success (6)
+[23:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:00:07]: [200] Account Communication Success (6)
+[00:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:30:07]: [200] Account Communication Success (6)
+[00:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:00:07]: [200] Account Communication Success (6)
+[01:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:30:07]: [200] Account Communication Success (6)
+[01:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:00:07]: [200] Account Communication Success (6)
+[02:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:30:07]: [200] Account Communication Success (6)
+[02:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:00:07]: [200] Account Communication Success (6)
+[03:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:30:07]: [200] Account Communication Success (6)
+[03:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:00:07]: [200] Account Communication Success (6)
+[04:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:30:07]: [200] Account Communication Success (6)
+[04:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:00:07]: [200] Account Communication Success (6)
+[05:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:30:07]: [200] Account Communication Success (6)
+[05:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[06:00:07]: [200] Account Communication Success (6)
+[06:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[06:30:07]: [200] Account Communication Success (6)
+[06:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[07:00:07]: [200] Account Communication Success (6)
+[07:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[07:30:07]: [200] Account Communication Success (6)
+[07:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[08:00:07]: [200] Account Communication Success (6)
+[08:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[08:30:07]: [200] Account Communication Success (6)
+[08:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[09:00:07]: [200] Account Communication Success (6)
+[09:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[09:30:07]: [200] Account Communication Success (6)
+[09:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[10:00:07]: [200] Account Communication Success (6)
+[10:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[10:30:07]: [200] Account Communication Success (6)
+[10:30:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[11:00:07]: [200] Account Communication Success (6)
+[11:00:07]: Received (KU_nIwUWxJ4) from TokenPurpose
+[11:30:08]: [200] Account Communication Success (6)
+[11:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[12:00:08]: [200] Account Communication Success (6)
+[12:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[12:30:08]: [200] Account Communication Success (6)
+[12:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[13:00:08]: [200] Account Communication Success (6)
+[13:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[13:30:08]: [200] Account Communication Success (6)
+[13:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[14:00:08]: [200] Account Communication Success (6)
+[14:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[14:30:08]: [200] Account Communication Success (6)
+[14:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[15:00:08]: [200] Account Communication Success (6)
+[15:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[15:30:08]: [200] Account Communication Success (6)
+[15:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[16:00:08]: [200] Account Communication Success (6)
+[16:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[16:30:08]: [200] Account Communication Success (6)
+[16:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:00:08]: [200] Account Communication Success (6)
+[17:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:30:08]: [200] Account Communication Success (6)
+[17:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:00:08]: [200] Account Communication Success (6)
+[18:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:30:08]: [200] Account Communication Success (6)
+[18:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:00:08]: [200] Account Communication Success (6)
+[19:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:30:08]: [200] Account Communication Success (6)
+[19:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:00:08]: [200] Account Communication Success (6)
+[20:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:30:08]: [200] Account Communication Success (6)
+[20:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:47:21]: Registering master server in US lobby
+[20:52:53]: Gameserver logged on to Steam, assigned identity steamid:90135991738667008
+[20:52:56]: Registering master server in US lobby
+[21:00:08]: [200] Account Communication Success (6)
+[21:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:30:08]: [200] Account Communication Success (6)
+[21:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:00:08]: [200] Account Communication Success (6)
+[22:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:30:08]: [200] Account Communication Success (6)
+[22:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:00:08]: [200] Account Communication Success (6)
+[23:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:30:08]: [200] Account Communication Success (6)
+[23:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:00:08]: [200] Account Communication Success (6)
+[00:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:30:08]: [200] Account Communication Success (6)
+[00:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:00:08]: [200] Account Communication Success (6)
+[01:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:30:08]: [200] Account Communication Success (6)
+[01:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:00:08]: [200] Account Communication Success (6)
+[02:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[02:30:08]: [200] Account Communication Success (6)
+[02:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:00:08]: [200] Account Communication Success (6)
+[03:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[03:30:08]: [200] Account Communication Success (6)
+[03:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:00:08]: [200] Account Communication Success (6)
+[04:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[04:30:08]: [200] Account Communication Success (6)
+[04:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:00:08]: [200] Account Communication Success (6)
+[05:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[05:30:08]: [200] Account Communication Success (6)
+[05:30:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[06:00:08]: [200] Account Communication Success (6)
+[06:00:08]: Received (KU_nIwUWxJ4) from TokenPurpose
+[06:30:09]: [200] Account Communication Success (6)
+[06:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[07:00:09]: [200] Account Communication Success (6)
+[07:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[07:30:09]: [200] Account Communication Success (6)
+[07:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[08:00:09]: [200] Account Communication Success (6)
+[08:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[08:30:09]: [200] Account Communication Success (6)
+[08:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[09:00:09]: [200] Account Communication Success (6)
+[09:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[09:30:09]: [200] Account Communication Success (6)
+[09:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[10:00:09]: [200] Account Communication Success (6)
+[10:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[10:30:09]: [200] Account Communication Success (6)
+[10:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[11:00:09]: [200] Account Communication Success (6)
+[11:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[11:30:09]: [200] Account Communication Success (6)
+[11:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[12:00:09]: [200] Account Communication Success (6)
+[12:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[12:30:09]: [200] Account Communication Success (6)
+[12:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[13:00:09]: [200] Account Communication Success (6)
+[13:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[13:30:09]: [200] Account Communication Success (6)
+[13:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[14:00:09]: [200] Account Communication Success (6)
+[14:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[14:30:09]: [200] Account Communication Success (6)
+[14:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[15:00:09]: [200] Account Communication Success (6)
+[15:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[15:30:09]: [200] Account Communication Success (6)
+[15:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[16:00:09]: [200] Account Communication Success (6)
+[16:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[16:30:09]: [200] Account Communication Success (6)
+[16:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:00:09]: [200] Account Communication Success (6)
+[17:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[17:30:09]: [200] Account Communication Success (6)
+[17:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:00:09]: [200] Account Communication Success (6)
+[18:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[18:30:09]: [200] Account Communication Success (6)
+[18:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:00:09]: [200] Account Communication Success (6)
+[19:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[19:30:09]: [200] Account Communication Success (6)
+[19:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:00:09]: [200] Account Communication Success (6)
+[20:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[20:30:09]: [200] Account Communication Success (6)
+[20:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:00:09]: [200] Account Communication Success (6)
+[21:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[21:30:09]: [200] Account Communication Success (6)
+[21:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:00:09]: [200] Account Communication Success (6)
+[22:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[22:30:09]: [200] Account Communication Success (6)
+[22:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:00:09]: [200] Account Communication Success (6)
+[23:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[23:30:09]: [200] Account Communication Success (6)
+[23:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:00:09]: [200] Account Communication Success (6)
+[00:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[00:30:09]: [200] Account Communication Success (6)
+[00:30:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:00:09]: [200] Account Communication Success (6)
+[01:00:09]: Received (KU_nIwUWxJ4) from TokenPurpose
+[01:15:38]: Serializing world: session/B2C1CA1B648E5137/0000000070
+[01:15:38]: Truncating to snapshot #70...
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000044
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000058
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000041
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000051
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000031
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000042
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000040
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000045
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000038
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000057
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000026
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000046
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000025
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000024
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000039
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000022
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000048
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000050
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000060
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000028
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000047
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000036
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000030
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000049
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000037
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000052
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000054
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000033
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000035
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000027
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000059
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000034
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000056
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000053
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000043
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000029
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000023
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000055
+[01:15:38]:  - session/B2C1CA1B648E5137/0000000032
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000060
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000059
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000058
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000057
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000056
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000055
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000054
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000053
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000052
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000051
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000050
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000049
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000048
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000047
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000046
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000045
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000044
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000043
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000042
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000041
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000040
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000039
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000038
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000037
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000036
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000035
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000034
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000033
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000032
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000031
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000030
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000029
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000028
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000027
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000026
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000025
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000024
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000023
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GCRCQS93SV/0000000022
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000060
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000059
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000058
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000057
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000056
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000055
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000054
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000053
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000052
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000051
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000050
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000049
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000048
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000047
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000046
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000045
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000044
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000043
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000042
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000041
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000040
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000039
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000038
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000037
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000036
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000035
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000034
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000033
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000032
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000031
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000030
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000029
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000028
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000027
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000026
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000025
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000024
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000023
+[01:15:38]:  - session/B2C1CA1B648E5137/A7GF3T2236E4/0000000022
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000060
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000059
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000058
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000057
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000056
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000055
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000054
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000053
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000052
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000051
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000050
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000049
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000048
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000047
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000046
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000045
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000044
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000043
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000042
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000041
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000040
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000039
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000038
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000037
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000036
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000035
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000034
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000033
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000032
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000031
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000030
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000029
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000028
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000027
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000026
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000025
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000024
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000023
+[01:15:38]:  - session/B2C1CA1B648E5137/A7M55QF87D64/0000000022
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000060
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000059
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000058
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000057
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000056
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000055
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000054
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000053
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000052
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000051
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000050
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000049
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000048
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000047
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000046
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000045
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000044
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000043
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000042
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000041
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000040
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000039
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000038
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000037
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000036
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000035
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000034
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000033
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000032
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000031
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000030
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000029
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000028
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000027
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000026
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000025
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000024
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000023
+[01:15:39]:  - session/B2C1CA1B648E5137/A7I3V6NP4VDV/0000000022
+[01:15:39]:    195 file(s) removed
+[01:15:39]: Removing server from US lobby
+[01:15:39]: [Shard] Stopping shard mode
+[01:15:39]: Collecting garbage...
+[01:15:40]: lua_gc took 0.66 seconds
+[01:15:40]: ~ShardLuaProxy()
+[01:15:40]: ~cEventLeaderboardProxy()
+[01:15:40]: ~ItemServerLuaProxy()
+[01:15:40]: ~InventoryLuaProxy()
+[01:15:40]: ~NetworkLuaProxy()
+[01:15:40]: ~SimLuaProxy()
+[01:15:40]: Cancelling LuaQueryCallback handle [616]
+[01:15:40]: Cancelling LuaQueryCallback handle [617]
+[01:15:41]: lua_close took 0.95 seconds
+[01:15:41]: Orphaned unnamed resource. This resource must have used Add( resource ) to insert itself into the manager. 
+[01:15:41]: CurlRequestManager::ClientThread::Main() complete
+[01:15:41]: HttpClient2 discarded 0 callbacks.
+[01:15:41]: Shutting down
