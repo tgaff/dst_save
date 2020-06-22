@@ -133,6 +133,9 @@ local function fn()
     inst:AddTag("blueflame")
     inst:AddTag("NPC_workable")
 
+	-- for storytellingprop component
+	inst:AddTag("storytellingprop")
+
     MakeObstaclePhysics(inst, .3)
 
     inst.entity:SetPristine()
@@ -165,6 +168,9 @@ local function fn()
     inst.components.fueled:InitializeFuelLevel(TUNING.COLDFIRE_FUEL_START)
 
     -----------------------------
+    inst:AddComponent("storytellingprop")
+
+    -----------------------------
 
     inst:AddComponent("inspectable")
     inst.components.inspectable.getstatus = getstatus
@@ -192,8 +198,6 @@ inst:ListenForEvent("rez_player", OnRezPlayer)
 
     return inst
 end
-
-
 
 return Prefab("coldfire", fn, assets, prefabs),
     MakePlacer("coldfire_placer", "coldfire", "coldfire", "preview")
