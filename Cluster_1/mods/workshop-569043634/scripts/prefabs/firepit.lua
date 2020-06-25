@@ -161,6 +161,9 @@ local function fn()
     --cooker (from cooker component) added to pristine state for optimization
     inst:AddTag("cooker")
 
+   	-- for storytellingprop component
+	inst:AddTag("storytellingprop")
+
     if TheNet:GetServerGameMode() == "quagmire" then
         inst:AddTag("installations")
         inst:AddTag("quagmire_stewer")
@@ -214,6 +217,8 @@ local function fn()
     inst.components.fueled:SetUpdateFn(onupdatefueled)
     inst.components.fueled:SetSectionCallback(onfuelchange)
     inst.components.fueled:InitializeFuelLevel(TUNING.FIREPIT_FUEL_START)
+
+    inst:AddComponent("storytellingprop")
 
     -----------------------------
     if TheNet:GetServerGameMode() == "quagmire" then

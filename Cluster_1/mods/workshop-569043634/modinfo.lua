@@ -1,7 +1,7 @@
 name = "Campfire Respawn"
-description = "Allows you to respawn, when you haunt campfires.".."\n".."Works the same way as the Jury-Rigged Portal.".."\n\n".."Affects:".."\n".."*Campfire".."\n".."*Firepit".."\n".."*Endothermic Fire".."\n".."*Endothermic Fire Pit".."\n".."Only works in Endless and Survival mode.".."\n".."Version 1.5"
+description = "Allows you to respawn, when you haunt campfires.".."\n".."Works the same way as the Jury-Rigged Portal.".."\n\n".."Affects:".."\n".."*Campfire".."\n".."*Firepit".."\n".."*Endothermic Fire".."\n".."*Endothermic Fire Pit".."\n".."Only works in Endless and Survival mode.".."\n".."Version 1.5.1".."\n".."License : Public Domain"
 author = "VampireMonkey"
-version = "v1.5"
+version = "v1.5.1"
 
 dont_starve_compatible = true
 dst_compatible = true
