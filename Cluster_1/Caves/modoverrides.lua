@@ -61,7 +61,7 @@ return {
       chester_max=1,
       chester_science="{tech = TUNING.PROTOTYPER_TREES.SCIENCEMACHINE, hint = string.sub(STRINGS.UI.CRAFTING.NEEDSCIENCEMACHINE, 1, -14)..\" this!\"}",
       followertypes=6,
-      hutch_craft="{Ingredient(\"ice\", 1),Ingredient(\"waterballoon\", 4),Ingredient(\"fish\", 1),Ingredient(\"bluegem\", 1)}",
+      hutch_craft="{Ingredient(\"ice\", 1),Ingredient(\"waterballoon\", 4),Ingredient(\"pondfish\", 1),Ingredient(\"bluegem\", 1)}",
       hutch_locations="{\"forest\", \"island\"}",
       hutch_max=1,
       hutch_science="{tech = TUNING.PROTOTYPER_TREES.SHADOWMANIPULATOR, hint = string.sub(STRINGS.UI.CRAFTING.NEEDSHADOWMANIPULATOR, 1, -14)..\" this!\"}",
