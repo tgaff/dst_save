@@ -56,7 +56,7 @@ return {
       HUTCH=0,
       MAIN=0,
       PACKIM=0,
-      chester_craft="{Ingredient(\"livinglog\", 1),Ingredient(\"rope\", 1),Ingredient(\"goldnugget\", 1),Ingredient(\"nightmarefuel\", 1)}",
+      chester_craft="{Ingredient(\"livinglog\", 1),Ingredient(\"rope\", 1),Ingredient(\"boneshard\", 8),Ingredient(\"nightmarefuel\", 2)}",
       chester_locations="{}",
       chester_max=1,
       chester_science="{tech = TUNING.PROTOTYPER_TREES.SCIENCEMACHINE, hint = string.sub(STRINGS.UI.CRAFTING.NEEDSCIENCEMACHINE, 1, -14)..\" this!\"}",
