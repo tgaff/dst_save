@@ -20,8 +20,8 @@ directory. If not, please refer to
 
 --[[
 Okay here is the deal with how this works:
-We need some function that we can send a custom data from the lua side of the slave shard servers, to the lua side of the master shard.
-(Slave Lua to Slave C to Master C to Master Lua)
+We need some function that we can send a custom data from the lua side of the secondary shard servers, to the lua side of the master shard.
+(Secondary Lua to Secondary C to Master C to Master Lua)
 Tecnicaly we only need to be able to send a custom string since we can load a string as raw lua code,
 THE ONLY way of doing this is the Announcements/SystemMessage system.
 so we do a "System Message" with the unique prefix HSR(HandleShardRPC) if we encounter a system message with the prefix HSR,
@@ -170,7 +170,7 @@ local function SendShardRPC(id_table, shardlist, ...)
 	TheNet:SystemMessage("HSR"..table.concat(ArgStrings, ","))
 end
 
---small helper function for pure slave -> master communication
+--small helper function for pure secondary -> master communication
 local function SendShardRPCToServer(id_table, ...)
     SendShardRPC(id_table, tonumber(SHARDID.MASTER), ...)
 end

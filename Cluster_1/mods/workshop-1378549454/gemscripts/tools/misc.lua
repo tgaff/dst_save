@@ -60,7 +60,7 @@ local custom_atlases = {}
 local _GetInventoryItemAtlas = GetInventoryItemAtlas
 function GetInventoryItemAtlas(imagename, ...)
     local atlas = inventoryItemAtlasLookup[imagename]
-    if atlas then _GetInventoryItemAtlas(imagename, ...) end
+    if atlas then return _GetInventoryItemAtlas(imagename, ...) end
     for i, custom_atlas in ipairs(custom_atlases) do
         atlas = TheSim:AtlasContains(custom_atlas, imagename) and custom_atlas or nil
         if atlas then
@@ -101,6 +101,7 @@ return {
 	},
 	Local = {
 		DebugPrint = DebugPrint,
+        minitraceback = minitraceback,
 		AddContainerWidget = AddContainerWidget,
         AddInventoryItemAtlas = AddInventoryItemAtlas,
 	},

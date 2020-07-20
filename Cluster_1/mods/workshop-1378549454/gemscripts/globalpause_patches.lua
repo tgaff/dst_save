@@ -71,6 +71,92 @@ if not TheNet:IsDedicated() then
             end
         end)
     end)
+
+
+    GEMENV.AddGamePostInit(function()
+        --this patch fixes the game not unpausing when using a controller sometimes.
+        if TheNet:GetIsServerAdmin() and rawget(_G, "GLOBALPAUSE") and GLOBALPAUSE.AUTOPAUSEENABLED then
+            local autopaused = false
+
+            local function GetPlayerCount()
+                local ClientObjs = TheNet:GetClientTable()
+                if ClientObjs == nil then
+                    return #{}
+                elseif TheNet:GetServerIsClientHosted() then
+                    return #ClientObjs
+                end
+
+                --remove dedicate host from player list
+                for i, v in ipairs(ClientObjs) do
+                    if v.performance ~= nil then
+                        table.remove(ClientObjs, i)
+                        break
+                    end
+                end
+                return #ClientObjs
+            end
+
+            if GLOBALPAUSE.AUTOPAUSEMAP then
+                local MapScreen = require("screens/mapscreen")
+
+                local _MapScreen_OnBecomeActive = MapScreen.OnBecomeActive
+                function MapScreen:OnBecomeActive(...)
+                    if GetPlayerCount() == 1 then
+                        if not TheWorld.ispaused then
+                            TheWorld:SetPause(true)
+                            autopaused = true
+                        end
+                    end
+                    local _ispaused = rawget(TheWorld, "ispaused")
+                    if autopaused then
+                        rawset(TheWorld, "ispaused", true)
+                    end
+                    local rets = {_MapScreen_OnBecomeActive(self, ...)}
+                    rawset(TheWorld, "ispaused", _ispaused)
+                    return unpack(rets)
+                end
+
+                local _MapScreen_OnBecomeInactive = MapScreen.OnBecomeInactive
+                function MapScreen:OnBecomeInactive(...)
+                    if autopaused then
+                        TheWorld:SetPause(false)
+                    end
+                    autopaused = false
+                    return _MapScreen_OnBecomeInactive(self, ...)
+                end
+            end
+
+            if GLOBALPAUSE.AUTOPAUSECONSOLE then
+                local ConsoleScreen = require("screens/consolescreen")
+
+                local _ConsoleScreen_OnBecomeActive = ConsoleScreen.OnBecomeActive
+                function ConsoleScreen:OnBecomeActive(...)
+                    if GetPlayerCount() == 1 then
+                        if not TheWorld.ispaused then
+                            TheWorld:SetPause(true)
+                            autopaused = true
+                        end
+                    end
+                    local _ispaused = rawget(TheWorld, "ispaused")
+                    if autopaused then
+                        rawset(TheWorld, "ispaused", true)
+                    end
+                    local rets = {_ConsoleScreen_OnBecomeActive(self, ...)}
+                    rawset(TheWorld, "ispaused", _ispaused)
+                    return unpack(rets)
+                end
+
+                local _ConsoleScreen_OnBecomeInactive = ConsoleScreen.OnBecomeInactive
+                function ConsoleScreen:OnBecomeInactive(...)
+                    if autopaused then
+                        TheWorld:SetPause(false)
+                    end
+                    autopaused = false
+                    return _ConsoleScreen_OnBecomeInactive(self, ...)
+                end
+            end
+        end
+    end)
 end
 
 if TheNet:GetIsServer() then
@@ -89,71 +175,4 @@ if TheNet:GetIsServer() then
             return true
         end, "AllPlayersPaused")
     end)
-end
-
---this patch fixes the game not unpausing when using a controller sometimes.
-if TheNet:GetIsServerAdmin() then
-    local autopaused = false
-
-    local function GetPlayerCount()
-        local ClientObjs = TheNet:GetClientTable()
-        if ClientObjs == nil then
-            return #{}
-        elseif TheNet:GetServerIsClientHosted() then
-            return #ClientObjs
-        end
-
-        --remove dedicate host from player list
-        for i, v in ipairs(ClientObjs) do
-            if v.performance ~= nil then
-                table.remove(ClientObjs, i)
-                break
-            end
-        end
-        return #ClientObjs
-    end
-
-    local MapScreen = require("screens/mapscreen")
-
-    local _MapScreen_OnBecomeActive = MapScreen.OnBecomeActive
-    function MapScreen:OnBecomeActive(...)
-        if rawget(_G, "GLOBALPAUSE") and GLOBALPAUSE.AUTOPAUSEENABLED and GLOBALPAUSE.AUTOPAUSEMAP and GetPlayerCount() == 1 then
-            if not TheWorld.ispaused then
-                TheWorld:SetPause(true)
-                autopaused = true
-            end
-        end
-        return _MapScreen_OnBecomeActive(self, ...)
-    end
-
-    local _MapScreen_OnBecomeInactive = MapScreen.OnBecomeInactive
-    function MapScreen:OnBecomeInactive(...)
-        if autopaused then
-            TheWorld:SetPause(false)
-        end
-        autopaused = false
-        return _MapScreen_OnBecomeInactive(self, ...)
-    end
-
-    local ConsoleScreen = require("screens/consolescreen")
-
-    local _ConsoleScreen_OnBecomeActive = ConsoleScreen.OnBecomeActive
-    function ConsoleScreen:OnBecomeActive(...)
-        if rawget(_G, "GLOBALPAUSE") and GLOBALPAUSE.AUTOPAUSEENABLED and GLOBALPAUSE.AUTOPAUSECONSOLE and GetPlayerCount() == 1 then
-            if not TheWorld.ispaused then
-                TheWorld:SetPause(true)
-                autopaused = true
-            end
-        end
-        return _ConsoleScreen_OnBecomeActive(self, ...)
-    end
-
-    local _ConsoleScreen_OnBecomeInactive = ConsoleScreen.OnBecomeInactive
-    function ConsoleScreen:OnBecomeInactive(...)
-        if autopaused then
-            TheWorld:SetPause(false)
-        end
-        autopaused = false
-        return _ConsoleScreen_OnBecomeInactive(self, ...)
-    end
 end

@@ -82,7 +82,6 @@ gemrun("worldseedhelper")
 env.first_load = first_load
 modimport("gemscripts/legacy_modfrontendmain")
 env.first_load = nil
-
 MakeGemFunction("extendenvironment", function(functionname, env, ...)
     local gemrun = gemrun
     _G.setfenv(1, env)

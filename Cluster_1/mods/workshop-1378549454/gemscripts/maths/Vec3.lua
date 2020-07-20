@@ -22,26 +22,81 @@ Vec3 = Class(function(self, x, y, z)
     self.x, self.y, self.z = x or 0, y or 0, z or 0
 end)
 
-Vec3.__add = Vector3.__add
-Vec3.__sub = Vector3.__sub
-Vec3.__mul = Vector3.__mul
-Vec3.__div = Vector3.__div
-Vec3.Dot = Vector3.Dot
-Vec3.Cross = Vector3.Cross
+function Vec3:__add(rhs)
+    return Vec3(self.x + rhs.x, self.y + rhs.y, self.z + rhs.z)
+end
+
+function Vec3:__sub(rhs)
+    return Vec3(self.x - rhs.x, self.y - rhs.y, self.z - rhs.z)
+end
+
+function Vec3:__mul(rhs)
+    return Vec3(self.x * rhs.x, self.y * rhs.y, self.z * rhs.z)
+end
+
+function Vec3:__div(rhs)
+    return Vec3(self.x / rhs.x, self.y / rhs.y, self.z / rhs.z)
+end
+
+function Vec3:Dot(rhs)
+    return self.x * rhs.x + self.y * rhs.y + self.z * rhs.z
+end
+
+function Vec3:Cross(rhs)
+    return Vec3(self.y * rhs.z - self.z * rhs.y,
+                self.z * rhs.x - self.x * rhs.z,
+                self.x * rhs.y - self.y * rhs.x)
+end
+
 Vec3.__tostring = Vector3.__tostring
+--we want comparison to work between Vec3 and Vector3
 Vec3.__eq = Vector3.__eq
 
-Vec3.DistSq = Vector3.DistSq
-Vec3.Dist = Vector3.Dist
-Vec3.LengthSq = Vector3.LengthSq
-Vec3.Length = Vector3.Length
-Vec3.Normalize = Vector3.Normalize
-Vec3.GetNormalized = Vector3.GetNormalized
-Vec3.GetNormalizedAndLength = Vector3.GetNormalizedAndLength
-Vec3.Get = Vector3.Get
+function Vec3:DistSq(other)
+    return (self.x - other.x)*(self.x - other.x) + (self.y - other.y)*(self.y - other.y) + (self.z - other.z)*(self.z - other.z)
+end
+
+function Vec3:Dist(other)
+    return math.sqrt(self:DistSq(other))
+end
+
+function Vec3:LengthSq()
+    return self.x*self.x + self.y*self.y + self.z*self.z
+end
+
+function Vec3:Length()
+    return math.sqrt(self:LengthSq())
+end
+
+function Vec3:Normalize()
+    local len = self:Length()
+    if len > 0 then
+        self.x = self.x / len
+        self.y = self.y / len
+        self.z = self.z / len
+    end
+    return self
+end
+
+function Vec3:GetNormalized()
+    return self / self:Length()
+end
+
+function Vec3:GetNormalizedAndLength()
+    local len = self:Length()
+    return (len > 0 and self / len) or self, len
+end
+
+function Vec3:Get()
+    return self.x, self.y, self.z
+end
 
 function Vec3:__unm()
     return Vec3(-self.x, -self.y, -self.z)
+end
+
+function Vector3:__unm()
+    return Vector3(-self.x, -self.y, -self.z)
 end
 
 MakeVecCtor(Vec3)

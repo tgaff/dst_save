@@ -9,12 +9,12 @@ The source code is shared for referrence and academic purposes
 with the hope that people can read and learn from it. This is not
 Free and Open Source software, and code is not redistributable
 without permission of the author. Read the RECEX SHARED
-SOURCE LICENSE for details 
+SOURCE LICENSE for details
 The source codes does not come with any warranty including
-the implied warranty of merchandise. 
+the implied warranty of merchandise.
 You should have received a copy of the RECEX SHARED SOURCE
 LICENSE in the form of a LICENSE file in the root of the source
-directory. If not, please refer to 
+directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 
@@ -52,17 +52,17 @@ function OnRemoveEntity(entityguid)
 end
 
 function EntityScript:AddPhysicsCallback(src, fn)
-    if PhysicsCollisionCallbacksList[inst.GUID] == nil then
-        PhysicsCollisionCallbacksList[inst.GUID] = {}
+    if PhysicsCollisionCallbacksList[self.GUID] == nil then
+        PhysicsCollisionCallbacksList[self.GUID] = {}
     end
-    PhysicsCollisionCallbacksList[inst.GUID][src] = fn
+    PhysicsCollisionCallbacksList[self.GUID][src] = fn
 end
 
 function EntityScript:RemovePhysicsCallback(src)
-    if PhysicsCollisionCallbacksList[inst.GUID] == nil then
-        PhysicsCollisionCallbacksList[inst.GUID] = {}
+    if PhysicsCollisionCallbacksList[self.GUID] == nil then
+        PhysicsCollisionCallbacksList[self.GUID] = {}
     end
-    PhysicsCollisionCallbacksList[inst.GUID][src] = nil
+    PhysicsCollisionCallbacksList[self.GUID][src] = nil
 end
 
 function SpeedToTickSpeed(speed, scale)
@@ -158,11 +158,11 @@ local function DoFakePhysicsWallMovement(inst, speed, canmoveto, getmaxxz, dorea
         mx, mz = math.rotate(math.abs(cx) < math.abs(rcx) and cx or rcx, math.abs(cz) < math.abs(rcz) and cz or rcz, deg)
         inst.Physics:SetMotorVel(mx, my, mz)
 
-        if false and inst:HasTag("player") then 
+        if false and inst:HasTag("player") then
             print(string.format("\npredictedcoords:\ndeg: %.2f\nx: %.4f z: %.4f\npx: %.4f pz: %.4f\nfinalx: %.4f finalz: %.4f\nmomentumx: %.4f momentumz: %.4f\nmovementdata:\ncalcx: %.4f calcz: %.4f\nrealx: %.4f realz: %.4f",
                 math.deg(deg), x, z, px, pz, finalxpos, finalzpos, mx, mz, cx, cz, rcx, rcz))
         end
-        return true      
+        return true
     end
     dorealmovement(unpack(dorealargs))
     return false

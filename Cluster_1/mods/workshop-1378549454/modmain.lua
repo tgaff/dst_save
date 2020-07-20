@@ -19,6 +19,8 @@ directory. If not, please refer to
 ]]
 local _G = GLOBAL
 
+_G.global("MOD_POSTINIT")
+
 Assets = {
     Asset("IMAGE", "images/gemdict_ui.tex"),
     Asset("ATLAS", "images/gemdict_ui.xml"),
@@ -71,11 +73,12 @@ MakeGemFunction("extendenvironment", function(functionname, env, ...)
     UpvalueHacker = gemrun("tools/upvaluehacker")
     LocalVariableHacker = gemrun("tools/localvariablehacker")
     bit = gemrun("bit")
-    DebugPrint = gemrun("tools/misc").Global.DebugPrint
-    minitraceback = gemrun("tools/misc").Global.minitraceback
     DynamicTileManager = gemrun("tools/dynamictilemanager")
     AddShardRPCHandler = _G.AddShardRPCHandler
     AddClientRPCHandler = _G.AddClientRPCHandler
+    for k, v in pairs(MiscStuff.Local) do
+        env[k] = v
+    end
     if modname then
         gemrun("forcememspikefix", true)
         function GetModModConfigData(optionname, modmodname, ...)
@@ -87,7 +90,6 @@ MakeGemFunction("extendenvironment", function(functionname, env, ...)
 end, true)
 
 local function DoModsPostInit(ModManager)
-    _G.global("MOD_POSTINIT")
     _G.MOD_POSTINIT = 1
     for i, mod in ipairs(ModManager.mods) do
         ModManager.currentlyloadingmod = mod.modname

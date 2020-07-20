@@ -23,7 +23,7 @@ function math.round(num)
 end
 
 function math.variance(num1, num2, variance)
-    return math.abs(math.abs(num1) - math.abs(num2)) < variance
+    return math.abs(num1 - num2) < variance
 end
 
 function math.absmin(...)

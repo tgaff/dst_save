@@ -9,12 +9,12 @@ The source code is shared for referrence and academic purposes
 with the hope that people can read and learn from it. This is not
 Free and Open Source software, and code is not redistributable
 without permission of the author. Read the RECEX SHARED
-SOURCE LICENSE for details 
+SOURCE LICENSE for details
 The source codes does not come with any warranty including
-the implied warranty of merchandise. 
+the implied warranty of merchandise.
 You should have received a copy of the RECEX SHARED SOURCE
 LICENSE in the form of a LICENSE file in the root of the source
-directory. If not, please refer to 
+directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 
@@ -50,21 +50,21 @@ local _ismastershard = _world.ismastershard
 --Network
 local mastershardID = net_tinybyte(inst.GUID, "shard_report._mastershardid") --this can be a tinybyte since its value is ALWAYS 1
 local mastershardData = net_string(inst.GUID, "shard_report._mastersharddata", "mastersharddirty")
-local slaveshardID = {}
-local slaveshardData = {}
+local secondaryshardID = {}
+local secondaryshardData = {}
 local emptyShardList = {}
 
 local function UpdateShardRPCSenders(shardNumber)
     --hack to send arbitrary table over a string, normally this would be to costly to do but we only do this once per shard at startup, so its not a big deal.
-    SHARD_LIST[slaveshardID[shardNumber]:value()] = loadstring(slaveshardData[shardNumber]:value())()
+    SHARD_LIST[secondaryshardID[shardNumber]:value()] = loadstring(secondaryshardData[shardNumber]:value())()
 end
 
 for i = 1, MAX_TARGETS do
-    local prefix = "shard_report._slaveshard["..tostring(i).."]"
-    table.insert(slaveshardID, net_uint(inst.GUID, prefix.."id"))
-    table.insert(slaveshardData, net_string(inst.GUID, prefix.."data", "slaveshard["..i.."]dirty"))
+    local prefix = "shard_report._secondaryshard["..tostring(i).."]"
+    table.insert(secondaryshardID, net_uint(inst.GUID, prefix.."id"))
+    table.insert(secondaryshardData, net_string(inst.GUID, prefix.."data", "secondaryshard["..i.."]dirty"))
     table.insert(emptyShardList, i)
-    inst:ListenForEvent("slaveshard["..i.."]dirty", function() UpdateShardRPCSenders(i) end)
+    inst:ListenForEvent("secondaryshard["..i.."]dirty", function() UpdateShardRPCSenders(i) end)
 end
 
 
@@ -73,12 +73,12 @@ end
 --------------------------------------------------------------------------
 
 local NewShardReport = _ismastershard and function(inst, data)
-    if #emptyShardList > 0 then 
-        slaveshardID[emptyShardList[1]]:set(data.fromShard)
-        slaveshardData[emptyShardList[1]]:set(data.data)
+    if #emptyShardList > 0 then
+        secondaryshardID[emptyShardList[1]]:set(data.fromShard)
+        secondaryshardData[emptyShardList[1]]:set(data.data)
         table.remove(emptyShardList, 1)
     else
-        print("To many Slave Shards connected to Master Shard")
+        print("To many Secondary Shards connected to Master Shard")
     end
 end or nil
 
@@ -97,9 +97,9 @@ Shard_UpdateWorldState = _ismastershard and function(world_id, state, tags, worl
         once = 1
     end
     if state ~= REMOTESHARDSTATE.READY then
-        for i, v in ipairs(slaveshardID) do
-            if slaveshardID[i]:value() == world_id then
-                slaveshardData[i]:set("nil")
+        for i, v in ipairs(secondaryshardID) do
+            if secondaryshardID[i]:value() == world_id then
+                secondaryshardData[i]:set("nil")
                 table.insert(emptyShardList, i)
                 table.sort(emptyShardList)
                 break

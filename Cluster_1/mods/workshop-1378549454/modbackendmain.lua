@@ -18,6 +18,7 @@ directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 local _G = GLOBAL
+_G.global("WORLDGEN_MOD_POSTINIT")
 
 modimport("gemscripts/gemrun")
 _G.gemrun = gemrun
@@ -77,7 +78,6 @@ if _G.rawget(_G, "WORLDGEN_MAIN") == 1 then
 end
 
 local function DoModsPostInit(ModManager)
-    _G.global("WORLDGEN_MOD_POSTINIT")
     _G.WORLDGEN_MOD_POSTINIT = 1
     for i, mod in ipairs(ModManager.mods) do
         ModManager.currentlyloadingmod = mod.modname
