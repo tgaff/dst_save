@@ -9,12 +9,12 @@ The source code is shared for referrence and academic purposes
 with the hope that people can read and learn from it. This is not
 Free and Open Source software, and code is not redistributable
 without permission of the author. Read the RECEX SHARED
-SOURCE LICENSE for details 
+SOURCE LICENSE for details
 The source codes does not come with any warranty including
-the implied warranty of merchandise. 
+the implied warranty of merchandise.
 You should have received a copy of the RECEX SHARED SOURCE
 LICENSE in the form of a LICENSE file in the root of the source
-directory. If not, please refer to 
+directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 
@@ -49,17 +49,20 @@ function debug.getinfo(...)
     else
         args[fnidx] = hiddenfns[fn] or fn
     end
-    return _debug_getinfo(unpack(args))
+    local rets = {_debug_getinfo(unpack(args))}
+    return unpack(rets)
 end
 
 local _debug_getupvalue = debug.getupvalue
 function debug.getupvalue(fn, ...)
-    return _debug_getupvalue(hiddenfns[fn] or fn, ...)
+    local rets = {_debug_getupvalue(hiddenfns[fn] or fn, ...)}
+    return unpack(rets)
 end
 
 local _debug_setupvalue = debug.setupvalue
 function debug.setupvalue(fn, ...)
-    return _debug_setupvalue(hiddenfns[fn] or fn, ...)
+    local rets = {_debug_setupvalue(hiddenfns[fn] or fn, ...)}
+    return unpack(rets)
 end
 
 local _debug_getlocal = debug.getlocal
@@ -85,7 +88,8 @@ function debug.getlocal(...)
     else
         args[fnidx] = hiddenfns[fn] or fn
     end
-    return _debug_getlocal(unpack(args))
+    local rets = {_debug_getlocal(unpack(args))}
+    return unpack(rets)
 end
 
 local _debug_setlocal = debug.setlocal
@@ -111,17 +115,20 @@ function debug.setlocal(...)
     else
         args[fnidx] = hiddenfns[fn] or fn
     end
-    return _debug_setlocal(unpack(args))
+    local rets = {_debug_setlocal(unpack(args))}
+    return unpack(rets)
 end
 
 local _debug_getfenv = debug.getfenv
 function debug.getfenv(fn, ...)
-    return _debug_getfenv(hiddenfns[fn] or fn, ...)
+    local rets = {_debug_getfenv(hiddenfns[fn] or fn, ...)}
+    return unpack(rets)
 end
 
 local _debug_setfenv = debug.setfenv
 function debug.setfenv(fn, ...)
-    return _debug_setfenv(hiddenfns[fn] or fn, ...)
+    local rets = {_debug_setfenv(hiddenfns[fn] or fn, ...)}
+    return unpack(rets)
 end
 
 local _getfenv = getfenv
@@ -145,7 +152,8 @@ function getfenv(fn, ...)
     else
         fn = hiddenfns[fn] or fn
     end
-    return _getfenv(fn, ...)
+    local rets = {_getfenv(fn, ...)}
+    return unpack(rets)
 end
 
 local _setfenv = setfenv
@@ -167,7 +175,8 @@ function setfenv(fn, ...)
     else
         fn = hiddenfns[fn] or fn
     end
-    return _setfenv(fn, ...)
+    local rets = {_setfenv(fn, ...)}
+    return unpack(rets)
 end
 
 MakeGemFunction("hidefn", hidefn, true)
