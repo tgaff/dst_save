@@ -9,12 +9,12 @@ The source code is shared for referrence and academic purposes
 with the hope that people can read and learn from it. This is not
 Free and Open Source software, and code is not redistributable
 without permission of the author. Read the RECEX SHARED
-SOURCE LICENSE for details 
+SOURCE LICENSE for details
 The source codes does not come with any warranty including
-the implied warranty of merchandise. 
+the implied warranty of merchandise.
 You should have received a copy of the RECEX SHARED SOURCE
 LICENSE in the form of a LICENSE file in the root of the source
-directory. If not, please refer to 
+directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 
@@ -34,7 +34,7 @@ local function GeneratePerModConfigOptions(_modname)
                     table.insert(configdata, config)
                 end
             end
-        end 
+        end
 
         table.sort(configdata, function(a,b)
             if not a.label then return false end
@@ -50,7 +50,7 @@ local function GeneratePerModConfigOptions(_modname)
         end
         table.insert(configdata, 1, {
             name = optionname..":",
-            options = {{description="", data=false}}, 
+            options = {{description="", data=false}},
             default = false,
         })
         table.insert(configsets, configdata)
@@ -117,7 +117,7 @@ local function LoadGemCoreModConfigurationOptions(_LoadModConfigurationOptions, 
     if known_mod == nil then
         return _LoadModConfigurationOptions(self, modname, client_config, ...)
     end
-    
+
     -- Try to find saved config settings first
     add_gem_path = true
     local filename = self:GetModConfigurationPath(modname, client_config)
@@ -146,12 +146,17 @@ if IsTheFrontEnd then
     local ModsTab = require("widgets/redux/modstab")
     local FrontendHelper = gemrun("tools/frontendhelper", GEMENV.modname)
 
-    FrontendHelper.ReplaceFunction(ModsTab, "ShowModDetails", function(_ShowModDetails, self, idx, client_mod, ...)
+    FrontendHelper.ReplaceFunction(ModsTab, "ShowModDetails", function(_ShowModDetails, self, widget_idx, client_mod, ...)
+        local items_table = client_mod and self.optionwidgets_client or self.optionwidgets_server
         local modnames_versions = client_mod and self.modnames_client or self.modnames_server
-        if modnames_versions and #modnames_versions > 0 then
-            ApplyPerModConfigOptions(modnames_versions[idx].modname)
+
+        local idx = items_table[widget_idx] and items_table[widget_idx].index or nil
+        local modname = idx and modnames_versions[idx] and modnames_versions[idx].modname or nil
+
+        if modname then
+            ApplyPerModConfigOptions(modname)
         end
-        return _ShowModDetails(self, idx, client_mod, ...)
+        return _ShowModDetails(self, widget_idx, client_mod, ...)
     end)
 
     FrontendHelper.ReplaceFunction(KnownModIndex, "SaveConfigurationOptions", function(_SaveConfigurationOptions, self, callback, modname, configdata, ...)
@@ -208,7 +213,7 @@ template = {
             data = true,
             hover = "hover text when enabled."
         }
-    }, 
+    },
     default = true,
 }
 ]]

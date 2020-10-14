@@ -56,25 +56,24 @@ local localdata
 local RecipePopupRefreshEnv = setmetatable({
     ipairs = function(t, ...)
         if not localdata then return ipairs(t, ...) end
-        print(t, localdata)
         local self = localdata.self
 
-        local owner = self.owner
-
         local recipe = self.recipe
-        local builder = owner.replica.builder
-        local inventory = owner.replica.inventory
 
-        local _tech_ingredients = localdata._tech_ingredients
-
-        if t == recipe.tech_ingredients then
+        if t == self.ing then
+            --increase the size of the tech ingredients table so the ui spaces the ingredients properly.
+            localdata._tech_ingredients = recipe.tech_ingredients
+            recipe.tech_ingredients = ExtendedArray({}, {true}, #recipe.tech_ingredients + #recipe.gemdict_ingredients)
+        elseif t == recipe.tech_ingredients then
             --if t is ever == to my modified tech ingredients table, replace it with the proper value before iterating
-            t = _tech_ingredients
-            recipe.tech_ingredients = _tech_ingredients
+            t = localdata._tech_ingredients
+            recipe.tech_ingredients = localdata._tech_ingredients
         elseif t == recipe.ingredients then
             --obtain the index where recipe.ingredients start.
             startidx = #self.ing + 1
         elseif t == recipe.character_ingredients then
+            local owner = self.owner
+            local builder = owner.replica.builder
             --get the local variables from _Refresh
             local num
             local w
@@ -107,8 +106,8 @@ local RecipePopupRefreshEnv = setmetatable({
 
             for i, v in ipairs(recipe.gemdict_ingredients) do
                 local _ingredientdata = ingredientdata[v]
-                local images, names, counts = v:GetImages(not _ingredientdata.has, _ingredientdata.num_found, #_ingredientdata == 0 and _ingredientdata.has or false)
-                if #_ingredientdata > 0 then
+                local images, names, counts = v:GetImages(not _ingredientdata.has, _ingredientdata.num_found, not _ingredientdata.nomix and _ingredientdata.has or false)
+                if _ingredientdata.nomix then
                     for i1, v1 in ipairs(_ingredientdata) do
                         for item, count in pairs(v1.items) do
                             local image = item.replica.inventoryitem:GetImage()
@@ -180,10 +179,7 @@ function RecipePopup:Refresh(...)
 
     local recipe = self.recipe
 
-    --in order for num(obtained via LocalVariableHacker) to be the correct value I cheat the length of the tech ingredients table.
-    local _tech_ingredients = recipe.tech_ingredients
-    recipe.tech_ingredients = ExtendedArray({}, {true}, #recipe.tech_ingredients + #recipe.gemdict_ingredients)
-    localdata = {self = self, _tech_ingredients = _tech_ingredients}
+    localdata = {self = self}
 
     return _Refresh(self, ...)
 end

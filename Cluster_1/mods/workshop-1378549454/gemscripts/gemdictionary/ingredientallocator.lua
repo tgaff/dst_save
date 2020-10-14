@@ -511,7 +511,7 @@ function IngredientAllocation_NoMix:GetConsumedItems()
 end
 
 function IngredientAllocation_NoMix:GetRecipePopupData()
-    local ingredientdata = {}
+    local ingredientdata = {nomix = true}
     for ingredient_priority, ingredient_allocation in ipairs(self.invalid_ingredient_allocations) do
         table.insert(ingredientdata, ingredient_allocation:GetRecipePopupData())
         ingredientdata.has = ingredientdata.has or ingredientdata[#ingredientdata].has
@@ -586,7 +586,7 @@ function IngredientAllocator:GetIngredientSets(ingredientmod)
                     return prefab_to_index[a.item.prefab] < prefab_to_index[b.item.prefab]
                 end)
 
-                if #_itemoptions > 0 then
+                if #_itemoptions > 0 or self.allowinvalid then
                     table.insert(ingredient_sets, IngredientSet({gemdict_ingredient = gemdict_ingredient, canmix = false, itemoptions = _itemoptions}, ingredientmod))
                 end
             end

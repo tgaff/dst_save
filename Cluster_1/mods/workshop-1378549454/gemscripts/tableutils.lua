@@ -135,6 +135,10 @@ function ipairs(t, ...)
     return i(t, ...)
 end
 
+metanext = next
+metapairs = pairs
+metaipairs = ipairs
+
 gemrun("hidefn", next, rawnext)
 gemrun("hidefn", pairs, rawpairs)
 gemrun("hidefn", ipairs, rawipairs)
