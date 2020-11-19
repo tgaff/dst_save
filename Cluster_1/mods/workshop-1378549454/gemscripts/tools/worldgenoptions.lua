@@ -9,12 +9,12 @@ The source code is shared for referrence and academic purposes
 with the hope that people can read and learn from it. This is not
 Free and Open Source software, and code is not redistributable
 without permission of the author. Read the RECEX SHARED
-SOURCE LICENSE for details 
+SOURCE LICENSE for details
 The source codes does not come with any warranty including
-the implied warranty of merchandise. 
+the implied warranty of merchandise.
 You should have received a copy of the RECEX SHARED SOURCE
 LICENSE in the form of a LICENSE file in the root of the source
-directory. If not, please refer to 
+directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 local MakeGemFunction, DeleteGemFunction = gemrun("gemfunctionmanager")
@@ -68,10 +68,8 @@ local function ShouldUpdateOverride(overrides, override)
 end
 
 if not IsTheFrontEnd then
-    require("saveindex")
-    SaveIndex.GetLevelDataOverride = UpvalueHacker.GetUpvalue(SaveIndex.StartSurvivalMode, "GetLevelDataOverride")
-    SaveIndex.GetWorldgenOverride = UpvalueHacker.GetUpvalue(SaveIndex.StartSurvivalMode, "GetWorldgenOverride")
-    UpvalueHacker.SetUpvalue(SaveIndex.GetWorldgenOverride, function(wgo)
+    require("shardindex")
+    UpvalueHacker.SetUpvalue(ShardIndex.SetServerShardData, function(wgo)
         --we are only keeping the first part of this sanity check, since the otherone would clog loads of prints on something I am not doing(adding the WorldGenOptions stuff to the backend.)
         print("  sanity-checking worldgenoverride.lua...")
         local validfields = {
@@ -84,23 +82,33 @@ if not IsTheFrontEnd then
                 print(string.format("    WARNING! Found entry '%s' in worldgenoverride.lua, but this isn't a valid entry.", k))
             end
         end
-    end, "SanityCheckWorldGenOverride")
+    end, "GetWorldgenOverride", "SanityCheckWorldGenOverride")
     local Customise = require("map/customise")
 
-    local _Save = SaveIndex.Save
-    function SaveIndex:Save(callback, ...)
-        local options = self.data.slots[self.current_slot] and self.data.slots[self.current_slot].world.options and self.data.slots[self.current_slot].world.options[1]
+    local _Save = ShardIndex.Save
+    function ShardIndex:Save(callback, ...)
+        local options = self:GetGenOptions()
         if options then
+            local blockoverrides = options.overrides.blockoverrides
+            local updateanyways = options.overrides.updateanyways
             options.overrides.blockoverrides = nil
             options.overrides.updateanyways = nil
+            local _callback = callback
+            callback = function(...)
+                options.overrides.blockoverrides = blockoverrides
+                options.overrides.updateanyways = updateanyways
+                if _callback then
+                    return _callback(...)
+                end
+            end
         end
         return _Save(self, callback, ...)
     end
 
     gemrun("onsavegame", function(callback, ...)
         local args = {...}
-        local saveslot = SaveGameIndex:GetCurrentSaveSlot()
-        local overrides = SaveGameIndex.data.slots[saveslot] and SaveGameIndex.data.slots[saveslot].world.options and SaveGameIndex.data.slots[saveslot].world.options[1].overrides
+        local options = ShardGameIndex:GetGenOptions()
+        local overrides = options and options.overrides or {}
         local _overrides = TheWorld.topology.overrides
         for k, v in pairs(_overrides) do
             if k ~= "original" and k ~= "blockoverrides" and k ~= "updateanyways" then
@@ -109,7 +117,7 @@ if not IsTheFrontEnd then
                 end
             end
         end
-        SaveGameIndex:Save(function() callback(unpack(args)) end)
+        ShardGameIndex:Save(function() callback(unpack(args)) end)
     end)
 
     local function GenerateBlockedOverridesList(overrides)
@@ -121,7 +129,7 @@ if not IsTheFrontEnd then
                 break
             end
             for override in pairs(blockers) do
-                print(mod.." has blocked override: "..override.." from being grabbed from leveldataoverride/worldgenoverride")
+                print(mod.." has blocked override: "..override.." from being updated from leveldataoverride/worldgenoverride")
                 blocklist[override] = overrides[override]
             end
         end
@@ -129,61 +137,31 @@ if not IsTheFrontEnd then
     end
 
     gemrun("ondoinitgame", function(callback, savedata, profile, ...)
-        local args = {...}
+        ShardGameIndex:SetServerShardData(ShardGameIndex:GetGenOptions(), ShardGameIndex:GetServerData())
 
-        --client hosted servers now properly save save games into the Cluster_XX folders!
-        local saveslot = SaveGameIndex:GetCurrentSaveSlot()
-        local serverdata = SaveGameIndex:GetSlotServerData(saveslot)
-        local force_shard_path = serverdata ~= nil and serverdata.use_cluster_path and not TheNet:IsDedicated() and "Master" or nil
+        local options = ShardGameIndex:GetGenOptions()
 
         local blocklist = GenerateBlockedOverridesList(savedata.map.topology.overrides)
+        if blocklist ~= true and savedata.map.topology then
+            local original = savedata.map.topology.overrides.original or {}
+            original.original = nil
+            savedata.map.topology.overrides = options and options.overrides or savedata.map.topology.overrides
+            savedata.map.topology.overrides.original = original
+        end
+        --reset any blocked values to their pre blocked state.
+        for k, v in pairs(blocklist ~= true and blocklist or {}) do
+            savedata.map.topology.overrides[k] = v
+        end
 
-        savedata.map.topology.overrides.original = savedata.map.topology.overrides.original or {}
-        SaveGameIndex.GetLevelDataOverride(saveslot, force_shard_path, function(leveldata)
-            if blocklist == false and leveldata and leveldata.overrides and savedata.map.topology then
-                local original = savedata.map.topology.overrides.original
-                original.original = nil
-                savedata.map.topology.overrides = leveldata.overrides
-                savedata.map.topology.overrides.original = original
+        --prune out the "default" options.
+        for k, v in pairs(savedata.map.topology.overrides) do
+            if k ~= "original" and k ~= "blockoverrides" and k ~= "updateanyways" then
+                if v == Customise.GetDefaultForOption(k) then
+                    savedata.map.topology.overrides[k] = nil
+                end
             end
-            SaveGameIndex.GetWorldgenOverride(saveslot, force_shard_path, function(overridedata, frompreset)
-                if blocklist == false and overridedata and overridedata.overrides and savedata.map.topology then
-                    if frompreset == true then
-                        local original = savedata.map.topology.overrides.original
-                        original.original = nil
-                        savedata.map.topology.overrides = overridedata.overrides
-                        savedata.map.topology.overrides.original = original
-                    else
-                        savedata.map.topology.overrides = MergeMapsDeep(savedata.map.topology.overrides, overridedata.overrides)
-                        savedata.map.topology.overrides.original.original = nil
-                    end
-                end
-
-                --reset any blocked values to their pre blocked state.
-                for k, v in pairs(blocklist or {}) do
-                    savedata.map.topology.overrides[k] = v
-                end
-
-                --prune out the "default" options.
-                for k, v in pairs(savedata.map.topology.overrides) do
-                    if k ~= "original" and k ~= "blockoverrides" and k ~= "updateanyways" then
-                        if v == Customise.GetDefaultForOption(k) then
-                            savedata.map.topology.overrides[k] = nil
-                        end
-                    end
-                end
-                -- Clear out one time overrides
-                if TheNet:GetCurrentSnapshot() > 2 then
-                    local onetime = {"season_start", "autumn", "winter", "spring", "summer", "frograin", "wildfires", "prefabswaps_start", "rock_ice"}
-                    for i,override in ipairs(onetime) do
-                        if savedata.map.topology.overrides[override] ~= nil then
-                            savedata.map.topology.overrides[override] = nil
-                        end
-                    end
-                end
-                callback(savedata, profile, unpack(args))
-            end)
-        end)
+        end
+        callback(savedata, profile, ...)
     end)
     return
 end
@@ -239,53 +217,57 @@ end
 
 local function LoadBackendSetTweaks(worldcustomizationtab)
     local self = worldcustomizationtab
+
     --somehow sometimes caves exist on worlds where caves are disabled, don't ask me how, this check should fix that.
-    if not SaveGameIndex:IsSlotEmpty(self.slot) and self.current_option_settings[self.tab_location_index] ~= nil then
-        local session_id = SaveGameIndex:GetSlotSession(self.slot, self.current_level_locations[self.tab_location_index] == "cave")
+    if not ShardSaveGameIndex:IsSlotEmpty(self.slot) and self.current_option_settings[self.tab_location_index] ~= nil then
+        local session_id = ShardSaveGameIndex:GetSlotSession(self.slot, self.tab_location_index == 1 and "Master" or "Caves")
+        local meta
+        local prefab
         if session_id ~= nil then
             local function onreadworldfile(success, str)
                 if success and str ~= nil and #str > 0 then
                     local success, savedata = RunInSandbox(str)
                     if success and savedata ~= nil and GetTableSize(savedata) > 0 then
-                        local overrides = savedata.map.topology.overrides or {}
-                         --SPECIAL THING SO WORLDSEEDS GET PROPERLY LOADED
-                        if overrides.worldseed ~= nil then
-                            local actual_seed = tonumber(overrides.worldseed) or hash(overrides.worldseed)
-                            if actual_seed == (savedata.meta ~= nil and savedata.meta.seed or nil) then
-                                overrides.worldseed = overrides.worldseed
-                            else
-                                overrides.worldseed = savedata.meta ~= nil and savedata.meta.seed or "WORLD SEED NOT FOUND"
-                            end
-                        else
-                            overrides.worldseed = savedata.meta ~= nil and savedata.meta.seed or "WORLD SEED NOT FOUND"
-                        end
-                        local FIRST_VALID_BUILD_VERSION = 369546 --this is the first build that has the fixed worldgen so its not completly random.
-                        if savedata.meta ~= nil and (tonumber(savedata.meta.build_version) or 0) < FIRST_VALID_BUILD_VERSION then
-                            print((savedata.map.prefab or "unknown").." world's build version is: "..savedata.meta.build_version.." needs to be greater than "..FIRST_VALID_BUILD_VERSION)
-                            print("worldseed is: "..overrides.worldseed)
-                            overrides.worldseed = "WORLD VERSION IS TOO OLD"
-                        end
-
-                        for k, v in pairs(overrides) do
-                            if k ~= "original" and k ~= "blockoverrides" and k ~= "updateanyways" then
-                                if ShouldUpdateOverride(overrides, k) then
-                                    self:SetTweak(self.tab_location_index, k, v)
-                                end
-                            end
-                        end
+                        meta = savedata.meta
+                        prefab = savedata.map.prefab
                     end
                 end
             end
-            if SaveGameIndex:IsSlotMultiLevel(self.slot) or SaveGameIndex:GetSlotServerData(self.slot).use_cluster_path then
-                local shard_folder_name = self.current_level_locations[self.tab_location_index] == "cave" and "Caves" or "Master"
-                local file = TheNet:GetWorldSessionFileInClusterSlot(self.slot,  shard_folder_name, session_id)
+            if ShardSaveGameIndex:IsSlotMultiLevel(self.slot) or not ShardSaveGameIndex:GetSlotServerData(self.slot).use_legacy_session_path then
+                local shard = self.tab_location_index == 1 and "Master" or "Caves"
+                local file = TheNet:GetWorldSessionFileInClusterSlot(self.slot,  shard, session_id)
                 if file ~= nil then
-                    TheSim:GetPersistentStringInClusterSlot(self.slot, shard_folder_name, file, onreadworldfile)
+                    TheSim:GetPersistentStringInClusterSlot(self.slot, shard, file, onreadworldfile)
                 end
             else
                 local file = TheNet:GetWorldSessionFile(session_id)
                 if file ~= nil then
                     TheSim:GetPersistentString(file, onreadworldfile)
+                end
+            end
+        end
+
+         --SPECIAL THING SO WORLDSEEDS GET PROPERLY LOADED
+        local options = ShardSaveGameIndex:GetSlotGenOptions(self.slot)
+        local overrides = options and options.overrides
+        print(overrides.worldseed, tonumber(overrides.worldseed) or hash(overrides.worldseed), meta and meta.seed)
+        if overrides.worldseed and (tonumber(overrides.worldseed) or hash(overrides.worldseed)) == (meta and meta.seed or nil) then
+            overrides.worldseed = overrides.worldseed
+        else
+            overrides.worldseed = meta and meta.seed or "WORLD SEED NOT FOUND"
+        end
+
+        local FIRST_VALID_BUILD_VERSION = 435008 --this is the first build that has the fixed worldgen so its not completly random.
+        if meta and (tonumber(meta.build_version) or 0) < FIRST_VALID_BUILD_VERSION then
+            print((prefab or "unknown").." world's build version is: "..meta.build_version.." needs to be greater than "..FIRST_VALID_BUILD_VERSION)
+            print("worldseed is: "..worldseed)
+            overrides.worldseed = "WORLD VERSION IS TOO OLD"
+        end
+
+        for k, v in pairs(overrides) do
+            if k ~= "original" and k ~= "blockoverrides" and k ~= "updateanyways" then
+                if ShouldUpdateOverride(overrides, k) then
+                    self:SetTweak(self.tab_location_index, k, v)
                 end
             end
         end
@@ -565,7 +547,7 @@ function WorldGenOptions:GetOptionValue(location, option)
                         end
                     end
                 end
-            end 
+            end
         end
     end
 end
@@ -653,42 +635,20 @@ FrontendHelper.ReplaceFunction(WorldCustomizationTab, "CollectOptions", function
     return _CollectOptions(self, ...)
 end)
 
-local CURRENT_LEVEL_LOCATIONS = SERVER_LEVEL_LOCATIONS
-
-FrontendHelper.ReplaceFunction(WorldCustomizationTab, "OnChangeGameMode", function(_OnChangeGameMode, self, gamemode, ...)
-    local leveltype = GetLevelType(gamemode)
-    if EVENTSERVER_LEVEL_LOCATIONS[leveltype] ~= nil then
-        CURRENT_LEVEL_LOCATIONS = EVENTSERVER_LEVEL_LOCATIONS[leveltype]
-    else
-        CURRENT_LEVEL_LOCATIONS = SERVER_LEVEL_LOCATIONS
-    end
-    return _OnChangeGameMode(self, gamemode, ...)
-end)
-
-local Levels = require("map/levels")
-
 FrontendHelper.ReplaceFunction(WorldCustomizationTab, "LoadPreset", function(_LoadPreset, self, preset, ...)
     local retvals = {_LoadPreset(self, preset, ...)}
     PushWorldGenEvent("loadpreset", preset, self.current_option_settings[self.tab_location_index].preset)
     return unpack(retvals)
 end)
 
-FrontendHelper.ReplaceFunction(SaveGameIndex, "StartSurvivalMode", function(_StartSurvivalMode, self, ...)
+FrontendHelper.ReplaceFunction(SystemService, "StartDedicatedServers", function(_StartDedicatedServers, self, ...)
     worldoptions = nil
-    return _StartSurvivalMode(self, ...)
+    return _StartDedicatedServers(self, ...)
 end)
 
-FrontendHelper.ReplaceFunction(SaveGameIndex, "UpdateServerData", function(_UpdateServerData, self, saveslot, ...)
-    if worldoptions ~= nil then
-        self.data.slots[saveslot].world.options = worldoptions
-        worldoptions = nil
-    end
-    return _UpdateServerData(self, saveslot, ...)
-end)
-
-FrontendHelper.ReplaceFunction(SaveGameIndex, "Save", function(_Save, self, ...)
-    --we don't ever want this getting saved to the saveindex
-    local options = self.data.slots[self.current_slot].world.options
+FrontendHelper.ReplaceFunction(ShardGameIndex, "Save", function(_Save, self, ...)
+    --we don't ever want this getting saved to the shardindex
+    local options = self:GetGenOptions()
     for location_index, option in ipairs(options or {}) do
         option.overrides.blockoverrides = nil
         option.overrides.updateanyways = nil
@@ -762,10 +722,9 @@ local args = {...}
 local functionname = args[1]
 local modname = args[2]
 
-local MakeGemFunction = gemrun("gemfunctionmanager")
-MakeGemFunction(functionname, function(functionname, modname, ...)
-    memoized_wgo[modname] = memoized_wgo[modname] or WorldGenOptions(modname)
-    return memoized_wgo[modname]
+MakeGemFunction(functionname, function(fname, mname, ...)
+    memoized_wgo[mname] = memoized_wgo[mname] or WorldGenOptions(mname)
+    return memoized_wgo[mname]
 end, true)
 
 memoized_wgo[modname] = WorldGenOptions(modname)

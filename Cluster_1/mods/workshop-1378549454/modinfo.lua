@@ -18,7 +18,7 @@ directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 name = "[API] Gem Core"
-version = "5.1.3"
+version = "5.1.11"
 credits = "\n\nCredits:\nZarklord - For creating this API.\nFidooop - For ensuring things were done right.\nRezecib - For his wonderful upvalue hacker.\nNSimplex - For memspikefix."
 description = "Version: "..version.."\nLibrary of powerful modding tools for mod developers.\n\nVisit https://gitlab.com/DSTAPIS/GemCore/wikis/home for API info"..credits
 author = "Zarklord"
@@ -32,7 +32,6 @@ api_version_dst = 10
 --Custom field that lets the mods detect this mod more easily.
 GemCore = true
 
-folder_name = folder_name or "workshop-"
 if not folder_name:find("workshop-") then
     name = name.." - GitLab Version"
     version = version.."G"

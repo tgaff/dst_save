@@ -59,8 +59,9 @@ elseif rawget(_G, "WORLDGEN_MAIN") == 1 then
 
     assert(GEN_PARAMETERS ~= nil, "Parameters were not provided to worldgen!")
     local world_gen_data = json.decode(GEN_PARAMETERS)
-    assert(world_gen_data.level_data ~= nil and world_gen_data.level_data[1] ~= nil, "Must provide complete level data to worldgen.")
-    WORLDSEED = world_gen_data.level_data[1].overrides.worldseed
+    assert(world_gen_data.level_data ~= nil, "Must provide complete level data to worldgen.")
+    WORLDSEED = world_gen_data.level_data.overrides.worldseed
+
     WORLDSEED = (WORLDSEED ~= nil and WORLDSEED ~= "") and (tonumber(WORLDSEED) or hash(WORLDSEED)) or nil
 
     SEED = SetWorldGenSeed(WORLDSEED or SEED)
@@ -105,56 +106,76 @@ local function ResetServer(shard_id, data)
 end
 AddShardRPCHandler("GemCore", "ResetServer", ResetServer)
 gemrun("shardcomponent", "shard_regenerate")
-
-if TheNet:GetIsServer() then
-    NetworkProxy.ActualSendWorldResetRequestToServer = NetworkProxy.SendWorldResetRequestToServer
-    function NetworkProxy:SendWorldResetRequestToServer(...)
-        --clear world seed, callback will call ActualSendWorldResetRequestToServer(...)
+local function ClientRequestResetServer(player, preserve_seed)
+    if player.Network:IsServerAdmin() then
         if TheWorld then
-            TheWorld:PushEvent("shard_resetserver", {preserve_seed = false})
+            TheWorld:PushEvent("shard_resetserver", {preserve_seed = preserve_seed})
         else
-            self:ActualSendWorldResetRequestToServer(...)
+            self:ActualSendWorldResetRequestToServer()
         end
     end
-    function NetworkProxy:SendIdenticalWorldResetRequestToServer(...)
-        --set world seed, callback will call ActualSendWorldResetRequestToServer(...)
-        if TheWorld then
-            TheWorld:PushEvent("shard_resetserver", {preserve_seed = true})
-        else
-            self:ActualSendWorldResetRequestToServer(...)
-        end
+end
+AddModRPCHandler("GemCore", "ClientRequestResetServer", ClientRequestResetServer)
+
+NetworkProxy.ActualSendWorldResetRequestToServer = NetworkProxy.SendWorldResetRequestToServer
+function NetworkProxy:SendWorldResetRequestToServer(...)
+    --clear world seed, callback will call ActualSendWorldResetRequestToServer(...)
+    if TheNet:GetIsClient() and TheNet:GetIsServerAdmin() then
+        SendModRPCToServer(GetModRPC("GemCore", "ClientRequestResetServer"), false)
+    elseif TheNet:GetIsServer() and TheWorld then
+        TheWorld:PushEvent("shard_resetserver", {preserve_seed = false})
+    else
+        self:ActualSendWorldResetRequestToServer(...)
+    end
+end
+function NetworkProxy:SendIdenticalWorldResetRequestToServer(...)
+    --set world seed, callback will call ActualSendWorldResetRequestToServer(...)
+    if TheNet:GetIsClient() and TheNet:GetIsServerAdmin() then
+        SendModRPCToServer(GetModRPC("GemCore", "ClientRequestResetServer"), true)
+    elseif TheNet:GetIsServer() and TheWorld then
+        TheWorld:PushEvent("shard_resetserver", {preserve_seed = true})
+    else
+        self:ActualSendWorldResetRequestToServer(...)
     end
 end
 
 local worldseed
 local preserveworldseed
-local _StartSurvivalMode = SaveIndex.StartSurvivalMode
-function SaveIndex:StartSurvivalMode(slot, customoptions, ...)
-    if customoptions and customoptions[1] and customoptions[1].preserveworldseed then
+local _SetServerShardData = ShardIndex.SetServerShardData
+function ShardIndex:SetServerShardData(customoptions, serverdata, callback, ...)
+    if customoptions and customoptions.preserveworldseed then
         preserveworldseed = true
-        worldseed = customoptions[1].overrides and customoptions[1].overrides.worldseed or nil
-        customoptions[1].preserveworldseed = nil
+        worldseed = customoptions.overrides and customoptions.overrides.worldseed or nil
+        customoptions.preserveworldseed = nil
     end
-    return _StartSurvivalMode(self, slot, customoptions, ...)
-end
-local _Save = SaveIndex.Save
-function SaveIndex:Save(callback, ...)
-    if preserveworldseed then
-        --we can cheat the sanity checking for this long table indexing due to the fact that we know StartSurvivalMode was called before this.
-        local options = self.data.slots[self.current_slot].world.options[1]
-        options.overrides.worldseed = worldseed
-        preserveworldseed = nil
-        worldseed = nil
-        local _callback = callback
-        callback = function(...)
+
+    local _callback = callback
+    callback = function(...)
+        local options = self:GetGenOptions()
+        if options then
             --block worldseed from being changed by leveldataoverrides/worldgenoverrides
             gemrun("overridesblocker", options.overrides, GEMENV.modname, {"worldseed"}, true)
+        end
+        if _callback then
             return _callback(...)
+        end
+    end
+
+    return _SetServerShardData(self, customoptions, serverdata, callback, ...)
+end
+
+local _Save = ShardIndex.Save
+function ShardIndex:Save(callback, ...)
+    local options = self:GetGenOptions()
+    if options then
+        if preserveworldseed then
+            options.overrides.worldseed = worldseed
+            preserveworldseed = nil
+            worldseed = nil
         end
     end
     return _Save(self, callback, ...)
 end
-
 
 GEMENV.AddGamePostInit(function()
     STRINGS.UI.BUILTINCOMMANDS.REGENERATEIDENTICAL = STRINGS.UI.BUILTINCOMMANDS.REGENERATEIDENTICAL or {

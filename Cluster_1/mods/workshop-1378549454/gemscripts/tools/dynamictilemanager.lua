@@ -296,9 +296,10 @@ end})
 --this is really silly, but this is for compatibility with nsimplex's tile_adder.lua(which you dont need anymore)
 local _error = error
 function error(message, level)
-    if not string.find(message, "The numerical id [%d]- is already used by GROUND\..-!") then
-        _error(message, level)
+    if string.find(message, "The numerical id [%d]- is already used by GROUND%..-!") then
+        return
     end
+    return _error(message, level)
 end
 
 local function GroundImage(name)
@@ -440,10 +441,16 @@ local function ConvertDynamicTiles(savedata, old_GROUND)
     end
 
     --truncate useless data for nonexistant snapshots
-    local snapshot_infos
+    local function ShouldUseClusterSlot()
+        if TheNet:IsDedicated() then
+            return false
+        end
+        return not ShardGameIndex:GetServerData().use_legacy_session_path
+    end
 
-    local saveslot = SaveGameIndex:GetCurrentSaveSlot()
-    if SaveGameIndex:IsSlotMultiLevel(saveslot) or SaveGameIndex:GetSlotServerData(saveslot).use_cluster_path then
+    local snapshot_infos
+    local saveslot = ShardGameIndex:GetSlot()
+    if ShouldUseClusterSlot() then
         --client hosted servers now properly save save games into the Cluster_XX folders!
         snapshot_infos = TheNet:ListSnapshotsInClusterSlot(saveslot, "Master", savedata.meta.session_identifier, TheNet:IsOnlineMode())
     else
@@ -459,11 +466,18 @@ local function ConvertDynamicTiles(savedata, old_GROUND)
     end
 end
 
-gemrun("ongeneratenewworld", function(callback, self, saveslot, savedata, session_identifier, _cb, ...)
+gemrun("ongeneratenewworld", function(callback, self, savedata, metadataStr, session_identifier, _cb, ...)
     local function cb(...)
         GEMCORETILEDATA = {[2] = GROUND}
         local SetPersistentString
-        if not TheNet:IsDedicated() and self:GetSlotServerData(saveslot).use_cluster_path then
+        local function ShouldUseClusterSlot()
+            if TheNet:IsDedicated() then
+                return false
+            end
+            return not self:GetServerData().use_legacy_session_path
+        end
+        local saveslot = ShardGameIndex:GetSlot()
+        if ShouldUseClusterSlot() then
             --client hosted servers now properly save save games into the Cluster_XX folders!
             function SetPersistentString(path, data, encode, cb, ...)
                 TheSim:SetPersistentStringInClusterSlot(saveslot, "Master", path, data, encode, cb, ...)
@@ -473,19 +487,24 @@ gemrun("ongeneratenewworld", function(callback, self, saveslot, savedata, sessio
                 TheSim:SetPersistentString(path, data, encode, cb, ...)
             end
         end
-        SetPersistentString("session/"..session_identifier.."/GemCoreTileData", DataDumper(GEMCORETILEDATA, nil, true), false, function(...)
-            _cb(...)
-        end)
+        SetPersistentString("session/"..session_identifier.."/GemCoreTileData", DataDumper(GEMCORETILEDATA, nil, true), false, _cb)
     end
-    callback(self, saveslot, savedata, session_identifier, cb, ...)
+    callback(self, savedata, metadataStr, session_identifier, cb, ...)
 end)
 
 gemrun("ondoinitgame", function(callback, savedata, profile, ...)
     local args = {...}
     error = _error
     local GetPersistentString
-    local saveslot = SaveGameIndex:GetCurrentSaveSlot()
-    if not TheNet:IsDedicated() and SaveGameIndex:GetSlotServerData(saveslot).use_cluster_path then
+
+    local function ShouldUseClusterSlot()
+        if TheNet:IsDedicated() then
+            return false
+        end
+        return not ShardGameIndex:GetServerData().use_legacy_session_path
+    end
+    local saveslot = ShardGameIndex:GetSlot()
+    if ShouldUseClusterSlot() then
         --client hosted servers now properly save save games into the Cluster_XX folders!
         function GetPersistentString(path, cb, ...)
             TheSim:GetPersistentStringInClusterSlot(saveslot, "Master", path, cb, ...)
@@ -526,8 +545,15 @@ end)
 gemrun("onsavegame", function(callback, ...)
     GEMCORETILEDATA[TheNet:GetCurrentSnapshot()] = GROUND
     local SetPersistentString
-    local saveslot = SaveGameIndex:GetCurrentSaveSlot()
-    if not TheNet:IsDedicated() and SaveGameIndex:GetSlotServerData(saveslot).use_cluster_path then
+    local function ShouldUseClusterSlot()
+        if TheNet:IsDedicated() then
+            return false
+        end
+        return not ShardGameIndex:GetServerData().use_legacy_session_path
+    end
+
+    local saveslot = ShardGameIndex:GetSlot()
+    if ShouldUseClusterSlot() then
         --client hosted servers now properly save save games into the Cluster_XX folders!
         function SetPersistentString(path, data, encode, cb, ...)
             TheSim:SetPersistentStringInClusterSlot(saveslot, "Master", path, data, encode, cb, ...)

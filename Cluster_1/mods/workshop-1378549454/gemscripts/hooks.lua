@@ -67,8 +67,8 @@ if rawget(_G, "MAIN") == 1 then
         return MakeCallbackManager(_SaveGame, onsavegame, ...)
     end
 
-    local _OnGenerateNewWorld = SaveIndex.OnGenerateNewWorld
-    function SaveIndex.OnGenerateNewWorld(...)
+    local _OnGenerateNewWorld = ShardIndex.OnGenerateNewWorld
+    function ShardIndex.OnGenerateNewWorld(...)
         return MakeCallbackManager(_OnGenerateNewWorld, ongeneratenewworld, ...)
     end
 end

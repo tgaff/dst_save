@@ -46,51 +46,9 @@ MakeGemFunction("shardcomponent", function(functionname, name, ...)
 end, true)
 
 SHARD_LIST = {}
-SHARD_RPC_HANDLERS = {}
-SHARD_RPC = {}
-
-local function __index_lower(t, k)
-    return rawget(t, string.lower(k))
-end
-
-local function __newindex_lower(t, k, v)
-    rawset(t, string.lower(k), v)
-end
-
-local function setmetadata( tab )
-    setmetatable(tab, {__index = __index_lower, __newindex = __newindex_lower})
-end
-
-local function HandleShardRPC(shard_id, shardlist, namespace, code, ...)
-    if type(shardlist) == "number" then
-        shardlist = {shardlist}
-    end
-    if SHARD_RPC_HANDLERS[namespace] ~= nil then
-        local fn = SHARD_RPC_HANDLERS[namespace][code]
-        if fn ~= nil then
-            if shard_id ~= TheShard:GetShardId() and (shardlist == nil or table.contains(shardlist, tonumber(TheShard:GetShardId()))) then
-                fn(shard_id, ...)
-            end
-        else
-            print("Invalid Shard RPC code: ", namespace, code)
-        end
-    else
-        print("Invalid Shard RPC namespace: ", namespace, code)
-    end
-end
-
-local _Networking_SystemMessage = Networking_SystemMessage
-function Networking_SystemMessage(message)
-    if string.sub(message, 1, 3) == "HSR" then
-        if TheWorld.ismastersim then
-            local RPC = loadstring("HandleShardRPC("..string.sub(message, 4)..")")
-            setfenv(RPC, {HandleShardRPC = HandleShardRPC})
-            RPC()
-        end
-    else
-        _Networking_SystemMessage(message)
-    end
-end
+SHARD_RPC = setmetatable(SHARD_RPC, {__index = function(t, k)
+    return SHARD_MOD_RPC[k]
+end})
 
 local shardreportfns = {}
 local function AddShardReportDataFn(func)
@@ -117,19 +75,21 @@ MakeGemFunction("shardreportdata", function(functionname, ...)
 end)
 
 local function AddShardRPCHandler(namespace, name, fn)
-    if SHARD_RPC[namespace] == nil then
-        SHARD_RPC[namespace] = {}
-        SHARD_RPC_HANDLERS[namespace] = {}
-
-        setmetadata(SHARD_RPC[namespace])
-        setmetadata(SHARD_RPC_HANDLERS[namespace])
-    end
-
-    table.insert(SHARD_RPC_HANDLERS[namespace], fn)
-    SHARD_RPC[namespace][name] = { namespace = namespace, id = #SHARD_RPC_HANDLERS[namespace] }
-
-    setmetadata(SHARD_RPC[namespace][name])
+    AddShardModRPCHandler(namespace, name, fn)
 end
+
+local function ShardRPCWrapper(shard_id, namespace, code, string_args)
+    if TheShard:GetShardId() ~= tostring(shard_id) then
+        if SHARD_MOD_RPC_HANDLERS[namespace] ~= nil then
+            local fn = SHARD_MOD_RPC_HANDLERS[namespace][code]
+            local success, args = RunInSandbox(string_args)
+            if success then
+                fn(shard_id, unpack(args))
+            end
+        end
+    end
+end
+AddShardRPCHandler("GemCore", "ShardRPCWrapper", ShardRPCWrapper)
 
 --TODO: what other things might we want in the shard list?
 local function ShardReportInfo(shard_id, fromShardID, shardData)
@@ -139,40 +99,15 @@ local function ShardReportInfo(shard_id, fromShardID, shardData)
 end
 AddShardRPCHandler("GemCore", "ShardReportInfo", ShardReportInfo)
 
-local function dump(val)
-    return DataDumper(val, '', true)
-end
-
 local function SendShardRPC(id_table, shardlist, ...)
-    assert(id_table.namespace ~= nil and SHARD_RPC_HANDLERS[id_table.namespace] ~= nil and SHARD_RPC_HANDLERS[id_table.namespace][id_table.id] ~= nil)
-
-    --convert args to string format
-	local ArgStrings = {}
-    table.insert(ArgStrings, dump(TheShard:GetShardId()))
-    --if we only have a single shard were sending to we can optimize by not sending it as a table
-    if type(shardlist) == "table" and #shardlist == 1 then
-        shardlist = tonumber(shardlist[1])
-    elseif type(shardlist) == "string" then
-        shardlist = tonumber(shardlist)
-    elseif type(shardlist) == "table" then
-        for i, v in ipairs(shardlist) do
-            shardlist[i] = tonumber(v)
-        end
-    end
-    table.insert(ArgStrings, dump(shardlist))
-    table.insert(ArgStrings, dump(id_table.namespace))
-    table.insert(ArgStrings, dump(id_table.id))
-
-    for i, v in ipairs({...}) do
-    	table.insert(ArgStrings, dump(v))
-    end
-
-	TheNet:SystemMessage("HSR"..table.concat(ArgStrings, ","))
+    assert(id_table.namespace ~= nil and SHARD_MOD_RPC_HANDLERS[id_table.namespace] ~= nil and SHARD_MOD_RPC_HANDLERS[id_table.namespace][id_table.id] ~= nil)
+    SendModRPCToShard(GetShardModRPC("GemCore", "ShardRPCWrapper"), shardlist, id_table.namespace, id_table.id, DataDumper({...}, nil, true))
 end
 
 --small helper function for pure secondary -> master communication
 local function SendShardRPCToServer(id_table, ...)
-    SendShardRPC(id_table, tonumber(SHARDID.MASTER), ...)
+    assert(id_table.namespace ~= nil and SHARD_MOD_RPC_HANDLERS[id_table.namespace] ~= nil and SHARD_MOD_RPC_HANDLERS[id_table.namespace][id_table.id] ~= nil)
+    SendModRPCToShard(GetShardModRPC("GemCore", "ShardRPCWrapper"), SHARDID.MASTER, id_table.namespace, id_table.id, DataDumper({...}, nil, true))
 end
 
 _G.require("components/shard_report")

@@ -51,14 +51,14 @@ local function AllShardsRegenReady()
 end
 
 local function ResetServer(inst, data)
-    local slotdata = SaveGameIndex.data.slots[SaveGameIndex:GetCurrentSaveSlot()]
-    local options = slotdata and slotdata.world.options or nil
+    local options = ShardGameIndex:GetGenOptions()
     if options then
         print("Shard_Regenerate regenerating world", data.preserve_seed)
-        options[1] = options[1] or {overrides = {}}
-        options[1].overrides.worldseed = data.preserve_seed and (options[1].overrides.worldseed or _world.meta.seed) or (nil)
-        options[1].preserveworldseed = true
-        SaveGameIndex:Save(function()
+        local override_worldseed = options.overrides.worldseed
+        local worldseed = (override_worldseed and ((tonumber(override_worldseed) or hash(override_worldseed)) == _world.meta.seed) and override_worldseed) or _world.meta.seed
+        options.overrides.worldseed = data.preserve_seed and worldseed or nil
+        options.preserveworldseed = true
+        ShardGameIndex:Save(function()
             if data.srpc_sender then
                 --notify the sending server that we are ready for regen.
                 SendShardRPC(SHARD_RPC.GemCore.ReportRegenReady, data.srpc_sender)
@@ -66,7 +66,7 @@ local function ResetServer(inst, data)
                 _regenreadylist = {}
                 --notify all other servers to preserve/delete the world seed.
                 SendShardRPC(SHARD_RPC.GemCore.ResetServer, nil, data)
-                _world:PushEvent("shard_reportregenready", tonumber(TheShard:GetShardId())) 
+                _world:PushEvent("shard_reportregenready", tonumber(TheShard:GetShardId()))
             end
         end)
     end

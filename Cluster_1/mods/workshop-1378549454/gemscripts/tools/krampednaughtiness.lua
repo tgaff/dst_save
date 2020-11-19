@@ -18,35 +18,15 @@ directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 
-local NAUGHTY_VALUE
-local NAUGHTY_VALUE_ADD = {}
-
 GEMENV.AddComponentPostInit("kramped", function(inst)
     --Zarklord: yeah yeah its stupid, but hey it works.
-    local _OnKilledOther, _fn_i, scope_fn
+    local _OnKilledOther
     for i, v in ipairs(inst.inst.event_listening["ms_playerjoined"][TheWorld]) do
-        if UpvalueHacker.GetUpvalue(v, "OnKilledOther") and UpvalueHacker.GetUpvalue(v, "OnKilledOther", "NAUGHTY_VALUE") then
-            _OnKilledOther, _fn_i, scope_fn = UpvalueHacker.GetUpvalue(v, "OnKilledOther")
+        if UpvalueHacker.GetUpvalue(v, "OnKilledOther") and UpvalueHacker.GetUpvalue(v, "OnKilledOther", "OnNaughtyAction") then
+            _OnKilledOther = UpvalueHacker.GetUpvalue(v, "OnKilledOther")
             break
         end
     end
-
-    NAUGHTY_VALUE = UpvalueHacker.GetUpvalue(_OnKilledOther, "NAUGHTY_VALUE")
-    for k, v in pairs(NAUGHTY_VALUE_ADD) do
-        NAUGHTY_VALUE[k] = v
-    end
-
-    local function OnKilledOther(player, data, ...)
-        if data ~= nil and data.victim ~= nil and data.victim.prefab ~= nil then
-            local naughtiness = NAUGHTY_VALUE[data.victim.prefab]
-            if type(naughtiness) == "function" then
-                NAUGHTY_VALUE[data.victim.prefab] = naughtiness(player, data)
-            end
-            _OnKilledOther(player, data, ...)
-            NAUGHTY_VALUE[data.victim.prefab] = naughtiness
-        end
-    end
-    debug.setupvalue(scope_fn, _fn_i, OnKilledOther)
 
     local _activeplayers = UpvalueHacker.GetUpvalue(inst.GetDebugString, "_activeplayers")
 
@@ -57,11 +37,7 @@ GEMENV.AddComponentPostInit("kramped", function(inst)
 end)
 
 local function AddNaughtinessFor(prefab, value)
-    if NAUGHTY_VALUE ~= nil then
-        NAUGHTY_VALUE[prefab] = value
-    else
-        NAUGHTY_VALUE_ADD[prefab] = value
-    end
+    NAUGHTY_VALUE[prefab] = value
 end
 
 return AddNaughtinessFor
