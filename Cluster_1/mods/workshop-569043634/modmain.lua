@@ -23,8 +23,7 @@ local function Add_Resurrector(Prefab)
     Prefab.components.hauntable.cooldown = 0;
     Prefab.components.hauntable:SetOnHauntFn(function () return true end);
 
-    -- Only add the tag if we need it
-    if (GetModConfigData("usetags") == Enabled) then
+    if ((GetModConfigData("usetags") == Enabled) or (GetModConfigData("ReturnHotkey") ~= Unchanged)) then
         Prefab:AddTag("resurrector");
     end
 
@@ -67,19 +66,15 @@ Apply_CheckBlocking("coldfirepit");
 Apply_Skeleton("skeleton");
 Apply("reviver");
 
-local function Apply_ToTag()
-    if (GetModConfigData("usetags") == Enabled) then
-        -- Runs on all prefabs as i couldn't find a way to iterate through all prefabs post-all mods initialization
-        AddPrefabPostInitAny(function(Prefab)
-            -- Do not try to add "resurrector" if it's already there
-            if ((Prefab ~= nil) and (Prefab.components ~= nil) and Prefab:HasTag("campfire") and (not Prefab:HasTag("resurrector"))) then
-                Add_Resurrector(Prefab);
-            end
-        end)
-    end
+if (GetModConfigData("usetags") == Enabled) then
+    -- Runs on all prefabs as i couldn't find a way to iterate through all prefabs post-all mods initialization
+    AddPrefabPostInitAny(function(Prefab)
+        -- Do not try to add "resurrector" if it's already there
+        if ((Prefab ~= nil) and (Prefab.components ~= nil) and Prefab:HasTag("campfire") and (not Prefab:HasTag("resurrector"))) then
+            Add_Resurrector(Prefab);
+        end
+    end)
 end
-
-Apply_ToTag();
 
 local function Set(Key, Setting)
     Setting = GetModConfigData(Setting);
@@ -96,3 +91,92 @@ Set("MAXIMUM_HEALTH_PENALTY", "Health_Penalty_Maximum");
 Set("EFFIGY_HEALTH_PENALTY",  "Health_Penalty_Meat_Effigy");
 Set("REVIVE_HEALTH_PENALTY",  "Health_Penalty_Generic");
 Set("RESURRECT_HEALTH",       "Health_Respawn_Amount");
+
+local Hotkey = GetModConfigData("ReturnHotkey");
+
+if (Hotkey ~= Unchanged) then
+    -- This is how the game does it too!
+    local function GetPortal()
+        for Key, Value in pairs(GLOBAL.Ents) do
+            if (Value:IsValid() and Value:HasTag("multiplayer_portal")) then
+                return Value;
+            end
+        end
+    end
+
+    local function ResurrectPlayer_AtPortal(Player)
+        local Portal = GetPortal();
+
+        if (Portal ~= nil) then
+            Player.Monkey_LastHauntTarget = Portal;
+            local X, Y, Z = Portal.Transform:GetWorldPosition();
+            Player.Physics:Teleport(X, Y, Z);
+            Player:PushEvent("respawnfromghost", {source = Portal, user = Player});
+        end
+    end
+
+    local function ResurrectPlayer_At(Prefab, Player)
+        local X, Y, Z = Prefab.Transform:GetWorldPosition();
+        Player:PushEvent("respawnfromghost", {source = Prefab, user = Player});
+        Player.Physics:Teleport(X, Y, Z);
+    end
+
+    local function ResurrectPlayer(Player, Mode)
+        if ((Mode == "Last") and (Player.Monkey_LastHauntTarget ~= nil)) then
+            local X, Y, Z = Player.Monkey_LastHauntTarget.Transform:GetWorldPosition();
+
+            -- If any are nil then the target doesn't exist anymore
+            if ((X ~= nil) and (Y ~= nil) and (Z ~= nil)) then
+                ResurrectPlayer_At(Player.Monkey_LastHauntTarget, Player)
+            else
+                Player.Monkey_LastHauntTarget = nil;
+                ResurrectPlayer_AtPortal(Player);
+            end
+        elseif (Mode == "Closest") then
+            local X, Y, Z = Player.Transform:GetWorldPosition();
+            local Entities = GLOBAL.TheSim:FindEntities(X, Y, Z, 1000, {"resurrector"}, nil, {"structure", "multiplayer_portal"})
+            local Resurrector = nil
+
+            for _, Entity in ipairs(Entities) do
+                if ((Entity ~= nil) and (Entity.components.attunable == nil)) then
+                    Resurrector = Entity
+                    break
+                end
+            end
+
+            if (Resurrector ~= nil) then
+                ResurrectPlayer_At(Resurrector, Player)
+            else
+                ResurrectPlayer_AtPortal(Player);
+            end
+        else
+            ResurrectPlayer_AtPortal(Player);
+        end
+    end
+
+    AddModRPCHandler(modname, "Monkey_ResurrectPlayer", ResurrectPlayer);
+
+    if (GLOBAL.TheNet:GetIsServer() or GLOBAL.TheNet:IsDedicated()) then
+        AddPlayerPostInit(function (Prefab)
+            Prefab:ListenForEvent("haunt", function (Ghost, Data)
+                if ((Data ~= nil) and (Data.target ~= nil) and Data.target:HasTag("resurrector")) then
+                    Ghost.Monkey_LastHauntTarget = Data.target
+                end
+            end)
+        end)
+    end
+
+    if (not GLOBAL.TheNet:GetIsServer()) then
+        GLOBAL.TheInput:AddKeyUpHandler(GLOBAL["KEY_" .. Hotkey], function ()
+            if GLOBAL.GetPortalRez(GLOBAL.TheNet:GetServerGameMode()) then
+                local Player = GLOBAL.ThePlayer
+
+                if Player:HasTag("playerghost") then
+                    SendModRPCToServer(MOD_RPC[modname]["Monkey_ResurrectPlayer"], GetModConfigData("ReturnHotkey_Mode"))
+                end
+            end
+        end);
+    end
+end
+
+
