@@ -11,28 +11,23 @@ Only works in Endless and Survival mode.
 
 Read the Steam Workshop mod's page for all features, there isn't enough space in these menus.
 
-Version 1.6.1
+Version 1.6.2
 License : Public Domain
 ]]
 
-author = "VampireMonkey"
-version = "v1.6.1"
+author  = "VampireMonkey"
+version = "v1.6.2"
 
-dont_starve_compatible = false
-dst_compatible = true
-reign_of_giants_compatible = true
-
-client_only_mod = false
-all_clients_require_mod = true
-
-forumthread = ""
-
-api_version = 10
-
-server_filter_tags = {"utility"}
-
-icon_atlas = "modicon.xml"
-icon = "modicon.tex"
+dont_starve_compatible 		= false
+dst_compatible 				= true
+reign_of_giants_compatible 	= true
+client_only_mod 			= false
+all_clients_require_mod 	= true
+forumthread 				= ""
+api_version 				= 10
+server_filter_tags 			= {"utility"}
+icon_atlas 					= "modicon.xml"
+icon 						= "modicon.tex"
 
 local Unchanged = "Unchanged";
 local Enabled 	= "Enabled";
@@ -54,56 +49,21 @@ for i = 1, #Keys do
 end
 
 -- Doesn't go up to 100%, can't have the player spawning with no health
-local Options_0_99 =
-{
-	{description = "Unchanged",   data = Unchanged},
-	{description = "0%", 		  data = 0.0},
-	{description = "5%", 		  data = 0.05},
-	{description = "10%", 		  data = 0.10},
-	{description = "15%", 		  data = 0.15},
-	{description = "20%", 		  data = 0.20},
-	{description = "25%", 		  data = 0.25},
-	{description = "30%", 		  data = 0.30},
-	{description = "35%", 		  data = 0.35},
-	{description = "40%", 		  data = 0.40},
-	{description = "45%", 		  data = 0.45},
-	{description = "50%", 		  data = 0.50},
-	{description = "55%", 		  data = 0.55},
-	{description = "60%", 		  data = 0.60},
-	{description = "65%", 		  data = 0.65},
-	{description = "70%", 		  data = 0.70},
-	{description = "75%", 		  data = 0.75},
-	{description = "80%", 		  data = 0.80},
-	{description = "85%", 		  data = 0.85},
-	{description = "90%", 		  data = 0.90},
-	{description = "95%", 		  data = 0.95},
-	{description = "99%", 		  data = 0.99}
-};
+local Options_0_99 = {{description = "Unchanged", data = Unchanged}};
 
-local Options_1_99_Integers =
-{
-	{description = "Unchanged",   data = Unchanged},
-	{description = "5", 		  data = 5},
-	{description = "10", 		  data = 10},
-	{description = "15", 		  data = 15},
-	{description = "20", 		  data = 20},
-	{description = "25", 		  data = 25},
-	{description = "30", 		  data = 30},
-	{description = "35", 		  data = 35},
-	{description = "40", 		  data = 40},
-	{description = "45", 		  data = 45},
-	{description = "50", 		  data = 50},
-	{description = "55", 		  data = 55},
-	{description = "60", 		  data = 60},
-	{description = "65", 		  data = 65},
-	{description = "70", 		  data = 70},
-	{description = "75", 		  data = 75},
-	{description = "80", 		  data = 80},
-	{description = "85", 		  data = 85},
-	{description = "90", 		  data = 90},
-	{description = "95", 		  data = 95},
-	{description = "99", 		  data = 99}
-};
+for i = 0, 95, 5 do
+	Options_0_99[#Options_0_99 + 1] = {description = i .. "%", data = (i * 0.01)}
+end
+
+Options_0_99[#Options_0_99 + 1] = {description = "99%", data = 0.99}
+
+local Options_1_99_Integers = {{description = "Unchanged", data = Unchanged}};
+
+for i = 0, 95, 5 do
+	Options_1_99_Integers[#Options_1_99_Integers + 1] = {description = i, data = i}
+end
+
+Options_1_99_Integers[#Options_1_99_Integers + 1] = {description = "99", data = 99}
 
 local Options_1_500 =
 {
@@ -206,9 +166,9 @@ configuration_options =
 		default = Unchanged
 	},
     {
-		name 	= "Health_PenaHealth_Penalty_Meat_Effigylty_Portal",
-		label 	= "Health Penalty - Meat Effigy",
-		hover 	= Generic_Health_Penalty .. "the Meat Effigy.\nMin amount of Health you can spawn with. Default : 40.",
+		name 	= "Health_Penalty_Meat_Effigy",
+		label 	= "Attunement - Meat Effigy",
+		hover 	= "Amount of Health it cost to Attune at a Meat Effigy. Default : 40.",
 		options = Options_1_99_Integers,
 		default = Unchanged
 	},
@@ -224,6 +184,17 @@ configuration_options =
 		label 	= "Return Hotkey",
 		hover 	= "Will return you to the last place you respawned or the Jury-Rigged Portal. Does not work inbetween loads.",
 		options = Keys_Options,
+		default = Unchanged
+	},
+    {
+		name 	= "ReturnHotkey_Mode",
+		label 	= "Return Hotkey - Mode",
+		hover 	= "Pick one of 2 modes for Return Hotkey. Closest's Max Range is 1000 and only works with Structures, doesn't work with the Meat Effigy.",
+		options =
+		{
+			{description = "Last", 	  data = "Last",	hover = "Will respawn you at the last place you respawned or the Jury-Rigged Portal."},
+			{description = "Closest", data = "Closest",	hover = "Will respawn you at the closest structure you can respawn at or the Jury-Rigged Portal."}
+		},
 		default = Unchanged
 	}
 }
