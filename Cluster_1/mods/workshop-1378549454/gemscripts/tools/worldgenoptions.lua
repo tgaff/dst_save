@@ -177,7 +177,13 @@ defaultdescs.frequency_descriptions = deepcopy(GROUP.monsters.desc)
 defaultdescs.starting_swaps_descriptions = deepcopy(GROUP.misc.items.prefabswaps_start.desc)
 defaultdescs.petrification_descriptions = deepcopy(GROUP.misc.items.petrification.desc)
 defaultdescs.speed_descriptions = deepcopy(GROUP.misc.items.regrowth.desc)
-defaultdescs.disease_descriptions = deepcopy(GROUP.misc.items.disease_delay.desc)
+defaultdescs.disease_descriptions = deepcopy({
+    { text = STRINGS.UI.SANDBOXMENU.QTYNONE, data = "none" },
+    { text = STRINGS.UI.SANDBOXMENU.RANDOM, data = "random" },
+    { text = STRINGS.UI.SANDBOXMENU.SLIDESLOW, data = "long" },
+    { text = STRINGS.UI.SANDBOXMENU.SLIDEDEFAULT, data = "default" },
+    { text = STRINGS.UI.SANDBOXMENU.SLIDEFAST, data = "short" },
+})
 defaultdescs.day_descriptions = deepcopy(GROUP.misc.items.day.desc)
 defaultdescs.season_length_descriptions = deepcopy(GROUP.misc.items.autumn.desc)
 defaultdescs.season_start_descriptions = deepcopy(GROUP.misc.items.season_start.desc)

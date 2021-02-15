@@ -154,7 +154,7 @@ function ShardIndex:SetServerShardData(customoptions, serverdata, callback, ...)
         local options = self:GetGenOptions()
         if options then
             --block worldseed from being changed by leveldataoverrides/worldgenoverrides
-            gemrun("overridesblocker", options.overrides, GEMENV.modname, {"worldseed"}, true)
+            gemrun("overridesblocker", options.overrides, GEMENV.modname, {"worldseed", "specialevent"}, true)
         end
         if _callback then
             return _callback(...)

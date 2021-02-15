@@ -285,7 +285,7 @@ setmetatable(GROUND, {__newindex = function(t, k, v)
                 end
             end
         end
-        assert(didfindgemtile, "\nERROR! ERROR! ERROR!\n TWO MODS ARE TRYING TO ADD TILES UNDER THE SAME ID\nPLEASE FIND AND REPORT THIS TO THE MOD AUTHORS SO THEY CAN FIX THIS")
+        assert(didfindgemtile, "\nERROR! TWO MODS ARE TRYING TO ADD TILES UNDER THE SAME ID\nPLEASE FIND AND REPORT THIS TO THE MOD AUTHORS SO THEY CAN FIX THIS")
     else
         print("Tile: "..k.." Set to ID: "..v)
         rawset(t, k, v)
@@ -296,6 +296,7 @@ end})
 --this is really silly, but this is for compatibility with nsimplex's tile_adder.lua(which you dont need anymore)
 local _error = error
 function error(message, level)
+    level = (level or 1) + 1
     if string.find(message, "The numerical id [%d]- is already used by GROUND%..-!") then
         return
     end
@@ -381,7 +382,9 @@ MakeGemFunction("ontileconversion", function(functionname, cb, ...)
     table.insert(ontileconversion, cb)
 end, true)
 
-local function ConvertMapTiles(TileString, ConversionMap)
+local ConversionMap
+
+local function ConvertMapTiles(TileString)
     if next(ConversionMap) ~= nil then
         local tiles = BinaryString(TileString)
 
@@ -395,19 +398,19 @@ local function ConvertMapTiles(TileString, ConversionMap)
 end
 
 local function GetGroundTileDiff(currentTileSet, previousTileSet)
-    local ConversionMap = {}
+    local map = {}
     for k, v in pairs(currentTileSet) do
         if previousTileSet[k] ~= nil and previousTileSet[k] ~= v then
-            ConversionMap[previousTileSet[k]] = v
+            map[previousTileSet[k]] = v
         end
     end
-    return ConversionMap
+    return map
 end
 
 local function ConvertStaticTiles(savedata)
     print("Migrating Static Gem Core Tiles!")
 
-    local ConversionMap = {}
+    ConversionMap = {}
     --this is first load for our DynamicTileManager
     for mod, record in pairs(savedata.mods or {}) do
         if WORKSHOP_NONWORKSHOP_LINKS[mod] ~= nil then
@@ -423,7 +426,7 @@ local function ConvertStaticTiles(savedata)
         end
     end
     GEMCORETILEDATA = {}
-    savedata.map.tiles = ConvertMapTiles(savedata.map.tiles, ConversionMap)
+    savedata.map.tiles = ConvertMapTiles(savedata.map.tiles)
 
     for i, mod_callback in ipairs(ontileconversion) do
         mod_callback(savedata, ConversionMap)
@@ -433,8 +436,8 @@ end
 local function ConvertDynamicTiles(savedata, old_GROUND)
     print("Loading Dynamic Gem Core Tiles!")
 
-    local ConversionMap = GetGroundTileDiff(GROUND, old_GROUND)
-    savedata.map.tiles = ConvertMapTiles(savedata.map.tiles, ConversionMap)
+    ConversionMap = GetGroundTileDiff(GROUND, old_GROUND)
+    savedata.map.tiles = ConvertMapTiles(savedata.map.tiles)
 
     for i, mod_callback in ipairs(ontileconversion) do
         mod_callback(savedata, ConversionMap)
@@ -464,6 +467,28 @@ local function ConvertDynamicTiles(savedata, old_GROUND)
             deleteIdx = deleteIdx - 1
         end
     end
+end
+
+if CurrentRelease.GreaterOrEqualTo("R14_FARMING_REAPWHATYOUSOW") and GEMENV.AddComponentPostInit then
+    GEMENV.AddComponentPostInit("farming_manager", function(farming_manager)
+        local _OnLoad = farming_manager.OnLoad
+        function farming_manager:OnLoad(data)
+            data = DecodeAndUnzipSaveData(data)
+            if data ~= nil then
+                if data.tile_data then
+                    for x, ylist in pairs(data.tile_data) do
+                        for y, entries in pairs(ylist) do
+                            if entries.belowsoiltile then
+                                entries.belowsoiltile = ConversionMap[entries.belowsoiltile] or entries.belowsoiltile
+                            end
+                        end
+                    end
+                end
+            end
+
+            return _OnLoad(self, ZipAndEncodeSaveData(data))
+        end
+    end)
 end
 
 gemrun("ongeneratenewworld", function(callback, self, savedata, metadataStr, session_identifier, _cb, ...)

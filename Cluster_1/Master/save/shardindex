@@ -106,6 +106,7 @@ KLEI     1 return {
         beefalo="often",
         berrybush="often",
         carrot="often",
+        disease_delay="default",
         has_ocean=true,
         hounds="rare",
         keep_disconnected_tiles=true,

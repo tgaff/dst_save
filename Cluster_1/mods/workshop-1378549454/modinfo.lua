@@ -18,7 +18,7 @@ directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 name = "[API] Gem Core"
-version = "5.1.11"
+version = "5.1.16"
 credits = "\n\nCredits:\nZarklord - For creating this API.\nFidooop - For ensuring things were done right.\nRezecib - For his wonderful upvalue hacker.\nNSimplex - For memspikefix."
 description = "Version: "..version.."\nLibrary of powerful modding tools for mod developers.\n\nVisit https://gitlab.com/DSTAPIS/GemCore/wikis/home for API info"..credits
 author = "Zarklord"

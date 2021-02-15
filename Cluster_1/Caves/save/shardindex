@@ -105,6 +105,7 @@ KLEI     1 return {
       override_level_string=false,
       overrides={
         banana="often",
+        disease_delay="default",
         layout_mode="RestrictNodesByKey",
         original={
           alternatehunt="default",
