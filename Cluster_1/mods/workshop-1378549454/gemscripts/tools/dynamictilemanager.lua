@@ -469,7 +469,7 @@ local function ConvertDynamicTiles(savedata, old_GROUND)
     end
 end
 
-if CurrentRelease.GreaterOrEqualTo("R14_FARMING_REAPWHATYOUSOW") and GEMENV.AddComponentPostInit then
+if GEMENV.AddComponentPostInit then
     GEMENV.AddComponentPostInit("farming_manager", function(farming_manager)
         local _OnLoad = farming_manager.OnLoad
         function farming_manager:OnLoad(data)

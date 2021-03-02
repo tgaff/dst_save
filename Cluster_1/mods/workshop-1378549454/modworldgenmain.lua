@@ -17,31 +17,42 @@ LICENSE in the form of a LICENSE file in the root of the source
 directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
-local _G = GLOBAL
-local require = _G.require
+if CurrentRelease.GreaterOrEqualTo("R15_QOL_WORLDSETTINGS") then
+	local _G = GLOBAL
+	local require = _G.require
 
-_G.GEMENV = env
+	_G.GEMENV = env
 
-if _G.rawget(_G, "TheFrontEnd") and _G.rawget(_G, "IsInFrontEnd") and _G.IsInFrontEnd() then
-    local stacklevel = 2
-    local info = _G.debug.getinfo(stacklevel, "n")
-    _G.IsSaveSlotLoading = false
-    while info ~= nil do
-        if info.name == "SetSaveSlot" then
-            _G.IsSaveSlotLoading = true
-            break
-        elseif info.name == "OnConfirmEnable" then
-            _G.IsSaveSlotLoading = false
-            break
-        end
-        stacklevel = stacklevel + 1
-        info = _G.debug.getinfo(stacklevel, "n")
-    end
-    print("IsSaveSlotLoading", _G.IsSaveSlotLoading)
-
-    require("frontendmainloader")
+	if not (_G.rawget(_G, "TheFrontEnd") and _G.rawget(_G, "IsInFrontEnd") and _G.IsInFrontEnd()) then
+	    require("backendmainloader")
+	end
 else
-    require("backendmainloader")
-end
+	local _G = GLOBAL
+	local require = _G.require
 
-_G.IsSaveSlotLoading = nil
+	_G.GEMENV = env
+
+	if _G.rawget(_G, "TheFrontEnd") and _G.rawget(_G, "IsInFrontEnd") and _G.IsInFrontEnd() then
+	    local stacklevel = 2
+	    local info = _G.debug.getinfo(stacklevel, "n")
+	    _G.IsSaveSlotLoading = false
+	    while info ~= nil do
+	        if info.name == "SetSaveSlot" then
+	            _G.IsSaveSlotLoading = true
+	            break
+	        elseif info.name == "OnConfirmEnable" then
+	            _G.IsSaveSlotLoading = false
+	            break
+	        end
+	        stacklevel = stacklevel + 1
+	        info = _G.debug.getinfo(stacklevel, "n")
+	    end
+	    print("IsSaveSlotLoading", _G.IsSaveSlotLoading)
+
+	    require("frontendmainloader")
+	else
+	    require("backendmainloader")
+	end
+
+	_G.IsSaveSlotLoading = nil
+end

@@ -57,6 +57,7 @@ local function ResetServer(inst, data)
         local override_worldseed = options.overrides.worldseed
         local worldseed = (override_worldseed and ((tonumber(override_worldseed) or hash(override_worldseed)) == _world.meta.seed) and override_worldseed) or _world.meta.seed
         options.overrides.worldseed = data.preserve_seed and worldseed or nil
+        TheWorld.topology.overrides.worldseed = options.overrides.worldseed
         options.preserveworldseed = true
         ShardGameIndex:Save(function()
             if data.srpc_sender then

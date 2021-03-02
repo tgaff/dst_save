@@ -18,97 +18,195 @@ directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
 --any access form or function defined in the file is depreciated, and is subject to removal at my discretion.
-local _G = GLOBAL
+if CurrentRelease.GreaterOrEqualTo("R15_QOL_WORLDSETTINGS") then
+    local _G = GLOBAL
 
-local MakeGemFunction, DeleteGemFunction = gemrun("gemfunctionmanager")
+    local MakeGemFunction, DeleteGemFunction = gemrun("gemfunctionmanager")
 
-_G.GEMWORLDGENENV = env
+    _G.GEMWORLDGENENV = env
 
-_G.global("GEMWORLDGENCALLBACKS")
+    _G.global("GEMWORLDGENCALLBACKS")
 
-local AddGetSet, RemoveGetSet = gemrun("tools/globalmetatable")
-_G.GlobalMetatable = {AddGetSet = AddGetSet, RemoveGetSet = RemoveGetSet}
-
---OLD VERSION FRONTEND COMPAT
-local function SetupGemCoreWorldGenEnv(enviroment)
-    _G.setfenv(1, enviroment)
-    gemrun = _G.gemrun
-    DebugPrint = gemrun("tools/misc").Local.DebugPrint
-    UpvalueHacker = gemrun("tools/upvaluehacker")
-    LocalVariableHacker = gemrun("tools/localvariablehacker")
-    bit = gemrun("bit")
-    WorldGenOptions = gemrun("tools/worldgenoptions", modname)
-    --wrap all functions to automatically call with self.
-    if WorldGenOptions.wrapped ~= true then
-        for k, v in pairs(WorldGenOptions) do
-            if type(v) == "function" then
-                local _compat = v
-                WorldGenOptions[k] = function(self, ...)
-                    if self == WorldGenOptions then
-                        return _compat(self, ...)
-                    else
-                        return _compat(WorldGenOptions, self, ...)
-                    end
-                end
-            end
-        end
-        for k, v in pairs(_G.getmetatable(WorldGenOptions)) do
-            if type(v) == "function" then
-                local _compat = v
-                WorldGenOptions[k] = function(self, ...)
-                    if self == WorldGenOptions then
-                        return _compat(self, ...)
-                    else
-                        return _compat(WorldGenOptions, self, ...)
-                    end
-                end
-            end
-        end
-        WorldGenOptions.wrapped = true
-    end
     local AddGetSet, RemoveGetSet = gemrun("tools/globalmetatable")
-    GlobalMetatable = {AddGetSet = AddGetSet, RemoveGetSet = RemoveGetSet}
+    _G.GlobalMetatable = {AddGetSet = AddGetSet, RemoveGetSet = RemoveGetSet}
 
-    function ReloadFrontEndAssets()
-        gemrun("unloadassets", enviroment.modname or true)--we do the "or true", to prevent nil getting passed which is how we signal deletion of all frontend_assets_prefabs.
-        gemrun("loadassets", enviroment.modname, enviroment.frontendassets)
+    --OLD VERSION FRONTEND COMPAT
+    local function SetupGemCoreWorldGenEnv(enviroment)
+        _G.setfenv(1, enviroment)
+        gemrun = _G.gemrun
+        DebugPrint = gemrun("tools/misc").Local.DebugPrint
+        UpvalueHacker = gemrun("tools/upvaluehacker")
+        LocalVariableHacker = gemrun("tools/localvariablehacker")
+        bit = gemrun("bit")
+        WorldGenOptions = gemrun("tools/worldgenoptions", modname)
+        --wrap all functions to automatically call with self.
+        if WorldGenOptions.wrapped ~= true then
+            for k, v in pairs(WorldGenOptions) do
+                if type(v) == "function" then
+                    local _compat = v
+                    WorldGenOptions[k] = function(self, ...)
+                        if self == WorldGenOptions then
+                            return _compat(self, ...)
+                        else
+                            return _compat(WorldGenOptions, self, ...)
+                        end
+                    end
+                end
+            end
+            for k, v in pairs(_G.getmetatable(WorldGenOptions)) do
+                if type(v) == "function" then
+                    local _compat = v
+                    WorldGenOptions[k] = function(self, ...)
+                        if self == WorldGenOptions then
+                            return _compat(self, ...)
+                        else
+                            return _compat(WorldGenOptions, self, ...)
+                        end
+                    end
+                end
+            end
+            WorldGenOptions.wrapped = true
+        end
+        local AddGetSet, RemoveGetSet = gemrun("tools/globalmetatable")
+        GlobalMetatable = {AddGetSet = AddGetSet, RemoveGetSet = RemoveGetSet}
+
+        function env.ReloadFrontEndAssets()
+            if env.frontendassets then
+                _G.ModReloadFrontEndAssets(env.frontendassets, env.modname)
+            end
+        end
+        ReloadFrontEndAssets()
     end
-    ReloadFrontEndAssets()
-end
 
-SetupGemCoreWorldGenEnv(env)
-if first_load then
-    gemrun("unloadgemcore", function() _G.GEMWORLDGENCALLBACKS = nil end)
-end
-
---these are in here, since I need to delete them to prevent bad access to these functions
-DeleteGemFunction("unloadmodany")
-DeleteGemFunction("unloadgemcore")
-MakeGemFunction("gemfunctionmanager", function() return function() end, function() end end)
-
-local function CallWorldgenModCallback(callback)
-    local enviroment = _G.getfenv(callback)
-    _G.setfenv(1, enviroment)
-    if _G.IsWorkshopMod(modname) then
-        _G.modprint("MOD WARNING: ".._G.ModInfoname(modname)..": Worldgen Mod Callback is DEPRECIATED")
-    else
-        moderror("Worldgen Mod Callback is DEPRECIATED")
+    SetupGemCoreWorldGenEnv(env)
+    if first_load then
+        gemrun("unloadgemcore", function() _G.GEMWORLDGENCALLBACKS = nil end)
     end
-    local _path = _G.package.path
-    local _currentlyloadingmod = _G.ModManager.currentlyloadingmod
 
-    _G.package.path = enviroment.MODROOT.."\\scripts\\?.lua;".._G.package.path
-    SetupGemCoreWorldGenEnv(enviroment)
-    _G.RunInEnvironmentSafe(callback, enviroment)
-    
-    _G.package.path = _path
-    _G.ModManager.currentlyloadingmod = _currentlyloadingmod
+    --these are in here, since I need to delete them to prevent bad access to these functions
+    DeleteGemFunction("unloadmodany")
+    DeleteGemFunction("unloadgemcore")
+    MakeGemFunction("gemfunctionmanager", function() return function() end, function() end end)
+
+    local function CallWorldgenModCallback(callback)
+        local enviroment = _G.getfenv(callback)
+        _G.setfenv(1, enviroment)
+        if _G.IsWorkshopMod(modname) then
+            _G.modprint("MOD WARNING: ".._G.ModInfoname(modname)..": Worldgen Mod Callback is DEPRECIATED")
+        else
+            moderror("Worldgen Mod Callback is DEPRECIATED")
+        end
+        local _path = _G.package.path
+        local _currentlyloadingmod = _G.ModManager.currentlyloadingmod
+
+        _G.package.path = enviroment.MODROOT.."\\scripts\\?.lua;".._G.package.path
+        SetupGemCoreWorldGenEnv(enviroment)
+        _G.RunInEnvironmentSafe(callback, enviroment)
+        
+        _G.package.path = _path
+        _G.ModManager.currentlyloadingmod = _currentlyloadingmod
+    end
+
+    for i, v in ipairs(_G.GEMWORLDGENCALLBACKS or {}) do
+        CallWorldgenModCallback(v)
+    end
+
+    _G.GEMWORLDGENCALLBACKS = _G.setmetatable({}, {__newindex = function(t, k, v)
+        CallWorldgenModCallback(v)
+    end})
+else
+    local _G = GLOBAL
+
+    local MakeGemFunction, DeleteGemFunction = gemrun("gemfunctionmanager")
+
+    _G.GEMWORLDGENENV = env
+
+    _G.global("GEMWORLDGENCALLBACKS")
+
+    local AddGetSet, RemoveGetSet = gemrun("tools/globalmetatable")
+    _G.GlobalMetatable = {AddGetSet = AddGetSet, RemoveGetSet = RemoveGetSet}
+
+    --OLD VERSION FRONTEND COMPAT
+    local function SetupGemCoreWorldGenEnv(enviroment)
+        _G.setfenv(1, enviroment)
+        gemrun = _G.gemrun
+        DebugPrint = gemrun("tools/misc").Local.DebugPrint
+        UpvalueHacker = gemrun("tools/upvaluehacker")
+        LocalVariableHacker = gemrun("tools/localvariablehacker")
+        bit = gemrun("bit")
+        WorldGenOptions = gemrun("tools/worldgenoptions", modname)
+        --wrap all functions to automatically call with self.
+        if WorldGenOptions.wrapped ~= true then
+            for k, v in pairs(WorldGenOptions) do
+                if type(v) == "function" then
+                    local _compat = v
+                    WorldGenOptions[k] = function(self, ...)
+                        if self == WorldGenOptions then
+                            return _compat(self, ...)
+                        else
+                            return _compat(WorldGenOptions, self, ...)
+                        end
+                    end
+                end
+            end
+            for k, v in pairs(_G.getmetatable(WorldGenOptions)) do
+                if type(v) == "function" then
+                    local _compat = v
+                    WorldGenOptions[k] = function(self, ...)
+                        if self == WorldGenOptions then
+                            return _compat(self, ...)
+                        else
+                            return _compat(WorldGenOptions, self, ...)
+                        end
+                    end
+                end
+            end
+            WorldGenOptions.wrapped = true
+        end
+        local AddGetSet, RemoveGetSet = gemrun("tools/globalmetatable")
+        GlobalMetatable = {AddGetSet = AddGetSet, RemoveGetSet = RemoveGetSet}
+
+        function ReloadFrontEndAssets()
+            gemrun("unloadassets", enviroment.modname or true)--we do the "or true", to prevent nil getting passed which is how we signal deletion of all frontend_assets_prefabs.
+            gemrun("loadassets", enviroment.modname, enviroment.frontendassets)
+        end
+        ReloadFrontEndAssets()
+    end
+
+    SetupGemCoreWorldGenEnv(env)
+    if first_load then
+        gemrun("unloadgemcore", function() _G.GEMWORLDGENCALLBACKS = nil end)
+    end
+
+    --these are in here, since I need to delete them to prevent bad access to these functions
+    DeleteGemFunction("unloadmodany")
+    DeleteGemFunction("unloadgemcore")
+    MakeGemFunction("gemfunctionmanager", function() return function() end, function() end end)
+
+    local function CallWorldgenModCallback(callback)
+        local enviroment = _G.getfenv(callback)
+        _G.setfenv(1, enviroment)
+        if _G.IsWorkshopMod(modname) then
+            _G.modprint("MOD WARNING: ".._G.ModInfoname(modname)..": Worldgen Mod Callback is DEPRECIATED")
+        else
+            moderror("Worldgen Mod Callback is DEPRECIATED")
+        end
+        local _path = _G.package.path
+        local _currentlyloadingmod = _G.ModManager.currentlyloadingmod
+
+        _G.package.path = enviroment.MODROOT.."\\scripts\\?.lua;".._G.package.path
+        SetupGemCoreWorldGenEnv(enviroment)
+        _G.RunInEnvironmentSafe(callback, enviroment)
+        
+        _G.package.path = _path
+        _G.ModManager.currentlyloadingmod = _currentlyloadingmod
+    end
+
+    for i, v in ipairs(_G.GEMWORLDGENCALLBACKS or {}) do
+        CallWorldgenModCallback(v)
+    end
+
+    _G.GEMWORLDGENCALLBACKS = _G.setmetatable({}, {__newindex = function(t, k, v)
+        CallWorldgenModCallback(v)
+    end})
 end
-
-for i, v in ipairs(_G.GEMWORLDGENCALLBACKS or {}) do
-    CallWorldgenModCallback(v)
-end
-
-_G.GEMWORLDGENCALLBACKS = _G.setmetatable({}, {__newindex = function(t, k, v)
-    CallWorldgenModCallback(v)
-end})

@@ -17,6 +17,7 @@ LICENSE in the form of a LICENSE file in the root of the source
 directory. If not, please refer to
 <https://raw.githubusercontent.com/Recex/Licenses/master/SharedSourceLicense/LICENSE.txt>
 ]]
+if CurrentRelease.GreaterOrEqualTo("R15_QOL_WORLDSETTINGS") then return end
 local _G = GLOBAL
 
 frontendassets = {
