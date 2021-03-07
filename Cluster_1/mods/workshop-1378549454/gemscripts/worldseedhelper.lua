@@ -23,7 +23,7 @@ if CurrentRelease.GreaterOrEqualTo("R15_QOL_WORLDSETTINGS") then
     STRINGS.UI.CUSTOMIZATIONSCREEN.WORLDSEED = STRINGS.UI.CUSTOMIZATIONSCREEN.WORLDSEED or "Leave blank for a random seed."
     STRINGS.UI.CUSTOMIZATIONSCREEN.ICON_TITLES.WORLDSEED = STRINGS.UI.CUSTOMIZATIONSCREEN.ICON_TITLES.WORLDSEED or "World Seed"
 
-    GEMENV.AddCustomiseItem(LEVELCATEGORY.WORLDGEN, "misc", "worldseed", {order = -10, value = "", widget_type = "textentry", image = "world_seed.tex", atlas = "images/world_seed.xml", options_remap = {img = "blank_world.tex"}})
+    GEMENV.AddCustomizeItem(LEVELCATEGORY.WORLDGEN, "misc", "worldseed", {order = -10, value = "", widget_type = "textentry", image = "world_seed.tex", atlas = "images/world_seed.xml", options_remap = {img = "blank_world.tex"}})
 
     if IsTheFrontEnd then
         local args = {...}

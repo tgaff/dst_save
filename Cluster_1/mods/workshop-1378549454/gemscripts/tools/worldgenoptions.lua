@@ -22,6 +22,10 @@ if CurrentRelease.GreaterOrEqualTo("R15_QOL_WORLDSETTINGS") then
 	local MakeGemFunction, DeleteGemFunction = gemrun("gemfunctionmanager")
 	MakeGemFunction("overridesblocker", function() end, true)
 
+	if not IsTheFrontEnd then
+	    return
+	end
+
 	local WorldGenOptions = Class(function(self, modname)
 	    assert(KnownModIndex:DoesModExistAnyVersion(modname), "modname "..modname.." must refer to a valid mod!")
 	    self.modname = modname
@@ -41,7 +45,7 @@ if CurrentRelease.GreaterOrEqualTo("R15_QOL_WORLDSETTINGS") then
 	function WorldGenOptions.SetOptionValue() end
 	function WorldGenOptions.GetOptionValue() end
 	function WorldGenOptions:__index(name)
-	    return GEMENV.GetCustomiseDescription(name) or getmetatable(self)[name]
+	    return GEMENV.GetCustomizeDescription(name) or getmetatable(self)[name]
 	end
 
 	local memoized_wgo = {}
